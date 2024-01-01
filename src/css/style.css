@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: local('Ubuntu-Regular'), url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: local('Ubuntu-Medium'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+    src: local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'InriaSerif Italic';
+    src: local('InriaSerif-Italic'), url('../fonts/InriaSerif-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'InriaSerif Regular';
+    src: local('InriaSerif-Regular'), url('../fonts/InriaSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'InriaSerif Bold';
+    src: local('InriaSerif-Bold'), url('../fonts/InriaSerif-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+:root {
+    --background: #000A24;
+    --background-footer: #252323;
+    --background-white: #fff;
+    --button-primary: #083CC0;
+    --button-disabled: #61677A;
+    --button-active: #02257F;
+    --button-visited: #fff;
+    --icon-hover: #7FA2FB;
+    --сolor-white: #fff;
+    --сolor-black: #000;
+    --color-burger-yellow: #FFF500;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu Regular';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    background-color: var(--background);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+/*--------button--start--------*/
+/*--------button--end--------*/
+
+/*===================== mobile version 375px =====================*/
+/* loader start */
+/* loader end */
+
+/* hero section start */
+/* hero section end" */
+
+/* header start */
+/* header end */
+
+/* quote start */
+/* quote end */
+
+/* registration section start */
+/* registration section end */
+
+/* conditions of participation start */
+/* conditions of participation end */
+
+/* partners start */
+/* partners end */
+
+/* logo of partners start */
+/* logo of partners end */
+
+/* specialities start */
+/* specialities end */
+
+/* footer start */
+/* footer end */
+
+/* modal windows start */
+/* modal windows end */
+
+/* 404 start */
+/* 404 end */
+
+/*=============================================================*/
+/*------------------------ @ media ----------------------------*/
+
+@media (min-width: 786px){
+/* loader start */
+/* loader end */
+
+/* hero section start */
+/* hero section end" */
+
+/* header start */
+/* header end */
+
+/* quote start */
+/* quote end */
+
+/* registration section start */
+/* registration section end */
+
+/* conditions of participation start */
+/* conditions of participation end */
+
+/* partners start */
+/* partners end */
+
+/* logo of partners start */
+/* logo of partners end */
+
+/* specialities start */
+/* specialities end */
+
+/* footer start */
+/* footer end */
+
+/* modal windows start */
+/* modal windows end */
+
+/* 404 start */
+/* 404 end */
+}
+
+@media (min-width: 1024px) {
+/* loader start */
+/* loader end */
+
+/* hero section start */
+/* hero section end" */
+
+/* header start */
+/* header end */
+
+/* quote start */
+/* quote end */
+
+/* registration section start */
+/* registration section end */
+
+/* conditions of participation start */
+/* conditions of participation end */
+
+/* partners start */
+/* partners end */
+
+/* logo of partners start */
+/* logo of partners end */
+
+/* specialities start */
+/* specialities end */
+
+/* footer start */
+/* footer end */
+
+/* modal windows start */
+/* modal windows end */
+
+/* 404 start */
+/* 404 end */    
+}
