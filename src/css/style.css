@@ -49,16 +49,17 @@
 :root {
     --background: #000A24;
     --background-footer: #252323;
-    --background-white: #fff;
+    --white: #fff;
     --button-primary: #083CC0;
-    --button-disabled: #61677A;
-    --button-active: #02257F;
-    --button-visited: #fff;
+    --button-primary-hover-bg: #02257F;
+    --button-disabled-bg: #61677A;
+    --button-disabled-text: #D8D9DA;;
+    --button-hover-bg: #02257F;
+    --button-active-bg: #fff;
     --icon-hover: #7FA2FB;
     --сolor-white: #fff;
     --сolor-black: #000;
     --color-burger-yellow: #FFF500;
-    --bs-primary: #083CC0;
 }
 
 *,
@@ -86,6 +87,45 @@ a {
 ul,
 li {
     list-style-type: none;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    line-height: normal;
+    outline: none;
+}
+
+.button-primary {
+    color: var(--white);
+    border-radius: 6px;
+    background: var(--button-primary);
+}
+
+.button-primary:hover {
+    color: var(--white);
+    background: var(--button-primary-hover-bg);
+}
+
+.button-primary:disabled {
+    color: var(--button-disabled-text);
+    background: var(--button-disabled);
+}
+
+.button-primary:focus-visible {
+    color: var(--button-primary);
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-primary:active {
+    color: var(--button-primary);
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /*--------button--start--------*/
@@ -129,7 +169,7 @@ li {
 .hero_content_title {
     max-width: 300px;
     margin: 0;
-    color: #FFF;
+    color: var(--white);
     font-family: 'Ubuntu Bold';
     text-align: center;
     font-size: 24px;
@@ -140,7 +180,7 @@ li {
 
 .hero_content_description {
     margin: 0;
-    color: #FFF;
+    color: var(--white);
     text-align: center;
     font-family: 'InriaSerif Regular';
     font-size: 14px;
