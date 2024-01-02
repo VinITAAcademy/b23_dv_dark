@@ -253,9 +253,6 @@ li {
     /* loader end */
 
     /* hero section start */
-    /* hero section end" */
-
-    /* header start */
     .hero_main {
         min-height: 768px;
     }
@@ -276,7 +273,9 @@ li {
     .hero_content_description {
         font-size: 20px;
     }
+    /* hero section end" */
 
+    /* header start */
     /* header end */
 
     /* quote start */
