@@ -135,7 +135,7 @@ button {
 /* loader end */
 
 /* hero section start */
-.hero_main {
+#hero .hero_main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +146,7 @@ button {
     min-height: 768px;
 }
 
-.hero_content {
+#hero .hero_main .hero_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +154,7 @@ button {
     gap: 30px;
 }
 
-.hero_content_button {
+#hero .hero_main .hero_content .hero_content_button {
     display: flex;
     padding: 15px 54px;
     justify-content: center;
@@ -165,7 +165,7 @@ button {
     line-height: normal;
 }
 
-.hero_content_title {
+#hero .hero_main .hero_content .hero_content_title {
     max-width: 300px;
     margin: 0;
     color: var(--white);
@@ -177,7 +177,7 @@ button {
     line-height: normal;
 }
 
-.hero_content_description {
+#hero .hero_main .hero_content .hero_content_description {
     margin: 0;
     color: var(--white);
     text-align: center;
@@ -230,26 +230,26 @@ button {
     /* loader end */
 
     /* hero section start */
-    .hero_main {
+    #hero .hero_main {
         min-height: 1024px;
     }
 
-    .hero_content {
+    #hero .hero_main .hero_content {
         gap: 90px;
     }
 
-    .hero_content_button {
+    #hero .hero_main .hero_content .hero_content_button {
         padding: 33px 120px;    
         font-size: 36px;
     }
 
-    .hero_content_title {
+    #hero .hero_main .hero_content .hero_content_title {
         max-width: 674px;
         font-size: 70px;
         line-height: 2;
     }
 
-    .hero_content_description {
+    #hero .hero_main  .hero_content .hero_content_description {
         font-size: 36px;
         max-width: 500px;
     }
@@ -292,24 +292,24 @@ button {
     /* loader end */
 
     /* hero section start */
-    .hero_main {
+    #hero .hero_main {
         min-height: 768px;
     }
 
-    .hero_content {
+    #hero .hero_main .hero_content {
         gap: 30px;
     }
 
-    .hero_content_button {
+    #hero .hero_main .hero_content .hero_content_button {
         padding: 25px 85px;
         font-size: 22px;     
     }
 
-    .hero_content_title {
+    #hero .hero_main .hero_content .hero_content_title {
         font-size: 36px;
     }
 
-    .hero_content_description {
+    #hero .hero_main .hero_content .hero_content_description {
         font-size: 20px;
     }
     /* hero section end" */
