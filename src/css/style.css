@@ -49,11 +49,13 @@
 :root {
     --background: #000A24;
     --background-footer: #252323;
-    --background-white: #fff;
+    --white: #fff;
     --button-primary: #083CC0;
-    --button-disabled: #61677A;
-    --button-active: #02257F;
-    --button-visited: #fff;
+    --button-primary-hover-bg: #02257F;
+    --button-disabled-bg: #61677A;
+    --button-disabled-text: #D8D9DA;;
+    --button-hover-bg: #02257F;
+    --button-active-bg: #fff;
     --icon-hover: #7FA2FB;
     --сolor-white: #fff;
     --сolor-black: #000;
@@ -87,6 +89,44 @@ li {
     list-style-type: none;
 }
 /*--------button--start--------*/
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    line-height: normal;
+    outline: none;
+}
+
+.button-primary {
+    color: var(--white);
+    border-radius: 6px;
+    background: var(--button-primary);
+}
+
+.button-primary:hover {
+    color: var(--white);
+    background: var(--button-primary-hover-bg);
+}
+
+.button-primary:disabled {
+    color: var(--button-disabled-text);
+    background: var(--button-disabled);
+}
+
+.button-primary:focus-visible {
+    color: var(--button-primary);
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-primary:active {
+    color: var(--button-primary);
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 /*--------button--end--------*/
 
 /*===================== mobile version 375px =====================*/
@@ -94,6 +134,60 @@ li {
 /* loader end */
 
 /* hero section start */
+#hero .hero_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/images/hero-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 768px;
+}
+
+#hero .hero_main .hero_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#hero .hero_main .hero_content .hero_content_button {
+    display: flex;
+    padding: 15px 54px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#hero .hero_main .hero_content .hero_content_title {
+    max-width: 300px;
+    margin: 0;
+    color: var(--white);
+    font-family: 'Ubuntu Bold';
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#hero .hero_main .hero_content .hero_content_description {
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+    font-family: 'InriaSerif Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 256px;
+}
+
 /* hero section end" */
 
 /* header start */
@@ -216,21 +310,38 @@ li {
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
 
+
 @media (min-width: 768px){
 /* loader start */
 /* loader end */
 
-/* hero section start */
-/* hero section end" */
 
-/* header start */
-/* header end */
+    /* hero section start */
+    #hero .hero_main {
+        min-height: 1024px;
+    }
 
-/* quote start */
-/* quote end */
+    #hero .hero_main .hero_content {
+        gap: 90px;
+    }
 
-/* registration section start */
-/* registration section end */
+    #hero .hero_main .hero_content .hero_content_button {
+        padding: 33px 120px;    
+        font-size: 36px;
+    }
+    #hero .hero_main .hero_content .hero_content_title {
+        max-width: 674px;
+        font-size: 70px;
+        line-height: 2;
+    }
+
+
+    #hero .hero_main  .hero_content .hero_content_description {
+        font-size: 36px;
+        max-width: 500px;
+    }
+
+    /* hero section end" */
 
 /* conditions of participation start */
 .img1 {
@@ -332,40 +443,63 @@ li {
   }
 /* conditions of participation end */
 
-/* partners start */
-/* partners end */
 
-/* logo of partners start */
-/* logo of partners end */
+    /* header start */
+    /* header end */
 
-/* specialities start */
-/* specialities end */
+    /* quote start */
+    /* quote end */
 
-/* footer start */
-/* footer end */
+    /* registration section start */
+    /* registration section end */
 
-/* modal windows start */
-/* modal windows end */
+    /* conditions of participation start */
+    /* conditions of participation end */
 
-/* 404 start */
-/* 404 end */
+    /* partners start */
+    /* partners end */
+
+    /* logo of partners start */
+    /* logo of partners end */
+
+    /* specialities start */
+    /* specialities end */
+
+    /* footer start */
+    /* footer end */
+
+    /* modal windows start */
+    /* modal windows end */
+
+    /* 404 start */
+    /* 404 end */
 }
 
 @media (min-width: 1024px) {
-/* loader start */
-/* loader end */
+    /* loader start */
+    /* loader end */
 
-/* hero section start */
-/* hero section end" */
+    /* hero section start */
+    #hero .hero_main {
+        min-height: 768px;
+    }
 
-/* header start */
-/* header end */
+    #hero .hero_main .hero_content {
+        gap: 30px;
+    }
 
-/* quote start */
-/* quote end */
+    #hero .hero_main .hero_content .hero_content_button {
+        padding: 25px 85px;
+        font-size: 22px;     
+    }
 
-/* registration section start */
-/* registration section end */
+    #hero .hero_main .hero_content .hero_content_title {
+        font-size: 36px;
+    }
+    #hero .hero_main .hero_content .hero_content_description {
+        font-size: 20px;
+    }
+    /* hero section end" */
 
 /* conditions of participation start */
 .img1 {
@@ -465,21 +599,33 @@ li {
  }
 /* conditions of participation end */
 
-/* partners start */
-/* partners end */
+    /* header start */
+    /* header end */
 
-/* logo of partners start */
-/* logo of partners end */
+    /* quote start */
+    /* quote end */
 
-/* specialities start */
-/* specialities end */
+    /* registration section start */
+    /* registration section end */
 
-/* footer start */
-/* footer end */
+    /* conditions of participation start */
+    /* conditions of participation end */
 
-/* modal windows start */
-/* modal windows end */
+    /* partners start */
+    /* partners end */
 
-/* 404 start */
-/* 404 end */    
+    /* logo of partners start */
+    /* logo of partners end */
+
+    /* specialities start */
+    /* specialities end */
+
+    /* footer start */
+    /* footer end */
+
+    /* modal windows start */
+    /* modal windows end */
+
+    /* 404 start */
+    /* 404 end */
 }
