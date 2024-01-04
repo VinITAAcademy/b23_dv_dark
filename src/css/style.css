@@ -50,10 +50,12 @@
     --background: #000A24;
     --background-footer: #252323;
     --white: #fff;
+    --dark: #05003E;
     --button-primary: #083CC0;
     --button-primary-hover-bg: #02257F;
     --button-disabled-bg: #61677A;
-    --button-disabled-text: #D8D9DA;;
+    --button-disabled-text: #D8D9DA;
+    ;
     --button-hover-bg: #02257F;
     --button-active-bg: #fff;
     --icon-hover: #7FA2FB;
@@ -128,6 +130,7 @@ button {
     background: var(--white);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 /*--------button--end--------*/
 
 /*===================== mobile version 375px =====================*/
@@ -189,7 +192,6 @@ button {
     max-width: 256px;
 }
 
-/* hero section end" */
 
 /* header start */
 /* header end */
@@ -216,6 +218,70 @@ button {
 /* footer end */
 
 /* modal windows start */
+
+#succesModal .succes_modal_container {
+    width: 375px !important;
+}
+
+#succesModal .succes_modal_content {
+    position: relative;
+    width: 375px;
+    padding: 113px 41px 50px 42px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+
+#succesModal .succes_modal_title {
+    margin: 0;
+    color: var(--сolor-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Ubuntu';
+}
+
+#succesModal .succes_modal_description {
+    margin-bottom: 0;
+    color: var(--сolor-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 26px;
+}
+
+
+#succesModal .succes_modal_button {
+    margin-top: 82px;
+    height: 53px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    line-height: normal;
+}
+
+
+#succesModal .succes_modal_close {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: transparent;
+}
+
 /* modal windows end */
 
 /* 404 start */
@@ -225,7 +291,7 @@ button {
 /*------------------------ @ media ----------------------------*/
 
 @media (min-width: 786px) {
-
+    
     /* loader start */
     /* loader end */
 
@@ -239,7 +305,7 @@ button {
     }
 
     #hero .hero_main .hero_content .hero_content_button {
-        padding: 33px 120px;    
+        padding: 33px 120px;
         font-size: 36px;
     }
 
@@ -249,7 +315,7 @@ button {
         line-height: 2;
     }
 
-    #hero .hero_main  .hero_content .hero_content_description {
+    #hero .hero_main .hero_content .hero_content_description {
         font-size: 36px;
         max-width: 500px;
     }
@@ -302,7 +368,7 @@ button {
 
     #hero .hero_main .hero_content .hero_content_button {
         padding: 25px 85px;
-        font-size: 22px;     
+        font-size: 22px;
     }
 
     #hero .hero_main .hero_content .hero_content_title {
@@ -312,7 +378,7 @@ button {
     #hero .hero_main .hero_content .hero_content_description {
         font-size: 20px;
     }
-    /* hero section end" */
+    /* hero section end */
 
     /* header start */
     /* header end */
