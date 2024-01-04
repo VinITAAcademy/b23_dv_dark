@@ -86,7 +86,6 @@ ul,
 li {
     list-style-type: none;
 }
-
 /*--------button--start--------*/
 /*--------button--end--------*/
 
@@ -107,6 +106,93 @@ li {
 /* registration section end */
 
 /* conditions of participation start */
+.img1{
+    max-width:375px;
+    max-height: 305px;
+}
+.img2{
+    max-width:375px;
+    max-height: 375px;   
+}
+.line {
+    margin-left: 43px;
+    margin-right: 43px;
+    height: 1.5px;
+    background:
+      repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+      /*5px red then 2px transparent -> repeat this!*/
+  }
+
+  .main_block {
+    background-color: var(--background-white);
+    width: 375px;
+    height: auto;
+  }
+
+  .vertical_padding_block {
+    padding-top: 30px; 
+  }
+
+.block_4 {
+    background-color: var(--background-white);
+    width: 375px;
+    height: 624px;
+}
+
+.icon-main {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 8px; 
+}
+
+.text-1 {
+    font-family: 'Ubuntu Regular';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin: 20px 44px 0px 44px;
+}
+
+.text-2 {
+    font-family: 'Ubuntu Regular';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin: 20px 40px 25px 40px;
+    background-color: var(--background-white);
+}
+
+.text-3 {
+    font-family: 'Ubuntu Bold';
+    font-size: 14px;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin-left:60px ;
+    margin-right:60px ;
+    margin-bottom: 25px;
+    font-weight:700;
+}
+
+.icon-icon_condition:before {
+    content: "\e900";
+    font-size: 40px;
+    text-align: center;
+}
+
+  .container_block {
+    background-color: var(--background-white);
+    width: 375px;
+    height: auto;
+}
+
+.align_block {
+    display: block;
+}
 /* conditions of participation end */
 
 /* partners start */
@@ -130,7 +216,7 @@ li {
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
 
-@media (min-width: 786px){
+@media (min-width: 768px){
 /* loader start */
 /* loader end */
 
@@ -147,6 +233,103 @@ li {
 /* registration section end */
 
 /* conditions of participation start */
+.img1 {
+    max-width: 768px ;
+    max-height: 572px;
+}
+
+.img2 {
+    max-width: 768px ;
+    max-height: 724px;
+}
+
+.line {
+    width:672px ;
+    margin-left: 43px;
+    margin-right: 43px;
+    height: 1.5px;
+    background:
+      repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+      /*5px red then 2px transparent -> repeat this!*/
+  }
+
+  .main_block {
+    background-color: var(--background-white);
+    width: 768px;
+    height: auto;
+  }
+
+  .vertical_padding_block {
+    padding-top: 0px; 
+  }
+
+.block_4 {
+    background-color: var(--background-white);
+    width: 375px;
+    height: 624px;
+}
+
+.icon-main {
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 8px; 
+}
+
+.text-1 {
+    font-family: 'Ubuntu Medium';
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin: 42px 39px 42px 39px;
+    line-height: 162%;
+}
+
+.text-2 {
+    font-family: 'Ubuntu Medium';
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin: 50px 48px 50px 48px;
+    background-color: var(--background-white);
+    line-height: 162%;
+}
+
+.text-3 {
+    font-family: 'Ubuntu Bold';
+    font-size: 24px;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin-left:48px ;
+    margin-right:48px ;
+    margin-bottom: 25px;
+    font-weight:700;
+    margin-top: 15px;
+    margin-bottom: 92px;
+    text-align: center;
+    width: 700px;
+    line-height: 162%;
+}
+
+.icon-icon_condition:before {
+    content: "\e900";
+    font-size: 40px;
+    text-align: center;
+}
+
+  .container_block {
+    background-color: var(--background-white);
+    width: 768px;
+    height: auto;
+  }
+  
+  .align_block {
+    display: block;
+  }
 /* conditions of participation end */
 
 /* partners start */
@@ -185,6 +368,101 @@ li {
 /* registration section end */
 
 /* conditions of participation start */
+.img1 {
+    margin:50px 42px 0px 0px;
+    width: 460px ;
+    height: 421px;
+    float:right;
+  }
+
+.img2 {
+    margin:0px 42px 50px 42px ;
+    width : 380px ;
+    height: 538px;
+    float:left;
+   }
+
+  .line {
+    width:940px;
+      margin-left: 42px;
+      margin-right: 42px;
+      background:
+        repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+        /*5px red then 2px transparent -> repeat this!*/
+    }
+  
+    .main_block {
+      background-color: var(--background-white);
+      width: 1024px;
+      height: auto;
+    }
+  
+  .text-1 {
+      font-family: 'Ubuntu Regular';
+      font-size: 20px;
+      font-weight: 400;
+      font-style: normal;
+      color: #000A24 ;
+      line-height: 22.68px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      margin-left: 42px;
+      margin-right: 100px;
+      width: 380px;
+      height: auto;
+      float:right;
+      text-align: justify;
+      line-height: 32.4px;
+  }
+  
+  .text-2 {
+      font-family: 'Ubuntu Regular';
+      font-size: 20px;
+      font-weight: 400;
+      font-style: normal;
+      color: #000A24 ;
+      line-height: 22.68px;
+      margin: 45px 42px 50px 42px;
+      width: 460px;
+      background-color: var(--background-white);
+      float:right;
+      text-align: justify; 
+      line-height: 32.4px;
+  }
+  
+  .text-3 {
+      font-family: 'Ubuntu Bold';
+      font-size: 15px;
+      font-style: normal;
+      color: #000A24 ;
+      line-height: 22.68px;
+      margin-left:33px ;
+      margin-right:48px ;
+      margin-bottom: 30px;
+      font-weight:700;
+      margin-top: 29px;
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 25.92px;
+  }
+
+  .icon-icon_condition:before {
+      content: "\e900";
+      font-size: 70px;
+      text-align: center;
+      margin-top:29px ;
+      margin-bottom: 29px;
+      margin-left:42px ;  
+  }
+
+  .icon-main {
+    text-align: left;
+    margin: 29px 0px 33px 29px;
+ }
+   
+.align_block {
+    display: inline-block;
+ }
 /* conditions of participation end */
 
 /* partners start */
