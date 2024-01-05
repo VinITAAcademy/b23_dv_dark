@@ -200,10 +200,9 @@ button {
 /* we provide start */
 #we-provide {
     min-height: 811px;
-    background: white;
+    background: var(--white);
     position: relative;
     font-family: 'Ubuntu Bold';
-    font-weight: 700;
     font-style: normal;
     line-height: normal;
 }
@@ -250,7 +249,7 @@ button {
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
     text-align: center;
     margin: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 162%;
     letter-spacing: 0.28px;
     color: #000A24;
