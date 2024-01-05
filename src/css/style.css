@@ -22,30 +22,6 @@
     line-height: normal;
 }
 
-@font-face {
-    font-family: 'InriaSerif Italic';
-    src: local('InriaSerif-Italic'), url('../fonts/InriaSerif-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    line-height: normal;
-}
-
-@font-face {
-    font-family: 'InriaSerif Regular';
-    src: local('InriaSerif-Regular'), url('../fonts/InriaSerif-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    line-height: normal;
-}
-
-@font-face {
-    font-family: 'InriaSerif Bold';
-    src: local('InriaSerif-Bold'), url('../fonts/InriaSerif-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    line-height: normal;
-}
-
 :root {
     --background: #000A24;
     --background-footer: #252323;
@@ -173,7 +149,6 @@ button {
     text-align: center;
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
 }
 
@@ -181,14 +156,12 @@ button {
     margin: 0;
     color: var(--white);
     text-align: center;
-    font-family: 'InriaSerif Regular';
+    font-family: 'Ubuntu Regular';
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
     max-width: 256px;
 }
-
 /* hero section end" */
 
 /* header start */
@@ -353,7 +326,7 @@ button {
         min-height: 1367px;
     }
 
-    #we-provide .we-provide__container{
+    #we-provide .we-provide__container {
         padding-top: 50px;
     }
 
@@ -475,7 +448,7 @@ button {
         min-height: 983px;
     }
 
-    #we-provide .we-provide__container{
+    #we-provide .we-provide__container {
         padding-top: 40px;
         position: relative;
     }
