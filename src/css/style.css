@@ -198,25 +198,25 @@ button {
 /* quote end */
 
 /* registration section start */
-#registration .registration_main {
+#registration .registration-main {
     text-align: center;
     padding: 2.0625rem 4.4rem 1.875rem;
 }
 
-#registration .registration_main .registration_content .registration_content_text {
+#registration .registration-main .registration-content .registration-content-text {
     color: var(--white);
     font-family: 'Ubuntu Medium';
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
 
-#registration .registration_main .registration_content .registration_content_button {
+#registration .registration-main .registration-content .registration-ontent-button {
     padding: 1rem 3.375rem;
     font-family: 'Ubuntu Regular';
     font-size: 0.875rem;
 }
 
-#registration .registration_main .registration_image_container {
+#registration .registration-main .registration-image-container {
     display: none;
 }
 /* registration section end */
@@ -284,20 +284,20 @@ button {
     /* quote end */
 
     /* registration section start */
-    #registration .registration_main {
+    #registration .registration-main {
         padding: 3.125rem 3.3125rem;
     }
 
-    #registration .registration_main .registration_content .registration_content_link {
+    #registration .registration-main .registration-content .registration-content-link {
         display: inline-block;
     }
 
-    #registration .registration_main .registration_content .registration_content_text {
+    #registration .registration-main .registration-content .registration-content-text {
         font-size: 2.25rem;
         margin-bottom: 3.125rem;
     }
 
-    #registration .registration_main .registration_content .registration_content_button {
+    #registration .registration-main .registration-content .registration-content-button {
         padding: 1.5625rem 5.3125rem;
         font-size: 1.375rem;
         width: 21.875rem;
@@ -360,30 +360,30 @@ button {
     /* quote end */
 
     /* registration section start */
-    #registration .registration_main {
+    #registration .registration-main {
         padding: 0;
         text-align: left;
         display: flex;
         justify-content: space-between;
     }
 
-    #registration .registration_main .registration_content {
+    #registration .registration-main .registration-content {
         padding: 3rem 6.5rem 3.4375rem 2.625rem;
     }
 
-    #registration .registration_main .registration_content .registration_content_text {
+    #registration .registration-main .registration-content .registration-content-text {
         font-size: 1.75rem;
         margin-bottom: 1.5625rem;
     }
 
-    #registration .registration_main .registration_content .registration_content_button {
+    #registration .registration-main .registration-content .registration-content-button {
         padding: 1rem 3.375rem;
         font-size: 0.875rem;
         width: 14rem;
         text-align: center;
     }
 
-    #registration .registration_main .registration_image_container {
+    #registration .registration-main .registration-image-container {
         display: inline-block;
     }
     /* registration section end */
