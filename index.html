@@ -38,13 +38,36 @@
                 </p>
                 <button class="hero_content_button button-primary" data-bs-toggle="modal"
                     data-bs-target="#registrationForm">Зареєструватися</button>
+
+
             </div>
-        </div>
     </section>
 
     <!--"hero section end"-->
 
     <!--"quote start"-->
+    <section id="quote">
+        <svg class="quote_left" xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="0 0 31 21" fill="none">
+            <path
+                d="M21.2295 20.58L20.5295 16.87C21.7428 16.5433 22.8628 15.9367 23.8895 15.05C24.9628 14.21 25.4995 12.7867 25.4995 10.78H19.4795V0H30.3295V9.31C30.2828 12.7633 29.5128 15.4467 28.0195 17.36C26.5262 19.2733 24.2628 20.3467 21.2295 20.58Z"
+                fill="white" fill-opacity="0.12" />
+            <path
+                d="M1.75 20.58L1.05 16.87C2.26333 16.5433 3.38333 15.9367 4.41 15.05C5.48333 14.21 6.02 12.7867 6.02 10.78H0V0H10.85V9.31C10.8033 12.7633 10.0333 15.4467 8.54 17.36C7.04667 19.2733 4.78333 20.3467 1.75 20.58Z"
+                fill="white" fill-opacity="0.12" />
+        </svg>
+        <p class="quote_text">Ми створили і постійно розвиваємо всесвітню мережу офлайн/онлайн центрів підтримки українців, що
+            постраждали
+            внаслідок війни, розв'язаної росією проти України та її народу. А також центрів підтримки ветеранів та
+            громадян, які змушені були покинути місця свого постійного проживання.</p>
+        <svg class="quote_right" xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="0 0 31 21" fill="none">
+            <path
+                d="M21.2297 20.58L20.5297 16.87C21.7431 16.5433 22.8631 15.9367 23.8897 15.05C24.9631 14.21 25.4997 12.7867 25.4997 10.78H19.4797V0H30.3297V9.31C30.2831 12.7633 29.5131 15.4467 28.0197 17.36C26.5264 19.2733 24.2631 20.3467 21.2297 20.58Z"
+                fill="white" fill-opacity="0.12" />
+            <path
+                d="M1.75 20.58L1.05 16.87C2.26333 16.5433 3.38333 15.9367 4.41 15.05C5.48333 14.21 6.02 12.7867 6.02 10.78H0V0H10.85V9.31C10.8033 12.7633 10.0333 15.4467 8.54 17.36C7.04667 19.2733 4.78333 20.3467 1.75 20.58Z"
+                fill="white" fill-opacity="0.12" />
+        </svg>
+    </section>
     <!--"quote end"-->
 
     <!--"registration section start"-->
@@ -68,23 +91,22 @@
     <!-- "modal windows start" -->
     <div class="modal fade" id="succesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered succes_modal_container" style="width: 375px;" role="document">
-                <div class="succes_modal_content">
-                    <p class="succes_modal_title">Дякуємо за Вашу заявку!</p>
-                    <p class="succes_modal_description">Очікуйте зворотнього зв’язку.</p>
-                    <button class="succes_modal_button button-primary">На головну</button>
-                    <button class="succes_modal_close">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="#000">
-                            <path d="M19.5556 0H2.44444C1.79614 0 1.17438 0.257539 0.715961 0.715961C0.257539 1.17438 0 1.79614 0 2.44444V19.5556C0 20.2039 0.257539 20.8256 0.715961 21.284C1.17438 21.7425 1.79614 22 2.44444 22H19.5556C20.2039 22 20.8256 21.7425 21.284 21.284C21.7425 20.8256 22 20.2039 22 19.5556V2.44444C22 1.79614 21.7425 1.17438 21.284 0.715961C20.8256 0.257539 20.2039 0 19.5556 0ZM15.4 17.1111L11 12.7111L6.6 17.1111L4.88889 15.4L9.28889 11L4.88889 6.6L6.6 4.88889L11 9.28889L15.4 4.88889L17.1111 6.6L12.7111 11L17.1111 15.4L15.4 17.1111Z" fill="black"/>
-                            </svg>
-                    </button>
+        <div class="modal-dialog modal-dialog-centered succes_modal_container" role="document">
+            <div class="succes_modal_content">
+                <p class="succes_modal_title">Дякуємо за Вашу заявку!</p>
+                <p class="succes_modal_description">Очікуйте зворотнього зв’язку.</p>
+                <button class="succes_modal_button button-primary">На головну</button> 
+                <button class="succes_modal_close">
+                    <span class="icon-close"></span>
+                </button>
             </div>
 
         </div>
     </div>
 
     <!-- I have added it to test open of succees modal -->
-    <button class="btn btn-primary" type="button" data-bs-target="#succesModal" data-bs-toggle="modal">open modal</button>
+    <button class="btn btn-primary" type="button" data-bs-target="#succesModal" data-bs-toggle="modal">open
+        modal</button>
     <!-- "modal windows end" -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

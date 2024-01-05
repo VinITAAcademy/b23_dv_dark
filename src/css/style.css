@@ -197,6 +197,35 @@ button {
 /* header end */
 
 /* quote start */
+#quote {
+    display: flex;
+    justify-content: center;
+    margin: 15px 101px;
+    position: relative;
+}
+
+#quote .quote_text {
+    color: var(--white);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 162%;
+    letter-spacing: 0.32px;
+    margin: 16px 32px;
+}
+#quote .quote_left{
+    position: absolute;
+    left: 0 ;
+    top: 0;
+}
+
+#quote .quote_right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
 /* quote end */
 
 /* registration section start */
@@ -234,7 +263,6 @@ button {
     background-color: var(--white);
 }
 
-
 #succesModal .succes_modal_title {
     margin: 0;
     color: var(--сolor-black);
@@ -255,7 +283,6 @@ button {
     margin-top: 26px;
 }
 
-
 #succesModal .succes_modal_button {
     margin-top: 82px;
     height: 53px;
@@ -266,7 +293,6 @@ button {
     font-size: 22px;
     line-height: normal;
 }
-
 
 #succesModal .succes_modal_close {
     cursor: pointer;
@@ -291,7 +317,7 @@ button {
 /*------------------------ @ media ----------------------------*/
 
 @media (min-width: 786px) {
-    
+
     /* loader start */
     /* loader end */
 
@@ -378,6 +404,7 @@ button {
     #hero .hero_main .hero_content .hero_content_description {
         font-size: 20px;
     }
+
     /* hero section end */
 
     /* header start */
