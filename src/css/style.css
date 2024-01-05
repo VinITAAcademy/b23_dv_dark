@@ -197,6 +197,71 @@ button {
 /* quote start */
 /* quote end */
 
+/* we provide start */
+#we-provide {
+    min-height: 811px;
+    background: var(--white);
+    position: relative;
+    font-family: 'Ubuntu Bold';
+    font-style: normal;
+    line-height: normal;
+}
+
+#we-provide .we-provide__container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#we-provide .we-provide__container .we-provide__title {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#we-provide .we-provide__container .we-provide__cards-box {
+    position: relative;
+}
+
+#we-provide .we-provide__container .we-provide__cards-box .cards-item {
+    width: 226px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line {
+    width: 226px;
+    border-top: 1px dashed #000A24;
+    margin-bottom: 15px;
+}
+
+#we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
+    text-align: center;
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 162%;
+    letter-spacing: 0.28px;
+    color: #000A24;
+}
+
+#we-provide .we-provide__container .we-provide__video {
+    height: 210px;
+    width: 375px;
+}
+
+/* we provide end */
+
 /* registration section start */
 #registration .registration-main {
     text-align: center;
@@ -245,7 +310,7 @@ button {
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
 
-@media (min-width: 786px) {
+@media (min-width: 768px) {
 
     /* loader start */
     /* loader end */
@@ -282,6 +347,52 @@ button {
 
     /* quote start */
     /* quote end */
+
+    /* we provide start */
+    #we-provide {
+        min-height: 1367px;
+    }
+
+    #we-provide .we-provide__container{
+        padding-top: 50px;
+    }
+
+    #we-provide .we-provide__container .we-provide__title {
+        font-family: 'Ubuntu Medium';
+        font-size: 2.625rem;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item {
+        width: 412px;
+        margin-bottom: 40px;
+    }
+
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
+        margin-bottom: 30px;
+        font-size: 5.625rem;
+    }
+
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line {
+        width: 412px;
+        border-top: 1px dashed #000A24;
+        margin-bottom: 40px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
+        text-align: center;
+        margin: 0;
+        font-size: 1.25rem;
+        line-height: 162%;
+        letter-spacing: 0.4px;
+    }
+
+    #we-provide .we-provide__container .we-provide__video {
+        width: 768px;
+        height: 431px;
+    }
+    /* we provide end */
 
     /* registration section start */
     #registration .registration-main {
@@ -358,6 +469,63 @@ button {
 
     /* quote start */
     /* quote end */
+
+    /* we provide start */
+    #we-provide {
+        min-height: 983px;
+    }
+
+    #we-provide .we-provide__container{
+        padding-top: 40px;
+        position: relative;
+    }
+
+    #we-provide .we-provide__container .we-provide__title {
+        font-family: 'Ubuntu Medium';
+        font-size: 2.625rem;
+        margin: 0;
+        margin-bottom: 75px;
+    }
+
+    #we-provide .we-provide__container .we-provide__cards-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 44px;
+        margin-right: 46px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
+        display: block;
+        margin-bottom: 41px;
+        font-size: 4.375rem;
+    }
+    
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line {
+        width: 300px;
+        border-top: 1px dashed #000A24;
+        margin-bottom: 30px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
+        font-family: 'Ubuntu Regular';
+        font-size: 1rem;
+        line-height: 162%;
+        letter-spacing: 0.32px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__video {
+        width: 940px;
+        height: 528px;
+    }
+    /* we provide end */
 
     /* registration section start */
     #registration .registration-main {
