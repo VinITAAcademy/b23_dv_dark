@@ -252,7 +252,7 @@ button {
     width: 375px !important;
 }
 
-#succesModal .succes_modal_content {
+#succesModal .modal-dialog .succes_modal_content {
     position: relative;
     width: 375px;
     padding: 113px 41px 50px 42px;
@@ -263,7 +263,7 @@ button {
     background-color: var(--white);
 }
 
-#succesModal .succes_modal_title {
+#succesModal .modal-dialog .succes_modal_content .succes_modal_title {
     margin: 0;
     color: var(--сolor-black);
     font-size: 24px;
@@ -273,7 +273,7 @@ button {
     font-family: 'Ubuntu';
 }
 
-#succesModal .succes_modal_description {
+#succesModal .modal-dialog .succes_modal_content .succes_modal_description {
     margin-bottom: 0;
     color: var(--сolor-black);
     font-size: 16px;
@@ -283,7 +283,7 @@ button {
     margin-top: 26px;
 }
 
-#succesModal .succes_modal_button {
+#succesModal .modal-dialog .succes_modal_content .succes_modal_button {
     margin-top: 82px;
     height: 53px;
     width: 270px;
@@ -294,7 +294,7 @@ button {
     line-height: normal;
 }
 
-#succesModal .succes_modal_close {
+#succesModal .modal-dialog .succes_modal_content .succes_modal_close {
     cursor: pointer;
     position: absolute;
     top: 8px;
