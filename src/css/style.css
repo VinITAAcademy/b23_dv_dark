@@ -265,6 +265,7 @@ button {
 #registration .registration-main {
     text-align: center;
     padding: 2.0625rem 4.4rem 1.875rem;
+    background-color: #000A24;
 }
 
 #registration .registration-main .registration-content .registration-content-text {
