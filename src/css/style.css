@@ -52,7 +52,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    background-color: var(--background-);
+    background-color: var(--background);
 }
 
 a {
@@ -261,7 +261,7 @@ button {
 
 /* conditions of participation start */
 #main .conditions_main_block {
-    background-color: var(--background-white);
+    background-color: var(--white);
     width: 375px;
     height: auto;
 }
@@ -288,7 +288,7 @@ button {
   }
 
   #main .conditions_main_block .conditions-block_4 {
-    background-color: var(--background-white);
+    background-color: var(--white);
     width: 375px;
     height: 624px;
 }
@@ -315,7 +315,7 @@ button {
     color: #000A24 ;
     line-height: 22.68px;
     margin: 20px 40px 25px 40px;
-    background-color: var(--background-white);
+    background-color: var(--white);
 }
 
 #main .conditions_main_block .conditions-align_block .conditions-text-3 {
@@ -336,7 +336,7 @@ button {
 }
 
 #main .conditions_main_block .conditions-container_block {
-    background-color: var(--background-white);
+    background-color: var(--white);
     width: 375px;
     height: auto;
 }
@@ -420,7 +420,7 @@ button {
   }
 
 #main .conditions_main_block {
-    background-color: var(--background-white);
+    background-color: var(--white);
     width: 768px;
     height: auto;
   }
@@ -430,7 +430,7 @@ button {
   }
 
 #main .conditions_main_block .conditions-block_4 {
-    background-color: var(--background-white);
+    background-color: var(--white);
     width: 375px;
     height: 624px;
 }
@@ -458,7 +458,7 @@ button {
     color: #000A24 ;
     line-height: 22.68px;
     margin: 50px 48px 50px 48px;
-    background-color: var(--background-white);
+    background-color: var(--white);
     line-height: 162%;
 }
 
@@ -484,7 +484,7 @@ button {
 }
 
 #main .conditions_main_block .conditions-container_block {
-    background-color: var(--background-white);
+    background-color: var(--white);
     width: 768px;
     height: auto;
   }
@@ -640,7 +640,7 @@ button {
     }
   
 #main .conditions_main_block {
-      background-color: var(--background-white);
+      background-color: var(--white);
       width: 1024px;
       height: auto;
       margin: 0 auto ;
@@ -671,7 +671,7 @@ button {
       line-height: 22.68px;
       margin: 45px 42px 50px 42px;
       width: 460px;
-      background-color: var(--background-white);
+      background-color: var(--white);
       float:right;
       text-align: justify; 
       line-height: 32.4px;
