@@ -98,7 +98,74 @@ li {
 /* hero section end" */
 
 /* header start */
-/* header end */
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    
+}
+#header .navbar {
+    padding: 0px; 
+}
+#header .container-fluid {
+    padding: 0px;
+    
+}
+#header .navbar-brand {
+    padding: 0px;
+    margin: 0px;
+}
+#header .navbar-brand .header-logo-mobile {
+    margin-top: 24px;
+    margin-left: 25px;
+}
+#header .header-logo-tablet {
+    display: none;
+}
+#header .flag-div {
+    display: none;
+}
+#header .navbar-toggler {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--background);
+    margin-top: 11px;
+    margin-right: 25px;
+}
+#header .navbar-toggler-icon_1 {
+    background-image: none;
+    width: 16px;
+    height: 2px;
+    margin-bottom: 4px;
+    margin-left: 6px;
+    background-color: var(--background-white);
+    margin-top: 8px;
+}
+#header .navbar-toggler-icon_2 {
+    background-image: none;
+    width: 16px;
+    height: 2px;
+    margin-bottom: 3px;
+    margin-left: 6px;
+    background-color: var(--background-white);
+    margin-top: 0px;
+}
+#header .navbar-toggler-icon_3 {
+    background-image: none;
+    width: 16px;
+    height: 2px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    margin-left: 6px;
+    background-color: var(--background-white);
+}
+
+/* header end */ 
 
 /* quote start */
 /* quote end */
@@ -130,7 +197,7 @@ li {
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
 
-@media (min-width: 786px){
+@media (min-width: 768px){
 /* loader start */
 /* loader end */
 
@@ -138,6 +205,64 @@ li {
 /* hero section end" */
 
 /* header start */
+#header .header-logo-mobile {
+    display: none;
+}
+#header .flag-div {
+    display: none;
+}
+#header .navbar-brand {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 139px;
+    height: 86px;
+    background-image: url(../images/logo_header_tablet.png);
+}
+#header .header-logo-tablet {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#header .navbar-toggler {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--background);
+    margin-top: -9px;
+    margin-right: 25px;
+}
+#header .navbar-toggler-icon_1 {
+    background-image: none;
+    width: 32px;
+    height: 3px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    background-color: var(--background-white);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+#header .navbar-toggler-icon_2 {
+    background-image: none;
+    width: 32px;
+    height: 3px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    background-color: var(--background-white);
+    margin-top: 4px;
+    border-radius: 3px;
+}
+#header .navbar-toggler-icon_3 {
+    background-image: none;
+    width: 32px;
+    height: 3px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    background-color: var(--background-white);
+    border-radius: 3px;
+}
 /* header end */
 
 /* quote start */
@@ -167,7 +292,67 @@ li {
 /* 404 start */
 /* 404 end */
 }
-
+/* 
+@media (min-width: 991px) {
+#header .header-logo-mobile {
+    display: none;
+}
+#header .flag-div {
+    display: none;
+}
+#header .navbar-brand {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 139px;
+    height: 86px;
+    background-image: url(../images/logo_header_tablet.png);
+}
+#header .header-logo-tablet {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#header .navbar-toggler {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--background);
+    margin-top: -9px;
+    margin-right: 25px;
+}
+#header .navbar-toggler-icon_1 {
+    background-image: none;
+    width: 32px;
+    height: 3px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    background-color: var(--background-white);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+#header .navbar-toggler-icon_2 {
+    background-image: none;
+    width: 32px;
+    height: 3px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    background-color: var(--background-white);
+    margin-top: 4px;
+    border-radius: 3px;
+}
+#header .navbar-toggler-icon_3 {
+    background-image: none;
+    width: 32px;
+    height: 3px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+    background-color: var(--background-white);
+    border-radius: 3px;
+}
+} */
 @media (min-width: 1024px) {
 /* loader start */
 /* loader end */
@@ -176,6 +361,58 @@ li {
 /* hero section end" */
 
 /* header start */
+#header .header-logo-mobile {
+    display: none;
+}
+#header .navbar-brand {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#header .nav-link {
+    color: var(--сolor-white);
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+}
+#header .nav-link:hover {
+    color: var(--button-active);
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 500;
+}
+#header .navbar-toggler {
+    display: none;
+}
+#header .navbar-nav {
+    width: 600px;
+    height: 21px; 
+    margin-top: 9px;
+    margin-left: 111px;
+}
+#header .nav-item-1 {
+    width: 150px;
+    height: 21px;
+}
+#header .nav-item-2{
+    width: 150px;
+    height: 21px;
+    padding-left: 7px;
+}
+#header .nav-item-3 {
+    width: 150px;
+    height: 21px;
+    padding-left: 15px;
+}
+#header .nav-item-4 {
+    width: 150px;
+    height: 21px;
+    margin-left: -15px;
+}
+#header .flag-div {
+    margin-top: 25px;
+    margin-right: 32px;
+    display: block;
+}
 /* header end */
 
 /* quote start */
