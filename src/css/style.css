@@ -796,7 +796,8 @@ button {
     }
     
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
-        width: 294px;
+        width: 291px;
+        background: repeating-linear-gradient(90deg, #000A24 0 3px,#0000 0 12px)
     }
     
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
