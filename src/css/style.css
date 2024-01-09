@@ -66,7 +66,6 @@ ul,
 li {
     list-style-type: none;
 }
-
 /*--------button--start--------*/
 button {
     border: none;
@@ -186,14 +185,13 @@ button {
     letter-spacing: 0.32px;
     margin: 16px 32px;
 }
-
-#quote .quote_left {
+#quote .quote_left{
     position: absolute;
-    left: 0;
+    left: 0 ;
     top: 0;
 }
 
-#quote .quote_right {
+#quote .quote_right{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -290,7 +288,6 @@ button {
 #registration .registration-main .registration-image-container {
     display: none;
 }
-
 /* registration section end */
 
 /* conditions of participation start */
@@ -305,25 +302,24 @@ button {
     max-height: 305px;
 }
 
-#main .conditions_main_block .vertical_padding_block .img2 {
+#main .conditions_main_block .vertical_padding_block .img2{
     max-width: 375px;
-    max-height: 375px;
+    max-height: 375px;   
 }
-
 #main .conditions_main_block .line {
     margin-left: 43px;
     margin-right: 43px;
     height: 1.5px;
     background:
-        repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
-        /*5px red then 2px transparent -> repeat this!*/
-}
+      repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+      /*5px red then 2px transparent -> repeat this!*/
+  }
 
-#main .conditions_main_block .vertical_padding_block {
-    padding-top: 30px;
-}
+  #main .conditions_main_block .vertical_padding_block {
+    padding-top: 30px; 
+  }
 
-#main .conditions_main_block .block_4 {
+  #main .conditions_main_block .block_4 {
     background-color: var(--background-white);
     width: 375px;
     height: 624px;
@@ -332,14 +328,14 @@ button {
 #main .conditions_main_block .align_block .icon-main {
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
 }
 
 #main .conditions_main_block .text-1 {
     font-family: 'Ubuntu Medium';
     font-size: 14px;
     font-style: normal;
-    color: #000A24;
+    color: #000A24 ;
     line-height: 22.68px;
     margin: 20px 44px 0px 44px;
 }
@@ -348,7 +344,7 @@ button {
     font-family: 'Ubuntu Medium';
     font-size: 14px;
     font-style: normal;
-    color: #000A24;
+    color: #000A24 ;
     line-height: 22.68px;
     margin: 20px 40px 25px 40px;
     background-color: var(--background-white);
@@ -358,10 +354,10 @@ button {
     font-family: 'Ubuntu Bold';
     font-size: 14px;
     font-style: normal;
-    color: #000A24;
+    color: #000A24 ;
     line-height: 22.68px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 60px ;
+    margin-right: 60px ;
     margin-bottom: 25px;
 }
 
@@ -380,7 +376,6 @@ button {
 #main .conditions_main_block .align_block {
     display: block;
 }
-
 /* conditions of participation end */
 
 /* partners start */
@@ -466,8 +461,8 @@ button {
 /*------------------------ @ media ----------------------------*/
 
 @media (min-width: 768px) {
-    /* loader start */
-    /* loader end */
+/* loader start */
+/* loader end */
 
 
     /* hero section start */
@@ -483,117 +478,120 @@ button {
         padding: 33px 120px;
         font-size: 36px;
     }
-
     #hero .hero_main .hero_content .hero_content_title {
         max-width: 674px;
         font-size: 70px;
         line-height: 2;
     }
 
+<<<<<<< HEAD
     #hero .hero_main .hero_content .hero_content_description {
+=======
+
+    #hero .hero_main  .hero_content .hero_content_description {
+>>>>>>> develop
         font-size: 36px;
         max-width: 500px;
     }
 
     /* hero section end" */
 
-    /* conditions of participation start */
-    #main .conditions_main_block .img1 {
-        max-width: 768px;
-        max-height: 572px;
-    }
+/* conditions of participation start */
+#main .conditions_main_block .img1 {
+    max-width: 768px ;
+    max-height: 572px;
+}
 
-    #main .conditions_main_block .vertical_padding_block .img2 {
-        max-width: 768px;
-        max-height: 724px;
-    }
+#main .conditions_main_block .vertical_padding_block .img2 {
+    max-width: 768px ;
+    max-height: 724px;
+}
 
-    #main .conditions_main_block .line {
-        width: 672px;
-        margin-left: 43px;
-        margin-right: 43px;
-        height: 1.5px;
-        background:
-            repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
-            /*5px red then 2px transparent -> repeat this!*/
-    }
+#main .conditions_main_block .line {
+    width: 672px ;
+    margin-left: 43px;
+    margin-right: 43px;
+    height: 1.5px;
+    background:
+      repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+      /*5px red then 2px transparent -> repeat this!*/
+  }
 
-    #main .conditions_main_block {
-        background-color: var(--background-white);
-        width: 768px;
-        height: auto;
-    }
+#main .conditions_main_block {
+    background-color: var(--background-white);
+    width: 768px;
+    height: auto;
+  }
 
-    #main .conditions_main_block .vertical_padding_block {
-        padding-top: 0px;
-    }
+#main .conditions_main_block .vertical_padding_block {
+    padding-top: 0px; 
+  }
 
-    #main .conditions_main_block .block_4 {
-        background-color: var(--background-white);
-        width: 375px;
-        height: 624px;
-    }
+#main .conditions_main_block .block_4 {
+    background-color: var(--background-white);
+    width: 375px;
+    height: 624px;
+}
 
-    #main .conditions_main_block .align_block .icon-main {
-        text-align: center;
-        margin-top: 14px;
-        margin-bottom: 8px;
-    }
+#main .conditions_main_block .align_block .icon-main {
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 8px; 
+}
 
-    #main .conditions_main_block .text-1 {
-        font-family: 'Ubuntu Medium';
-        font-size: 24px;
-        font-style: normal;
-        color: #000A24;
-        line-height: 22.68px;
-        margin: 42px 39px 42px 39px;
-        line-height: 162%;
-    }
+#main .conditions_main_block .text-1 {
+    font-family: 'Ubuntu Medium';
+    font-size: 24px;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin: 42px 39px 42px 39px;
+    line-height: 162%;
+}
 
-    #main .conditions_main_block .vertical_padding_block .text-2 {
-        font-family: 'Ubuntu Medium';
-        font-size: 24px;
-        font-style: normal;
-        color: #000A24;
-        line-height: 22.68px;
-        margin: 50px 48px 50px 48px;
-        background-color: var(--background-white);
-        line-height: 162%;
-    }
+#main .conditions_main_block .vertical_padding_block .text-2 {
+    font-family: 'Ubuntu Medium';
+    font-size: 24px;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin: 50px 48px 50px 48px;
+    background-color: var(--background-white);
+    line-height: 162%;
+}
 
-    #main .conditions_main_block .align_block .text-3 {
-        font-family: 'Ubuntu Bold';
-        font-size: 24px;
-        font-style: normal;
-        color: #000A24;
-        line-height: 22.68px;
-        margin-left: 48px;
-        margin-right: 48px;
-        margin-bottom: 25px;
-        margin-top: 15px;
-        margin-bottom: 92px;
-        text-align: center;
-        width: 700px;
-        line-height: 162%;
-    }
+#main .conditions_main_block .align_block .text-3 {
+    font-family: 'Ubuntu Bold';
+    font-size: 24px;
+    font-style: normal;
+    color: #000A24 ;
+    line-height: 22.68px;
+    margin-left: 48px ;
+    margin-right: 48px ;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 92px;
+    text-align: center;
+    width: 700px;
+    line-height: 162%;
+}
 
-    #main .conditions_main_block .align_block .icon-main .icon-icon_condition:before {
-        content: "\e900";
-        font-size: 40px;
-        text-align: center;
-    }
+#main .conditions_main_block .align_block .icon-main .icon-icon_condition:before {
+    content: "\e900";
+    font-size: 40px;
+    text-align: center;
+}
 
-    #main .conditions_main_block .container_block {
-        background-color: var(--background-white);
-        width: 768px;
-        height: auto;
-    }
-
-    #main .conditions_main_block .align_block {
-        display: block;
-    }
-
-    /* conditions of participation end */
+#main .conditions_main_block .container_block {
+    background-color: var(--background-white);
+    width: 768px;
+    height: auto;
+  }
+  
+#main .conditions_main_block .align_block {
+    display: block;
+  }
+/* conditions of participation end */
 
 
     /* header start */
@@ -633,7 +631,7 @@ button {
         border-top: 1px dashed #000A24;
         margin-bottom: 40px;
     }
-
+    
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
         text-align: center;
         margin: 0;
@@ -646,7 +644,6 @@ button {
         width: 768px;
         height: 431px;
     }
-
     /* we provide end */
 
     /* registration section start */
@@ -668,7 +665,6 @@ button {
         font-size: 1.375rem;
         width: 21.875rem;
     }
-
     /* registration section end */
 
     /* conditions of participation start */
@@ -687,13 +683,71 @@ button {
     /* footer end */
 
     /* modal windows start */
+    #succesModal .succes_modal_container {
+        width: 370px !important;
+    }
+    
+    #succesModal .modal-dialog .succes_modal_content {
+        position: relative;
+        width: 370px;
+        padding: 113px 40px 50px 41px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--white);
+    }
+    
+    #succesModal .modal-dialog .succes_modal_content .succes_modal_title {
+        margin: 0;
+        color: var(--сolor-black);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-family: 'Ubuntu';
+    }
+    
+    #succesModal .modal-dialog .succes_modal_content .succes_modal_description {
+        margin-bottom: 0;
+        color: var(--сolor-black);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 26px;
+    }
+    
+    #succesModal .modal-dialog .succes_modal_content .succes_modal_button {
+        margin-top: 82px;
+        height: 53px;
+        width: 270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        line-height: normal;
+    }
+    
+    #succesModal .modal-dialog .succes_modal_content .succes_modal_close {
+        cursor: pointer;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 4px;
+        background: transparent;
+    }
     /* modal windows end */
 
     /* 404 start */
     /* 404 end */
 
 }
-
 @media (min-width: 1024px) {
     /* loader start */
     /* loader end */
@@ -715,108 +769,106 @@ button {
     #hero .hero_main .hero_content .hero_content_title {
         font-size: 36px;
     }
-
     #hero .hero_main .hero_content .hero_content_description {
         font-size: 20px;
     }
 
     /* hero section end */
 
-    /* conditions of participation start */
-    #main .conditions_main_block .img1 {
-        margin: 50px 42px 0px 0px;
-        width: 460px;
-        height: 421px;
-        float: right;
-    }
+/* conditions of participation start */
+#main .conditions_main_block .img1 {
+    margin: 50px 42px 0px 0px;
+    width: 460px;
+    height: 421px;
+    float: right;
+  }
 
-    #main .conditions_main_block .vertical_padding_block .img2 {
-        margin: 0px 42px 50px 42px;
-        width: 380px;
-        height: 538px;
-        float: left;
-    }
+  #main .conditions_main_block .vertical_padding_block .img2 {
+    margin: 0px 42px 50px 42px ;
+    width: 380px ;
+    height: 538px;
+    float: left;
+   }
 
-    #main .conditions_main_block .line {
-        width: 940px;
-        margin-left: 42px;
-        margin-right: 42px;
-        background:
-            repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
-            /*5px red then 2px transparent -> repeat this!*/
+#main .conditions_main_block .line {
+    width: 940px;
+      margin-left: 42px;
+      margin-right: 42px;
+      background:
+        repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+        /*5px red then 2px transparent -> repeat this!*/
     }
-
-    #main .conditions_main_block {
-        background-color: var(--background-white);
-        width: 1024px;
-        height: auto;
+  
+#main .conditions_main_block {
+      background-color: var(--background-white);
+      width: 1024px;
+      height: auto;
     }
+  
+#main .conditions_main_block .text-1 {
+      font-family: 'Ubuntu Regular';
+      font-size: 20px;
+      font-style: normal;
+      color: #000A24 ;
+      line-height: 22.68px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      margin-left: 42px;
+      margin-right: 100px;
+      width: 380px;
+      height: auto;
+      float: right;
+      text-align: justify;
+      line-height: 32.4px;
+  }
+  
+#main .conditions_main_block .vertical_padding_block .text-2 {
+      font-family: 'Ubuntu Regular';
+      font-size: 20px;
+      font-style: normal;
+      color: #000A24 ;
+      line-height: 22.68px;
+      margin: 45px 42px 50px 42px;
+      width: 460px;
+      background-color: var(--background-white);
+      float:right;
+      text-align: justify; 
+      line-height: 32.4px;
+  }
+  
+#main .conditions_main_block .align_block .text-3 {
+      font-family: 'Ubuntu Bold';
+      font-size: 15px;
+      font-style: normal;
+      color: #000A24 ;
+      line-height: 22.68px;
+      margin-left: 33px ;
+      margin-right: 48px ;
+      margin-bottom: 30px;
+      margin-top: 29px;
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 25.92px;
+  }
 
-    #main .conditions_main_block .text-1 {
-        font-family: 'Ubuntu Regular';
-        font-size: 20px;
-        font-style: normal;
-        color: #000A24;
-        line-height: 22.68px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-left: 42px;
-        margin-right: 100px;
-        width: 380px;
-        height: auto;
-        float: right;
-        text-align: justify;
-        line-height: 32.4px;
-    }
+#main .conditions_main_block .align_block .icon-main .icon-icon_condition:before {
+      content: "\e900";
+      font-size: 70px;
+      text-align: center;
+      margin-top: 29px ;
+      margin-bottom: 29px;
+      margin-left: 42px ;  
+  }
 
-    #main .conditions_main_block .vertical_padding_block .text-2 {
-        font-family: 'Ubuntu Regular';
-        font-size: 20px;
-        font-style: normal;
-        color: #000A24;
-        line-height: 22.68px;
-        margin: 45px 42px 50px 42px;
-        width: 460px;
-        background-color: var(--background-white);
-        float: right;
-        text-align: justify;
-        line-height: 32.4px;
-    }
-
-    #main .conditions_main_block .align_block .text-3 {
-        font-family: 'Ubuntu Bold';
-        font-size: 15px;
-        font-style: normal;
-        color: #000A24;
-        line-height: 22.68px;
-        margin-left: 33px;
-        margin-right: 48px;
-        margin-bottom: 30px;
-        margin-top: 29px;
-        margin-bottom: 15px;
-        text-align: center;
-        line-height: 25.92px;
-    }
-
-    #main .conditions_main_block .align_block .icon-main .icon-icon_condition:before {
-        content: "\e900";
-        font-size: 70px;
-        text-align: center;
-        margin-top: 29px;
-        margin-bottom: 29px;
-        margin-left: 42px;
-    }
-
-    #main .conditions_main_block .align_block .icon-main {
-        text-align: left;
-        margin: 29px 0px 33px 29px;
-    }
-
-    #main .conditions_main_block .align_block {
-        display: inline-block;
-    }
-
-    /* conditions of participation end */
+ #main .conditions_main_block .align_block .icon-main {
+    text-align: left;
+    margin: 29px 0px 33px 29px;
+ }
+   
+ #main .conditions_main_block .align_block {
+    display: inline-block;
+ }
+/* conditions of participation end */
 
     /* header start */
     /* header end */
@@ -855,31 +907,30 @@ button {
         margin-bottom: 44px;
         margin-right: 46px;
     }
-
+    
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
         display: block;
         margin-bottom: 41px;
         font-size: 4.375rem;
     }
-
+    
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line {
         width: 300px;
         border-top: 1px dashed #000A24;
         margin-bottom: 30px;
     }
-
+    
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
         font-family: 'Ubuntu Regular';
         font-size: 1rem;
         line-height: 162%;
         letter-spacing: 0.32px;
     }
-
+    
     #we-provide .we-provide__container .we-provide__video {
         width: 940px;
         height: 528px;
     }
-
     /* we provide end */
 
     /* registration section start */
@@ -909,7 +960,6 @@ button {
     #registration .registration-main .registration-image-container {
         display: inline-block;
     }
-
     /* registration section end */
 
     /* conditions of participation start */
@@ -928,6 +978,66 @@ button {
     /* footer end */
 
     /* modal windows start */
+
+#succesModal .succes_modal_container {
+    width: 375px !important;
+}
+
+#succesModal .modal-dialog .succes_modal_content {
+    position: relative;
+    width: 375px;
+    padding: 113px 42px 50px 42px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+#succesModal .modal-dialog .succes_modal_content .succes_modal_title {
+    margin: 0;
+    color: var(--сolor-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Ubuntu';
+}
+
+#succesModal .modal-dialog .succes_modal_content .succes_modal_description {
+    margin-bottom: 0;
+    color: var(--сolor-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 26px;
+}
+
+#succesModal .modal-dialog .succes_modal_content .succes_modal_button {
+    margin-top: 82px;
+    height: 53px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    line-height: normal;
+}
+
+#succesModal .modal-dialog .succes_modal_content .succes_modal_close {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: transparent;
+}
     /* modal windows end */
 
     /* 404 start */
