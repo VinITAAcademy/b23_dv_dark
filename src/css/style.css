@@ -241,17 +241,30 @@ button {
 
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-size: 2.5rem;
 }
 
-#we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line {
+#we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper {
+    position: relative;
     width: 226px;
-    border-top: 1px dashed #000A24;
     margin-bottom: 15px;
 }
 
+#we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
+    width: 220px;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, #000A24 0 2px,#0000 0 8px)
+}
+
+#we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
+    max-width: 226px;
     text-align: center;
     margin: 0;
     font-size: 0.875rem;
@@ -260,11 +273,15 @@ button {
     color: #000A24;
 }
 
-#we-provide .we-provide__container .we-provide__video {
+#we-provide .we-provide__container .we-provide__video-wrapper {
     height: 210px;
     width: 375px;
 }
 
+#we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
+    height: 210px;
+    width: 375px;
+}
 /* we provide end */
 
 /* registration section start */
@@ -281,7 +298,7 @@ button {
     margin-bottom: 1.5rem;
 }
 
-#registration .registration-main .registration-content .registration-ontent-button {
+#registration .registration-main .registration-content .registration-content-button {
     padding: 1rem 3.375rem;
     font-family: 'Ubuntu Regular';
     font-size: 0.875rem;
@@ -528,13 +545,18 @@ button {
         font-size: 5.625rem;
     }
 
-    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line {
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper {
+        position: relative;
         width: 412px;
-        border-top: 1px dashed #000A24;
         margin-bottom: 40px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
+        width: 406px;
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
+        max-width: 352px;
         text-align: center;
         margin: 0;
         font-size: 1.25rem;
@@ -542,7 +564,12 @@ button {
         letter-spacing: 0.4px;
     }
 
-    #we-provide .we-provide__container .we-provide__video {
+    #we-provide .we-provide__container .we-provide__video-wrapper {
+        width: 768px;
+        height: 431px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
         width: 768px;
         height: 431px;
     }
@@ -720,7 +747,7 @@ button {
 
     /* we provide start */
     #we-provide {
-        min-height: 983px;
+        min-height: 989px;
     }
 
     #we-provide .we-provide__container {
@@ -732,12 +759,13 @@ button {
         font-family: 'Ubuntu Medium';
         font-size: 2.625rem;
         margin: 0;
-        margin-bottom: 75px;
+        margin-bottom: 70px;
     }
 
     #we-provide .we-provide__container .we-provide__cards-box {
         display: flex;
         flex-direction: row;
+        margin-bottom: 44px;
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item {
@@ -746,30 +774,44 @@ button {
         flex-direction: column;
         align-items: center;
         margin: 0;
-        margin-bottom: 44px;
         margin-right: 46px;
     }
 
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item:last-child {
+        margin-right: 0;
+    }
+    
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
         display: block;
-        margin-bottom: 41px;
-        font-size: 4.375rem;
+        margin-bottom: 40px;
+        font-size: 4.0625rem;
     }
-
-    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line {
+    
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper {
+        position: relative;
         width: 300px;
-        border-top: 1px dashed #000A24;
         margin-bottom: 30px;
     }
-
+    
+    #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
+        width: 291px;
+        background: repeating-linear-gradient(90deg, #000A24 0 3px,#0000 0 12px)
+    }
+    
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
+        max-width: 300px;
         font-family: 'Ubuntu Regular';
         font-size: 1rem;
         line-height: 162%;
         letter-spacing: 0.32px;
     }
 
-    #we-provide .we-provide__container .we-provide__video {
+    #we-provide .we-provide__container .we-provide__video-wrapper {
+        width: 940px;
+        height: 528px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
         width: 940px;
         height: 528px;
     }
