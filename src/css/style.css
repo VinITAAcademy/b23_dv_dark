@@ -690,7 +690,7 @@ button {
     #succesModal .modal-dialog .succes_modal_content {
         position: relative;
         width: 370px;
-        padding: 113px 40px 50px 4px;
+        padding: 113px 40px 50px 41px;
         justify-content: center;
         display: flex;
         flex-direction: column;
