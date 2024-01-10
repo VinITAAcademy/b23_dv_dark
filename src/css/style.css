@@ -715,7 +715,7 @@ button {
 /* modal windows end */
 
 /* 404 start */
-#block-404 .block-404_main {
+#block-404 .block-404-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -726,7 +726,7 @@ button {
     min-height: 362px;
 }
 
-#block-404 .block-404_main .block-404_content {
+#block-404 .block-404-main .block-404-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -734,7 +734,7 @@ button {
     gap: 20px;
 }
 
-#block-404 .block-404_main .block-404_content .block-404_content_title {
+#block-404 .block-404-main .block-404-content .block-404-content-title {
     max-width: 258px;
     color: var(--white);
     font-family: 'Ubuntu Bold';
@@ -742,7 +742,7 @@ button {
     font-size: 24px;
 }
 
-#block-404 .block-404_main .block-404_content .block-404_content_button {
+#block-404 .block-404-main .block-404-content .block-404-content-button {
     padding: 16px 78.32px;
     font-size: 14px;
 }
@@ -1100,7 +1100,7 @@ button {
     /* modal windows end */
 
     /* 404 start */
-    #block-404 .block-404_main {
+    #block-404 .block-404-main {
         align-items: flex-start;
         padding-top: 372px;
         background: url(../assets/images/404/404-background-tablet.png);
@@ -1108,16 +1108,16 @@ button {
         min-height: 1024px;
     }
 
-    #block-404 .block-404_main .block-404_content {
+    #block-404 .block-404-main .block-404-content {
         gap: 55px;
     }
 
-    #block-404 .block-404_main .block-404_content .block-404_content_title {
+    #block-404 .block-404-main .block-404-content .block-404-content-title {
         max-width: 670px;
         font-size: 70px;
     }
 
-    #block-404 .block-404_main .block-404_content .block-404_content_button {
+    #block-404 .block-404-main .block-404-content .block-404-content-button {
         padding: 33px 120px;
         font-size: 36px;
     }
@@ -1557,50 +1557,25 @@ button {
     /* modal windows end */
 
     /* 404 start */
-    #block-404 .block-404_main {
+    #block-404 .block-404-main {
         padding: 303px;
         background: url(../assets/images/404/404-background.png);
         background-size: cover;
         min-height: 768px;
     }
 
-    #block-404 .block-404_main .block-404_content {
+    #block-404 .block-404-main .block-404-content {
         gap: 45px;
     }
 
-    #block-404 .block-404_main .block-404_content .block-404_content_title {
+    #block-404 .block-404-main .block-404-content .block-404-content-title {
         width: 480px;
         font-size: 36px;
     }
 
-    #block-404 .block-404_main .block-404_content .block-404_content_button {
+    #block-404 .block-404-main .block-404-content .block-404-content-button {
         padding: 25px 85px;
         font-size: 22px;
     }
-   
-    
-    
-/*  
-
-    #block-404 .block-404_main .block-404_content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
-    #block-404 .block-404_main .block-404_content .block-404_content_title {
-        max-width: 258px;
-        color: var(--white);
-        font-family: 'Ubuntu Bold';
-        text-align: center;
-        font-size: 24px;
-    }
-
-#block-404 .block-404_main .block-404_content .block-404_content_button {
-    padding: 16px 78.32px;
-    font-size: 14px;
-}*/
     /* 404 end */
 }
