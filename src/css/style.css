@@ -409,6 +409,245 @@ button {
 /* specialities end */
 
 /* footer start */
+#footer {
+    min-height: 674px;
+}
+
+.footer-main-container {
+    background: var(--background-footer);
+    display: flex;
+    justify-content: center;
+}
+
+#footer .footer-main-container .footer-main {
+    position: relative;
+    min-height: 637px;
+    width: 375px;
+    padding-top: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .footer-main-container .footer-main .footer-main-arrow-icon .icon-arrow {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 18px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    padding: 5px 6px;
+    font-weight: 700;
+}
+
+#footer .footer-main-container .footer-main .footer-main-icon {
+    font-size: 30px;
+    color: var(--white);
+}
+
+#footer .footer-main-container .footer-main .footer-main-icon:hover {
+    color: var(--icon-hover);
+    border-color: var(--icon-hover);
+}
+
+#footer .footer-main-container .footer-main .footer-main-icon:active {
+    color: var(--button-hover-bg);
+    border-color: var(--button-hover-bg);
+}
+
+#footer .footer-main-container .footer-main .footer-main-icon:disabled {
+    color: var(--button-disabled-bg);
+    border-color: var(--button-disabled-bg);
+}
+
+#footer .footer-main-container .footer-main a:hover .footer-main-icon::before {
+    color: var(--icon-hover);
+    border-color: var(--icon-hover);
+}
+
+#footer .footer-main-container .footer-main a:active .footer-main-icon::before {
+    color: var(--button-hover-bg);
+    border-color: var(--button-hover-bg);
+}
+
+#footer .footer-main-container .footer-main a:disabled .footer-main-icon::before {
+    color: var(--button-disabled-bg);
+    border-color: var(--button-disabled-bg);
+}
+
+#footer .footer-main-container .footer-main .footer-main-intita-logo {
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    width: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-intita-logo-svg {
+    height: 24.969px;
+    margin-bottom: 5.15px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper {
+    position: relative;
+    width: 82.5px;
+    margin-bottom: 4.19px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-left {
+    width: 81px;
+    height: 0.633px;
+    background: repeating-linear-gradient(90deg, var(--white) 0 0.5px, #0000 0 2px);
+}
+
+#footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-rm-logo-svg {
+    width: 83.275px;
+    margin-right: 1.09px;
+}
+
+#footer .footer-main .footer-main-students-logo {
+    position: absolute;
+    top: 33px;
+    right: 16px;
+    width: 211px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer .footer-main-container .footer-main .footer-main-students-logo-svg {
+    width: 50px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-students-logo .footer-main-logo-text {
+    color: var(--white);
+    font-family: "Ubuntu Regular";
+    font-size: 12px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+#footer .footer-main-container .footer-main .footer-main-nav {
+    width: 111px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-nav .nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-main-container .footer-main .nav-menu-link {
+    color: var(--white);
+    font-family: "Ubuntu Medium";
+    font-size: 16px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .footer-main-container .footer-main .footer-main-line {
+    width: 291px;
+    margin: 0;
+    border: none;
+    border-top: 3px solid var(--button-primary);
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+#footer .footer-main-container .footer-main .footer-main-text {
+    color: var(--white);
+    font-family: "Ubuntu Bold";
+    font-size: 12px;
+    text-align: center;
+    line-height: 162%;
+    letter-spacing: 0.24px;
+    width: 283px;
+    margin-bottom: 20px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-text2 {
+    width: 232px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+#footer .footer-main-container .footer-main .footer-main-icon-box {
+    width: 340px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-contacts {
+    width: 147px;
+    height: 93px;
+    text-align: center;
+    font-family: "Ubuntu Regular";
+    font-size: 16px;
+    color: var(--white);
+}
+
+#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
+    font-family: "Ubuntu Bold";
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
+    margin-bottom: 9px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-email {
+    margin-bottom: 0;
+}
+
+#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-link {
+    color: var(--white);
+}
+
+#footer .footer-main-container .footer-main .footer-main-qr-code {
+    display: none;
+}
+
+#footer .footer-second-section {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    min-height: 37px;
+    background-color: var(--white);
+}
+
+#footer .footer-second-section .footer-second-section-text {
+    font-family: "Ubuntu Bold";
+    font-size: 12px;
+    margin: 0;
+}
 /* footer end */
 
 /* modal windows start */
@@ -703,6 +942,127 @@ button {
     /* specialities end */
 
     /* footer start */
+    #footer {
+        min-height: 396px;
+    }
+
+    #footer .footer-main-container .footer-main {
+        min-height: 341px;
+        padding-top: 155px;
+        width: 768px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-arrow-icon .icon-arrow {
+        top: 12px;
+        right: 40px;
+        font-size: 30px;
+        padding: 9px 11px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo {
+        top: 25px;
+        left: 37px;
+        width: 139px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-intita-logo-svg {
+        height: 39.043px;
+        margin-bottom: 8.61px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper {
+        position: relative;
+        width: 128.5px;
+        margin-bottom: 7.11px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-left {
+        width: 125.5px;
+        height: 1px;
+        background: repeating-linear-gradient(90deg, var(--white) 0 0.75px, #0000 0 2.5px);
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-rm-logo-svg {
+        width: 131.537px;
+        margin-right: 0.93px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-students-logo {
+        top: 266px;
+        right: 303px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-nav {
+        display: none;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text-box {
+        width: 694px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-line {
+        display: none;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text {
+        width: 291px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text2 {
+        width: 237px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
+        text-decoration: none;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-icon-box {
+        display: none;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-contacts {
+        position: absolute;
+        top: 25px;
+        right: 181px;
+        height: 86px;
+        text-align: left;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
+        font-family: "Ubuntu Bold";
+        font-size: 20px;
+        margin-bottom: 19.69px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
+        margin-bottom: 5.18px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-qr-code {
+        display: block;
+        position: absolute;
+        right: 37px;
+        bottom: 25px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-qr-code .footer-main-qr-code-svg {
+        width: 59px;
+        height: 56px;
+    }
+
+    #footer .footer-second-section {
+        padding: 18px;
+        min-height: 55px;
+    }
+
+    #footer .footer-second-section .footer-second-section-text {
+        font-size: 16px;
+    }
     /* footer end */
 
     /* modal windows start */
@@ -953,6 +1313,192 @@ button {
     /* specialities end */
 
     /* footer start */
+    #footer {
+        min-height: 431px;
+    }
+
+    #footer .footer-main-container .footer-main {
+        min-height: 376px;
+        padding-top: 159px;
+        padding-left: 46px;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 1024px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-arrow-icon .icon-arrow {
+        top: 14px;
+        right: 43px;
+        font-size: 30px;
+        padding: 9px 11px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-arrow-icon .footer-main-arrow-svg {
+        height: 50px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-icon {
+        font-size: 25px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo {
+        top: 39px;
+        left: 43px;
+        width: 139px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-intita-logo-svg {
+        height: 39.043px;
+        margin-bottom: 8.61px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper {
+        position: relative;
+        width: 128.5px;
+        margin-bottom: 7.11px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-left {
+        width: 125.5px;
+        height: 1px;
+        background: repeating-linear-gradient(90deg, var(--white) 0 0.75px, #0000 0 2.5px);
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-rm-logo-svg {
+        width: 131.537px;
+        margin-right: 0.93px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-students-logo {
+        top: 312px;
+        right: 408px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-nav {
+        position: absolute;
+        top: 73px;
+        left: 315px;
+        width: 348px;
+        height: 18px;
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-nav .nav-menu-list {
+        width: 348px;
+        height: 18px;
+        flex-direction: row;
+    }
+
+    #footer .footer-main-container .footer-main .nav-menu-link {
+        font-family: "Ubuntu Regular";
+        font-size: 15px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text-box {
+        width: 561px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-right: 64px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-line {
+        display: none;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text {
+        font-size: 15px;
+        text-align: left;
+        line-height: 162%;
+        letter-spacing: 0.3px;
+        width: 288px;
+        height: 119px;
+        margin-bottom: 0;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text2 {
+        width: 237px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
+        text-decoration: underline;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-icon-box {
+        position: relative;
+        width: 310px;
+        height: 119px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 0;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-icon-box .icon-icon-box {
+        padding: 10px;
+        border: 1px solid #6d6d6d;
+        border-radius: 6px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-icon:hover {
+        color: var(--icon-hover);
+        border-color: var(--icon-hover);
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-icon:active {
+        color: var(--button-hover-bg);
+        border-color: var(--button-hover-bg);
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-icon:disabled {
+        color: var(--button-disabled-bg);
+        border-color: var(--button-disabled-bg);
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-contacts {
+        position: absolute;
+        top: 68px;
+        right: 43px;
+        width: 184.196px;
+        height: 106px;
+        text-align: right;
+        font-size: 20px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
+        margin-bottom: 10px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-qr-code {
+        display: block;
+        position: absolute;
+        right: 43px;
+        bottom: 19px;
+    }
+
+    #footer .footer-main-container .footer-main .footer-main-qr-code .footer-main-qr-code-svg {
+        width: 56px;
+        height: 53px;
+    }
+
+    #footer .footer-second-section {
+        display: flex;
+        justify-content: center;
+        padding: 18px;
+        min-height: 55px;
+    }
+
+    #footer .footer-second-section .footer-second-section-text {
+        font-family: "Ubuntu Bold";
+        font-size: 18px;
+        margin: 0;
+    }
     /* footer end */
 
     /* modal windows start */
