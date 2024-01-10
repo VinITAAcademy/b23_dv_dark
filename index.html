@@ -36,13 +36,24 @@
                     постраждали внаслідок війни росії проти України
                     та українського народу.
                 </p>
-                <button class="hero_content_button button-primary">Зареєструватися</button>
+                <button class="hero_content_button button-primary" data-bs-toggle="modal"
+                    data-bs-target="#registrationForm">Зареєструватися</button>
+
+
             </div>
-        </div>
     </section>
+
     <!--"hero section end"-->
 
     <!--"quote start"-->
+    <section id="quote">
+     <img class="quote_left" src="./src/assets/images/quote.svg" alt="quote">
+        <p class="quote_text">Ми створили і постійно розвиваємо всесвітню мережу офлайн/онлайн центрів підтримки українців, що
+            постраждали
+            внаслідок війни, розв'язаної росією проти України та її народу. А також центрів підтримки ветеранів та
+            громадян, які змушені були покинути місця свого постійного проживання.</p>
+            <img class="quote_right" src="./src/assets/images/quote.svg" alt="quote">
+    </section>
     <!--"quote end"-->
 
     <!-- "we provide start" -->
@@ -56,23 +67,32 @@
             <div class="we-provide__cards-box">
                 <div class="we-provide__cards-item cards-item">
                     <span class="icon-icon_study cards-item__icomoon"></span>
-                    <div class="cards-item__line"></div>
-                    <p class="cards-item__text" >інтенсивне навчання<br>ветеранів/біженців/<br>переселенців айтішних<br>спеціальностей</p>
+                    <div class="cards-item__line-wrapper">
+                        <div class="cards-item__line-left"></div>
+                        <div class="cards-item__line-left cards-item__line-right"></div>
+                    </div>
+                    <p class="cards-item__text" >інтенсивне навчання ветеранів/біженців/переселенців айтішних спеціальностей</p>
                 </div>
                 <div class="we-provide__cards-item cards-item">
                     <span class="icon-icon_work cards-item__icomoon"></span>
-                    <div class="cards-item__line"></div>
-                    <p class="cards-item__text" >персональний супровід<br>кожної/ого до<br>працевлаштування</p>
+                    <div class="cards-item__line-wrapper">
+                        <div class="cards-item__line-left"></div>
+                        <div class="cards-item__line-left cards-item__line-right"></div>
+                    </div>
+                    <p class="cards-item__text" >персональний супровід кожної/ого до працевлаштування</p>
                 </div>
                 <div class="we-provide__cards-item cards-item">
                     <span class="icon-icon_person cards-item__icomoon"></span>
-                    <div class="cards-item__line"></div>
-                    <p class="cards-item__text">повернення до повноцінного<br>життя в свої міста, села в<br>Україні</p>
+                    <div class="cards-item__line-wrapper">
+                        <div class="cards-item__line-left"></div>
+                        <div class="cards-item__line-left cards-item__line-right"></div>
+                    </div>
+                    <p class="cards-item__text">повернення до повноцінного життя в свої міста, села в Україні</p>
                 </div>
             </div>
             
             <!-- video -->
-            <div>
+            <div class="we-provide__video-wrapper">
                 <iframe class="we-provide__video" src="https://www.youtube.com/embed/pmrIlYBWP20?si=S8eRtAyXzzP5OIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
@@ -102,34 +122,34 @@
     <!--"conditions of participation start"-->
     <section id="main" class="main">
         <div class="conditions_main_block">
-            <img class="img1" src="assets/images/stand.png" alt="we stand with ukraine">
-            <p class="text-1">Залучаємо фінансові, матеріальні ресурси та експертизу від країн, фондів, підприємств,
+            <img class="conditions-img1" src="src/assets/images/stand.png" alt="we stand with ukraine">
+            <p class="conditions-text-1">Залучаємо фінансові, матеріальні ресурси та експертизу від країн, фондів, підприємств,
                 фізичних
                 осіб з-за кордону в Україну - як для прямої, так і непрямої підтримки програми, а відтак української армії і
                 українського народу.</p>
-            <div class="vertical_padding_block">
-                <img class="img2" src="assets/images/flag.png" alt="flag">
-                <p class="text-2">Якнайбільше ресурсів залучатиметься в Україну, а не виводитиметься з неї. Перезапуститься
+            <div class="conditions-vertical_padding_block">
+                <img class="conditions-img2" src="src/assets/images/flag.png" alt="flag">
+                <p class="conditions-text-2">Якнайбільше ресурсів залучатиметься в Україну, а не виводитиметься з неї. Перезапуститься
                     та
                     запрацює економіка, створюватимуться нові робочі місця для українців - особливо тих, що найбільше
                     постраждали від війни росії проти України. А все це разом буде працювати на оборону, на стрімкий
                     розвиток
                     України, на персональний добробут кожного українця та його сім'ї.</p>
             </div>
-            <div class="align_block">
-                <div class="line"></div>
-                <div class="align_block icon-main">
+            <div class="conditions-align_block">
+                <div class="conditions-line"></div>
+                <div class="conditions-align_block conditions-icon-main">
                     <i class="icon-icon_condition"></i>
                 </div>
-                <div class="align_block">
-                    <p class="text-3">Обов’язкова умова участі в програмі - повернення у свої міста та села в Україні після
+                <div class="conditions-align_block">
+                    <p class="conditions-text-3">Обов’язкова умова участі в програмі - повернення у свої міста та села в Україні після
                         Нашої Перемоги над російськими загарбниками!
                         Ми робили, робимо і будемо робити все можливе, щоб кожен українець мав змогу повернутись до гідного
                         життя на своїй Батьківщині!
                     </p>
                 </div>
             </div>
-            <div class="line"></div>
+            <div class="conditions-line"></div>
         </div>
     </section>
     <!--"conditions of participation end"-->
@@ -262,12 +282,94 @@
     <!--"specialities end"-->
 
     <!--"footer start"-->
+    <section id="footer">
+        <div class="footer-main-container">
+            <!-- footer main section -->
+            <div class="footer-main">
+                <!-- icon arrow -->
+                <div class="footer-main-arrow-icon">                
+                    <a href="#hero"><i class="icon-arrow footer-main-icon"></i></a>
+                </div>          
+                <!-- logos -->
+                <div class="footer-main-intita-logo">
+                    <a href="https://intita.com/" target="_blank"><img class="footer-main-intita-logo-svg" src="src/assets/images/footer/footer-intita-logo.svg" alt="INTITA logo"></a>
+                    <div class="footer-main-logo-line-wrapper">
+                        <div class="footer-main-logo-line-left"></div>
+                        <div class="footer-main-logo-line-left footer-main-logo-line-right"></div>
+                    </div>
+                    <a href="https://www.robotamolodi.org/" target="_blank"><img class="footer-main-rm-logo-svg" src="src/assets/images/footer/rm-logo.svg" alt="Robota molodi logo"></a>
+                </div>
+                <div class="footer-main-students-logo">
+                    <img class="footer-main-students-logo-svg" src="src/assets/images/footer/footer-students-logo.svg" alt="INTITA students' logo">
+                    <a class="footer-main-logo-link" href="#"><p class="footer-main-logo-text">Розроблено студентами<br>Вінницької IT-Академії 2024</p></a>                
+                </div>            
+                <!-- nav menu -->
+                <nav class="footer-main-nav nav-menu">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#we-provide">Про програму</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Партнери</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Спеціальності</a></li>
+                    </ul>
+                </nav>
+                <!-- text block -->
+                <div class="footer-main-text-box">            
+                    <hr class="footer-main-line">
+                    <p class="footer-main-text">Якщо у Вас виникли запитання про нашу програму чи організацію або про те, як Ви можете нам допомогти, будь ласка, зв’яжіться з нами!</p>
+                    <hr class="footer-main-line">
+                    <p class="footer-main-text footer-main-text2">Бажаєте фінансово підтримати програму, щоб допомогти Україні, будь ласка, відвідайте сторінку: <a class="footer-main-text-link" href="https://www.robotamolodi.org" target="_blank">https://www.robotamolodi.org/</a></p>
+                    <hr class="footer-main-line">
+                </div>
+                <!-- social media icon box -->
+                <div class="footer-main-icon-box">
+                    <a href="https://t.me/IT_Academy_Vinnytsia" target="_blank"><i class="icon-telegram icon-icon-box footer-main-icon"></i></a>
+                    <a href="https://www.facebook.com/intita.it/" target="_blank"><i class="icon-facebook icon-icon-box footer-main-icon"></i></a>
+                    <a href="viber://chat?number=+380631892256" target="_blank"><i class="icon-viber icon-icon-box footer-main-icon"></i></a>
+                    <a href="https://wa.me/+380674317424" target="_blank"><i class="icon-whatsapp icon-icon-box footer-main-icon"></i></a>
+                    <a href="https://twitter.com/INTITA_EDU" target="_blank"><i class="icon-twitter icon-icon-box footer-main-icon"></i></a>
+                    <a href="https://www.instagram.com/intitaedu" target="_blank"><i class="icon-instagram icon-icon-box footer-main-icon"></i></a>   
+                </div>
+                <!-- contacts -->
+                <div class="footer-main-contacts">
+                    <h2 class="footer-main-contacts-title">Контакти:</h2>
+                    <a class="footer-main-contacts-link" href="tel:+380674311921"><p class="footer-main-phone">+38 067 431 19 21</p></a>
+                    <a class="footer-main-contacts-link" href="mailto:ita.in.ua@gmail.com"><p class="footer-main-email">ita.in.ua@gmail.com</p></a>                
+                </div>
+                <!-- qr -->
+                <div class="footer-main-qr-code">
+                    <img class="footer-main-qr-code-svg" src="src/assets/images/footer/qr-code.svg" alt="QR-code">
+                </div>
+            </div>
+        </div>
+        <!-- footer second section -->
+        <div class="footer-second-section">
+            <p class="footer-second-section-text">©2024 Доброго вечора - ми з України</p>
+        </div>
+    </section>
     <!--"footer end"-->
+
+    <!-- "modal windows start" -->
+    <div class="modal fade" id="succesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered succes_modal_container" role="document">
+            <div class="succes_modal_content">
+                <p class="succes_modal_title">Дякуємо за Вашу заявку!</p>
+                <p class="succes_modal_description">Очікуйте зворотнього зв’язку.</p>
+                <button class="succes_modal_button button-primary">На головну</button> 
+                <button class="succes_modal_close">
+                    <span class="icon-close"></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- "modal windows end" -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="src/js/script.js"></script>
+
 </body>
 
 </html>
