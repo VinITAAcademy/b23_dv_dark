@@ -173,29 +173,51 @@ button {
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: transparent;   
+    background-color: transparent;
 }
+
 #header .navbar {
-    padding: 0px; 
+    padding: 0px;
 }
+
 #header .container-fluid {
     padding: 0px;
-    
+
 }
+
 #header .navbar-brand {
+    display: flex;
     padding: 0px;
     margin: 0px;
+    flex-direction: column;
 }
-#header .navbar-brand .header-logo-mobile {
-    margin-top: 24px;
-    margin-left: 25px;
+
+#header .navbar-brand .header-logo-intita {
+    width: 73px;
+    height: 22px;
+    margin-top: 23px;
+    margin-left: 31px;
 }
-#header .header-logo-tablet {
-    display: none;
+#header .line-logo {
+    border-top: var(--border-width) solid;
+    border-style: dotted;
+    width: 76px;
+    margin-top: 2px;
+    margin-left: 26px;
+    opacity: .25;
+    border-color: white;
+
+}
+#header .navbar-brand .header-logo-robota-molodi {
+    width: 63px;
+    height: 15px;
+    margin-left: 26px;
+    margin-top: -37px;
 }
 #header .flag-div {
     display: none;
 }
+
 #header .navbar-toggler {
     padding: 0;
     display: flex;
@@ -204,9 +226,10 @@ button {
     width: 30px;
     height: 30px;
     background-color: var(--background);
-    margin-top: 11px;
+    margin-top: -10px;
     margin-right: 25px;
 }
+
 #header .navbar-toggler-icon_1 {
     background-image: none;
     width: 16px;
@@ -216,6 +239,7 @@ button {
     background-color: var(--button-active-bg);
     margin-top: 8px;
 }
+
 #header .navbar-toggler-icon_2 {
     background-image: none;
     width: 16px;
@@ -225,6 +249,7 @@ button {
     background-color: var(--button-active-bg);
     margin-top: 0px;
 }
+
 #header .navbar-toggler-icon_3 {
     background-image: none;
     width: 16px;
@@ -235,7 +260,7 @@ button {
     background-color: var(--button-active-bg);
 }
 
-/* header end */ 
+/* header end */
 
 /* quote start */
 #quote {
@@ -373,7 +398,7 @@ button {
     max-height: 305px;
 }
 
-#main .conditions_main_block .conditions-vertical_padding_block .conditions-img2{
+#main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
     max-width: 375px;
     max-height: 375px;
 }
@@ -383,14 +408,14 @@ button {
     margin-right: 43px;
     height: 1.5px;
     background:
-      repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
-  }
+        repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
+}
 
-  #main .conditions_main_block .conditions-vertical_padding_block {
-    padding-top: 30px; 
-  }
+#main .conditions_main_block .conditions-vertical_padding_block {
+    padding-top: 30px;
+}
 
-  #main .conditions_main_block .conditions-block_4 {
+#main .conditions_main_block .conditions-block_4 {
     background-color: var(--white);
     width: 375px;
     height: 624px;
@@ -534,68 +559,93 @@ button {
 
 
 @media (min-width: 768px) {
-/* loader start */
-/* loader end */
-/* header start */
-#header .header-logo-mobile {
-    display: none;
-}
-#header .flag-div {
-    display: none;
-}
-#header .navbar-brand {
-    margin-top: 25px;
-    margin-left: 25px;
-    width: 139px;
-    height: 86px;
-    background-image: url(../images/logo_header_tablet.png);
-}
-#header .header-logo-tablet {
-    margin-top: 25px;
-    margin-left: 25px;
-}
-#header .navbar-toggler {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    background-color: var(--background);
-    margin-top: -9px;
-    margin-right: 25px;
-}
-#header .navbar-toggler-icon_1 {
-    background-image: none;
-    width: 32px;
-    height: 3px;
-    margin-bottom: 4px;
-    margin-left: 8px;
-    background-color: var(--button-active-bg);
-    margin-top: 10px;
-    border-radius: 3px;
-}
-#header .navbar-toggler-icon_2 {
-    background-image: none;
-    width: 32px;
-    height: 3px;
-    margin-bottom: 5px;
-    margin-left: 8px;
-    background-color: var(--button-active-bg);
-    margin-top: 4px;
-    border-radius: 3px;
-}
-#header .navbar-toggler-icon_3 {
-    background-image: none;
-    width: 32px;
-    height: 3px;
-    margin-top: 3px;
-    margin-bottom: 4px;
-    margin-left: 8px;
-    background-color: var(--button-active-bg);
-    border-radius: 3px;
-}
-/* header end */
+
+    /* loader start */
+    /* loader end */
+    /* header start */
+    #header .header-logo-mobile {
+        display: none;
+    }
+
+    #header .flag-div {
+        display: none;
+    }
+
+    #header .navbar-brand {
+        margin-top: 25px;
+        margin-left: 25px;
+        width: 139px;
+        height: 86px;
+        background-image: url(../images/logo_header_tablet.png);
+    }
+    #header .navbar-brand .header-logo-intita {
+        width: 128px;
+        height: 38px;
+        margin-top: 1px;
+        margin-left: 6px;
+    }
+    #header .line-logo {
+        border-top: var(--border-width) solid;
+        border-style: dotted;
+        width: 130px;
+        margin-top: 10px;
+        margin-left: 7px;
+        opacity: .25;
+        border-color: white;
+    
+    }
+    #header .navbar-brand .header-logo-robota-molodi {
+        width: 132px;
+        height: 33px;
+        margin-left: 2px;
+        margin-top: -20px;
+    }
+    #header .navbar-toggler {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        background-color: var(--background);
+        margin-top: -9px;
+        margin-right: 25px;
+    }
+
+    #header .navbar-toggler-icon_1 {
+        background-image: none;
+        width: 32px;
+        height: 3px;
+        margin-bottom: 4px;
+        margin-left: 8px;
+        background-color: var(--button-active-bg);
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+
+    #header .navbar-toggler-icon_2 {
+        background-image: none;
+        width: 32px;
+        height: 3px;
+        margin-bottom: 5px;
+        margin-left: 8px;
+        background-color: var(--button-active-bg);
+        margin-top: 4px;
+        border-radius: 3px;
+    }
+
+    #header .navbar-toggler-icon_3 {
+        background-image: none;
+        width: 32px;
+        height: 3px;
+        margin-top: 3px;
+        margin-bottom: 4px;
+        margin-left: 8px;
+        background-color: var(--button-active-bg);
+        border-radius: 3px;
+    }
+
+    /* header end */
     /* hero section start */
     #hero .hero_main {
         min-height: 1024px;
@@ -700,97 +750,98 @@ button {
 
     /* conditions of participation start */
     #main .conditions_main_block .conditions-img1 {
-        max-width: 768px ;
+        max-width: 768px;
         max-height: 572px;
     }
-    
+
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
-        max-width: 768px ;
+        max-width: 768px;
         max-height: 724px;
     }
-    
+
     #main .conditions_main_block .conditions-line {
-        width: 672px ;
+        width: 672px;
         margin-left: 43px;
         margin-right: 43px;
         height: 1.5px;
         background:
-          repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
-      }
-    
+            repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
+    }
+
     #main .conditions_main_block {
         background-color: var(--white);
         width: 768px;
         height: auto;
-      }
-    
+    }
+
     #main .conditions_main_block .conditions-vertical_padding_block {
-        padding-top: 0px; 
-      }
-    
+        padding-top: 0px;
+    }
+
     #main .conditions_main_block .conditions-block_4 {
         background-color: var(--white);
         width: 375px;
         height: 624px;
     }
-    
+
     #main .conditions_main_block .conditions-align_block .conditions-icon-main {
         text-align: center;
         margin-top: 53px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
-    
+
     #main .conditions_main_block .conditions-text-1 {
         font-family: 'Ubuntu Medium';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 42px 39px 42px 39px;
         line-height: 162%;
     }
-    
+
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-text-2 {
         font-family: 'Ubuntu Medium';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 50px 48px 50px 48px;
         background-color: var(--white);
         line-height: 162%;
     }
-    
+
     #main .conditions_main_block .conditions-align_block .conditions-text-3 {
         font-family: 'Ubuntu Bold';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
-        margin-left: 48px ;
-        margin-right: 48px ;
+        margin-left: 48px;
+        margin-right: 48px;
         margin-bottom: 53px;
         margin-top: 15px;
         text-align: center;
         line-height: 162%;
         max-width: 700px;
     }
-    
+
     #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
         content: "\e900";
         font-size: 40px;
         text-align: center;
     }
-    
+
     #main .conditions_main_block .conditions-container_block {
         background-color: var(--white);
         width: 768px;
         height: auto;
-      }
-      
+    }
+
     #main .conditions_main_block .conditions-align_block {
         display: block;
-      }
+    }
+
     /* conditions of participation end */
 
     /* partners start */
@@ -812,8 +863,8 @@ button {
     /* 404 end */
 
 }
-/* 
-@media (min-width: 991px) {
+
+/* @media (min-width: 992px) {
 #header .header-logo-mobile {
     display: none;
 }
@@ -881,6 +932,7 @@ button {
     #hero .hero_main {
         min-height: 768px;
     }
+
     #hero .hero_main .hero_content {
         gap: 30px;
     }
@@ -902,55 +954,66 @@ button {
     #header .header-logo-mobile {
         display: none;
     }
+
     #header .navbar-brand {
         margin-top: 25px;
         margin-left: 25px;
     }
+
     #header .nav-link {
-        color: var(--сolor-white);
+        color: var(--white);
         font-family: 'Ubuntu';
         font-size: 18px;
         font-weight: 500;
     }
+
     #header .nav-link:hover {
-        color: var(--button-active);
+        color: var(--icon-hover);
         font-family: 'Ubuntu';
         font-size: 18px;
         font-weight: 500;
     }
+
     #header .navbar-toggler {
         display: none;
     }
+
     #header .navbar-nav {
         width: 600px;
-        height: 21px; 
+        height: 21px;
         margin-top: 9px;
         margin-left: 111px;
     }
+
     #header .nav-item-1 {
         width: 150px;
         height: 21px;
     }
-    #header .nav-item-2{
+
+    #header .nav-item-2 {
         width: 150px;
         height: 21px;
         padding-left: 7px;
     }
+
     #header .nav-item-3 {
         width: 150px;
         height: 21px;
         padding-left: 15px;
     }
+
     #header .nav-item-4 {
         width: 150px;
         height: 21px;
         margin-left: -15px;
     }
+
     #header .flag-div {
         margin-top: 25px;
         margin-right: 32px;
         display: block;
     }
+
     /* header end */
 
     /* quote start */
@@ -1050,93 +1113,94 @@ button {
         width: 460px;
         height: 421px;
         float: right;
-      }
-    
-      #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
-        margin: 0px 42px 50px 42px ;
-        width: 380px ;
+    }
+
+    #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
+        margin: 0px 42px 50px 42px;
+        width: 380px;
         height: 538px;
         float: left;
-       }
-    
+    }
+
     #main .conditions_main_block .conditions-line {
         width: 940px;
         margin-left: 42px;
         margin-right: 42px;
         background:
-            repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
-        }
-      
-    #main .conditions_main_block {
-          background-color: var(--white);
-          width: 1024px;
-          height: auto;
-          margin: 0 auto ;
+            repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
     }
-    
+
+    #main .conditions_main_block {
+        background-color: var(--white);
+        width: 1024px;
+        height: auto;
+        margin: 0 auto;
+    }
+
     #main .conditions_main_block .conditions-text-1 {
-          font-family: 'Ubuntu Regular';
-          font-size: 20px;
-          font-style: normal;
-          color: #000A24 ;
-          line-height: 22.68px;
-          margin-top: 50px;
-          margin-bottom: 30px;
-          margin-left: 42px;
-          margin-right: 100px;
-          width: 380px;
-          height: auto;
-          float: right;
-          text-align: justify;
-          line-height: 32.4px;
-      }
-      
+        font-family: 'Ubuntu Regular';
+        font-size: 20px;
+        font-style: normal;
+        color: #000A24;
+        line-height: 22.68px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 42px;
+        margin-right: 100px;
+        width: 380px;
+        height: auto;
+        float: right;
+        text-align: justify;
+        line-height: 32.4px;
+    }
+
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-text-2 {
-          font-family: 'Ubuntu Regular';
-          font-size: 20px;
-          font-style: normal;
-          color: #000A24 ;
-          line-height: 22.68px;
-          margin: 45px 42px 50px 42px;
-          width: 460px;
-          background-color: var(--white);
-          float:right;
-          text-align: justify; 
-          line-height: 32.4px;
-      }
-      
+        font-family: 'Ubuntu Regular';
+        font-size: 20px;
+        font-style: normal;
+        color: #000A24;
+        line-height: 22.68px;
+        margin: 45px 42px 50px 42px;
+        width: 460px;
+        background-color: var(--white);
+        float: right;
+        text-align: justify;
+        line-height: 32.4px;
+    }
+
     #main .conditions_main_block .conditions-align_block .conditions-text-3 {
-          font-family: 'Ubuntu Bold';
-          font-size: 15px;
-          font-style: normal;
-          color: #000A24 ;
-          line-height: 25.92px;
-          margin-left: 33px ;
-          margin-right: 48px ;
-          margin-bottom: 30px;
-          margin-top: 29px;
-          margin-bottom: 15px;
-          line-height: 25.92px;
-          text-align: center;
-      }
-    
+        font-family: 'Ubuntu Bold';
+        font-size: 15px;
+        font-style: normal;
+        color: #000A24;
+        line-height: 25.92px;
+        margin-left: 33px;
+        margin-right: 48px;
+        margin-bottom: 30px;
+        margin-top: 29px;
+        margin-bottom: 15px;
+        line-height: 25.92px;
+        text-align: center;
+    }
+
     #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
-          content: "\e900";
-          font-size: 70px;
-          text-align: center;
-          margin-top: 29px ;
-          margin-bottom: 29px;
-          margin-left: 42px ;  
-      }
-    
-     #main .conditions_main_block .conditions-align_block .conditions-icon-main {
+        content: "\e900";
+        font-size: 70px;
+        text-align: center;
+        margin-top: 29px;
+        margin-bottom: 29px;
+        margin-left: 42px;
+    }
+
+    #main .conditions_main_block .conditions-align_block .conditions-icon-main {
         text-align: left;
         margin: 29px 33px 33px 29px;
-     }
-       
-     #main .conditions_main_block .conditions-align_block {
+    }
+
+    #main .conditions_main_block .conditions-align_block {
         display: inline-block;
-     }
+    }
+
     /* conditions of participation end */
 
     /* partners start */
