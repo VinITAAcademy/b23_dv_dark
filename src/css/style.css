@@ -255,7 +255,7 @@ button {
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
     width: 220px;
     height: 1px;
-    background: repeating-linear-gradient(90deg, #000A24 0 2px,#0000 0 8px)
+    background: repeating-linear-gradient(90deg, #000A24 0 2px, #0000 0 8px)
 }
 
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-right {
@@ -283,6 +283,7 @@ button {
     height: 210px;
     width: 375px;
 }
+
 /* we provide end */
 
 /* registration section start */
@@ -326,7 +327,7 @@ button {
     max-height: 305px;
 }
 
-#main .conditions_main_block .conditions-vertical_padding_block .conditions-img2{
+#main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
     max-width: 375px;
     max-height: 375px;
 }
@@ -335,14 +336,14 @@ button {
     margin-left: 43px;
     margin-right: 43px;
     height: 1.5px;
-    background: repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px);
+    background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
 }
 
-  #main .conditions_main_block .conditions-vertical_padding_block {
-    padding-top: 30px; 
+#main .conditions_main_block .conditions-vertical_padding_block {
+    padding-top: 30px;
 }
 
-  #main .conditions_main_block .conditions-block_4 {
+#main .conditions_main_block .conditions-block_4 {
     background-color: var(--white);
     width: 375px;
     height: 624px;
@@ -451,6 +452,7 @@ button {
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-tumblers .specialty-carousel-tumbler.active {
     background-color: var(--button-primary);
 }
+
 /* end of round tumblers */
 
 /* start of carousel */
@@ -580,6 +582,7 @@ button {
     padding: 13px 60.27px;
     margin: 0 39px 32px;
 }
+
 /* end of carousel */
 
 /* start of arrow tumblers */
@@ -596,6 +599,7 @@ button {
     color: transparent;
     background-image: none;
 }
+
 /* end of arrow tumblers */
 /* specialities end */
 
@@ -839,6 +843,7 @@ button {
     font-size: 12px;
     margin: 0;
 }
+
 /* footer end */
 
 /* modal windows start */
@@ -979,7 +984,7 @@ button {
         width: 412px;
         margin-bottom: 40px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
         width: 406px;
     }
@@ -997,7 +1002,7 @@ button {
         width: 768px;
         height: 431px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
         width: 768px;
         height: 431px;
@@ -1029,97 +1034,98 @@ button {
 
     /* conditions of participation start */
     #main .conditions_main_block .conditions-img1 {
-        max-width: 768px ;
+        max-width: 768px;
         max-height: 572px;
     }
-    
+
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
-        max-width: 768px ;
+        max-width: 768px;
         max-height: 724px;
     }
-    
+
     #main .conditions_main_block .conditions-line {
-        width: 672px ;
+        width: 672px;
         margin-left: 43px;
         margin-right: 43px;
         height: 1.5px;
         background:
-          repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
-      }
-    
+            repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
+    }
+
     #main .conditions_main_block {
         background-color: var(--white);
         width: 768px;
         height: auto;
-      }
-    
+    }
+
     #main .conditions_main_block .conditions-vertical_padding_block {
-        padding-top: 0px; 
-      }
-    
+        padding-top: 0px;
+    }
+
     #main .conditions_main_block .conditions-block_4 {
         background-color: var(--white);
         width: 375px;
         height: 624px;
     }
-    
+
     #main .conditions_main_block .conditions-align_block .conditions-icon-main {
         text-align: center;
         margin-top: 53px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
     }
-    
+
     #main .conditions_main_block .conditions-text-1 {
         font-family: 'Ubuntu Medium';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 42px 39px 42px 39px;
         line-height: 162%;
     }
-    
+
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-text-2 {
         font-family: 'Ubuntu Medium';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 50px 48px 50px 48px;
         background-color: var(--white);
         line-height: 162%;
     }
-    
+
     #main .conditions_main_block .conditions-align_block .conditions-text-3 {
         font-family: 'Ubuntu Bold';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
-        margin-left: 48px ;
-        margin-right: 48px ;
+        margin-left: 48px;
+        margin-right: 48px;
         margin-bottom: 53px;
         margin-top: 15px;
         text-align: center;
         line-height: 162%;
         max-width: 700px;
     }
-    
+
     #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
         content: "\e900";
         font-size: 40px;
         text-align: center;
     }
-    
+
     #main .conditions_main_block .conditions-container_block {
         background-color: var(--white);
         width: 768px;
         height: auto;
-      }
-      
+    }
+
     #main .conditions_main_block .conditions-align_block {
         display: block;
-      }
+    }
+
     /* conditions of participation end */
 
     /* partners start */
@@ -1194,6 +1200,7 @@ button {
         margin-bottom: 24px;
         margin-top: 0;
     }
+
     /* end of cards */
 
     /* hide display of arrow tumblers */
@@ -1201,6 +1208,7 @@ button {
     #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-arrow-right.carousel-control-next {
         display: none;
     }
+
     /* specialities end */
 
     /* footer start */
@@ -1325,6 +1333,7 @@ button {
     #footer .footer-second-section .footer-second-section-text {
         font-size: 16px;
     }
+
     /* footer end */
 
     /* modal windows start */
@@ -1360,6 +1369,7 @@ button {
     #hero .hero_main .hero_content .hero_content_description {
         font-size: 20px;
     }
+
     /* hero section end" */
 
     /* conditions of participation start */
@@ -1371,8 +1381,8 @@ button {
     }
 
     #main .conditions_main_block .vertical_padding_block .img2 {
-        margin: 0px 42px 50px 42px ;
-        width: 380px ;
+        margin: 0px 42px 50px 42px;
+        width: 380px;
         height: 538px;
         float: left;
     }
@@ -1382,20 +1392,20 @@ button {
         margin-left: 42px;
         margin-right: 42px;
         background:
-            repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+            repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px)
     }
-    
+
     #main .conditions_main_block {
         background-color: var(--white);
         width: 1024px;
         height: auto;
     }
-    
+
     #main .conditions_main_block .text-1 {
         font-family: 'Ubuntu Regular';
         font-size: 20px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin-top: 50px;
         margin-bottom: 30px;
@@ -1407,29 +1417,29 @@ button {
         text-align: justify;
         line-height: 32.4px;
     }
-    
+
     #main .conditions_main_block .vertical_padding_block .text-2 {
         font-family: 'Ubuntu Regular';
         font-size: 20px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 45px 42px 50px 42px;
         width: 460px;
         background-color: var(--white);
-        float:right;
-        text-align: justify; 
+        float: right;
+        text-align: justify;
         line-height: 32.4px;
     }
-    
+
     #main .conditions_main_block .align_block .text-3 {
         font-family: 'Ubuntu Bold';
         font-size: 15px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
-        margin-left: 33px ;
-        margin-right: 48px ;
+        margin-left: 33px;
+        margin-right: 48px;
         margin-bottom: 30px;
         margin-top: 29px;
         margin-bottom: 15px;
@@ -1441,19 +1451,20 @@ button {
         content: "\e900";
         font-size: 70px;
         text-align: center;
-        margin-top: 29px ;
+        margin-top: 29px;
         margin-bottom: 29px;
-        margin-left: 42px ;  
+        margin-left: 42px;
     }
 
     #main .conditions_main_block .align_block .icon-main {
         text-align: left;
         margin: 29px 0px 33px 29px;
     }
-    
+
     #main .conditions_main_block .align_block {
         display: inline-block;
     }
+
     /* conditions of participation end */
 
     /* header start */
@@ -1497,24 +1508,24 @@ button {
     #we-provide .we-provide__container .we-provide__cards-box .cards-item:last-child {
         margin-right: 0;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
         display: block;
         margin-bottom: 40px;
         font-size: 4.0625rem;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper {
         position: relative;
         width: 300px;
         margin-bottom: 30px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
         width: 291px;
-        background: repeating-linear-gradient(90deg, #000A24 0 3px,#0000 0 12px)
+        background: repeating-linear-gradient(90deg, #000A24 0 3px, #0000 0 12px)
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
         max-width: 300px;
         font-family: 'Ubuntu Regular';
@@ -1527,7 +1538,7 @@ button {
         width: 940px;
         height: 528px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
         width: 940px;
         height: 528px;
@@ -1571,93 +1582,93 @@ button {
         width: 460px;
         height: 421px;
         float: right;
-      }
-    
-      #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
-        margin: 0px 42px 50px 42px ;
-        width: 380px ;
+    }
+
+    #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
+        margin: 0px 42px 50px 42px;
+        width: 380px;
         height: 538px;
         float: left;
-       }
-    
+    }
+
     #main .conditions_main_block .conditions-line {
         width: 940px;
         margin-left: 42px;
         margin-right: 42px;
-        background:
-            repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
-        }
-      
-    #main .conditions_main_block {
-          background-color: var(--white);
-          width: 1024px;
-          height: auto;
-          margin: 0 auto ;
+        background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     }
-    
+
+    #main .conditions_main_block {
+        background-color: var(--white);
+        width: 1024px;
+        height: auto;
+        margin: 0 auto;
+    }
+
     #main .conditions_main_block .conditions-text-1 {
-          font-family: 'Ubuntu Regular';
-          font-size: 20px;
-          font-style: normal;
-          color: #000A24 ;
-          line-height: 22.68px;
-          margin-top: 50px;
-          margin-bottom: 30px;
-          margin-left: 42px;
-          margin-right: 100px;
-          width: 380px;
-          height: auto;
-          float: right;
-          text-align: justify;
-          line-height: 32.4px;
-      }
-      
+        font-family: 'Ubuntu Regular';
+        font-size: 20px;
+        font-style: normal;
+        color: #000A24;
+        line-height: 22.68px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 42px;
+        margin-right: 100px;
+        width: 380px;
+        height: auto;
+        float: right;
+        text-align: justify;
+        line-height: 32.4px;
+    }
+
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-text-2 {
-          font-family: 'Ubuntu Regular';
-          font-size: 20px;
-          font-style: normal;
-          color: #000A24 ;
-          line-height: 22.68px;
-          margin: 45px 42px 50px 42px;
-          width: 460px;
-          background-color: var(--white);
-          float:right;
-          text-align: justify; 
-          line-height: 32.4px;
-      }
-      
+        font-family: 'Ubuntu Regular';
+        font-size: 20px;
+        font-style: normal;
+        color: #000A24;
+        line-height: 22.68px;
+        margin: 45px 42px 50px 42px;
+        width: 460px;
+        background-color: var(--white);
+        float: right;
+        text-align: justify;
+        line-height: 32.4px;
+    }
+
     #main .conditions_main_block .conditions-align_block .conditions-text-3 {
-          font-family: 'Ubuntu Bold';
-          font-size: 15px;
-          font-style: normal;
-          color: #000A24 ;
-          line-height: 25.92px;
-          margin-left: 33px ;
-          margin-right: 48px ;
-          margin-bottom: 30px;
-          margin-top: 29px;
-          margin-bottom: 15px;
-          line-height: 25.92px;
-          text-align: center;
-      }
-    
+        font-family: 'Ubuntu Bold';
+        font-size: 15px;
+        font-style: normal;
+        color: #000A24;
+        line-height: 25.92px;
+        margin-left: 33px;
+        margin-right: 48px;
+        margin-bottom: 30px;
+        margin-top: 29px;
+        margin-bottom: 15px;
+        line-height: 25.92px;
+        text-align: center;
+    }
+
     #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
-          content: "\e900";
-          font-size: 70px;
-          text-align: center;
-          margin-top: 29px ;
-          margin-bottom: 29px;
-          margin-left: 42px ;  
-      }
-    
-     #main .conditions_main_block .conditions-align_block .conditions-icon-main {
+        content: "\e900";
+        font-size: 70px;
+        text-align: center;
+        margin-top: 29px;
+        margin-bottom: 29px;
+        margin-left: 42px;
+    }
+
+    #main .conditions_main_block .conditions-align_block .conditions-icon-main {
         text-align: left;
         margin: 29px 33px 33px 29px;
-     }
-       
-     #main .conditions_main_block .conditions-align_block {
+    }
+
+    #main .conditions_main_block .conditions-align_block {
         display: inline-block;
-     }
+    }
+
     /* conditions of participation end */
 
     /* partners start */
@@ -1696,6 +1707,7 @@ button {
     #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:nth-child(-n+3) {
         margin-top: 10px;
     }
+
     /* specialities end */
 
     /* footer start */
@@ -1885,6 +1897,7 @@ button {
         font-size: 18px;
         margin: 0;
     }
+
     /* footer end */
 
     /* modal windows start */
