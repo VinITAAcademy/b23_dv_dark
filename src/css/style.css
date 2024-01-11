@@ -168,6 +168,101 @@ button {
 }
 
 /* header start */
+#header .fixed-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: transparent;
+}
+
+#header .navbar {
+    padding: 0px;
+}
+
+#header .fixed-top .container-fluid {
+    padding: 0px;
+
+}
+
+#header .navbar-brand {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+}
+
+#header .navbar .header-logo-intita {
+    width: 73px;
+    height: 22px;
+    margin-top: 23px;
+    margin-left: 31px;
+}
+
+#header .line-logo {
+    border-top: var(--border-width) solid;
+    border-style: dotted;
+    width: 76px;
+    margin-top: 2px;
+    margin-left: 26px;
+    opacity: .25;
+    border-color: white;
+}
+
+#header .navbar-brand .header-logo-robota-molodi {
+    width: 63px;
+    height: 15px;
+    margin-left: 26px;
+    margin-top: -37px;
+}
+
+#header .flag-div {
+    display: none;
+}
+
+#header .navbar-toggler {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--background);
+    margin-top: -10px;
+    margin-right: 25px;
+}
+
+#header .navbar-toggler-icon_1 {
+    background-image: none;
+    width: 16px;
+    height: 2px;
+    margin-bottom: 4px;
+    margin-left: 6px;
+    background-color: var(--button-active-bg);
+    margin-top: 8px;
+}
+
+#header .navbar-toggler-icon_2 {
+    background-image: none;
+    width: 16px;
+    height: 2px;
+    margin-bottom: 3px;
+    margin-left: 6px;
+    background-color: var(--button-active-bg);
+    margin-top: 0px;
+}
+
+#header .navbar-toggler-icon_3 {
+    background-image: none;
+    width: 16px;
+    height: 2px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+    margin-left: 6px;
+    background-color: var(--button-active-bg);
+}
+
 /* header end */
 
 /* quote start */
@@ -283,7 +378,6 @@ button {
     height: 210px;
     width: 375px;
 }
-
 /* we provide end */
 
 /* registration section start */
@@ -847,15 +941,14 @@ button {
 /* footer end */
 
 /* modal windows start */
-
 #succesModal .succes_modal_container {
     width: 375px !important;
 }
 
-#succesModal .modal-dialog .succes_modal_content {
+#succesModal .succes_modal_container .modal-content .succes_modal_content {
     position: relative;
     width: 375px;
-    padding: 113px 41px 50px 42px;
+    padding: 113px 40px 50px 40px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -863,27 +956,24 @@ button {
     background-color: var(--white);
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_title {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_title {
     margin: 0;
     color: var(--сolor-black);
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
-    font-family: 'Ubuntu';
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_description {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_description {
     margin-bottom: 0;
     color: var(--сolor-black);
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-top: 26px;
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_button {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_button {
     margin-top: 82px;
     height: 53px;
     width: 270px;
@@ -894,20 +984,14 @@ button {
     line-height: normal;
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_close {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_close  {
     cursor: pointer;
     position: absolute;
     top: 8px;
     right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 22px;
-    height: 22px;
+    font-size: 30px;
     border-radius: 4px;
-    background: transparent;
 }
-
 /* modal windows end */
 
 /* 404 start */
@@ -916,10 +1000,99 @@ button {
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
 
+
 @media (min-width: 768px) {
+
     /* loader start */
     /* loader end */
+    /* header start */
+    #header .header-logo-mobile {
+        display: none;
+    }
 
+    #header .flag-div {
+        display: none;
+    }
+
+    #header .navbar-brand {
+        margin-top: 25px;
+        margin-left: 25px;
+        width: 139px;
+        height: 86px;
+        background-image: url(../images/logo_header_tablet.png);
+    }
+
+    #header .navbar-brand .header-logo-intita {
+        width: 128px;
+        height: 38px;
+        margin-top: 1px;
+        margin-left: 6px;
+    }
+
+    #header .line-logo {
+        border-top: var(--border-width) solid;
+        border-style: dotted;
+        width: 130px;
+        margin-top: 10px;
+        margin-left: 7px;
+        opacity: .25;
+        border-color: white;
+
+    }
+
+    #header .navbar-brand .header-logo-robota-molodi {
+        width: 132px;
+        height: 33px;
+        margin-left: 2px;
+        margin-top: -20px;
+    }
+
+    #header .navbar .navbar-toggler {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        background-color: var(--background);
+        margin-top: -9px;
+        margin-right: 25px;
+    }
+
+    #header .navbar .navbar-toggler .navbar-toggler-icon_1 {
+        background-image: none;
+        width: 32px;
+        height: 3px;
+        margin-bottom: 4px;
+        margin-left: 8px;
+        background-color: var(--button-active-bg);
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+
+    #header .navbar .navbar-toggler .navbar-toggler-icon_2 {
+        background-image: none;
+        width: 32px;
+        height: 3px;
+        margin-bottom: 5px;
+        margin-left: 8px;
+        background-color: var(--button-active-bg);
+        margin-top: 4px;
+        border-radius: 3px;
+    }
+
+    #header .navbar .navbar-toggler .navbar-toggler-icon_3 {
+        background-image: none;
+        width: 32px;
+        height: 3px;
+        margin-top: 3px;
+        margin-bottom: 4px;
+        margin-left: 8px;
+        background-color: var(--button-active-bg);
+        border-radius: 3px;
+    }
+
+    /* header end */
     /* hero section start */
     #hero .hero_main {
         min-height: 1024px;
@@ -1344,6 +1517,7 @@ button {
 
 }
 
+
 @media (min-width: 1024px) {
     /* loader start */
     /* loader end */
@@ -1468,6 +1642,73 @@ button {
     /* conditions of participation end */
 
     /* header start */
+    #header .header-logo-mobile {
+        display: none;
+    }
+
+    #header .navbar-brand {
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    #header .nav-link {
+        color: var(--white);
+        font-family: 'Ubuntu';
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    #header .navbar .navbar-toggler {
+        display: none;
+    }
+
+    #header .navbar .navbar-toggler .nav-link:hover {
+        color: var(--icon-hover);
+        font-family: 'Ubuntu';
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    #header .navbar .navbar-toggler {
+        display: none;
+    }
+
+    #header .navbar .navbar-nav {
+        width: 600px;
+        height: 21px;
+        margin-top: 9px;
+        margin-left: 111px;
+    }
+
+    #header .navbar .navbar-nav .nav-item-1 {
+        width: 150px;
+        height: 21px;
+    }
+
+    #header .navbar .navbar-nav .nav-item-2 {
+        width: 150px;
+        height: 21px;
+        padding-left: 7px;
+    }
+
+    #header .navbar .navbar-nav .nav-item-3 {
+        width: 150px;
+        height: 21px;
+        padding-left: 15px;
+    }
+
+    #header .navbar .navbar-nav .nav-item-4 {
+        width: 150px;
+        height: 21px;
+        margin-left: -15px;
+    }
+
+    #header .navbar .flag-div {
+        margin-top: 25px;
+        margin-right: 32px;
+        display: block;
+    }
+
     /* header end */
 
     /* quote start */
