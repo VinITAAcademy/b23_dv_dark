@@ -180,7 +180,7 @@ button {
     padding: 0px;
 }
 
-#header .container-fluid {
+#header .fixed-top .container-fluid {
     padding: 0px;
 
 }
@@ -192,12 +192,13 @@ button {
     flex-direction: column;
 }
 
-#header .navbar-brand .header-logo-intita {
+#header .navbar .header-logo-intita {
     width: 73px;
     height: 22px;
     margin-top: 23px;
     margin-left: 31px;
 }
+
 #header .line-logo {
     border-top: var(--border-width) solid;
     border-style: dotted;
@@ -206,14 +207,15 @@ button {
     margin-left: 26px;
     opacity: .25;
     border-color: white;
-
 }
+
 #header .navbar-brand .header-logo-robota-molodi {
     width: 63px;
     height: 15px;
     margin-left: 26px;
     margin-top: -37px;
 }
+
 #header .flag-div {
     display: none;
 }
@@ -347,7 +349,7 @@ button {
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
     width: 220px;
     height: 1px;
-    background: repeating-linear-gradient(90deg, #000A24 0 2px,#0000 0 8px)
+    background: repeating-linear-gradient(90deg, #000A24 0 2px, #0000 0 8px)
 }
 
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-right {
@@ -375,6 +377,7 @@ button {
     height: 210px;
     width: 375px;
 }
+
 /* we provide end */
 
 /* registration section start */
@@ -595,12 +598,14 @@ button {
         height: 86px;
         background-image: url(../images/logo_header_tablet.png);
     }
+
     #header .navbar-brand .header-logo-intita {
         width: 128px;
         height: 38px;
         margin-top: 1px;
         margin-left: 6px;
     }
+
     #header .line-logo {
         border-top: var(--border-width) solid;
         border-style: dotted;
@@ -609,15 +614,17 @@ button {
         margin-left: 7px;
         opacity: .25;
         border-color: white;
-    
+
     }
+
     #header .navbar-brand .header-logo-robota-molodi {
         width: 132px;
         height: 33px;
         margin-left: 2px;
         margin-top: -20px;
     }
-    #header .navbar-toggler {
+
+    #header .navbar .navbar-toggler {
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -629,7 +636,7 @@ button {
         margin-right: 25px;
     }
 
-    #header .navbar-toggler-icon_1 {
+    #header .navbar .navbar-toggler .navbar-toggler-icon_1 {
         background-image: none;
         width: 32px;
         height: 3px;
@@ -640,7 +647,7 @@ button {
         border-radius: 3px;
     }
 
-    #header .navbar-toggler-icon_2 {
+    #header .navbar .navbar-toggler .navbar-toggler-icon_2 {
         background-image: none;
         width: 32px;
         height: 3px;
@@ -651,7 +658,7 @@ button {
         border-radius: 3px;
     }
 
-    #header .navbar-toggler-icon_3 {
+    #header .navbar .navbar-toggler .navbar-toggler-icon_3 {
         background-image: none;
         width: 32px;
         height: 3px;
@@ -727,7 +734,7 @@ button {
         width: 412px;
         margin-bottom: 40px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
         width: 406px;
     }
@@ -745,7 +752,7 @@ button {
         width: 768px;
         height: 431px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
         width: 768px;
         height: 431px;
@@ -994,48 +1001,52 @@ button {
         font-weight: 500;
     }
 
-    #header .nav-link:hover {
+    #header .navbar .navbar-toggler {
+        display: none;
+    }
+
+    #header .navbar .navbar-toggler .nav-link:hover {
         color: var(--icon-hover);
         font-family: 'Ubuntu';
         font-size: 18px;
         font-weight: 500;
     }
 
-    #header .navbar-toggler {
+    #header .navbar .navbar-toggler {
         display: none;
     }
 
-    #header .navbar-nav {
+    #header .navbar .navbar-nav {
         width: 600px;
         height: 21px;
         margin-top: 9px;
         margin-left: 111px;
     }
 
-    #header .nav-item-1 {
+    #header .navbar .navbar-nav .nav-item-1 {
         width: 150px;
         height: 21px;
     }
 
-    #header .nav-item-2 {
+    #header .navbar .navbar-nav .nav-item-2 {
         width: 150px;
         height: 21px;
         padding-left: 7px;
     }
 
-    #header .nav-item-3 {
+    #header .navbar .navbar-nav .nav-item-3 {
         width: 150px;
         height: 21px;
         padding-left: 15px;
     }
 
-    #header .nav-item-4 {
+    #header .navbar .navbar-nav .nav-item-4 {
         width: 150px;
         height: 21px;
         margin-left: -15px;
     }
 
-    #header .flag-div {
+    #header .navbar .flag-div {
         margin-top: 25px;
         margin-right: 32px;
         display: block;
@@ -1081,24 +1092,24 @@ button {
     #we-provide .we-provide__container .we-provide__cards-box .cards-item:last-child {
         margin-right: 0;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__icomoon {
         display: block;
         margin-bottom: 40px;
         font-size: 4.0625rem;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper {
         position: relative;
         width: 300px;
         margin-bottom: 30px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
         width: 291px;
-        background: repeating-linear-gradient(90deg, #000A24 0 3px,#0000 0 12px)
+        background: repeating-linear-gradient(90deg, #000A24 0 3px, #0000 0 12px)
     }
-    
+
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
         max-width: 300px;
         font-family: 'Ubuntu Regular';
@@ -1111,7 +1122,7 @@ button {
         width: 940px;
         height: 528px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
         width: 940px;
         height: 528px;
