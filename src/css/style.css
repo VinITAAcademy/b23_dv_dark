@@ -651,15 +651,14 @@ button {
 /* footer end */
 
 /* modal windows start */
-
 #succesModal .succes_modal_container {
     width: 375px !important;
 }
 
-#succesModal .modal-dialog .succes_modal_content {
+#succesModal .succes_modal_container .modal-content .succes_modal_content {
     position: relative;
     width: 375px;
-    padding: 113px 41px 50px 42px;
+    padding: 113px 40px 50px 40px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -667,27 +666,24 @@ button {
     background-color: var(--white);
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_title {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_title {
     margin: 0;
     color: var(--сolor-black);
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
-    font-family: 'Ubuntu';
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_description {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_description {
     margin-bottom: 0;
     color: var(--сolor-black);
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-top: 26px;
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_button {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_button {
     margin-top: 82px;
     height: 53px;
     width: 270px;
@@ -698,20 +694,14 @@ button {
     line-height: normal;
 }
 
-#succesModal .modal-dialog .succes_modal_content .succes_modal_close {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_close  {
     cursor: pointer;
     position: absolute;
     top: 8px;
     right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 22px;
-    height: 22px;
+    font-size: 30px;
     border-radius: 4px;
-    background: transparent;
 }
-
 /* modal windows end */
 
 /* 404 start */
