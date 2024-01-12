@@ -31,7 +31,7 @@
     --button-primary-hover-bg: #02257F;
     --button-disabled-bg: #61677A;
     --button-disabled-text: #D8D9DA;
-    ;
+;
     --button-hover-bg: #02257F;
     --button-active-bg: #fff;
     --icon-hover: #7FA2FB;
@@ -332,8 +332,7 @@ button {
     margin-left: 43px;
     margin-right: 43px;
     height: 1.5px;
-    background:
-        repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+    background: repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
 }
 
 #main .conditions_main_block .conditions-vertical_padding_block {
@@ -851,17 +850,17 @@ button {
 
     /* conditions of participation start */
     #main .conditions_main_block .conditions-img1 {
-        max-width: 768px ;
+        max-width: 768px;
         max-height: 572px;
     }
 
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
-        max-width: 768px ;
+        max-width: 768px;
         max-height: 724px;
     }
 
     #main .conditions_main_block .conditions-line {
-        width: 672px ;
+        width: 672px;
         margin-left: 43px;
         margin-right: 43px;
         height: 1.5px;
@@ -894,7 +893,7 @@ button {
         font-family: 'Ubuntu Medium';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 42px 39px 42px 39px;
         line-height: 162%;
@@ -904,7 +903,7 @@ button {
         font-family: 'Ubuntu Medium';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 50px 48px 50px 48px;
         background-color: var(--white);
@@ -915,10 +914,10 @@ button {
         font-family: 'Ubuntu Bold';
         font-size: 24px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
-        margin-left: 48px ;
-        margin-right: 48px ;
+        margin-left: 48px;
+        margin-right: 48px;
         margin-bottom: 53px;
         margin-top: 15px;
         text-align: center;
@@ -1239,8 +1238,8 @@ button {
     }
 
     #main .conditions_main_block .conditions-vertical_padding_block .conditions-img2 {
-        margin: 0px 42px 50px 42px ;
-        width: 380px ;
+        margin: 0px 42px 50px 42px;
+        width: 380px;
         height: 538px;
         float: left;
     }
@@ -1256,14 +1255,14 @@ button {
         background-color: var(--white);
         width: 1024px;
         height: auto;
-        margin: 0 auto ;
+        margin: 0 auto;
     }
 
     #main .conditions_main_block .conditions-text-1 {
         font-family: 'Ubuntu Regular';
         font-size: 20px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin-top: 50px;
         margin-bottom: 30px;
@@ -1280,7 +1279,7 @@ button {
         font-family: 'Ubuntu Regular';
         font-size: 20px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 22.68px;
         margin: 45px 42px 50px 42px;
         width: 460px;
@@ -1294,10 +1293,10 @@ button {
         font-family: 'Ubuntu Bold';
         font-size: 15px;
         font-style: normal;
-        color: #000A24 ;
+        color: #000A24;
         line-height: 25.92px;
-        margin-left: 33px ;
-        margin-right: 48px ;
+        margin-left: 33px;
+        margin-right: 48px;
         margin-bottom: 30px;
         margin-top: 29px;
         margin-bottom: 15px;
@@ -1309,9 +1308,9 @@ button {
         content: "\e900";
         font-size: 70px;
         text-align: center;
-        margin-top: 29px ;
+        margin-top: 29px;
         margin-bottom: 29px;
-        margin-left: 42px ;
+        margin-left: 42px;
     }
 
     #main .conditions_main_block .conditions-align_block .conditions-icon-main {
