@@ -865,8 +865,7 @@ button {
         margin-left: 43px;
         margin-right: 43px;
         height: 1.5px;
-        background:
-            repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+        background: repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px);
     }
 
     #main .conditions_main_block {
@@ -1250,8 +1249,7 @@ button {
         width: 940px;
         margin-left: 42px;
         margin-right: 42px;
-        background:
-            repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px)
+        background: repeating-linear-gradient(90deg, black 0 5px,#0000 0 10px);
     }
 
     #main .conditions_main_block {
