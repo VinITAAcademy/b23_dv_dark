@@ -744,6 +744,7 @@ button {
     font-size: 12px;
     margin: 0;
 }
+
 /* footer end */
 
 /* modal windows start */
@@ -790,7 +791,7 @@ button {
     line-height: normal;
 }
 
-#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_close  {
+#succesModal .succes_modal_container .modal-content .succes_modal_content .succes_modal_close {
     cursor: pointer;
     position: absolute;
     top: 8px;
@@ -798,6 +799,7 @@ button {
     font-size: 30px;
     border-radius: 4px;
 }
+
 /* modal windows end */
 
 /* 404 start */
@@ -1238,6 +1240,7 @@ button {
     #footer .footer-second-section .footer-second-section-text {
         font-size: 16px;
     }
+
     /* footer end */
 
     /* modal windows start */
@@ -1743,6 +1746,7 @@ button {
         font-size: 18px;
         margin: 0;
     }
+
     /* footer end */
 
     /* modal windows start */
