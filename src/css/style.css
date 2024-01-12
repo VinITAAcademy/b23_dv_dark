@@ -108,8 +108,127 @@ li {
 
 /* conditions of participation start */
 /* conditions of participation end */
+#partners .partners-main .partners-image{
+display: flex;
+flex-direction: column;
+}
+#partners .partners-main .partners-content .partners-content-text{
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+background: #000A24;
+color: #FFF;
+font-family: Ubuntu;
+font-size: 14px;
+font-style: italic;
+font-weight: 400;
+line-height: 162%; /* 22.68px */
+letter-spacing: 0.28px;
+}
+#partners .partners-main .partners-content .partners-content-text .partners-button{
+display: inline-flex;
+border-radius: 6px;
+background: #083CC0;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-family: Ubuntu;
+}
 
-/* partners start */
+
+/*.left-block, 
+.right-block {
+flex: 1;
+box-sizing: border-box;
+}
+
+.left-block {
+order: 1; /* Змінити порядок блоків для мобільних пристроїв */
+/*width: 375px;
+height: 272px;
+flex-shrink: 0;
+}
+
+.right-block {
+order: 2; /* Змінити порядок блоків для мобільних пристроїв */
+/*width: 375px;
+height: 588px;
+flex-shrink: 0;
+background: #000A24;
+color: #FFF;
+font-family: Ubuntu;
+font-size: 14px;
+font-style: italic;
+font-weight: 400;
+line-height: 162%; /* 22.68px */
+/*letter-spacing: 0.28px;
+}
+.button{
+width: 229px;
+height: 48px;
+flex-shrink: 0;
+display: inline-flex;
+border-radius: 6px;
+background: #083CC0;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-family: Ubuntu;
+}
+
+    .left-block, .right-block {
+        width: 100%; /* На повний екран на мобільних пристроях */
+       /* order: initial; /* Скинути порядок блоків */
+    
+
+/*.partners-image {
+    
+    
+
+}
+.partners{
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+.partners-main {
+  
+
+    }
+    
+.partners-content {
+   color: #fff;
+   font-family: Ubuntu;
+   position: relative;
+    }
+    .hr{
+        width: 302px;
+
+    }
+  .button{
+   /* display: inline-block;
+    padding: 10px 20px;
+    margin-top: 1em;
+    border-radius: 5px;
+    user-select: none;
+    line-height: 1,5;
+    font-size: item;
+    color: white;
+    background-color: blue;
+    border: 1px solid blue;*/
+  /*  display: inline-flex;
+    padding: 13px 53px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #083CC0;
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 12px;
+
+  }
 /* partners end */
 
 /* logo of partners start */
@@ -130,7 +249,7 @@ li {
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
 
-@media (min-width: 786px){
+@media (min-width: 768px){
 /* loader start */
 /* loader end */
 
@@ -150,6 +269,7 @@ li {
 /* conditions of participation end */
 
 /* partners start */
+
 /* partners end */
 
 /* logo of partners start */
