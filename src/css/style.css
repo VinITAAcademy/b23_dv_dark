@@ -1452,6 +1452,9 @@ button {
     /* registration section end */
 
     /* conditions of participation start */
+    #main {
+        background-color: var(--white);
+    }
     #main .conditions_main_block .conditions-img1 {
         margin: 50px 42px 0px 0px;
         width: 460px;
