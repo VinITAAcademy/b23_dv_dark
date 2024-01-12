@@ -383,6 +383,7 @@ button {
     width: 375px;
     height: 210px;
 }
+
 /* we provide end */
 
 /* registration section start */
@@ -539,7 +540,8 @@ button {
     font-size: 20px;
 }
 
-#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev, .owl-next {
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev,
+.owl-next {
     position: absolute;
     top: 8px;
 }
@@ -619,6 +621,7 @@ button {
     width: 232px;
     padding-top: 6px;
 }
+
 /* logo of partners end */
 
 /* specialities start */
@@ -1299,7 +1302,7 @@ button {
         width: 768px;
         height: 431px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
         width: 768px;
         height: 431px;
@@ -1434,39 +1437,41 @@ button {
         min-height: 195px;
         padding-left: 13px;
     }
-    
+
     #partners-logos .partners-logos-mobile-tablet .container {
         position: absolute;
         width: 576px;
         height: 195px;
         padding-top: 53px;
     }
-    
+
     #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev {
         left: -77px;
         font-size: 50px;
     }
-    
+
     #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-next {
         right: -65px;
         font-size: 50px;
     }
-    
-    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev, .owl-next {
+
+    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev,
+    .owl-next {
         top: 20px;
     }
-    
+
     #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev img {
         width: 50px;
     }
-    
+
     #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-next img {
         width: 50px;
     }
-    
+
     #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .card .card-img-top {
         width: 260px;
     }
+
     /* logo of partners end */
 
     /* specialities start */
@@ -1946,11 +1951,12 @@ button {
         width: 940px;
         height: 528px;
     }
-    
+
     #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
         width: 940px;
         height: 528px;
     }
+
     /* we provide end */
 
     /* registration section start */
@@ -2089,6 +2095,7 @@ button {
     #partners-logos .partners-logos-desktop .partners-logos-container {
         display: block;
     }
+
     /* logo of partners end */
 
     /* specialities start */

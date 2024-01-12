@@ -22,24 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-// start modal burger menu
-
-//end modal burger menu
-
 
 //start we provide video poster
-/* $('.slick-test').slick(); */
-
-
-var videos = $(".video");
+let videos = $(".video");
 
 videos.on("click", function () {
-    var elm = $(this),
+    let elm = $(this),
         conts = elm.contents(),
         le = conts.length,
         ifr = null;
 
-    for (var i = 0; i < le; i++) {
+    for (let i = 0; i < le; i++) {
         if (conts[i].nodeType == 8) ifr = conts[i].textContent;
     }
 
@@ -49,12 +42,12 @@ videos.on("click", function () {
 
 var videos2 = $(".video_with_autoplay");
 videos2.on("click", function () {
-    var elm = $(this),
+    let elm = $(this),
         conts = elm.contents(),
         le = conts.length,
         ifr = null;
 
-    for (var i = 0; i < le; i++) {
+    for (let i = 0; i < le; i++) {
         if (conts[i].nodeType == 8) ifr = conts[i].textContent;
     }
 
@@ -63,14 +56,14 @@ videos2.on("click", function () {
     $("#video1")[0].src += "&autoplay=1";
     
 });
-//start we provide video poster
+//end we provide video poster
 
 
-//start logo of partners
+//start partners' logos
 $(".owl-carousel").owlCarousel({
     items: 2,
     nav: true,
     loop: true,
-    navText: ["<div class='icon-arrow-left'></div>","<div class='icon-arrow-right'></div>"]
+    navText: ["<div class='icon-arrow-left-logos'></div>","<div class='icon-arrow-right-logos'></div>"]
 });
-//end logo of partners
+//end partners' logos
