@@ -373,9 +373,14 @@ button {
     width: 375px;
 }
 
-#we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
-    height: 210px;
+#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay .video-poster {
     width: 375px;
+    height: 210px;
+}
+
+#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+    width: 375px;
+    height: 210px;
 }
 /* we provide end */
 
@@ -1094,7 +1099,12 @@ button {
         height: 431px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay .video-poster {
+        width: 768px;
+        height: 431px;
+    }
+    
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
         width: 768px;
         height: 431px;
     }
@@ -1564,11 +1574,15 @@ button {
         height: 528px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay .video-poster {
         width: 940px;
         height: 528px;
     }
-
+    
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+        width: 940px;
+        height: 528px;
+    }
     /* we provide end */
 
     /* registration section start */
