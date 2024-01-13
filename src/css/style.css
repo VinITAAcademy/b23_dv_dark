@@ -374,9 +374,14 @@ button {
     width: 375px;
 }
 
-#we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
-    height: 210px;
+#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay .video-poster {
     width: 375px;
+    height: 210px;
+}
+
+#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+    width: 375px;
+    height: 210px;
 }
 
 /* we provide end */
@@ -502,6 +507,121 @@ button {
 /* partners end */
 
 /* logo of partners start */
+#partners-logos {
+    background-color: var(--white);
+}
+
+#partners-logos .partners-logos-mobile-tablet {
+    position: relative;
+    width: 375px;
+    min-height: 114px;
+    display: flex;
+    justify-content: center;
+    padding-left: 11px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container {
+    position: absolute;
+    width: 284px;
+    height: 114px;
+    padding: 0;
+    padding-top: 36.17px;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev {
+    left: -35px;
+    font-size: 20px;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-next {
+    right: -24px;
+    font-size: 20px;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev,
+.owl-next {
+    position: absolute;
+    top: 8px;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev img {
+    width: 20px;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-next img {
+    width: 20px;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .card {
+    border: 0;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .card .card-img-top {
+    width: 120px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+/* desktop */
+
+#partners-logos .partners-logos-desktop .partners-logos-container {
+    display: none;
+    max-width: 694px;
+    min-height: 211px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#partners-logos .partners-logos-desktop .partners-logos-container .first-line-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-top: 27px;
+}
+
+#partners-logos .partners-logos-container .first-line-container .card-item .it-academy-logo {
+    width: 167px;
+    padding-top: 10px;
+}
+
+#partners-logos .partners-logos-container .first-line-container .card-item .yeps-logo {
+    width: 169px;
+    padding-top: 19px;
+}
+
+#partners-logos .partners-logos-container .first-line-container .card-item .kava-drive-logo {
+    width: 258px;
+}
+
+#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .intita-partners-logo {
+    width: 187px;
+    margin-right: 57px;
+}
+
+#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .bayraktar-logo {
+    width: 115px;
+    margin-right: 78px;
+    padding-top: 21px;
+}
+
+#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .robota-molodi-partners-logo {
+    width: 232px;
+    padding-top: 6px;
+}
+
 /* logo of partners end */
 
 /* specialities start */
@@ -1189,7 +1309,12 @@ button {
         height: 431px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay .video-poster {
+        width: 768px;
+        height: 431px;
+    }
+
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
         width: 768px;
         height: 431px;
     }
@@ -1317,6 +1442,46 @@ button {
     /* partners end */
 
     /* logo of partners start */
+    #partners-logos .partners-logos-mobile-tablet {
+        width: 768px;
+        min-height: 195px;
+        padding-left: 13px;
+    }
+
+    #partners-logos .partners-logos-mobile-tablet .container {
+        position: absolute;
+        width: 576px;
+        height: 195px;
+        padding-top: 53px;
+    }
+
+    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev {
+        left: -77px;
+        font-size: 50px;
+    }
+
+    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-next {
+        right: -65px;
+        font-size: 50px;
+    }
+
+    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev,
+    .owl-next {
+        top: 20px;
+    }
+
+    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-prev img {
+        width: 50px;
+    }
+
+    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .owl-nav .owl-next img {
+        width: 50px;
+    }
+
+    #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .card .card-img-top {
+        width: 260px;
+    }
+
     /* logo of partners end */
 
     /* specialities start */
@@ -1803,7 +1968,12 @@ button {
         height: 528px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .we-provide__video {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay .video-poster {
+        width: 940px;
+        height: 528px;
+    }
+
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
         width: 940px;
         height: 528px;
     }
@@ -1939,6 +2109,14 @@ button {
     /* partners end */
 
     /* logo of partners start */
+    #partners-logos .partners-logos-mobile-tablet {
+        display: none;
+    }
+
+    #partners-logos .partners-logos-desktop .partners-logos-container {
+        display: block;
+    }
+
     /* logo of partners end */
 
     /* specialities start */

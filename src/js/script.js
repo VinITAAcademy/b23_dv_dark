@@ -22,6 +22,48 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-// start modal burger menu
 
-//end modal burger menu
+//start we provide video poster
+let videos = $(".video");
+
+videos.on("click", function () {
+    let elm = $(this),
+        conts = elm.contents(),
+        le = conts.length,
+        ifr = null;
+
+    for (let i = 0; i < le; i++) {
+        if (conts[i].nodeType == 8) ifr = conts[i].textContent;
+    }
+
+    elm.addClass("player").html(ifr);
+    elm.off("click");
+});
+
+var videos2 = $(".video_with_autoplay");
+videos2.on("click", function () {
+    let elm = $(this),
+        conts = elm.contents(),
+        le = conts.length,
+        ifr = null;
+
+    for (let i = 0; i < le; i++) {
+        if (conts[i].nodeType == 8) ifr = conts[i].textContent;
+    }
+
+    elm.addClass("player").html(ifr);
+    elm.off("click");
+    $("#video1")[0].src += "&autoplay=1";
+    
+});
+//end we provide video poster
+
+
+//start partners' logos
+$(".owl-carousel").owlCarousel({
+    items: 2,
+    nav: true,
+    loop: true,
+    navText: ["<div class='icon-arrow-left-logos'></div>","<div class='icon-arrow-right-logos'></div>"]
+});
+//end partners' logos
