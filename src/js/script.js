@@ -1,17 +1,22 @@
 // start loader
+
+//imitation of loading. uncomment for test
+
+/*
 document.onreadystatechange = function (e) {
     if (document.readyState === 'complete') {
         let animationPreload = document.querySelectorAll('.loader-block')[0];
         animationPreload.style.visibility = 'visible';
         animationPreload.style.opacity = '1';
 
-        //imitation of loading
         let timerId = setTimeout(function () {
             animationPreload.style.opacity = '0';
             animationPreload.style.visibility = 'hidden';
-        }, 3000);
+        }, 2000); 
     }
 };
+*/
+
 // end loader
 
 // start specialities
