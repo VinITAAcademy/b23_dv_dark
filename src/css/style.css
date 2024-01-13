@@ -168,29 +168,8 @@ button {
 
 /* desktop contacts block start */
 #contacts-block {
-    position: absolute;
-    right: 0;
-    padding-top: 176px;
     display: none;
-    width: 137px;
-    height: 768px;
-    background-color: #515558;
 }
-
-#contacts-block .contacts-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 35px;
-    height: 495px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#contacts-block .contacts-box .contacts-block-icon {
-    font-size: 35px;
-}
-
 /* desktop contacts block end */
 
 /* header start */
@@ -1265,7 +1244,6 @@ button {
     #contacts-block {
         display: none;
     }
-
     /* desktop contacts block end */
 
     /* quote start */
@@ -1747,12 +1725,35 @@ button {
     /* hero section end" */
 
     /* desktop contacts block start */
-    #contacts-block {
-        display: block;
+
+    /* body {
+        position: relative;
     }
-
-    /* desktop contacts block end */
-
+     */
+    #contacts-block {
+        position: absolute;
+        right: 0;
+        padding-top: 176px;
+        display: block;
+        width: 137px;
+        height: 768px;
+        background-color: #515558;
+    }
+    
+    #contacts-block .contacts-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35px;
+        height: 495px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #contacts-block .contacts-box .contacts-block-icon {
+        font-size: 35px;
+    }
+    
     /* conditions of participation start */
     #main .conditions_main_block .img1 {
         margin: 50px 42px 0px 0px;
