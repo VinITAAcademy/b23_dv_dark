@@ -1,6 +1,7 @@
+// start specialities
 document.addEventListener('DOMContentLoaded', function () {
-    let carouselBlock = document.querySelectorAll('.specialty-carousel-main-container')[0];
-    let carouselCards = document.querySelectorAll('.specialty-carousel-cards-container')[0];
+    let carouselBlock = document.querySelector('.specialty-carousel-main-container');
+    let carouselCards = document.querySelector('.specialty-carousel-cards-container');
     let carouselCard = document.querySelectorAll('.carousel-item');
     let screenWidth = window.screen.width;
     
@@ -22,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// end specialities
+
 // start modal burger menu
 
 //end modal burger menu
