@@ -379,7 +379,7 @@ button {
     height: 210px;
 }
 
-#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
     width: 375px;
     height: 210px;
 }
@@ -1314,7 +1314,7 @@ button {
         height: 431px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
         width: 768px;
         height: 431px;
     }
@@ -1973,7 +1973,7 @@ button {
         height: 528px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
         width: 940px;
         height: 528px;
     }
