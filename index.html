@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--"Meta Date-Start"-->
+    <meta name="author" content="ІНТІТА">
+    <meta name="title" content="Доброго вечора, ми з України!">
+    <meta name="description"
+        content="Програма працевлаштування постраждалих від війни">
+    <meta name="keywords"
+        content="Програма працевлаштування, війна в Україні, допомога ветеранам, допомога ВПО, навчання ІТ, Україна">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vinitaacademy.github.io/b23_dv_dark/">
+    <meta property="og:title" content="Доброго вечора, ми з України!">
+    <meta property="og:description"
+        content="Програма працевлаштування постраждалих від війни">
+    <meta property="og:image" content="https://vinitaacademy.github.io/b23_dv_dark/src/assets/images/hero-background.png">
     <!--"Meta Date-END"-->
 
     <!--"Favicon"-->
@@ -16,6 +29,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="src/css/icomoon.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
@@ -31,11 +46,11 @@
             <div class="container-fluid">
             <div class="navbar-brand">
                 <a href="https://intita.com/">  
-                <img class="header-logo-intita" src="./src/assets/images/Intita_logo.png" alt="logo_intita_img" >
+                    <img class="header-logo-intita" src="./src/assets/images/Intita_logo.png" alt="logo_intita_img" >
                 </a>  
                 <hr class="line-logo">
                 <a href="https://www.robotamolodi.org/">  
-                <img class="header-logo-robota-molodi" src="./src/assets/images/robota_molodi_logo.png" alt="logo_rm_img">
+                    <img class="header-logo-robota-molodi" src="./src/assets/images/robota_molodi_logo.png" alt="logo_rm_img">
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,25 +59,25 @@
             <span class="navbar-toggler-icon_3"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item-1">
-                    <a class="nav-link" href="#">Про програму</a>
-                </li>
-                <li class="nav-item-2">
-                    <a class="nav-link" href="#">Спеціальності</a>
-                </li>                  
-                 <li class="nav-item-3">
-                    <a class="nav-link" href="#">Партнери</a>
-                </li>                  
-                <li class="nav-item-4">
-                    <a class="nav-link" href="#">Контакти</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item-1">
+                        <a class="nav-link" href="#">Про програму</a>
+                    </li>
+                    <li class="nav-item-2">
+                        <a class="nav-link" href="#">Спеціальності</a>
+                    </li>                  
+                    <li class="nav-item-3">
+                        <a class="nav-link" href="#">Партнери</a>
+                    </li>                  
+                    <li class="nav-item-4">
+                        <a class="nav-link" href="#">Контакти</a>
+                    </li>
+                </ul>
             </div>    
             <div class="flag-div">
                 <a><img class="flag" src="./src/assets/images/flag_header.png" alt="flg"></a>
             </div>
-          </nav> 
+        </nav> 
     </header>
     <!--"header end"-->
 
@@ -77,8 +92,6 @@
                 </p>
                 <button class="hero_content_button button-primary" data-bs-toggle="modal"
                     data-bs-target="#registrationForm">Зареєструватися</button>
-
-
             </div>
         </section>
 
@@ -99,10 +112,8 @@
     <!-- "we provide start" -->
     <section id="we-provide" class="we-provide">
         <div class="we-provide__container">
-
             <!-- title -->
             <h2 class="we-provide__title">Ми забезпечуємо</h2>
-
             <!-- cards -->
             <div class="we-provide__cards-box">
                 <div class="we-provide__cards-item cards-item">
@@ -129,11 +140,13 @@
                     </div>
                     <p class="cards-item__text">повернення до повноцінного життя в свої міста, села в Україні</p>
                 </div>
-            </div>
-            
+            </div>     
             <!-- video -->
-            <div class="we-provide__video-wrapper">
-                <iframe class="we-provide__video" src="https://www.youtube.com/embed/pmrIlYBWP20?si=S8eRtAyXzzP5OIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="we-provide__video-wrapper">            
+                <div class="video_with_autoplay">
+                     <img class="video-poster" src="src/assets/images/we_provide/poster-desktop.svg">
+                    <!-- <iframe id="we-provide-video"  src="https://www.youtube.com/embed/pmrIlYBWP20?si=S8eRtAyXzzP5OIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
             </div>
         </div>
     </section>
@@ -164,17 +177,14 @@
         <div class="conditions_main_block">
             <img class="conditions-img1" src="src/assets/images/stand.png" alt="we stand with ukraine">
             <p class="conditions-text-1">Залучаємо фінансові, матеріальні ресурси та експертизу від країн, фондів, підприємств,
-                фізичних
-                осіб з-за кордону в Україну - як для прямої, так і непрямої підтримки програми, а відтак української армії і
+                фізичних осіб з-за кордону в Україну - як для прямої, так і непрямої підтримки програми, а відтак української армії і
                 українського народу.</p>
             <div class="conditions-vertical_padding_block">
                 <img class="conditions-img2" src="src/assets/images/flag.png" alt="flag">
                 <p class="conditions-text-2">Якнайбільше ресурсів залучатиметься в Україну, а не виводитиметься з неї. Перезапуститься
-                    та
-                    запрацює економіка, створюватимуться нові робочі місця для українців - особливо тих, що найбільше
+                    та запрацює економіка, створюватимуться нові робочі місця для українців - особливо тих, що найбільше
                     постраждали від війни росії проти України. А все це разом буде працювати на оборону, на стрімкий
-                    розвиток
-                    України, на персональний добробут кожного українця та його сім'ї.</p>
+                    розвиток України, на персональний добробут кожного українця та його сім'ї.</p>
             </div>
             <div class="conditions-align_block">
                 <div class="conditions-line"></div>
@@ -198,6 +208,71 @@
     <!--"partners end"-->
 
     <!--"logo of partners start"-->
+    <section id="partners-logos">
+        <!-- mobile and tablet version -->
+        <div class="partners-logos-mobile-tablet">
+            <div class="container">
+                <div class="owl-carousel">
+                    <div class="ms-2 me-2">
+                        <div class="card">
+                            <a href="https://www.yeps.me/" target="_blank"><img class="card-img-top" src="src/assets/images/partners_logos/logos/yeps-logo.svg" alt="YEPS logo"></a>
+                        </div>
+                    </div>
+                    <div class="ms-2 me-2">
+                        <div class="card">
+                            <a href="https://drone.intita.com/" target="_blank"><img class="card-img-top" src="src/assets/images/partners_logos/logos/bayraktar-logo.svg" alt="Bayraktar logo"></a>
+                        </div>
+                    </div>
+                    <div class="ms-2 me-2">
+                        <div class="card">
+                            <a href="#" target="_blank"><img class="card-img-top" src="src/assets/images/partners_logos/logos/it-academy-logo.svg" alt="IT-Academy logo"></a>
+                        </div>
+                    </div>
+                    <div class="ms-2 me-2">
+                        <div class="card">
+                            <a href="https://intita.com/" target="_blank"><img class="card-img-top" src="src/assets/images/partners_logos/logos/intita-partners-logo.svg" alt="INTITA logo"></a>
+                        </div>
+                    </div>
+                    <div class="ms-2 me-2">
+                        <div class="card">
+                            <a href="https://kavadrive.com/" target="_blank"><img class="card-img-top" src="src/assets/images/partners_logos/logos/kava-drive-logo.svg" alt="Kava Drive logo"></a>
+                        </div>
+                    </div>
+                    <div class="ms-2 me-2">
+                        <div class="card">
+                            <a href="https://www.robotamolodi.org/" target="_blank"><img class="card-img-top" src="src/assets/images/partners_logos/logos/robota-molodi-partners-logo.svg" alt="Robota Molodi logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- desctop version -->
+        <div class="partners-logos-desktop">
+            <div class="partners-logos-container">
+                <div class="first-line-container">
+                    <div class="card-item">
+                        <a href="#" target="_blank"><img class="it-academy-logo" src="src/assets/images/partners_logos/logos/it-academy-logo.svg" alt="IT-Academy logo"></a>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.yeps.me/" target="_blank"><img class="yeps-logo" src="src/assets/images/partners_logos/logos/yeps-logo.svg" alt="YEPS logo"></a>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://kavadrive.com/" target="_blank"><img class="kava-drive-logo" src="src/assets/images/partners_logos/logos/kava-drive-logo.svg" alt="Kava Drive logo"></a>
+                    </div>
+                </div>
+                <div class="second-line-container">
+                    <div class="card-item">
+                        <a href="https://intita.com/" target="_blank"><img class="intita-partners-logo" src="src/assets/images/partners_logos/logos/intita-partners-logo.svg" alt="INTITA logo"></a>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://drone.intita.com/" target="_blank"><img class="bayraktar-logo" src="src/assets/images/partners_logos/logos/bayraktar-logo.svg" alt="Bayraktar logo"></a>
+                    </div>
+                    <div class="card-item">
+                        <a href="https://www.robotamolodi.org/" target="_blank"><img class="robota-molodi-partners-logo" src="src/assets/images/partners_logos/logos/robota-molodi-partners-logo.svg" alt="Robota Molodi logo"></a>
+                    </div>
+                </div>
+            </div>
+    </section>
     <!--"logo of partners end"-->
 
     <!--"specialities start"-->
@@ -212,7 +287,7 @@
             <!--carousel start-->
             <div id="carouselExampleIndicators" class="specialty-carousel-main-container carousel slide">
 
-                <!--sleder cards-->
+                <!--carousel cards-->
                 <div class="specialty-carousel-cards-container carousel-inner">
                     <div class="specialty-carousel-card specialty-carousel-list-card">
                         <p class="specialty-second-header specialty-carousel-list-text">
@@ -253,7 +328,7 @@
                     </div>
                     
                     <div class="specialty-carousel-card carousel-item">
-                        <h2 class="specialty-carousel-card-header">Hackers` school</h2>
+                        <h2 class="specialty-carousel-card-header">Hackers` <br> school</h2>
                         <div class="specialty-carousel-card-icon">
                             <i class="icon-specialty-hack"></i>
                         </div>
@@ -273,8 +348,7 @@
                         </div>
                         <h2 class="specialty-carousel-card-text">
                             Робота тестувальника нагадує роботу слідчого або детектива: він йде по “гарячих слідах” програміста і вишукує
-                            помилки -
-                            на професійній мові “баги”. У хід йдуть різні дедуктивні методи і прийоми. Ти експерементатор - тобі сюди.
+                            помилки - на професійній мові “баги”. У хід йдуть різні дедуктивні методи і прийоми. Ти експерементатор - тобі сюди.
                         </h2>
                         <div class="specialty-carousel-card-button button-primary">Реєструйся</div>
                     </div>
@@ -286,8 +360,7 @@
                         </div>
                         <h2 class="specialty-carousel-card-text">
                             Посада РМ`а приваблює змогою займатися управлінням: приймати рішення, організовувати швидке і якісне створення
-                            продукту,
-                            продуктивну роботу в команді.
+                            продукту, продуктивну роботу в команді.
                         </h2>
                         <div class="specialty-carousel-card-button button-primary">Реєструйся</div>
                     </div>
@@ -347,8 +420,8 @@
                 <nav class="footer-main-nav nav-menu">
                     <ul class="nav-menu-list">
                         <li class="nav-menu-item"><a class="nav-menu-link" href="#we-provide">Про програму</a></li>
-                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Партнери</a></li>
-                        <li class="nav-menu-item"><a class="nav-menu-link" href="#">Спеціальності</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#partners-logos">Партнери</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link" href="#specialty">Спеціальності</a></li>
                     </ul>
                 </nav>
                 <!-- text block -->
@@ -363,8 +436,8 @@
                 <div class="footer-main-icon-box">
                     <a href="https://t.me/IT_Academy_Vinnytsia" target="_blank"><i class="icon-telegram icon-icon-box footer-main-icon"></i></a>
                     <a href="https://www.facebook.com/intita.it/" target="_blank"><i class="icon-facebook icon-icon-box footer-main-icon"></i></a>
-                    <a href="viber://chat?number=+380631892256" target="_blank"><i class="icon-viber icon-icon-box footer-main-icon"></i></a>
                     <a href="https://wa.me/+380674317424" target="_blank"><i class="icon-whatsapp icon-icon-box footer-main-icon"></i></a>
+                    <a href="viber://chat?number=+380631892256" target="_blank"><i class="icon-viber icon-icon-box footer-main-icon"></i></a>
                     <a href="https://twitter.com/INTITA_EDU" target="_blank"><i class="icon-twitter icon-icon-box footer-main-icon"></i></a>
                     <a href="https://www.instagram.com/intitaedu" target="_blank"><i class="icon-instagram icon-icon-box footer-main-icon"></i></a>   
                 </div>
@@ -479,11 +552,11 @@
       
     <!-- "modal windows end" -->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="src/js/script.js"></script>
-
 </body>
-
 </html>

@@ -1,30 +1,42 @@
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon-fonts/icomoon.eot?pchocb');
-    src: url('../fonts/icomoon-fonts/icomoon.eot?pchocb#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon-fonts/icomoon.ttf?pchocb') format('truetype'),
-        url('../fonts/icomoon-fonts/icomoon.woff?pchocb') format('woff'),
-        url('../fonts/icomoon-fonts/icomoon.svg?pchocb#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon-fonts/icomoon.eot?55zar3');
+  src:  url('../fonts/icomoon-fonts/icomoon.eot?55zar3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon-fonts/icomoon.ttf?55zar3') format('truetype'),
+    url('../fonts/icomoon-fonts/icomoon.woff?55zar3') format('woff'),
+    url('../fonts/icomoon-fonts/icomoon.svg?55zar3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-arrow-right-logos:before {
+  content: "\e914";
+  color: #083cc0;
+}
+.icon-arrow-left-logos:before {
+  content: "\e915";
+  color: #083cc0;
+}
 .icon-arrow-left:before {
   content: "\e912";
   color: #2d5bd0;
@@ -76,11 +88,11 @@
   content: "\e905";
   color: #fff;
 }
-.icon-viber:before {
+.icon-whatsapp:before {
   content: "\e906";
   color: #fff;
 }
-.icon-whatsapp:before {
+.icon-viber:before {
   content: "\e907";
   color: #fff;
 }
@@ -99,7 +111,4 @@
 .icon-share:before {
   content: "\e90b";
   color: #fff;
-}
-.icon-arrow:before {
-  content: "\e90c";
 }
