@@ -122,7 +122,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 768px;
+    min-height: 375px;
 }
 
 #hero .hero_main .hero_content {
