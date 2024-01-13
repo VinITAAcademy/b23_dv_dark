@@ -45,7 +45,7 @@ videos.on("click", function () {
     elm.off("click");
 });
 
-var videos2 = $(".video_with_autoplay");
+let videos2 = $(".video_with_autoplay");
 videos2.on("click", function () {
     let elm = $(this),
         conts = elm.contents(),
@@ -58,7 +58,7 @@ videos2.on("click", function () {
 
     elm.addClass("player").html(ifr);
     elm.off("click");
-    $("#video1")[0].src += "&autoplay=1";
+    $("#we-provide-video")[0].src += "&autoplay=1";
     
 });
 //end we provide video poster
