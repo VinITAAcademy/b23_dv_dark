@@ -9,7 +9,7 @@ document.onreadystatechange = function (e) {
         let timerId = setTimeout(function () {
             animationPreload.style.opacity = '0';
             animationPreload.style.visibility = 'hidden';
-        }, 30000);
+        }, 3000);
     }
 };
 // end loader
