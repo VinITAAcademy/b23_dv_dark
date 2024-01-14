@@ -2118,7 +2118,6 @@ button {
 
     #registration .registration-main {
         padding: 0;
-        box-sizing:content-box;
         text-align: left;
         display: flex;
     }
