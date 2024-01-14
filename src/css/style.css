@@ -111,6 +111,99 @@ button {
 
 /*===================== mobile version 375px =====================*/
 /* loader start */
+.loader-block {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1031;
+    background-image: linear-gradient(to right top, var(--background), var(--button-primary));
+    transition: 1s all;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-block .loader-block-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+@keyframes changeSize-1 {
+    from {
+        transform: translate(-100px, 0);
+        background-color: var(--icon-hover);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes changeSize-2 {
+    from {
+        transform: translate(100px, 0);
+        background-color: var(--icon-hover);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes changeSize-3 {
+    from {
+        transform: translate(-50px, 0);
+        background-color: var(--icon-hover);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes changeSize-4 {
+    from {
+        transform: translate(50px, 0);
+        background-color: var(--icon-hover);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes changeSize-5 {
+    from {
+        background-color: var(--icon-hover);
+    }
+
+    to {}
+}
+
+.loader-block .loader-block-element:nth-child(1) {
+    animation: changeSize-1 2s ease-in infinite alternate;
+}
+
+.loader-block .loader-block-element:nth-child(2) {
+    animation: changeSize-2 2s ease-in infinite alternate;
+}
+
+.loader-block .loader-block-element:nth-child(3) {
+    animation: changeSize-3 2s ease-in infinite alternate;
+}
+
+.loader-block .loader-block-element:nth-child(4) {
+    animation: changeSize-4 2s ease-in infinite alternate;
+}
+
+.loader-block .loader-block-element:nth-child(5) {
+    animation: changeSize-5 2s ease-in infinite alternate;
+}
+
 /* loader end */
 
 /* hero section start */
@@ -122,7 +215,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 768px;
+    min-height: 375px;
 }
 
 #hero .hero_main .hero_content {
@@ -165,6 +258,33 @@ button {
     line-height: normal;
     max-width: 256px;
 }
+
+/* desktop contacts block start */
+#contacts-block {
+    position: absolute;
+    right: 0;
+    padding-top: 176px;
+    display: none;
+    width: 137px;
+    height: 768px;
+    background-color: #515558;
+}
+
+#contacts-block .contacts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 495px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contacts-block .contacts-box .contacts-block-icon {
+    font-size: 35px;
+}
+
+/* desktop contacts block end */
 
 /* header start */
 #header .fixed-top {
@@ -377,7 +497,7 @@ button {
     height: 210px;
 }
 
-#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
     width: 375px;
     height: 210px;
 }
@@ -669,6 +789,11 @@ button {
 /* end of round tumblers */
 
 /* start of carousel */
+#specialty {
+    display: flex;
+    justify-content: center;
+}
+
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container:not(:first-child) {
     display: flex;
     align-items: center;
@@ -1234,6 +1359,13 @@ button {
 
     /* hero section end" */
 
+    /* desktop contacts block start */
+    #contacts-block {
+        display: none;
+    }
+
+    /* desktop contacts block end */
+
     /* quote start */
     #quote {
         margin: 30px 50px;
@@ -1303,7 +1435,7 @@ button {
         height: 431px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
         width: 768px;
         height: 431px;
     }
@@ -1712,6 +1844,13 @@ button {
 
     /* hero section end" */
 
+    /* desktop contacts block start */
+    #contacts-block {
+        display: block;
+    }
+
+    /* desktop contacts block end */
+
     /* conditions of participation start */
     #main .conditions_main_block .img1 {
         margin: 50px 42px 0px 0px;
@@ -1961,7 +2100,7 @@ button {
         height: 528px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
         width: 940px;
         height: 528px;
     }
