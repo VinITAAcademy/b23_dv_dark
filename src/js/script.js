@@ -1,3 +1,24 @@
+// start loader
+
+//imitation of loading. uncomment for test
+
+/*
+document.onreadystatechange = function (e) {
+    if (document.readyState === 'complete') {
+        let animationPreload = document.querySelectorAll('.loader-block')[0];
+        animationPreload.style.visibility = 'visible';
+        animationPreload.style.opacity = '1';
+
+        let timerId = setTimeout(function () {
+            animationPreload.style.opacity = '0';
+            animationPreload.style.visibility = 'hidden';
+        }, 2000); 
+    }
+};
+*/
+
+// end loader
+
 // start specialities
 document.addEventListener('DOMContentLoaded', function () {
     let carouselBlock = document.querySelector('.specialty-carousel-main-container');
@@ -62,7 +83,6 @@ videos2.on("click", function () {
     
 });
 //end we provide video poster
-
 
 //start partners' logos
 $(".owl-carousel").owlCarousel({
