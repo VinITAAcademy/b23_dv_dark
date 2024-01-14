@@ -2199,8 +2199,7 @@ button {
         display: block;
         max-width: 694px;
         min-height: 211px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     #partners-logos .partners-logos-desktop .partners-logos-container .first-line-container {
