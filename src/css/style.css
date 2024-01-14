@@ -1841,8 +1841,7 @@ button {
         justify-content: space-between;
         width: 35px;
         height: 495px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     #hero .hero_main #contacts-block .contacts-box .contacts-block-icon {
