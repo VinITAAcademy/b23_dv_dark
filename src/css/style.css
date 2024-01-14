@@ -2111,11 +2111,16 @@ button {
     /* we provide end */
 
     /* registration section start */
+    #registration {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
     #registration .registration-main {
         padding: 0;
+        box-sizing:content-box;
         text-align: left;
         display: flex;
-        justify-content: space-between;
     }
 
     #registration .registration-main .registration-content {
