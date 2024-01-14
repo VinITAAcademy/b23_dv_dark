@@ -166,6 +166,33 @@ button {
     max-width: 256px;
 }
 
+/* desktop contacts block start */
+#contacts-block {
+    position: absolute;
+    right: 0;
+    padding-top: 176px;
+    display: none;
+    width: 137px;
+    height: 768px;
+    background-color: #515558;
+}
+
+#contacts-block .contacts-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 495px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contacts-block .contacts-box .contacts-block-icon {
+    font-size: 35px;
+}
+
+/* desktop contacts block end */
+
 /* header start */
 #header .fixed-top {
     position: absolute;
@@ -1234,6 +1261,13 @@ button {
 
     /* hero section end" */
 
+    /* desktop contacts block start */
+    #contacts-block {
+        display: none;
+    }
+
+    /* desktop contacts block end */
+
     /* quote start */
     #quote {
         margin: 30px 50px;
@@ -1711,6 +1745,13 @@ button {
     }
 
     /* hero section end" */
+
+    /* desktop contacts block start */
+    #contacts-block {
+        display: block;
+    }
+
+    /* desktop contacts block end */
 
     /* conditions of participation start */
     #main .conditions_main_block .img1 {
