@@ -260,28 +260,8 @@ button {
 }
 
 /* desktop contacts block start */
-#contacts-block {
-    position: absolute;
-    right: 0;
-    padding-top: 176px;
+#hero .hero_main #contacts-block {
     display: none;
-    width: 137px;
-    height: 768px;
-    background-color: #515558;
-}
-
-#contacts-block .contacts-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 35px;
-    height: 495px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#contacts-block .contacts-box .contacts-block-icon {
-    font-size: 35px;
 }
 
 /* desktop contacts block end */
@@ -1360,7 +1340,7 @@ button {
     /* hero section end" */
 
     /* desktop contacts block start */
-    #contacts-block {
+    #hero .hero_main #contacts-block {
         display: none;
     }
 
@@ -1845,8 +1825,27 @@ button {
     /* hero section end" */
 
     /* desktop contacts block start */
-    #contacts-block {
+    #hero .hero_main #contacts-block {
+        position: absolute;
+        right: 0;
+        padding-top: 176px;
         display: block;
+        width: 137px;
+        height: 768px;
+        background-color: #515558;
+    }
+
+    #hero .hero_main #contacts-block .contacts-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35px;
+        height: 495px;
+        margin: 0 auto;
+    }
+
+    #hero .hero_main #contacts-block .contacts-box .contacts-block-icon {
+        font-size: 35px;
     }
 
     /* desktop contacts block end */
