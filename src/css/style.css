@@ -604,6 +604,64 @@ button {
 /* conditions of participation end */
 
 /* partners start */
+#partners .partners_main .partners_image{
+    display: flex;
+    flex-direction: column;
+}
+
+.partners_content_title {
+    font-family: 'Ubuntu Bold';
+    color: var(--сolor-white);
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+#partners .partners_main .partners_content .partners_content_text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding-top: 25px;
+    background: #000A24;
+    color: #FFF;
+    font-family: 'Ubuntu Regular';
+    font-size: 14px;
+    font-style: italic;
+    line-height: 162%; /* 22.68px */
+    letter-spacing: 0.28px;
+    width: 288px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#partners .partners_main .partners_content .partners_content_text_third {
+    margin-bottom: 21px;
+}
+
+#partners .partners_main .partners_content .dotted_line{
+    width: 277px;
+    margin: 0 auto;
+    height: 1px;
+    background: repeating-linear-gradient(90deg, #fff 0 5px, #0000 0 10px);
+}
+
+#partners .partners_main .partners_content .partners_button {
+    display: flex;
+    padding: 15px 77px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--white);
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 /* partners end */
 
 /* logo of partners start */
@@ -1494,6 +1552,33 @@ button {
     /* conditions of participation end */
 
     /* partners start */
+    .partners_content_title {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    
+    #partners .partners_main .partners_content .partners_content_text{
+        padding-top: 30px;
+        font-size: 24px;
+        letter-spacing: 0.48px;
+        width: 672px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #partners .partners_main .partners_content .partners_content_text_third {
+        margin-bottom: 50px;
+    }
+
+    #partners .partners_main .partners_content .dotted_line{
+        width: 672px;
+    }
+
+    #partners .partners_main .partners_content .partners_button {
+        padding: 20px 77px;
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
     /* partners end */
 
     /* logo of partners start */
@@ -2192,6 +2277,67 @@ button {
     /* conditions of participation end */
 
     /* partners start */
+    #partners {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #partners .partners_main{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    #partners .partners_main .partners_image{
+        display: flex;
+        flex-direction: column;
+        width: 513px;
+        height: 419px;
+    }
+    
+    .partners_content_title {
+        font-family: 'Ubuntu Bold';
+        color: var(--сolor-white);
+        justify-content: center;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    
+    #partners .partners_main .partners_content {
+        width: 511px;
+        height: 419px;
+        padding-left: 20px;
+    }
+    
+    #partners .partners_main .partners_content .partners_content_text{
+        padding-top: 0;
+        font-size: 12px;
+        font-style: italic;
+        letter-spacing: 0.24px;
+        width: 302px;
+        text-align: left;
+        margin-bottom: 13px;
+        margin-left: 0;
+    }
+    #partners .partners_main .partners_content .dotted_line{
+        width: 302px;
+        margin-left: 0;
+        margin-bottom: 13px;
+    }
+
+    #partners .partners_main .partners_content .partners_content_text_third {
+        margin-bottom: 19px;
+    }
+
+    #partners .partners_main .partners_content .partners_button {
+        padding: 15px 53px;
+        font-size: 12px;
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
     /* partners end */
 
     /* logo of partners start */
