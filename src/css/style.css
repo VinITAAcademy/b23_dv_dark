@@ -22,6 +22,14 @@
     line-height: normal;
 }
 
+@font-face {
+    font-family: 'Ubuntu Italic';
+    src: local('Ubuntu-Italic'), url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
 :root {
     --background: #000A24;
     --background-footer: #252323;
@@ -111,99 +119,6 @@ button {
 
 /*===================== mobile version 375px =====================*/
 /* loader start */
-.loader-block {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1031;
-    background-image: linear-gradient(to right top, var(--background), var(--button-primary));
-    transition: 1s all;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loader-block .loader-block-element {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--white);
-}
-
-@keyframes changeSize-1 {
-    from {
-        transform: translate(-100px, 0);
-        background-color: var(--icon-hover);
-    }
-
-    to {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes changeSize-2 {
-    from {
-        transform: translate(100px, 0);
-        background-color: var(--icon-hover);
-    }
-
-    to {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes changeSize-3 {
-    from {
-        transform: translate(-50px, 0);
-        background-color: var(--icon-hover);
-    }
-
-    to {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes changeSize-4 {
-    from {
-        transform: translate(50px, 0);
-        background-color: var(--icon-hover);
-    }
-
-    to {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes changeSize-5 {
-    from {
-        background-color: var(--icon-hover);
-    }
-
-    to {}
-}
-
-.loader-block .loader-block-element:nth-child(1) {
-    animation: changeSize-1 2s ease-in infinite alternate;
-}
-
-.loader-block .loader-block-element:nth-child(2) {
-    animation: changeSize-2 2s ease-in infinite alternate;
-}
-
-.loader-block .loader-block-element:nth-child(3) {
-    animation: changeSize-3 2s ease-in infinite alternate;
-}
-
-.loader-block .loader-block-element:nth-child(4) {
-    animation: changeSize-4 2s ease-in infinite alternate;
-}
-
-.loader-block .loader-block-element:nth-child(5) {
-    animation: changeSize-5 2s ease-in infinite alternate;
-}
-
 /* loader end */
 
 /* hero section start */
@@ -215,7 +130,7 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 375px;
+    min-height: 768px;
 }
 
 #hero .hero_main .hero_content {
@@ -259,126 +174,351 @@ button {
     max-width: 256px;
 }
 
-/* desktop contacts block start */
-#contacts-block {
-    position: absolute;
-    right: 0;
-    padding-top: 176px;
-    display: none;
-    width: 137px;
-    height: 768px;
-    background-color: #515558;
-}
-
-#contacts-block .contacts-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 35px;
-    height: 495px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#contacts-block .contacts-box .contacts-block-icon {
-    font-size: 35px;
-}
-
-/* desktop contacts block end */
-
 /* header start */
-#header .fixed-top {
+#header {
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    background-color: transparent;
+    width: 100%;
+    height: 100px;
 }
 
-#header .navbar {
-    padding: 0px;
+#header .intita-logo-header {
+    position: absolute;
+    width: 78px;
+    height: 21px;
+    top: 20px;
+    left: 30px;
 }
 
-#header .fixed-top .container-fluid {
-    padding: 0px;
-}
-
-#header .navbar-brand {
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    flex-direction: column;
-}
-
-#header .navbar .header-logo-intita {
-    width: 73px;
+#header .intita-logo-header .intita-logo-img {
+    width: 72px;
     height: 22px;
-    margin-top: 23px;
-    margin-left: 31px;
+    margin-top: 2px;
+    margin-left: 2px;
 }
 
-#header .line-logo {
+#header .intita-logo-header .line-logo {
     border-top: var(--border-width) solid;
     border-style: dotted;
     width: 76px;
     margin-top: 2px;
-    margin-left: 26px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     opacity: .25;
     border-color: white;
 }
 
-#header .navbar-brand .header-logo-robota-molodi {
+#header .intita-logo-header .robota-molodi-logo-img {
     width: 63px;
-    height: 15px;
-    margin-left: 26px;
-    margin-top: -37px;
+    height: 19px;
+    margin-left: -4px;
 }
 
-#header .flag-div {
+#header .hamburger {
+    width: 30px;
+    height: 30px;
+    background: none;
+    position: absolute;
+    top: 24px;
+    right: 25px;
+    line-height: 25px;
+    color: white;
+    border-radius: 6px;
+    font-size: 0em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    background-image: url(../assets/images/burger/burger_mobile_button.svg);
+    z-index: 10000000000000;
+}
+
+#header .cross .icon-close::before {
+    content: "\e90a";
+    color: black;
+    font-size: 22px;
+
+}
+
+#header .desktop-menu {
     display: none;
 }
 
-#header .navbar-toggler {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+#header .header-flag {
+    display: none;
+}
+
+.cross {
+    background: none;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    padding: 7px 15px 0px 15px;
+    color: white;
+    border: 0;
+    font-size: 0px;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+.menu {
+    top: 0px;
+    z-index: 1000000;
+    font-family: 'Ubuntu Medium';
+    src: local('Ubuntu-Medium'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    width: 100%;
+    height: 513px;
+    background: white;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+
+
+.menu .burger-top {
+    width: 375px;
+    height: 108px;
+}
+
+.menu .burger-top .bg-language {
+    width: 71px;
+    height: 31px;
+    float: left;
+    margin-top: -9px;
+    margin-left: -27px;
+}
+
+.menu .burger-top .bg-text {
+    width: 186px;
+    height: 64px;
+    padding-top: 6px;
+    margin-left: 23px;
+    float: left;
+}
+
+.menu .burger-top .bg-text .bg-text-italic {
+    font-family: 'Ubuntu Italic';
+    src: local('Ubuntu'), url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    font-size: 16px;
+    margin-left: -7px;
+    margin-top: -2px;
+}
+
+.menu .burger-top .bg-text .bg-text-bold {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: 19px;
+    font-size: 36px;
+    padding-bottom: 5px;
+    margin-left: -8px;
+}
+
+.menu .menu ul {
     margin: 0;
-    width: 30px;
-    height: 30px;
-    background-color: var(--background);
-    margin-top: -10px;
-    margin-right: 25px;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
 }
 
-#header .navbar-toggler-icon_1 {
-    background-image: none;
-    width: 16px;
-    height: 2px;
-    margin-bottom: 4px;
-    margin-left: 6px;
-    background-color: var(--button-active-bg);
-    margin-top: 8px;
+.menu .burger-top .bg-blue-line {
+    position: absolute;
+    color: #083CC0;
+    border: 3px;
+    border-style: solid;
+    width: 300px;
+    top: 98px;
+    left: 35px;
+    width: 300px;
+    opacity: 1;
+    margin: 0;
 }
 
-#header .navbar-toggler-icon_2 {
-    background-image: none;
-    width: 16px;
-    height: 2px;
-    margin-bottom: 3px;
-    margin-left: 6px;
-    background-color: var(--button-active-bg);
-    margin-top: 0px;
+.menu .burger-top .bg-yellow-line {
+    position: absolute;
+    color: #FFD500;
+    border: 2px;
+    border-style: solid;
+    width: 300px;
+    top: 103px;
+    left: 35px;
+    width: 300px;
+    opacity: 1;
+    margin: 0;
 }
 
-#header .navbar-toggler-icon_3 {
-    background-image: none;
-    width: 16px;
-    height: 2px;
-    margin-top: 1px;
-    margin-bottom: 4px;
-    margin-left: 6px;
-    background-color: var(--button-active-bg);
+.menu li {
+    display: block;
+    padding: 14px 0 15px 0;
+}
+
+.menu .bg-program {
+    margin-top: -29px;
+    margin-left: -34px;
+    color: black;
+}
+
+.menu .bg-spets {
+    margin-top: -1px;
+    margin-left: -34px;
+    color: black;
+}
+
+.menu .bg-partners {
+    margin-top: -1px;
+    margin-left: -34px;
+    color: black;
+}
+
+.menu .bg-contacts {
+    margin-top: -3px;
+    margin-left: -34px;
+    color: black;
+}
+
+.menu .bg-blue-line2 {
+    position: absolute;
+    color: #083CC0;
+    border: 3px;
+    border-style: solid;
+    width: 300px;
+    top: 330px;
+    left: 35px;
+    width: 300px;
+    opacity: 1;
+    margin: 0;
+}
+
+.menu .bg-yellow-line2 {
+    position: absolute;
+    color: #FFD500;
+    border: 2px;
+    border-style: solid;
+    width: 300px;
+    top: 335px;
+    left: 35px;
+    width: 300px;
+    opacity: 1;
+    margin: 0;
+}
+
+.menu .bg-bottom {
+    width: 375px;
+    height: 179px;
+    margin-left: -30px;
+}
+
+.menu .bg-social {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 362px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 58px;
+}
+
+.menu .bg-social-bottom {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 438px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 58px;
+}
+
+.menu .bg-social .icon-telegram:before {
+    content: "\e904";
+    font-size: 50px;
+    color: #000;
+}
+
+.menu .bg-social .icon-facebook:before {
+    content: "\e905";
+    font-size: 50px;
+    color: #000;
+}
+
+.menu .bg-social-bottom .icon-whatsapp:before {
+    content: "\e907";
+    font-size: 50px;
+    color: #000;
+}
+
+.menu .bg-social .icon-viber:before {
+    content: "\e906";
+    font-size: 50px;
+    color: #000;
+}
+
+.menu .bg-social-bottom .icon-twitter:before {
+    content: "\e909";
+    font-size: 50px;
+    color: #000;
+}
+
+.menu .bg-social-bottom .icon-instagram:before {
+    content: "\e908";
+    font-size: 50px;
+    color: #000;
+}
+
+.menu li:hover {
+    display: block;
+    background: #ffffff;
+    padding: 14px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #666;
+}
+
+.menu ul li a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #666;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+.glyphicon-home {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin: 0 auto;
+}
+
+header {
+    display: inline-block;
+    font-size: 12px;
+}
+
+span {
+    padding-left: 20px;
+}
+
+a {
+    color: #336699;
 }
 
 /* header end */
@@ -497,7 +637,7 @@ button {
     height: 210px;
 }
 
-#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
+#we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
     width: 375px;
     height: 210px;
 }
@@ -789,11 +929,6 @@ button {
 /* end of round tumblers */
 
 /* start of carousel */
-#specialty {
-    display: flex;
-    justify-content: center;
-}
-
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container:not(:first-child) {
     display: flex;
     align-items: center;
@@ -1245,89 +1380,121 @@ button {
     /* loader end */
 
     /* header start */
-    #header .header-logo-mobile {
-        display: none;
-    }
-
-    #header .flag-div {
-        display: none;
-    }
-
-    #header .navbar-brand {
-        margin-top: 25px;
-        margin-left: 25px;
-        width: 139px;
-        height: 86px;
-        background-image: url(../images/logo_header_tablet.png);
-    }
-
-    #header .navbar-brand .header-logo-intita {
-        width: 128px;
-        height: 38px;
-        margin-top: 1px;
-        margin-left: 6px;
-    }
-
-    #header .line-logo {
-        border-top: var(--border-width) solid;
-        border-style: dotted;
+    #header .intita-logo-header .intita-logo-img {
         width: 130px;
-        margin-top: 10px;
-        margin-left: 7px;
-        opacity: .25;
-        border-color: white;
+        height: 42px;
+        margin-top: 4px;
+        margin-left: 1px;
     }
 
-    #header .navbar-brand .header-logo-robota-molodi {
-        width: 132px;
-        height: 33px;
-        margin-left: 2px;
-        margin-top: -20px;
+    #header .intita-logo-header .line-logo {
+        width: 130px;
+        margin-top: 6px;
+        margin-left: 0px;
     }
 
-    #header .navbar .navbar-toggler {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
+    #header .desktop-menu {
+        display: none;
+    }
+
+    #header .header-flag {
+        display: none;
+    }
+
+    #header .hamburger {
         width: 50px;
         height: 50px;
-        background-color: var(--background);
-        margin-top: -9px;
-        margin-right: 25px;
+        border-radius: 6px;
+        background-image: url(../assets/images/burger/burger_tablet_button.svg);
     }
 
-    #header .navbar .navbar-toggler .navbar-toggler-icon_1 {
-        background-image: none;
-        width: 32px;
-        height: 3px;
-        margin-bottom: 4px;
-        margin-left: 8px;
-        background-color: var(--button-active-bg);
-        margin-top: 10px;
-        border-radius: 3px;
+    #header .intita-logo-header .robota-molodi-logo-img {
+        width: 134px;
+        height: 32px;
+        margin-top: 6px;
     }
 
-    #header .navbar .navbar-toggler .navbar-toggler-icon_2 {
-        background-image: none;
-        width: 32px;
-        height: 3px;
-        margin-bottom: 5px;
-        margin-left: 8px;
-        background-color: var(--button-active-bg);
-        margin-top: 4px;
-        border-radius: 3px;
+    .menu .burger-top .bg-text {
+        width: 500px;
+        height: 105px;
+        padding-top: 7px;
+        margin-left: 215px;
+        float: left;
     }
 
-    #header .navbar .navbar-toggler .navbar-toggler-icon_3 {
-        background-image: none;
-        width: 32px;
-        height: 3px;
-        margin-top: 3px;
-        margin-bottom: 4px;
-        margin-left: 8px;
-        background-color: var(--button-active-bg);
-        border-radius: 3px;
+    .menu .burger-top .bg-text .bg-text-italic {
+        font-size: 24px;
+        margin-left: -225px;
+        margin-top: 1px;
+    }
+
+    .menu .burger-top .bg-text .bg-text-bold {
+        font-size: 48px;
+        margin-left: -225px;
+        margin-top: 29px;
+    }
+
+    .menu .burger-top .bg-blue-line {
+        border: 2px;
+        top: 133px;
+        width: 696px;
+
+    }
+
+    .menu .burger-top .bg-yellow-line {
+        border: 3px;
+        top: 138px;
+        width: 696px;
+    }
+
+    .menu {
+        font-size: 64px;
+        height: 830px;
+    }
+
+    .menu .bg-program {
+        margin-top: 30px;
+        margin-left: -31px;
+    }
+
+    .menu .bg-spets {
+        margin-top: 6px;
+        margin-left: -31px;
+    }
+
+    .menu .bg-partners {
+        margin-top: 7px;
+        margin-left: -31px;
+    }
+
+    .menu .bg-contacts {
+        margin-top: 7px;
+        margin-left: -30px;
+    }
+
+    .menu .bg-blue-line2 {
+        top: 612px;
+        margin-left: 1px;
+        width: 696px;
+
+    }
+
+    .menu .bg-yellow-line2 {
+        top: 618px;
+        border: 2px;
+        margin-left: 1px;
+        width: 696px;
+
+    }
+
+    .menu .bg-social {
+        top: 635px;
+        left: 201px;
+    }
+
+    .menu .bg-social-bottom {
+        top: 713px;
+        left: 201px;
     }
 
     /* header end */
@@ -1358,13 +1525,6 @@ button {
     }
 
     /* hero section end" */
-
-    /* desktop contacts block start */
-    #contacts-block {
-        display: none;
-    }
-
-    /* desktop contacts block end */
 
     /* quote start */
     #quote {
@@ -1435,7 +1595,7 @@ button {
         height: 431px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
         width: 768px;
         height: 431px;
     }
@@ -1844,13 +2004,6 @@ button {
 
     /* hero section end" */
 
-    /* desktop contacts block start */
-    #contacts-block {
-        display: block;
-    }
-
-    /* desktop contacts block end */
-
     /* conditions of participation start */
     #main .conditions_main_block .img1 {
         margin: 50px 42px 0px 0px;
@@ -1946,72 +2099,56 @@ button {
     /* conditions of participation end */
 
     /* header start */
-    #header .header-logo-mobile {
+    .menu {
         display: none;
     }
 
-    #header .navbar-brand {
-        margin-top: 25px;
-        margin-left: 25px;
-    }
-
-    #header .nav-link {
-        color: var(--white);
-        font-family: 'Ubuntu';
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    #header .navbar .navbar-toggler {
+    #header .hamburger {
         display: none;
     }
 
-    #header .navbar .navbar-toggler .nav-link:hover {
-        color: var(--icon-hover);
-        font-family: 'Ubuntu';
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    #header .navbar .navbar-toggler {
-        display: none;
-    }
-
-    #header .navbar .navbar-nav {
-        width: 600px;
+    #header .desktop-menu {
+        width: 516px;
         height: 21px;
-        margin-top: 9px;
-        margin-left: 111px;
-    }
-
-    #header .navbar .navbar-nav .nav-item-1 {
-        width: 150px;
-        height: 21px;
-    }
-
-    #header .navbar .navbar-nav .nav-item-2 {
-        width: 150px;
-        height: 21px;
-        padding-left: 7px;
-    }
-
-    #header .navbar .navbar-nav .nav-item-3 {
-        width: 150px;
-        height: 21px;
-        padding-left: 15px;
-    }
-
-    #header .navbar .navbar-nav .nav-item-4 {
-        width: 150px;
-        height: 21px;
-        margin-left: -15px;
-    }
-
-    #header .navbar .flag-div {
-        margin-top: 25px;
-        margin-right: 32px;
+        position: absolute;
         display: block;
+        top: 57px;
+        left: 283px;
     }
+
+    #header .desktop-menu .desktop-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -32px;
+    }
+
+    #header .desktop-menu .desktop-list .desktop-menu-text {
+        font-family: 'Ubuntu Medium';
+        src: local('Ubuntu-Medium'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        line-height: normal;
+        font-size: 18px;
+        color: var(--button-active-bg);
+    }
+
+    #header .header-flag {
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 32px;
+    }
+
+    #header .desktop-menu .desktop-list .desktop-menu-text:before:hover {
+        color: #7FA2FB;
+        ;
+    }
+
+    #header .desktop-menu .desktop-list .desktop-menu-text:hover {
+        color: var(--button-hover-bg);
+    }
+
 
     /* header end */
 
@@ -2100,7 +2237,7 @@ button {
         height: 528px;
     }
 
-    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #we-provide-video {
+    #we-provide .we-provide__container .we-provide__video-wrapper .video_with_autoplay #video1 {
         width: 940px;
         height: 528px;
     }

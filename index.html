@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://vinitaacademy.github.io/b23_dv_dark/">
     <meta property="og:title" content="Доброго вечора, ми з України!">
     <meta property="og:description"
-        content="Програма працевлаштування ветеранів, ВПО та громадян, які постраждали внаслідок війни росії проти України та українського народу">
+        content="Програма працевлаштування постраждалих від війни">
     <meta property="og:image" content="https://vinitaacademy.github.io/b23_dv_dark/src/assets/images/hero-background.png">
     <!--"Meta Date-END"-->
 
@@ -37,54 +37,67 @@
 
 <body>
     <!--"loader start"-->
-    <div class="loader-block">
-        <span class="loader-block-element"></span>
-        <span class="loader-block-element"></span>
-        <span class="loader-block-element"></span>
-        <span class="loader-block-element"></span>
-        <span class="loader-block-element"></span>
-    </div>
+
     <!--"loader end"-->
 
     <!--"header start"-->
-       <header id="header">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-            <div class="navbar-brand">
-                <a href="https://intita.com/">  
-                    <img class="header-logo-intita" src="./src/assets/images/Intita_logo.png" alt="logo_intita_img" >
-                </a>  
-                <hr class="line-logo">
-                <a href="https://www.robotamolodi.org/">  
-                    <img class="header-logo-robota-molodi" src="./src/assets/images/robota_molodi_logo.png" alt="logo_rm_img">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon_1"></span>
-            <span class="navbar-toggler-icon_2"></span>
-            <span class="navbar-toggler-icon_3"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item-1">
-                        <a class="nav-link" href="#">Про програму</a>
-                    </li>
-                    <li class="nav-item-2">
-                        <a class="nav-link" href="#">Спеціальності</a>
-                    </li>                  
-                    <li class="nav-item-3">
-                        <a class="nav-link" href="#">Партнери</a>
-                    </li>                  
-                    <li class="nav-item-4">
-                        <a class="nav-link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </div>    
-            <div class="flag-div">
-                <a><img class="flag" src="./src/assets/images/flag_header.png" alt="flg"></a>
-            </div>
-        </nav> 
+    <header id="header">
+        <div class="intita-logo-header"> 
+            <a href="https://intita.com/" target="_blank">
+            <img class="intita-logo-img" src="./src/assets/images/Intita_logo.png" alt="intita_logo">
+            </a>
+            <hr class="line-logo">
+            <a href="https://www.robotamolodi.org/" target="_blank">
+            <img class="robota-molodi-logo-img" src="./src/assets/images/robota_molodi_logo.png" alt="intita_logo">
+            </a>
+        </div>
+        <div class="desktop-menu">
+            <ul class="desktop-list">
+            <a href="#we-provide"><button class="desktop-menu-text">Про програму</li></button>
+            <a href="#specialty"><button class="desktop-menu-text">Спеціальності</li></button>
+            <a href="#partners-logos"><button class="desktop-menu-text">Партнери</li></button>
+            <a href="#footer"><button class="desktop-menu-text">Контакти</li></button>
+            </ul>
+        </div>
+        <div class="header-flag">
+            <a><img class="flag" src="./src/assets/images/flag_header.png" alt="flg"></a>
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross"><i class="icon-close"></i>&#735;</button>
     </header>
+        <div class="menu">
+        <ul>
+        <li>
+            <div class="burger-top">
+                <img class="bg-language" src="./src/assets/images/burger/Language.png" alt="language">
+                <div class="bg-text">
+                <p class="bg-text-italic">ДОБРОГО ВЕЧОРА - МИ З</p>
+                <p class="bg-text-bold"> УКРАЇНИ!</p>
+                </div>
+                <hr class="bg-blue-line">
+                <hr class="bg-yellow-line">
+            </div>    
+        </li>
+            <a href="#we-provide"><li class="bg-program">Про програму</li></a>
+            <a href="#specialty"><li class="bg-spets">Спеціальності</li></a>
+            <a href="#partners-logos"><li class="bg-partners">Партнери</li></a>
+            <a href="#footer"><li class="bg-contacts">Контакти</li></a>
+        <li class="bg-bottom">
+            <hr class="bg-blue-line2">
+            <hr class="bg-yellow-line2">
+            <div class="bg-social">
+                <a href="https://t.me/IT_Academy_Vinnytsia"><i class="icon-telegram"></i></a>
+                <a href="https://www.facebook.com/intita.it/"><i class="icon-facebook"></i></a>
+                <a href="viber://chat?number=+380631892256"><i class="icon-viber"></i></a>
+            </div>
+            <div class="bg-social-bottom">
+                <a href="https://wa.me/+380674317424"><i class="icon-whatsapp"></i></a>
+                <a href="https://twitter.com/INTITA_EDU"><i class="icon-twitter"></i></a>
+                <a href="https://www.instagram.com/intitaedu"><i class="icon-instagram"></i></a>
+            </div>
+        </li>
+        </ul>
+        </div> 
     <!--"header end"-->
 
     <!--"hero section start"-->
@@ -93,23 +106,12 @@
             <div class="hero_content">
                 <h1 class="hero_content_title">ДОБРОГО ВЕЧОРА, МИ З УКРАЇНИ!</h1>
                 <p class="hero_content_description">Програма працевлаштування ветеранів, ВПО та громадян, які
-                    постраждали внаслідок війни росії проти України та українського народу.
+                    постраждали внаслідок війни росії проти України
+                    та українського народу.
                 </p>
                 <button class="hero_content_button button-primary" data-bs-toggle="modal"
                     data-bs-target="#registrationForm">Зареєструватися</button>
             </div>
-            <!-- desktop contacts block start -->
-            <div id="contacts-block">
-                <div class="contacts-box">
-                    <a href="https://t.me/IT_Academy_Vinnytsia" target="_blank"><i class="icon-telegram contacts-block-icon"></i></a>
-                    <a href="https://www.facebook.com/intita.it/" target="_blank"><i class="icon-facebook contacts-block-icon"></i></a>
-                    <a href="https://wa.me/+380674317424" target="_blank"><i class="icon-whatsapp contacts-block-icon"></i></a>
-                    <a href="viber://chat?number=+380631892256" target="_blank"><i class="icon-viber contacts-block-icon"></i></a>
-                    <a href="https://twitter.com/INTITA_EDU" target="_blank"><i class="icon-twitter contacts-block-icon"></i></a>
-                    <a href="https://www.instagram.com/intitaedu" target="_blank"><i class="icon-instagram contacts-block-icon"></i></a>   
-                </div>
-            </div>
-            <!-- desktop contacts block end -->
         </section>
 
     <!--"hero section end"-->
@@ -159,10 +161,10 @@
                 </div>
             </div>     
             <!-- video -->
-            <div class="we-provide__video-wrapper">  
+            <div class="we-provide__video-wrapper">            
                 <div class="video_with_autoplay">
                      <img class="video-poster" src="src/assets/images/we_provide/poster-desktop.svg">
-                    <!-- <iframe id="we-provide-video"  src="https://www.youtube.com/embed/pmrIlYBWP20?si=S8eRtAyXzzP5OIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <!-- <iframe id="video1"  src="https://www.youtube.com/embed/pmrIlYBWP20?si=S8eRtAyXzzP5OIrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>

@@ -1,24 +1,3 @@
-// start loader
-
-//imitation of loading. uncomment for test
-
-/*
-document.onreadystatechange = function (e) {
-    if (document.readyState === 'complete') {
-        let animationPreload = document.querySelectorAll('.loader-block')[0];
-        animationPreload.style.visibility = 'visible';
-        animationPreload.style.opacity = '1';
-
-        let timerId = setTimeout(function () {
-            animationPreload.style.opacity = '0';
-            animationPreload.style.visibility = 'hidden';
-        }, 2000); 
-    }
-};
-*/
-
-// end loader
-
 // start specialities
 document.addEventListener('DOMContentLoaded', function () {
     let carouselBlock = document.querySelector('.specialty-carousel-main-container');
@@ -47,6 +26,25 @@ document.addEventListener('DOMContentLoaded', function () {
 // end specialities
 
 // start modal burger menu
+$( document ).ready(function() {
+
+    $( ".cross" ).hide();
+    $( ".menu" ).hide();
+    $( ".hamburger" ).click(function() {
+    $( ".menu" ).slideToggle( "slow", function() {
+    $( ".hamburger" ).hide();
+    $( ".cross" ).show();
+    });
+    });
+    
+    $( ".cross" ).click(function() {
+    $( ".menu" ).slideToggle( "slow", function() {
+    $( ".cross" ).hide();
+    $( ".hamburger" ).show();
+    });
+    });
+    
+    });
 // end modal burger menu
 
 //start we provide video poster
@@ -66,7 +64,7 @@ videos.on("click", function () {
     elm.off("click");
 });
 
-let videos2 = $(".video_with_autoplay");
+var videos2 = $(".video_with_autoplay");
 videos2.on("click", function () {
     let elm = $(this),
         conts = elm.contents(),
@@ -79,10 +77,11 @@ videos2.on("click", function () {
 
     elm.addClass("player").html(ifr);
     elm.off("click");
-    $("#we-provide-video")[0].src += "&autoplay=1";
+    $("#video1")[0].src += "&autoplay=1";
     
 });
 //end we provide video poster
+
 
 //start partners' logos
 $(".owl-carousel").owlCarousel({
