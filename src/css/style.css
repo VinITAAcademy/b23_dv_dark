@@ -260,28 +260,8 @@ button {
 }
 
 /* desktop contacts block start */
-#contacts-block {
-    position: absolute;
-    right: 0;
-    padding-top: 176px;
+#hero .hero_main #contacts-block {
     display: none;
-    width: 137px;
-    height: 768px;
-    background-color: #515558;
-}
-
-#contacts-block .contacts-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 35px;
-    height: 495px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#contacts-block .contacts-box .contacts-block-icon {
-    font-size: 35px;
 }
 
 /* desktop contacts block end */
@@ -507,20 +487,22 @@ button {
 /* registration section start */
 #registration .registration-main {
     text-align: center;
-    padding: 2.0625rem 4.4rem 1.875rem;
+    padding: 30px 59px;
 }
 
 #registration .registration-main .registration-content .registration-content-text {
     color: var(--white);
     font-family: 'Ubuntu Medium';
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-style: normal;
+    line-height: normal;
 }
 
 #registration .registration-main .registration-content .registration-content-button {
-    padding: 1rem 3.375rem;
+    padding: 15px 57px 17px;
     font-family: 'Ubuntu Regular';
-    font-size: 0.875rem;
+    font-size: 14px;
 }
 
 #registration .registration-main .registration-image-container {
@@ -687,57 +669,8 @@ button {
     align-items: center;
 }
 
-/* desktop */
-
 #partners-logos .partners-logos-desktop .partners-logos-container {
     display: none;
-    max-width: 694px;
-    min-height: 211px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#partners-logos .partners-logos-desktop .partners-logos-container .first-line-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 16px;
-    padding-top: 27px;
-}
-
-#partners-logos .partners-logos-container .first-line-container .card-item .it-academy-logo {
-    width: 167px;
-    padding-top: 10px;
-}
-
-#partners-logos .partners-logos-container .first-line-container .card-item .yeps-logo {
-    width: 169px;
-    padding-top: 19px;
-}
-
-#partners-logos .partners-logos-container .first-line-container .card-item .kava-drive-logo {
-    width: 258px;
-}
-
-#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container {
-    display: flex;
-    flex-direction: row;
-}
-
-#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .intita-partners-logo {
-    width: 187px;
-    margin-right: 57px;
-}
-
-#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .bayraktar-logo {
-    width: 115px;
-    margin-right: 78px;
-    padding-top: 21px;
-}
-
-#partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .robota-molodi-partners-logo {
-    width: 232px;
-    padding-top: 6px;
 }
 
 /* logo of partners end */
@@ -1360,7 +1293,7 @@ button {
     /* hero section end" */
 
     /* desktop contacts block start */
-    #contacts-block {
+    #hero .hero_main #contacts-block {
         display: none;
     }
 
@@ -1444,7 +1377,7 @@ button {
 
     /* registration section start */
     #registration .registration-main {
-        padding: 3.125rem 3.3125rem;
+        padding: 50px 53px 51px;
     }
 
     #registration .registration-main .registration-content .registration-content-link {
@@ -1452,14 +1385,15 @@ button {
     }
 
     #registration .registration-main .registration-content .registration-content-text {
-        font-size: 2.25rem;
-        margin-bottom: 3.125rem;
+        font-size: 36px;
+        margin-bottom: 59px;
+        line-height: normal;
+        font-style: normal;
     }
 
     #registration .registration-main .registration-content .registration-content-button {
-        padding: 1.5625rem 5.3125rem;
-        font-size: 1.375rem;
-        width: 21.875rem;
+        padding: 24.5px 85px;
+        font-size: 22px;
     }
 
     /* registration section end */
@@ -1601,6 +1535,10 @@ button {
 
     #partners-logos .partners-logos-mobile-tablet .container .owl-carousel .card .card-img-top {
         width: 260px;
+    }
+
+    #partners-logos .partners-logos-desktop .partners-logos-container {
+        display: none;
     }
 
     /* logo of partners end */
@@ -1845,8 +1783,27 @@ button {
     /* hero section end" */
 
     /* desktop contacts block start */
-    #contacts-block {
+    #hero .hero_main #contacts-block {
+        position: absolute;
+        right: 0;
+        padding-top: 176px;
         display: block;
+        width: 137px;
+        height: 768px;
+        background-color: #515558;
+    }
+
+    #hero .hero_main #contacts-block .contacts-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 35px;
+        height: 495px;
+        margin: 0 auto;
+    }
+
+    #hero .hero_main #contacts-block .contacts-box .contacts-block-icon {
+        font-size: 35px;
     }
 
     /* desktop contacts block end */
@@ -2108,27 +2065,29 @@ button {
     /* we provide end */
 
     /* registration section start */
+    #registration {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
     #registration .registration-main {
         padding: 0;
         text-align: left;
         display: flex;
-        justify-content: space-between;
     }
 
     #registration .registration-main .registration-content {
-        padding: 3rem 6.5rem 3.4375rem 2.625rem;
+        padding: 48px 110px 55px 42px;
     }
 
     #registration .registration-main .registration-content .registration-content-text {
-        font-size: 1.75rem;
-        margin-bottom: 1.5625rem;
+        font-size: 28px;
+        margin-bottom: 25px;
     }
 
     #registration .registration-main .registration-content .registration-content-button {
-        padding: 1rem 3.375rem;
-        font-size: 0.875rem;
-        width: 14rem;
-        text-align: center;
+        padding: 15px 57px 17px;
+        font-size: 14px;
     }
 
     #registration .registration-main .registration-image-container {
@@ -2242,6 +2201,52 @@ button {
 
     #partners-logos .partners-logos-desktop .partners-logos-container {
         display: block;
+        max-width: 694px;
+        min-height: 211px;
+        margin: 0 auto;
+    }
+
+    #partners-logos .partners-logos-desktop .partners-logos-container .first-line-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        padding-top: 27px;
+    }
+
+    #partners-logos .partners-logos-container .first-line-container .card-item .it-academy-logo {
+        width: 167px;
+        padding-top: 10px;
+    }
+
+    #partners-logos .partners-logos-container .first-line-container .card-item .yeps-logo {
+        width: 169px;
+        padding-top: 19px;
+    }
+
+    #partners-logos .partners-logos-container .first-line-container .card-item .kava-drive-logo {
+        width: 258px;
+    }
+
+    #partners-logos .partners-logos-desktop .partners-logos-container .second-line-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .intita-partners-logo {
+        width: 187px;
+        margin-right: 57px;
+    }
+
+    #partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .bayraktar-logo {
+        width: 115px;
+        margin-right: 78px;
+        padding-top: 21px;
+    }
+
+    #partners-logos .partners-logos-desktop .partners-logos-container .second-line-container .card-item .robota-molodi-partners-logo {
+        width: 232px;
+        padding-top: 6px;
     }
 
     /* logo of partners end */
