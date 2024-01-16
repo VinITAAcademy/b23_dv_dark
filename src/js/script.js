@@ -94,22 +94,20 @@ $(".owl-carousel").owlCarousel({
 //end partners' logos
 // start modal burger menu
 $( document ).ready(function() {
-
     $( ".cross" ).hide();
-    $( ".menu" ).hide();
-    $( ".hamburger" ).click(function() {
-    $( ".menu" ).slideToggle( "slow", function() {
-    $( ".hamburger" ).hide();
-    $( ".cross" ).show();
-    });
-    });
+    $( "#menu" ).hide();
+        $( ".hamburger" ).click(function() {
+                $( "#menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+                });
+        });
     
     $( ".cross" ).click(function() {
-    $( ".menu" ).slideToggle( "slow", function() {
-    $( ".cross" ).hide();
-    $( ".hamburger" ).show();
+        $( "#menu" ).slideToggle( "slow", function() {
+            $( ".cross" ).hide();
+            $( ".hamburger" ).show();
+        });
     });
-    });
-    
-    });
+});
 // end modal burger menu

@@ -335,7 +335,6 @@ button {
     content: "\e90a";
     color: black;
     font-size: 22px;
-
 }
 
 #header .desktop-menu {
@@ -346,7 +345,7 @@ button {
     display: none;
 }
 
-.cross {
+#header .cross {
     background: none;
     position: absolute;
     top: -10px;
@@ -362,7 +361,7 @@ button {
     z-index: 10000000000000;
 }
 
-.menu {
+#menu {
     top: 0px;
     z-index: 1000000;
     font-family: 'Ubuntu Medium';
@@ -378,12 +377,12 @@ button {
 }
 
 
-.menu .burger-top {
+#menu .burger-top {
     width: 375px;
     height: 108px;
 }
 
-.menu .burger-top .bg-language {
+#menu .burger-top .bg-language {
     width: 71px;
     height: 31px;
     float: left;
@@ -391,7 +390,7 @@ button {
     margin-left: -27px;
 }
 
-.menu .burger-top .bg-text {
+#menu .burger-top .bg-text {
     width: 186px;
     height: 64px;
     padding-top: 6px;
@@ -399,7 +398,7 @@ button {
     float: left;
 }
 
-.menu .burger-top .bg-text .bg-text-italic {
+#menu .burger-top .bg-text .bg-text-italic {
     font-family: 'Ubuntu Italic';
     src: local('Ubuntu'), url('../fonts/Ubuntu-Italic.ttf') format('truetype');
     font-weight: 400;
@@ -410,7 +409,7 @@ button {
     margin-top: -2px;
 }
 
-.menu .burger-top .bg-text .bg-text-bold {
+#menu .burger-top .bg-text .bg-text-bold {
     font-family: 'Ubuntu';
     src: local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
     font-weight: 700;
@@ -421,14 +420,14 @@ button {
     margin-left: -8px;
 }
 
-.menu .menu ul {
+#menu .menu ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     list-style-image: none;
 }
 
-.menu .burger-top .bg-blue-line {
+#menu .burger-top .bg-blue-line {
     position: absolute;
     color: #083CC0;
     border: 3px;
@@ -441,7 +440,7 @@ button {
     margin: 0;
 }
 
-.menu .burger-top .bg-yellow-line {
+#menu .burger-top .bg-yellow-line {
     position: absolute;
     color: #FFD500;
     border: 2px;
@@ -454,36 +453,36 @@ button {
     margin: 0;
 }
 
-.menu li {
+#menu li {
     display: block;
     padding: 14px 0 15px 0;
 }
 
-.menu .bg-program {
+#menu .bg-program {
     margin-top: -29px;
     margin-left: -34px;
     color: black;
 }
 
-.menu .bg-spets {
+#menu .bg-spets {
     margin-top: -1px;
     margin-left: -34px;
     color: black;
 }
 
-.menu .bg-partners {
+#menu .bg-partners {
     margin-top: -1px;
     margin-left: -34px;
     color: black;
 }
 
-.menu .bg-contacts {
+#menu .bg-contacts {
     margin-top: -3px;
     margin-left: -34px;
     color: black;
 }
 
-.menu .bg-blue-line2 {
+#menu .bg-blue-line2 {
     position: absolute;
     color: #083CC0;
     border: 3px;
@@ -496,7 +495,7 @@ button {
     margin: 0;
 }
 
-.menu .bg-yellow-line2 {
+#menu .bg-yellow-line2 {
     position: absolute;
     color: #FFD500;
     border: 2px;
@@ -509,13 +508,13 @@ button {
     margin: 0;
 }
 
-.menu .bg-bottom {
+#menu .bg-bottom {
     width: 375px;
     height: 179px;
     margin-left: -30px;
 }
 
-.menu .bg-social {
+#menu .bg-social {
     position: absolute;
     width: 250px;
     height: 100px;
@@ -526,7 +525,7 @@ button {
     margin-left: 58px;
 }
 
-.menu .bg-social-bottom {
+#menu .bg-social-bottom {
     position: absolute;
     width: 250px;
     height: 100px;
@@ -537,88 +536,73 @@ button {
     margin-left: 58px;
 }
 
-.menu .bg-social .icon-telegram:before {
+#menu .bg-social .icon-telegram:before {
     content: "\e904";
     font-size: 50px;
     color: #000;
 }
 
-.menu .bg-social .icon-facebook:before {
+#menu .bg-social .icon-facebook:before {
     content: "\e905";
     font-size: 50px;
     color: #000;
 }
 
-.menu .bg-social-bottom .icon-whatsapp:before {
+#menu .bg-social-bottom .icon-whatsapp:before {
     content: "\e907";
     font-size: 50px;
     color: #000;
 }
 
-.menu .bg-social .icon-viber:before {
+#menu .bg-social .icon-viber:before {
     content: "\e906";
     font-size: 50px;
     color: #000;
 }
 
-.menu .bg-social-bottom .icon-twitter:before {
+#menu .bg-social-bottom .icon-twitter:before {
     content: "\e909";
     font-size: 50px;
     color: #000;
 }
 
-.menu .bg-social-bottom .icon-instagram:before {
+#menu .bg-social-bottom .icon-instagram:before {
     content: "\e908";
     font-size: 50px;
     color: #000;
 }
 
-.menu li:hover {
+#menu li:hover {
     display: block;
     background: #ffffff;
     padding: 14px 0 15px 0;
     border-bottom: #dddddd 1px solid;
 }
 
-.menu ul li a {
+#menu ul li a {
     text-decoration: none;
     margin: 0px;
     color: #666;
 }
 
-.menu ul li a:hover {
+#menu ul li a:hover {
     color: #666;
     text-decoration: none;
 }
 
-.menu a {
+#menu a {
     text-decoration: none;
     color: #666;
 }
 
-.menu a:hover {
+#menu a:hover {
     text-decoration: none;
     color: #666;
 }
 
-.glyphicon-home {
-    color: white;
-    font-size: 1.5em;
-    margin-top: 5px;
-    margin: 0 auto;
-}
-
-header {
+#header {
     display: inline-block;
     font-size: 12px;
-}
-
-span {
-    padding-left: 20px;
-}
-
-a {
-    color: #336699;
 }
 
 /* header end */
@@ -1472,7 +1456,7 @@ a {
         margin-top: 6px;
     }
 
-    .menu .burger-top .bg-text {
+    #menu .burger-top .bg-text {
         width: 500px;
         height: 105px;
         padding-top: 7px;
@@ -1480,42 +1464,42 @@ a {
         float: left;
     }
 
-    .menu .burger-top .bg-text .bg-text-italic {
+    #menu .burger-top .bg-text .bg-text-italic {
         font-size: 24px;
         margin-left: -225px;
         margin-top: 1px;
     }
 
-    .menu .burger-top .bg-text .bg-text-bold {
+    #menu .burger-top .bg-text .bg-text-bold {
         font-size: 48px;
         margin-left: -225px;
         margin-top: 29px;
     }
 
-    .menu .burger-top .bg-blue-line {
+    #menu .burger-top .bg-blue-line {
         border: 2px;
         top: 133px;
         width: 696px;
 
     }
 
-    .menu .burger-top .bg-yellow-line {
+    #menu .burger-top .bg-yellow-line {
         border: 3px;
         top: 138px;
         width: 696px;
     }
 
-    .menu {
+    #menu {
         font-size: 64px;
         height: 830px;
     }
 
-    .menu .bg-program {
+    #menu .bg-program {
         margin-top: 30px;
         margin-left: -31px;
     }
 
-    .menu .bg-spets {
+    #menu .bg-spets {
         margin-top: 6px;
         margin-left: -31px;
     }
@@ -1525,19 +1509,19 @@ a {
         margin-left: -31px;
     }
 
-    .menu .bg-contacts {
+    #menu .bg-contacts {
         margin-top: 7px;
         margin-left: -30px;
     }
 
-    .menu .bg-blue-line2 {
+    #menu .bg-blue-line2 {
         top: 612px;
         margin-left: 1px;
         width: 696px;
 
     }
 
-    .menu .bg-yellow-line2 {
+    #menu .bg-yellow-line2 {
         top: 618px;
         border: 2px;
         margin-left: 1px;
@@ -1545,12 +1529,12 @@ a {
 
     }
 
-    .menu .bg-social {
+    #menu .bg-social {
         top: 635px;
         left: 201px;
     }
 
-    .menu .bg-social-bottom {
+    #menu .bg-social-bottom {
         top: 713px;
         left: 201px;
     }
@@ -2195,7 +2179,7 @@ a {
     /* conditions of participation end */
 
     /* header start */
-    .menu {
+    #menu {
         display: none;
     }
 
