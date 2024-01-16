@@ -635,7 +635,6 @@ button {
     width: 288px;
     margin: 0 38px 25px 49px;
     text-align: left; 
-   /*  margin-bottom: 25px; */
 }
 
 #partners .partners-main .partners-content .partners-content-text-third {
@@ -659,9 +658,8 @@ button {
     font-weight: 400;
     line-height: normal;
     color: var(--white);
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
+    margin: 0 73px 30px;
+} 
 /* partners end */
 
 /* logo of partners start */
@@ -2300,10 +2298,8 @@ button {
         color: var(--сolor-white);
         justify-content: center; 
         text-align: left; 
-        margin-top: 30px; 
         font-size: 24px;
-        margin-bottom: 25px;
-        margin-left: 20px; 
+        margin: 30px 0 25px 20px;
     }
     
     #partners .partners-main .partners-content {
@@ -2321,7 +2317,6 @@ button {
         text-align: left;
         margin-bottom: 13px;
         margin-left: 20px; 
-        
     }
     #partners .partners-main .partners-content .dotted-line {
         width: 302px;
