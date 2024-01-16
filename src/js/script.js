@@ -98,8 +98,8 @@ $( document ).ready(function() {
     $( "#menu" ).hide();
         $( ".hamburger" ).click(function() {
             $( "#menu" ).slideToggle( "slow", function() {
-            $( ".hamburger" ).hide();
-            $( ".cross" ).show();
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
             });
         });
     
