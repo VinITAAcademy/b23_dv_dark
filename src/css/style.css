@@ -461,25 +461,25 @@ button {
 #menu .bg-program {
     margin-top: -29px;
     margin-left: -34px;
-    color: black;
+    color: var(--сolor-black);
 }
 
 #menu .bg-spets {
     margin-top: -1px;
     margin-left: -34px;
-    color: black;
+    color: var(--сolor-black);
 }
 
 #menu .bg-partners {
     margin-top: -1px;
     margin-left: -34px;
-    color: black;
+    color: var(--сolor-black);
 }
 
 #menu .bg-contacts {
     margin-top: -3px;
     margin-left: -34px;
-    color: black;
+    color: (var(--сolor-black));
 }
 
 #menu .bg-blue-line2 {
