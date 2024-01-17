@@ -379,6 +379,7 @@ button {
 #menu .burger-top {
     width: 375px;
     height: 108px;
+    margin-left: 32px;
 }
 
 #menu .burger-top .bg-language {
@@ -517,7 +518,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 58px;
+    margin-left: 60px;
 }
 
 #menu .bg-social-bottom {
@@ -528,7 +529,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 58px;
+    margin-left: 60px;
 }
 
 #menu .bg-social .icon-telegram:before {
@@ -1522,12 +1523,12 @@ button {
 
     #menu .bg-social {
         top: 637px;
-        left: 201px;
+        left: 199px;
     }
 
     #menu .bg-social-bottom {
         top: 713px;
-        left: 201px;
+        left: 199px;
     }
 
     /* header end */
