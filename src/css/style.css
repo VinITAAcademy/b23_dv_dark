@@ -1472,15 +1472,14 @@ button {
     }
 
     #menu .burger-top .bg-blue-line {
-        border: 2px;
         top: 133px;
+        margin-left: -1px;
         width: 696px;
-
     }
 
     #menu .burger-top .bg-yellow-line {
-        border: 3px;
         top: 138px;
+        margin-left: -1px;
         width: 696px;
     }
 
@@ -1516,8 +1515,7 @@ button {
     }
 
     #menu .bg-yellow-line2 {
-        top: 618px;
-        border: 2px;
+        top: 617px;
         margin-left: 1px;
         width: 696px;
     }
