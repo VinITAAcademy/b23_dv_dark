@@ -376,7 +376,6 @@ button {
     color: black;
 }
 
-
 #menu .burger-top {
     width: 375px;
     height: 108px;
@@ -386,14 +385,14 @@ button {
     width: 71px;
     height: 31px;
     float: left;
-    margin-top: -9px;
+    margin-top: 5px;
     margin-left: -27px;
 }
 
 #menu .burger-top .bg-text {
     width: 186px;
     height: 64px;
-    padding-top: 6px;
+    padding-top: 20px;
     margin-left: 23px;
     float: left;
 }
@@ -433,9 +432,8 @@ button {
     border: 3px;
     border-style: solid;
     width: 300px;
-    top: 98px;
+    top: 97px;
     left: 35px;
-    width: 300px;
     opacity: 1;
     margin: 0;
 }
@@ -446,9 +444,8 @@ button {
     border: 2px;
     border-style: solid;
     width: 300px;
-    top: 103px;
+    top: 102px;
     left: 35px;
-    width: 300px;
     opacity: 1;
     margin: 0;
 }
@@ -459,27 +456,27 @@ button {
 }
 
 #menu .bg-program {
-    margin-top: -29px;
+    margin-top: 0px;
     margin-left: -34px;
-    color: var(--сolor-black);
 }
 
 #menu .bg-spets {
     margin-top: -1px;
     margin-left: -34px;
-    color: var(--сolor-black);
 }
 
 #menu .bg-partners {
     margin-top: -1px;
     margin-left: -34px;
-    color: var(--сolor-black);
 }
 
 #menu .bg-contacts {
     margin-top: -3px;
     margin-left: -34px;
-    color: (var(--сolor-black));
+}
+
+#menu .bg-text-menu {
+    color: var(--сolor-black);
 }
 
 #menu .bg-blue-line2 {
@@ -488,9 +485,8 @@ button {
     border: 3px;
     border-style: solid;
     width: 300px;
-    top: 330px;
+    top: 329px;
     left: 35px;
-    width: 300px;
     opacity: 1;
     margin: 0;
 }
@@ -501,9 +497,8 @@ button {
     border: 2px;
     border-style: solid;
     width: 300px;
-    top: 335px;
+    top: 334px;
     left: 35px;
-    width: 300px;
     opacity: 1;
     margin: 0;
 }
@@ -1495,7 +1490,7 @@ button {
     }
 
     #menu .bg-program {
-        margin-top: 30px;
+        margin-top: 59px;
         margin-left: -31px;
     }
 
@@ -1504,9 +1499,9 @@ button {
         margin-left: -31px;
     }
 
-    .menu .bg-partners {
+    #menu .bg-partners {
         margin-top: 7px;
-        margin-left: -31px;
+        margin-left: -32px;
     }
 
     #menu .bg-contacts {
@@ -1518,7 +1513,6 @@ button {
         top: 612px;
         margin-left: 1px;
         width: 696px;
-
     }
 
     #menu .bg-yellow-line2 {
@@ -1526,11 +1520,10 @@ button {
         border: 2px;
         margin-left: 1px;
         width: 696px;
-
     }
 
     #menu .bg-social {
-        top: 635px;
+        top: 637px;
         left: 201px;
     }
 
@@ -2221,15 +2214,15 @@ button {
         z-index: 1;
     }
 
-    #header .desktop-menu .desktop-list .desktop-menu-text:before:hover {
-        color: #7FA2FB;
-        ;
+    #header .desktop-menu .desktop-list .desktop-menu-text .desktop-menu-link {
+        color: var(--button-active-bg);
     }
 
-    #header .desktop-menu .desktop-list .desktop-menu-text:hover {
+    #header .desktop-menu .desktop-list .desktop-menu-text .desktop-menu-link:hover {
         color: var(--button-hover-bg);
     }
 
+    */
     /* header end */
 
     /* quote start */
