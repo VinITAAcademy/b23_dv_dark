@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let carouselCard = document.querySelectorAll('.carousel-item');
     let screenWidth = window.screen.width;
     
-    windоw.addEventListener('resize', function (e) {    
+    document.addEventListener('resize', function (e) {    
         if (screenWidth >= 768) {
             carouselBlock.removeAttribute('id');
             carouselBlock.classList.remove('carousel');
@@ -92,6 +92,7 @@ $(".owl-carousel").owlCarousel({
     navText: ["<div class='icon-arrow-left-logos'></div>","<div class='icon-arrow-right-logos'></div>"]
 });
 //end partners' logos
+
 // start modal burger menu
 $( document ).ready(function() {
     $( ".cross" ).hide();
