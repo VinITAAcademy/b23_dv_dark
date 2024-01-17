@@ -92,3 +92,22 @@ $(".owl-carousel").owlCarousel({
     navText: ["<div class='icon-arrow-left-logos'></div>","<div class='icon-arrow-right-logos'></div>"]
 });
 //end partners' logos
+// start modal burger menu
+$( document ).ready(function() {
+    $( ".cross" ).hide();
+    $( "#menu" ).hide();
+        $( ".hamburger" ).click(function() {
+            $( "#menu" ).slideToggle( "slow", function() {
+                $( ".hamburger" ).hide();
+                $( ".cross" ).show();
+            });
+        });
+    
+    $( ".cross" ).click(function() {
+        $( "#menu" ).slideToggle( "slow", function() {
+            $( ".cross" ).hide();
+            $( ".hamburger" ).show();
+        });
+    });
+});
+// end modal burger menu
