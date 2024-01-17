@@ -1442,13 +1442,12 @@ button {
     color: var(--black);
 }
 
-
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form {
     display: flex;
     flex-direction: column;
 }
 
-#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .reqiared_form_controls {
+#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .required_form_controls {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1496,7 +1495,6 @@ button {
     content: '*';
     color: var(--red);
     padding-left: 4px;
-
 }
 
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .error_message {
@@ -1513,7 +1511,6 @@ button {
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .optional_fields {
     margin-top: 20px;
 }
-
 
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .optional_fields label {
     color: var(--grey);
@@ -2223,7 +2220,7 @@ button {
         margin-bottom: 25px;
     }
 
-    #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .reqiared_form_controls {
+    #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .required_form_controls {
         grid-template-columns: 1fr 1fr;
     }
 
