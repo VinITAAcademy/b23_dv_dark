@@ -609,7 +609,7 @@ button {
     flex-direction: column;
 }
 
-.partners-content-title {
+.partners.partners-main .partners-content .partners-content-title {
     font-family: 'Ubuntu Bold';
     color: var(--white);
     justify-content: center;
@@ -1550,7 +1550,7 @@ button {
     /* conditions of participation end */
 
     /* partners start */
-    .partners-content-title {
+    .partners.partners-main .partners-content.partners-content-title {
         margin-top: 50px;
         font-size: 40px;
     }
@@ -2293,7 +2293,7 @@ button {
         height: 419px;
     }
     
-    .partners-content-title {
+    .partners.partners-main .partners-content.partners-content-title {
         font-family: 'Ubuntu Bold';
         color: var(--сolor-white);
         justify-content: center; 
