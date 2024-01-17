@@ -51,44 +51,59 @@
     <!--"loader end"-->
 
     <!--"header start"-->
-       <header id="header">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-            <div class="navbar-brand">
-                <a href="https://intita.com/">  
-                    <img class="header-logo-intita" src="./src/assets/images/Intita_logo.png" alt="logo_intita_img" >
-                </a>  
-                <hr class="line-logo">
-                <a href="https://www.robotamolodi.org/">  
-                    <img class="header-logo-robota-molodi" src="./src/assets/images/robota_molodi_logo.png" alt="logo_rm_img">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon_1"></span>
-            <span class="navbar-toggler-icon_2"></span>
-            <span class="navbar-toggler-icon_3"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item-1">
-                        <a class="nav-link" href="#">Про програму</a>
-                    </li>
-                    <li class="nav-item-2">
-                        <a class="nav-link" href="#">Спеціальності</a>
-                    </li>                  
-                    <li class="nav-item-3">
-                        <a class="nav-link" href="#">Партнери</a>
-                    </li>                  
-                    <li class="nav-item-4">
-                        <a class="nav-link" href="#">Контакти</a>
-                    </li>
-                </ul>
-            </div>    
-            <div class="flag-div">
-                <a><img class="flag" src="./src/assets/images/flag_header.png" alt="flg"></a>
-            </div>
-        </nav> 
+    <header id="header">
+        <div class="intita-logo-header"> 
+            <a href="https://intita.com/" target="_blank">
+                <img class="intita-logo-img"  src="./src/assets/images/Intita_logo.png" alt="intita_logo">
+            </a>
+            <hr class="line-logo">
+            <a href="https://www.robotamolodi.org/" target="_blank">
+                <img class="robota-molodi-logo-img" src="./src/assets/images/robota_molodi_logo.png" alt="intita_logo">
+            </a>
+        </div>
+        <div class="desktop-menu">
+            <ul class="desktop-list">
+                <li class="desktop-menu-text"><a class="desktop-menu-link" href="#we-provide">Про програму</a></li>
+                <li class="desktop-menu-text"><a class="desktop-menu-link" href="#specialty">Спеціальності</a></li>
+                <li class="desktop-menu-text"><a class="desktop-menu-link" href="#partners-logos">Партнери</a></li>
+                <li class="desktop-menu-text"><a class="desktop-menu-link" href="#footer">Контакти</a></li>
+            </ul>
+        </div>
+        <div class="header-flag">
+            <a href="#"><img class="flag" src="./src/assets/images/flag_header.png" alt="flg"></a>
+        </div>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross"><i class="icon-close"></i>&#735;</button>
     </header>
+    <div id="menu">
+        <div class="burger-top">
+            <img class="bg-language" src="./src/assets/images/burger/Language.png" alt="language">
+            <div class="bg-text">
+                <p class="bg-text-italic">ДОБРОГО ВЕЧОРА - МИ З</p>
+                <p class="bg-text-bold"> УКРАЇНИ!</p>
+            </div>
+            <hr class="bg-blue-line">
+            <hr class="bg-yellow-line">
+        </div> 
+        <ul>   
+            <li class="bg-program"><a class="bg-text-menu" href="#we-provide">Про програму</a></li>
+            <li class="bg-spets"><a class="bg-text-menu" href="#specialty">Спеціальності</a></li>
+            <li class="bg-partners"><a class="bg-text-menu" href="#partners-logos">Партнери</a></li>
+            <li class="bg-contacts"><a class="bg-text-menu" href="#footer">Контакти</a></li>
+        </ul>
+            <hr class="bg-blue-line2">
+            <hr class="bg-yellow-line2">
+        <div class="bg-social">
+            <a href="https://t.me/IT_Academy_Vinnytsia"><i class="icon-telegram"></i></a>
+            <a href="https://www.facebook.com/intita.it/"><i class="icon-facebook"></i></a>
+            <a href="https://wa.me/+380674317424"><i class="icon-viber"></i></a>
+        </div>
+        <div class="bg-social-bottom">
+            <a href="viber://chat?number=+380631892256"><i class="icon-whatsapp"></i></a>
+            <a href="https://twitter.com/INTITA_EDU"><i class="icon-twitter"></i></a>
+            <a href="https://www.instagram.com/intitaedu"><i class="icon-instagram"></i></a>
+        </div>
+    </div> 
     <!--"header end"-->
 
     <!--"hero section start"-->
@@ -117,7 +132,7 @@
         </section>
 
     <!--"hero section end"-->
-
+   
     <!--"quote start"-->
     <section id="quote">
         <img class="quote_left" src="./src/assets/images/quote.svg" alt="quote">
