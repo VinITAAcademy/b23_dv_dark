@@ -609,7 +609,7 @@ button {
     flex-direction: column;
 }
 
-.partners.partners-main .partners-content .partners-content-title {
+#partners .partners-main .partners-content .partners-content-title {
     font-family: 'Ubuntu Bold';
     color: var(--white);
     justify-content: center;
@@ -1550,7 +1550,7 @@ button {
     /* conditions of participation end */
 
     /* partners start */
-    .partners.partners-main .partners-content.partners-content-title {
+    #partners .partners-main .partners-content .partners-content-title {
         margin-top: 50px;
         font-size: 40px;
     }
@@ -1575,7 +1575,7 @@ button {
     #partners .partners-main .partners-content .partners-button {
         padding: 20px 77px;
         font-size: 24px;
-        margin-bottom: 50px;
+        margin: 0 236px 50px;
     }
     /* partners end */
 
@@ -2293,10 +2293,10 @@ button {
         height: 419px;
     }
     
-    .partners.partners-main .partners-content.partners-content-title {
+    #partners .partners-main .partners-content .partners-content-title {
         font-family: 'Ubuntu Bold';
         color: var(--сolor-white);
-        justify-content: center; 
+         justify-content: center; 
         text-align: left; 
         font-size: 24px;
         margin: 30px 0 25px 20px;
