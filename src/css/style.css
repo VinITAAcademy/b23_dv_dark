@@ -45,9 +45,8 @@
     --сolor-white: #fff;
     --сolor-black: #000;
     --color-burger-yellow: #FFF500;
-    --grey: rgba(5, 0, 62, 0.40);
+    --color-grey: rgba(5, 0, 62, 0.40);
     --red: #F00;
-    --black: #000;
 }
 
 *,
@@ -1439,7 +1438,7 @@ button {
     right: 8px;
     font-size: 30px;
     border-radius: 4px;
-    color: var(--black);
+    color: var(--color-black);
 }
 
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form {
@@ -1483,7 +1482,7 @@ button {
 }
 
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .input_container label {
-    color: var(--grey);
+    color: var(--color-grey);
     position: absolute;
     top: 50%;
     left: 14px;
@@ -1513,7 +1512,7 @@ button {
 }
 
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .optional_fields label {
-    color: var(--grey);
+    color: var(--color-grey);
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 6px;
@@ -1578,7 +1577,7 @@ button {
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content .checkbox_group label {
     font-size: 12px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--color-black);
 }
 
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .applicant_form_submit {
@@ -2229,7 +2228,7 @@ button {
     }
 
     #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .optional_fields input::placeholder {
-        color: var(--grey);
+        color: var(--color-grey);
     }
 
     /* modal windows end */

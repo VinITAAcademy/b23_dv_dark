@@ -30,7 +30,6 @@ const applicantForm = $("#applicant_form_modal .form");
 applicantForm.on("submit", function (event) {
     event.preventDefault();
     const data = $(this).serializeArray();
-    console.log(data);
     $("#applicant_form_modal").modal("hide");
     $("#succesModal").modal('show');
 });
