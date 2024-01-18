@@ -1,26 +1,26 @@
-let blur = document.querySelector('.blur_container_br');
-let posterior = document.querySelector('.posterior_background_br');
+let blur = document.querySelector('.blur-container-br');
+let posterior = document.querySelector('.posterior-background-br');
 let container = document.getElementById('offcanvasRight');
 let shows = document.querySelector('.offcanvas-end')
 function brAdd() {
     shows.style.transition = 'all 0.9s ease 0s';
-    blur.classList.add("blur_br");
-    posterior.classList.add("posterior_background");
+    blur.classList.add("blur-br");
+    posterior.classList.add("posterior-background");
     container.classList.add('show');
     document.body.style.overflow = "hidden";
     container.style.overflow = 'auto';
 }
 function brRemove() {
     document.body.style.overflow = "scroll";
-    blur.classList.remove("blur_br");
-    posterior.classList.remove("posterior_background");
+    blur.classList.remove("blur-br");
+    posterior.classList.remove("posterior-background");
     container.classList.remove('show');
 }
 function brRemovee() {
     shows.style.transition = 'all 0s ease 0s';
     document.body.style.overflow = "scroll";
-    blur.classList.remove("blur_br");
-    posterior.classList.remove("posterior_background");
+    blur.classList.remove("blur-br");
+    posterior.classList.remove("posterior-background");
     container.classList.remove('show');
 }
 window.onscroll = function () { scrollFunction() };
