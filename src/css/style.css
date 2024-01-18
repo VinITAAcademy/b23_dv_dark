@@ -1461,178 +1461,179 @@ button {
 
 /* modal windows end */
 
-/* partners window start */
-#questionnaire-form_modal .questionnaire-form_modal_container {
-    width: 375px;
-}
+    /* partners window start */
+    #questionnaire-form_modal .questionnaire-form_modal_container {
+        width: 375px;
+        margin: auto auto;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
-    position: relative;
-    width: 375px;
-    padding: 12px 44px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
+        position: relative;
+        width: 375px;
+        padding: 12px 44px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
-    color: var(--dark);
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Unbuntu Medium';
-    margin-top: 11px;
-    margin-bottom: 30px;
-    margin-left: 12px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Unbuntu Medium';
+        margin-top: 11px;
+        margin-bottom: 30px;
+        margin-left: 12px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
-    color: var(--dark);
-    font-size: 16px;
-    font-family: 'Unbuntu Bold';
-    font-weight: 700;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
+        color: var(--dark);
+        font-size: 16px;
+        font-family: 'Unbuntu Bold';
+        font-weight: 700;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-    top: 8px;
-    right: 8px;
-    font-size: 30px;
-    border-radius: 4px;
-    color: var(--black);
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 8px;
+        right: 8px;
+        font-size: 30px;
+        border-radius: 4px;
+        color: var(--black);
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
-    display: flex;
-    flex-direction: column;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
+        display: flex;
+        flex-direction: column;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    row-gap: 20px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
-    position: relative;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
+        position: relative;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1.5px solid #ccc;
-    border-color: #000;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1.5px solid #ccc;
+        border-color: #000;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
-    outline: none;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
+        outline: none;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
-    opacity: 1;
-    transition: opacity 0.2s ease-out;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
-    color: #a7a7a7;
-    position: absolute;
-    top: 50%;
-    left: 8px;
-    transform: translateY(-50%);
-    z-index: 0;
-    font-family: 'Unbuntu Regular';
-    font-size: 12px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
+        color: #a7a7a7;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        z-index: 0;
+        font-family: 'Unbuntu Regular';
+        font-size: 12px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
-    content: '*';
-    color: red;
-    padding-left: 4px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
+        content: '*';
+        color: red;
+        padding-left: 4px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
-    color: red;
-    font-size: 14px;
-    margin-top: 6px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
+        color: red;
+        font-size: 14px;
+        margin-top: 6px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
-    color: #a7a7a7;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 6px;
-    margin-top: 12px;
-    font-family: 'Unbuntu Regular';
-    width: 218px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
+        color: #a7a7a7;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 6px;
+        margin-top: 12px;
+        font-family: 'Unbuntu Regular';
+        width: 218px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
-    color: white;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
+        color: white;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
-    width: 287px;
-    height: 57px;
-    flex-shrink: 0;
-    border: 1.5px solid var(--dark);
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
+        width: 287px;
+        height: 57px;
+        flex-shrink: 0;
+        border: 1.5px solid var(--dark);
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-    color: #a7a7a7;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 6px;
-    margin-top: 12px;
-    font-family: 'Unbuntu Regular';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
+        color: #a7a7a7;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 6px;
+        margin-top: 12px;
+        font-family: 'Unbuntu Regular';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
-    width: 287px;
-    height: 40px;
-    flex-shrink: 0;
-    border: 1.5px solid var(--dark);
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
+        width: 287px;
+        height: 40px;
+        flex-shrink: 0;
+        border: 1.5px solid var(--dark);
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
-    height: 14px;
-    margin-top: 20px;
-    font-size: 12px;
-    font-style: normal;
-    font-family: 'Unbuntu Regular';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
+        height: 14px;
+        margin-top: 20px;
+        font-size: 12px;
+        font-style: normal;
+        font-family: 'Unbuntu Regular';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
-    content: "*";
-    color: red;
-    font-size: 20px;
-    margin-right: 2px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
+        content: "*";
+        color: red;
+        font-size: 20px;
+        margin-right: 2px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-    margin-top: 28px;
-    margin-bottom: 40px;
-    padding: 14px 83px;
-    text-align: center;
-    font-family: 'Unbuntu Regular';
-    font-weight: 400;
-    font-size: 22px;
-    width: 271px;
-    height: 53px;
-    margin-left: 8px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
+        margin-top: 28px;
+        margin-bottom: 40px;
+        padding: 14px 83px;
+        text-align: center;
+        font-family: 'Unbuntu Regular';
+        font-weight: 400;
+        font-size: 22px;
+        width: 271px;
+        height: 53px;
+        margin-left: 8px;
+    }
 
-/* partners window end */
+   /* partners window end */
 
 /* 404 start */
 /* 404 end */
@@ -2274,203 +2275,205 @@ button {
     /* modal windows start */
     /* modal windows end */
 
- /* partners window start */
-#questionnaire-form_modal .questionnaire-form_modal_container {
-    width: 677px;
-    max-width: 677px;
-    min-width: 677px;
-}
+    /* partners window start */
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
-    position: relative;
-    width: 677px;
-    padding: 0px 83px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container {
+        width: 677px;
+        max-width: 677px;
+        min-width: 677px;
+     }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
-    color: var(--dark);
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 41px;
-    margin-top: 30px;
-    font-family: 'Unbuntu Medium';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
+        position: relative;
+        width: 677px;
+        padding: 0px 83px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
-    color: var(--dark);
-    font-size: 36px;
-    font-family: 'Unbuntu Bold';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
+        color: var(--dark);
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 41px;
+        margin-top: 30px;
+        font-family: 'Unbuntu Medium';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    cursor: pointer;
-    top: 8px;
-    right: 8px;
-    font-size: 30px;
-    border-radius: 4px;
-    color: var(--black);
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
+        color: var(--dark);
+        font-size: 36px;
+        font-family: 'Unbuntu Bold';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
-    display: flex;
-    flex-direction: column;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 8px;
+        right: 8px;
+        font-size: 30px;
+        border-radius: 4px;
+        color: var(--black);
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 77px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
+        display: flex;
+        flex-direction: column;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
-    position: relative;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 77px;
+    }  
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
-    width: 100%;
-    height: 40px;
-    border-radius: 2px;
-    border: 1.5px solid var(--dark);
-    padding: 11px 13px;
-    font-size: 12px;
-    font-family: 'Unbuntu Regular';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
+        position: relative;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
-    outline: none;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        border: 1.5px solid var(--dark);
+        padding: 11px 13px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
-    opacity: 1;
-    transition: opacity 0.2s ease-out;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
+        outline: none;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
-    color: #a7a7a7;
-    position: absolute;
-    top: 50%;
-    left: 14px;
-    transform: translateY(-60%);
-    z-index: 0;
-    font-family: 'Unbuntu Regular';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
-    color: #a7a7a7;
-    font-family: 'Unbuntu Regular';
-    font-size: 12px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
+        color: #a7a7a7;
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-60%);
+        z-index: 0;
+        font-family: 'Unbuntu Regular';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
-    content: '*';
-    color: red;
-    padding-left: 4px;
-    font-size: 24px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
+        color: #a7a7a7;
+        font-family: 'Unbuntu Regular';
+        font-size: 12px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
-    color: red;
-    font-size: 14px;
-    margin-top: 6px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
+        content: '*';
+        color: red;
+        padding-left: 4px;
+        font-size: 24px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-    display: none;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
+        color: red;
+        font-size: 14px;
+        margin-top: 6px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-    width: 379px;
-    height: 14px;
-    position: absolute;
-    transform: translateY(40%);
-    z-index: 0;
-    padding-left: 11px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
+        display: none;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
-    width: 100%;
-    height: 40px;
-    border-radius: 2px;
-    border: 1.5px solid var(--dark);
-    padding: 11px 13px;
-    margin-bottom: 19px;
-    font-size: 12px;
-    font-family: 'Unbuntu Regular';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
+        width: 379px;
+        height: 14px;
+        position: absolute;
+        transform: translateY(40%);
+        z-index: 0;
+        padding-left: 11px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input:focus {
-    outline: none;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        border: 1.5px solid var(--dark);
+        padding: 11px 13px;
+        margin-bottom: 19px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input:focus {
-    outline: none;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input:focus {
+         outline: none;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields {
-    margin-top: 20px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input:focus {
+        outline: none;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
-    width: 379px;
-    height: 14px;
-    display: none;
-    position: absolute;
-    padding-left: 11px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields {
+        margin-top: 20px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
-    width: 100%;
-    height: 40px;
-    border: 1.5px solid var(--dark);
-    border-radius: 2px;
-    padding: 11px 13px;
-    margin-bottom: 19px;
-    font-size: 12px;
-    font-family: 'Unbuntu Regular';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
+        width: 379px;
+        height: 14px;
+        display: none;
+        position: absolute;
+        padding-left: 11px;
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
-    height: 20px;
-    margin-top: 0;
-    font-size: 12px;
-    line-height: 20px;
-    font-family: 'Unbuntu Regular';
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
+        width: 100%;
+        height: 40px;
+        border: 1.5px solid var(--dark);
+        border-radius: 2px;
+        padding: 11px 13px;
+        margin-bottom: 19px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
-    content: "*";
-    color: red;
-    font-size: 20px;
-    line-height: 20px;
-    margin-right: 2px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
+        height: 20px;
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-family: 'Unbuntu Regular';
+    }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-    margin-top: 20px;
-    margin: 0 auto;
-    padding: 14px 83px;
-    width: 100%;
-    text-align: center;
-    width: 271px;
-    height: 53px;
-    margin-bottom: 30px;
-    font-family: 'Unbuntu Regular';
-    font-size: 22px;
-}
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
+        content: "*";
+        color: red;
+        font-size: 20px;
+        line-height: 20px;
+        margin-right: 2px;
+    }
 
-/* partners window end */
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
+        margin-top: 20px;
+        margin: 0 auto;
+        padding: 14px 83px;
+        width: 100%;
+        text-align: center;
+        width: 271px;
+        height: 53px;
+        margin-bottom: 30px;
+        font-family: 'Unbuntu Regular';
+        font-size: 22px;
+    }
+
+    /* partners window end */
+     
     /* 404 start */
     /* 404 end */
 }
@@ -3246,203 +3249,204 @@ button {
     /* modal windows end */
 
     /* partners window start */
- #questionnaire-form_modal .questionnaire-form_modal_container {
-     width: 677px;
-     max-width: 677px;
-     min-width: 677px;
- }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
-     position: relative;
-     width: 677px;
-     padding: 0px 83px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container {
+        width: 677px;
+        max-width: 677px;
+        min-width: 677px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
-     color: var(--dark);
-     font-size: 36px;
-     text-align: center;
-     margin-bottom: 41px;
-     margin-top: 30px;
-     font-family: 'Unbuntu Medium';
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
+        position: relative;
+        width: 677px;
+        padding: 0px 83px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
-     color: var(--dark);
-     font-size: 36px;
-     font-family: 'Unbuntu Bold';
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
+        color: var(--dark);
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 41px;
+        margin-top: 30px;
+        font-family: 'Unbuntu Medium';
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
-     width: 30px;
-     height: 30px;
-     position: absolute;
-     cursor: pointer;
-     top: 8px;
-     right: 8px;
-     font-size: 30px;
-     border-radius: 4px;
-     color: var(--black);
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
+        color: var(--dark);
+        font-size: 36px;
+        font-family: 'Unbuntu Bold';
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
-     display: flex;
-     flex-direction: column;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 8px;
+        right: 8px;
+        font-size: 30px;
+        border-radius: 4px;
+        color: var(--black);
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
-     grid-template-columns: 1fr 1fr;
-     column-gap: 77px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
+        display: flex;
+        flex-direction: column;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
-     position: relative;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 77px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
-     width: 100%;
-     height: 40px;
-     border-radius: 2px;
-     border: 1.5px solid var(--dark);
-     padding: 11px 13px;
-     font-size: 12px;
-     font-family: 'Unbuntu Regular';
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
+        position: relative;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
-     outline: none;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        border: 1.5px solid var(--dark);
+        padding: 11px 13px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
-     opacity: 1;
-     transition: opacity 0.2s ease-out;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
+        outline: none;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
-     opacity: 0;
-     transition: opacity 0.2s ease-in;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
-     opacity: 1;
-     transition: opacity 0.3s ease-in;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
-     color: #a7a7a7;
-     position: absolute;
-     top: 50%;
-     left: 14px;
-     transform: translateY(-60%);
-     z-index: 0;
-     font-family: 'Unbuntu Regular';
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
-     color: #a7a7a7;
-     font-family: 'Unbuntu Regular';
-     font-size: 12px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
+        color: #a7a7a7;
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-60%);
+        z-index: 0;
+        font-family: 'Unbuntu Regular';
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
-     content: '*';
-     color: red;
-     padding-left: 4px;
-     font-size: 24px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
+        color: #a7a7a7;
+        font-family: 'Unbuntu Regular';
+        font-size: 12px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
-     color: red;
-     font-size: 14px;
-     margin-top: 6px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
+        content: '*';
+        color: red;
+        padding-left: 4px;
+        font-size: 24px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-     display: none;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
+        color: red;
+        font-size: 14px;
+        margin-top: 6px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-     width: 379px;
-     height: 14px;
-     position: absolute;
-     transform: translateY(40%);
-     z-index: 0;
-     padding-left: 11px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
+        display: none;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
-     width: 100%;
-     height: 40px;
-     border-radius: 2px;
-     border: 1.5px solid var(--dark);
-     padding: 11px 13px;
-     margin-bottom: 19px;
-     font-size: 12px;
-     font-family: 'Unbuntu Regular';
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
+        width: 379px;
+        height: 14px;
+        position: absolute;
+        transform: translateY(40%);
+        z-index: 0;
+        padding-left: 11px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input:focus {
-     outline: none;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        border: 1.5px solid var(--dark);
+        padding: 11px 13px;
+        margin-bottom: 19px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input:focus {
-     outline: none;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input:focus {
+        outline: none;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields {
-     margin-top: 20px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input:focus {
+        outline: none;
+    }
+
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields {
+        margin-top: 20px;
+    }
 
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
-     width: 379px;
-     height: 14px;
-     display: none;
-     position: absolute;
-     padding-left: 11px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
+        width: 379px;
+        height: 14px;
+        display: none;
+        position: absolute;
+        padding-left: 11px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
-     width: 100%;
-     height: 40px;
-     border: 1.5px solid var(--dark);
-     border-radius: 2px;
-     padding: 11px 13px;
-     margin-bottom: 19px;
-     font-size: 12px;
-     font-family: 'Unbuntu Regular';
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
+        width: 100%;
+        height: 40px;
+        border: 1.5px solid var(--dark);
+        border-radius: 2px;
+        padding: 11px 13px;
+        margin-bottom: 19px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
-     height: 20px;
-     margin-top: 0;
-     font-size: 12px;
-     line-height: 20px;
-     font-family: 'Unbuntu Regular';
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
+        height: 20px;
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-family: 'Unbuntu Regular';
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
-     content: "*";
-     color: red;
-     font-size: 20px;
-     line-height: 20px;
-     margin-right: 2px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
+        content: "*";
+        color: red;
+        font-size: 20px;
+        line-height: 20px;
+        margin-right: 2px;
+    }
 
- #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-     margin-top: 20px;
-     margin: 0 auto;
-     padding: 14px 83px;
-     width: 100%;
-     text-align: center;
-     width: 271px;
-     height: 53px;
-     margin-bottom: 30px;
-     font-family: 'Unbuntu Regular';
-     font-size: 22px;
- }
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
+        margin-top: 20px;
+        margin: 0 auto;
+        padding: 14px 83px;
+        width: 100%;
+        text-align: center;
+        width: 271px;
+        height: 53px;
+        margin-bottom: 30px;
+        font-family: 'Unbuntu Regular';
+        font-size: 22px;
+    }
 
- /* partners window end */
+    /* partners window end */
     
     /* 404 start */
     /* 404 end */
