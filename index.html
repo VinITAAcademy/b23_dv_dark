@@ -528,72 +528,69 @@
     </div>
     <!-- "modal windows end" -->
     <!-- "partners window start" -->
-<div class="modal fade" id="questionnaire-form_modal" tabindex="-1" role="dialog"
-    aria-labelledby="questionnaireFormModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered questionnaire-form_modal_container" role="document">
-        <div class="modal-content">
-            <div class="questionnaire-form_modal_content">
-                <h2 class="questionnaire-title">Анкета для <span class="questionnaire-title-bold">партнерів</span>
-                    програми</h2>
-                <form>
-                    <div class="questionnaire-reqiared_form_controls">
-                        <div class="questionnaire-form_control">
-                            <div class="questionnaire-input_container">
-                                <input id="firstname" name="firstname" type="text" placeholder="" required />
-                                <label for="firstname">Ім'я</label>
+    <div class="modal fade" id="questionnaire-form_modal" tabindex="-1" role="dialog"
+        aria-labelledby="questionnaireFormModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered questionnaire-form_modal_container" role="document">
+            <div class="modal-content">
+                <div class="questionnaire-form_modal_content">
+                    <h2 class="questionnaire-title">Анкета для <b class="questionnaire-title-bold">партнерів</b>
+                        програми</h2>
+                    <form>
+                        <div class="questionnaire-reqiared_form_controls">
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="firstname" name="firstname" type="text" placeholder="" required />
+                                    <label for="firstname">Ім'я</label>
+                                </div>
+                                <span class="error_message"></span>
                             </div>
-                            <span class="error_message"></span>
-                        </div>
-                        <div class="questionnaire-form_control">
-                            <div class="questionnaire-input_container">
-                                <input id="email" name="email" type="text" placeholder="" required />
-                                <label for="email">Email</label>
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="email" name="email" type="text" placeholder="" required />
+                                    <label for="email">Email</label>
+                                </div>
+                                <span class="error_message"></span>
                             </div>
-                            <span class="error_message"></span>
-                        </div>
-                        <div class="questionnaire-form_control">
-                            <div class="questionnaire-input_container">
-                                <input id="surname" name="surname" type="text" placeholder="" required />
-                                <label for="surname">Прізвище</label>
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="surname" name="surname" type="text" placeholder="" required />
+                                    <label for="surname">Прізвище</label>
+                                </div>
+                                <span class="error_message"></span>
                             </div>
-                            <span class="error_message"></span>
-                        </div>
-                        <div class="questionnaire-form_control">
-                            <div class="questionnaire-input_container">
-                                <input id="phone" name="phone" type="text" placeholder="" required />
-                                <label for="phone">Мобільний телефон</label>
-                            </div>
-                            <span class="error_message"></span>
-                        </div>
-                    </div>
-                    <div class="questionnaire-optional_fields">
-                        <label for="location">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
-                        <input id="location" name="location" type="text"
-                            placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?" />
-                        <label for="source">Звідки отримали інформацію про нас?</label>
-                        <input id="source" name="source" type="text"
-                            placeholder="Звідки отримали інформацію про нас?" />
-                        <div class="questionnaire-optional_fields-1">
-                            <div class="questionnaire-input-1"> <label for="cooperation">Яка співпраця цікавить
-                                    Вас?</label>
-                                <input id="cooperation" name="cooperation" type="text"
-                                    placeholder="Яка співпраця цікавить Вас?" />
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="phone" name="phone" type="text" placeholder="" required />
+                                    <label for="phone">Мобільний телефон</label>
+                                </div>
+                                <span class="error_message"></span>
                             </div>
                         </div>
-                    </div>
-                    <p class="questionnaire-tip">Обов’язкові поля</p>
-                    <button class="button-primary questionnaire-form_submit">Надіслати</button>
-                </form>
-                <button class="modal_close" data-bs-dismiss="modal">
-                    <span class="icon-close"></span>
-                </button>
+                        <div class="questionnaire-optional_fields">
+                            <label for="location">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
+                            <input id="location" name="location" type="text"
+                                placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?" />
+                            <label for="source">Звідки отримали інформацію про нас?</label>
+                            <input id="source" name="source" type="text"
+                                placeholder="Звідки отримали інформацію про нас?" />
+                            <div class="questionnaire-optional_fields-1">
+                                <div class="questionnaire-input-1"> <label for="cooperation">Яка співпраця цікавить
+                                        Вас?</label>
+                                    <input id="cooperation" name="cooperation" type="text"
+                                        placeholder="Яка співпраця цікавить Вас?" />
+                                </div>
+                            </div>
+                        </div>
+                        <p class="questionnaire-tip">Обов’язкові поля</p>
+                        <button class="button-primary questionnaire-form_submit">Надіслати</button>
+                    </form>
+                    <button class="modal_close" data-bs-dismiss="modal">
+                        <span class="icon-close"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#questionnaire-form_modal">
-    Launch demo modal
-</button>
     <!-- "partners window end" -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

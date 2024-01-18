@@ -1554,7 +1554,6 @@ button {
     content: '*';
     color: red;
     padding-left: 4px;
-
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
@@ -1632,6 +1631,7 @@ button {
     height: 53px;
     margin-left: 8px;
 }
+
 /* partners window end */
 
 /* 404 start */
@@ -2276,9 +2276,9 @@ button {
 
  /* partners window start */
 #questionnaire-form_modal .questionnaire-form_modal_container {
-    width: 677px !important;
-    max-width: 677px !important;
-    min-width: 677px !important;
+    width: 677px;
+    max-width: 677px;
+    min-width: 677px;
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
@@ -2469,8 +2469,8 @@ button {
     font-family: 'Unbuntu Regular';
     font-size: 22px;
 }
-/* partners window end */
 
+/* partners window end */
     /* 404 start */
     /* 404 end */
 }
@@ -3246,10 +3246,10 @@ button {
     /* modal windows end */
 
     /* partners window start */
-    #questionnaire-form_modal .questionnaire-form_modal_container {
-     width: 677px !important;
-     max-width: 677px !important;
-     min-width: 677px !important;
+ #questionnaire-form_modal .questionnaire-form_modal_container {
+     width: 677px;
+     max-width: 677px;
+     min-width: 677px;
  }
 
  #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
