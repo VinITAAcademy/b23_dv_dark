@@ -1,4 +1,4 @@
-let blur = document.querySelector('.blur-container-br');
+let blur = document.querySelector('#blur-container-br');
 let posterior = document.querySelector('.posterior-background-br');
 let container = document.getElementById('offcanvasRight');
 let shows = document.querySelector('.offcanvas-end')
