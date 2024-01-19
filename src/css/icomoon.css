@@ -1,77 +1,114 @@
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon-fonts/icomoon.eot?jf4rg');
-    src:  url('../fonts/icomoon-fonts/icomoon.eot?jf4rg#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon-fonts/icomoon.ttf?jf4rg') format('truetype'),
-      url('../fonts/icomoon-fonts/icomoon.woff?jf4rg') format('woff'),
-      url('../fonts/icomoon-fonts/icomoon.svg?jf4rg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-icon_condition:before {
-    content: "\e900";
-  }
-  .icon-icon_study:before {
-    content: "\e901";
-    color: #2d5bd0;
-  }
-  .icon-icon_work:before {
-    content: "\e902";
-    color: #2d5bd0;
-  }
-  .icon-icon_person:before {
-    content: "\e903";
-    color: #2d5bd0;
-  }
-  .icon-facebook:before {
-    content: "\e905";
-    color: #fff;
-  }
-  .icon-viber:before {
-    content: "\e906";
-    color: #fff;
-  }
-  .icon-whatsapp:before {
-    content: "\e907";
-    color: #fff;
-  }
-  .icon-instagram:before {
-    content: "\e908";
-    color: #fff;
-  }
-  .icon-close:before {
-    content: "\e90a";
-  }
-  .icon-twitter:before {
-    content: "\e909";
-    color: #fff;
-  }
-  .icon-telegram:before {
-    content: "\e904";
-    color: #fff;
-  }
-  .icon-arrow:before {
-    content: "\e90c";
-    color: #fff;
-  }
-  .icon-share:before {
-    content: "\e90b";
-    color: #fff;
-  }
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon-fonts/icomoon.eot?55zar3');
+  src:  url('../fonts/icomoon-fonts/icomoon.eot?55zar3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon-fonts/icomoon.ttf?55zar3') format('truetype'),
+    url('../fonts/icomoon-fonts/icomoon.woff?55zar3') format('woff'),
+    url('../fonts/icomoon-fonts/icomoon.svg?55zar3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-arrow-right-logos:before {
+  content: "\e914";
+  color: #083cc0;
+}
+.icon-arrow-left-logos:before {
+  content: "\e915";
+  color: #083cc0;
+}
+.icon-arrow-left:before {
+  content: "\e912";
+  color: #2d5bd0;
+}
+.icon-arrow-right:before {
+  content: "\e913";
+  color: #2d5bd0;
+}
+.icon-specialty-design:before {
+  content: "\e90d";
+  color: #2d5bd0;
+}
+.icon-specialty-hack:before {
+  content: "\e90e";
+  color: #2d5bd0;
+}
+.icon-specialty-pm:before {
+  content: "\e90f";
+  color: #2d5bd0;
+}
+.icon-specialty-programming:before {
+  content: "\e910";
+  color: #2d5bd0;
+}
+.icon-specialty-testing:before {
+  content: "\e911";
+  color: #2d5bd0;
+}
+.icon-icon_condition:before {
+  content: "\e900";
+}
+.icon-icon_study:before {
+  content: "\e901";
+  color: #2d5bd0;
+}
+.icon-icon_work:before {
+  content: "\e902";
+  color: #2d5bd0;
+}
+.icon-icon_person:before {
+  content: "\e903";
+  color: #2d5bd0;
+}
+.icon-telegram:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-whatsapp:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-viber:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-twitter:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-close:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-share:before {
+  content: "\e90b";
+  color: #fff;
+}
