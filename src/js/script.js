@@ -1,25 +1,3 @@
-// start loader
-
-//imitation of loading. uncomment for test
-
-/*
-document.onreadystatechange = function (e) {
-    if (document.readyState === 'complete') {
-        let animationPreload = document.querySelectorAll('.loader-block')[0];
-        animationPreload.style.visibility = 'visible';
-        animationPreload.style.opacity = '1';
-
-        let timerId = setTimeout(function () {
-            animationPreload.style.opacity = '0';
-            animationPreload.style.visibility = 'hidden';
-        }, 2000); 
-    }
-};
-*/
-
-// end loader
-
-// start specialities
 document.addEventListener('DOMContentLoaded', function () {
         let carouselBlock=document.querySelector('.specialty-carousel-main-container');
         let carouselCardsContainer=document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
@@ -51,6 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 );
 // end specialities
+
+ // end specialities
+
+// start applicant form
+const applicantForm = $("#applicant_form_modal .form");
+
+applicantForm.on("submit", function (event) {
+    event.preventDefault();
+    const data = $(this).serializeArray();
+    $("#applicant_form_modal").modal("hide");
+    $("#succesModal").modal('show');
+});
+// end applicant form
 
 // start modal burger menu
 // end modal burger menu
@@ -106,6 +97,7 @@ $(".owl-carousel").owlCarousel( {
 );
 
 //end partners' logos
+
 // start modal burger menu
 $(document).ready(function() {
         $(".cross").hide();
@@ -137,3 +129,6 @@ $(document).ready(function() {
 );
 
 // end modal burger menu
+
+
+
