@@ -759,7 +759,7 @@ button {
 #main .conditions_main_block {
     background-color: var(--white);
     width: 375px;
-    height: auto;
+    height: 1426.3px;
 }
 
 #main .conditions_main_block .conditions-img1 {
@@ -777,6 +777,15 @@ button {
     margin-right: 43px;
     height: 1.5px;
     background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
+}
+
+#main .conditions_main_block .conditions-line-2 {
+    margin-left: 43px;
+    margin-right: 43px;
+    margin-bottom: 30px;
+    height: 1.5px;
+    background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
+    background-color: var(--white);
 }
 
 #main .conditions_main_block .conditions-vertical_padding_block {
@@ -2278,10 +2287,19 @@ button {
         background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     }
 
+    #main .conditions_main_block .conditions-line-2 {
+        width: 672px;
+        margin-left: 43px;
+        margin-right: 43px;
+        margin-bottom: 50px;
+        height: 1.5px;
+        background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
+    }
+
     #main .conditions_main_block {
         background-color: var(--white);
         width: 768px;
-        height: auto;
+        height: 2355.38px;
     }
 
     #main .conditions_main_block .conditions-vertical_padding_block {
@@ -3138,7 +3156,7 @@ button {
         float: left;
     }
 
-    #main .conditions_main_block .line {
+    #main .conditions_main_block .conditions-line {
         width: 940px;
         margin-left: 42px;
         margin-right: 42px;
@@ -3149,6 +3167,21 @@ button {
         background-color: var(--white);
         width: 1024px;
         height: auto;
+    }
+
+    #main{
+        background-color: var(--white);
+        width: 1024px;
+        height: 1051.72px;
+        margin: 0 auto;
+    }
+
+    #main .conditions_main_block .conditions-line-2 {
+        width: 940px;
+        margin-left: 42px;
+        margin-right: 42px;
+        margin-bottom: 50px;
+        background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     }
 
     #main .conditions_main_block .text-1 {
