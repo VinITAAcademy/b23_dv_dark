@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let carouselCard = document.querySelectorAll('.carousel-item');
     let screenWidth = window.screen.width;
     
-    window.addEventListener('resize', function (e) {    
+    document.addEventListener('resize', function (e) {    
         if (screenWidth >= 768) {
             carouselBlock.removeAttribute('id');
             carouselBlock.classList.remove('carousel');
