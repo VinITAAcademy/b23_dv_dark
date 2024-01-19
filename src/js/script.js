@@ -1,32 +1,11 @@
-// start loader
-
-//imitation of loading. uncomment for test
-
-/*
-document.onreadystatechange = function (e) {
-    if (document.readyState === 'complete') {
-        let animationPreload = document.querySelectorAll('.loader-block')[0];
-        animationPreload.style.visibility = 'visible';
-        animationPreload.style.opacity = '1';
-
-        let timerId = setTimeout(function () {
-            animationPreload.style.opacity = '0';
-            animationPreload.style.visibility = 'hidden';
-        }, 2000); 
-    }
-};
-*/
-
-// end loader
-
-// start specialities
 document.addEventListener('DOMContentLoaded', function () {
+// start specialities
     let carouselBlock = document.querySelector('.specialty-carousel-main-container');
     let carouselCardsContainer = document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
     let carouselCard = document.querySelectorAll('.carousel-item');
     let screenWidth = window.screen.width;
     
-    windоw.addEventListener('resize', function (e) {    
+    window.addEventListener('resize', function (e) {    
         if (screenWidth >= 768) {
             carouselBlock.removeAttribute('id');
             carouselBlock.classList.remove('carousel');
@@ -43,8 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 for (let item of carouselCard) item.classList.add('carousel-item');
         }
     });
+ // end specialities
+
+// start applicant form
+const applicantForm = $("#applicant_form_modal .form");
+
+applicantForm.on("submit", function (event) {
+    event.preventDefault();
+    const data = $(this).serializeArray();
+    $("#applicant_form_modal").modal("hide");
+    $("#succesModal").modal('show');
 });
-// end specialities
+// end applicant form
 
 // start modal burger menu
 // end modal burger menu
@@ -92,6 +81,8 @@ $(".owl-carousel").owlCarousel({
     navText: ["<div class='icon-arrow-left-logos'></div>","<div class='icon-arrow-right-logos'></div>"]
 });
 //end partners' logos
+
+
 // start modal burger menu
 $( document ).ready(function() {
     $( ".cross" ).hide();
@@ -111,3 +102,4 @@ $( document ).ready(function() {
     });
 });
 // end modal burger menu
+});
