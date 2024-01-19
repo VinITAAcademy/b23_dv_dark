@@ -247,6 +247,7 @@ button {
     line-height: normal;
 }
 
+
 #hero .hero_main .hero_content .hero_content_title {
     max-width: 300px;
     margin: 0;
@@ -635,7 +636,6 @@ button {
     bottom: 0;
 }
 
-
 /* quote end */
 
 /* we provide start */
@@ -743,8 +743,6 @@ button {
 
 #registration .registration-main .registration-content .registration-content-button {
     padding: 15px 57px 17px;
-    font-family: 'Ubuntu Regular';
-    font-size: 14px;
 }
 
 #registration .registration-main .registration-image-container {
@@ -872,11 +870,11 @@ button {
     font-family: 'Ubuntu Regular';
     font-size: 14px;
     font-style: italic;
-    line-height: 162%; /* 22.68px */
+    line-height: 162%;
     letter-spacing: 0.28px;
     width: 288px;
     margin: 0 38px 25px 49px;
-    text-align: left; 
+    text-align: left;
 }
 
 #partners .partners-main .partners-content .partners-content-text-third {
@@ -901,7 +899,8 @@ button {
     line-height: normal;
     color: var(--white);
     margin: 0 73px 30px;
-} 
+}
+
 /* partners end */
 
 /* logo of partners start */
@@ -977,24 +976,20 @@ button {
 #specialty {
     color: var(--white);
     padding: 30px 0;
-}
-
-#specialty .specialty-main .specialty-headers {
-    text-align: center;
-    margin-bottom: 31px;
+    font-style: normal;
+    line-height: normal;
 }
 
 #specialty .specialty-main .specialty-headers .specialty-main-header {
     font-family: "Ubuntu Bold";
     font-size: 24px;
-    font-style: normal;
-    line-height: normal;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 #specialty .specialty-main .specialty-second-header {
-    font-size: 14px;
-    font-style: normal;
     line-height: 135.5%;
+    width: 100%;
 }
 
 /* start of round tumblers */
@@ -1004,8 +999,8 @@ button {
 }
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-tumblers .specialty-carousel-tumbler {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border: 1px solid var(--button-primary);
     border-radius: 50%;
     background-color: transparent;
@@ -1031,7 +1026,7 @@ button {
 }
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card {
-    margin: 0 108px 30px 37px;
+    margin: 0 37px 33px;
 }
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-carousel-list {
@@ -1042,8 +1037,6 @@ button {
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-carousel-list .specialty-carousel-list-item {
     font-family: "Ubuntu Medium";
-    font-size: 14px;
-    font-style: normal;
     line-height: 135.5%;
     margin-bottom: 15px;
 }
@@ -1066,7 +1059,6 @@ button {
     border-radius: 6px;
     border: 1px solid #CBCBCB;
     font-family: "Ubuntu Bold";
-    font-style: normal;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1078,9 +1070,13 @@ button {
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-header {
     font-size: 32px;
-    line-height: normal;
     text-align: center;
     margin-top: 35px;
+    margin-bottom: 0;
+}
+
+#specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-header.qa {
+    margin-bottom: 20px;
 }
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card.carousel-item .specialty-carousel-card-header:nth-last-of-type(3),
@@ -1127,20 +1123,28 @@ button {
     margin: 0 40px;
 }
 
+#specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-text.qa {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-text.pm {
+    margin-bottom: 5px;
+}
+
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-text1 {
     font-size: 20px;
 }
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-text2 {
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-button {
     flex-shrink: 0;
     font-family: "Ubuntu Regular";
     font-size: 16px;
-    font-style: normal;
-    line-height: normal;
     padding: 13px 60.27px;
     margin: 0 39px 32px;
 }
@@ -1151,7 +1155,7 @@ button {
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-arrow-left.carousel-control-prev,
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-arrow-right.carousel-control-next {
     opacity: 1;
-    top: 181px;
+    top: 220px;
     width: 37px;
 }
 
@@ -1821,6 +1825,181 @@ button {
 
    /* partners window end */
 
+    /* mentors window start */
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container {
+        width: 375px;
+        margin: auto auto;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content {
+        position: relative;
+        width: 375px;
+        padding: 12px 44px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title {
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Unbuntu Medium';
+        margin-top: 11px;
+        margin-bottom: 30px;
+        margin-left: 12px;
+        text-align: center;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title .questionnaire-mentors-title-bold {
+        color: var(--dark);
+        font-size: 16px;
+        font-family: 'Unbuntu Bold';
+        font-weight: 700;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 8px;
+        right: 8px;
+        font-size: 30px;
+        border-radius: 4px;
+        color: var(--black);
+    }
+
+    #questionnaire-mentors-form_modal .questionnairev-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-reqiared_form_controls {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 20px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container {
+        position: relative;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1.5px solid #ccc;
+        border-color: #000;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:focus {
+        outline: none;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:placeholder-shown+label {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:not(:placeholder-shown)+label {
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label {
+        color: #a7a7a7;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+        z-index: 0;
+        font-family: 'Unbuntu Regular';
+        font-size: 12px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label:after {
+        content: '*';
+        color: red;
+        padding-left: 4px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .error_message {
+        color: red;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .active {
+        opacity: 1;
+       transition: opacity 0.3s ease-in;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields label {
+        color: #a7a7a7;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 6px;
+        margin-top: 12px;
+        font-family: 'Unbuntu Regular';
+        width: 218px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields ::placeholder {
+        color: white;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields input {
+        width: 287px;
+        height: 57px;
+        flex-shrink: 0;
+        border: 1.5px solid var(--dark);
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 label {
+        color: #a7a7a7;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 6px;
+        margin-top: 12px;
+        font-family: 'Unbuntu Regular';
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input {
+        width: 287px;
+        height: 40px;
+        flex-shrink: 0;
+        border: 1.5px solid var(--dark);
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip {
+        height: 14px;
+        margin-top: 20px;
+        font-size: 12px;
+        font-style: normal;
+        font-family: 'Unbuntu Regular';
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip::before {
+        content: "*";
+        color: red;
+        font-size: 20px;
+        margin-right: 2px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
+        margin-top: 28px;
+        margin-bottom: 40px;
+        padding: 14px 83px;
+        text-align: center;
+        font-family: 'Unbuntu Regular';
+        font-weight: 400;
+        font-size: 22px;
+        width: 271px;
+        height: 53px;
+        margin-left: 8px;
+    }
+
+/* mentors window end */
+
 /* 404 start */
 /* 404 end */
 
@@ -2071,8 +2250,6 @@ button {
     #registration .registration-main .registration-content .registration-content-text {
         font-size: 36px;
         margin-bottom: 59px;
-        line-height: normal;
-        font-style: normal;
     }
 
     #registration .registration-main .registration-content .registration-content-button {
@@ -2182,7 +2359,7 @@ button {
         margin-top: 50px;
         font-size: 40px;
     }
-    
+
     #partners .partners-main .partners-content .partners-content-text {
         padding-top: 30px;
         font-size: 24px;
@@ -2205,6 +2382,7 @@ button {
         font-size: 24px;
         margin: 0 236px 50px;
     }
+
     /* partners end */
 
     /* logo of partners start */
@@ -2286,7 +2464,6 @@ button {
         border-radius: 6px;
         border: 1px solid #CBCBCB;
         font-family: "Ubuntu Bold";
-        font-style: normal;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2315,7 +2492,7 @@ button {
     }
 
     #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-carousel-list-text:nth-child(2n+1) {
-        margin-top: 64px;
+        margin-top: 69px;
     }
 
     #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-second-header.specialty-carousel-list-text {
@@ -2688,7 +2865,206 @@ button {
     }
 
     /* partners window end */
-     
+         /* mentors window start */
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container {
+        width: 677px;
+        max-width: 677px;
+        min-width: 677px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content {
+        position: relative;
+        width: 677px;
+        padding: 0px 83px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title {
+        color: var(--dark);
+        font-size: 36px;
+        margin-bottom: 41px;
+        margin-top: 30px;
+        font-family: 'Unbuntu Medium';
+        width: 589px;
+        text-align: center;
+        padding-right: 75px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title .questionnaire-mentors-title-bold {
+        color: var(--dark);
+        font-size: 36px;
+        font-family: 'Unbuntu Bold';
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        top: 8px;
+        right: 8px;
+        font-size: 30px;
+        border-radius: 4px;
+        color: var(--black);
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-reqiared_form_controls {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 77px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container {
+        position: relative;
+    }
+ 
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        border: 1.5px solid var(--dark);
+        padding: 11px 13px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:focus {
+        outline: none;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:placeholder-shown+label {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:not(:placeholder-shown)+label {
+        opacity: 0;
+        transition: opacity 0.2s ease-in;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .active {
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label {
+        color: #a7a7a7;
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        transform: translateY(-60%);
+        z-index: 0;
+        font-family: 'Unbuntu Regular';
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields ::placeholder {
+        color: #a7a7a7;
+        font-family: 'Unbuntu Regular';
+        font-size: 12px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label:after {
+        content: '*';
+        color: red;
+        padding-left: 4px;
+        font-size: 24px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .error_message {
+        color: red;
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 label {
+        display: none;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 label {
+        width: 379px;
+        height: 14px;
+        position: absolute;
+        transform: translateY(40%);
+        z-index: 0;
+        padding-left: 11px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        border: 1.5px solid var(--dark);
+        padding: 11px 13px;
+        margin-bottom: 19px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    } 
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input:focus {
+        outline: none;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields input:focus {
+        outline: none;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields {
+        margin-top: 20px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields label {
+        width: 379px;
+        height: 14px;
+        display: none;
+        position: absolute;
+        padding-left: 11px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields input {
+        width: 100%;
+        height: 40px;
+        border: 1.5px solid var(--dark);
+        border-radius: 2px;
+        padding: 11px 13px;
+        margin-bottom: 19px;
+        font-size: 12px;
+        font-family: 'Unbuntu Regular';
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip {
+        height: 20px;
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-family: 'Unbuntu Regular';
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip::before {
+        content: "*";
+        color: red;
+        font-size: 20px;
+        line-height: 20px;
+        margin-right: 2px;
+    }
+
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
+        margin-top: 20px;
+        margin: 0 auto;
+        padding: 14px 83px;
+        width: 100%;
+        text-align: center;
+        width: 271px;
+        height: 53px;
+        margin-bottom: 30px;
+        font-family: 'Unbuntu Regular';
+        font-size: 22px;
+    }
+
+  /* mentors window end */
+
     /* 404 start */
     /* 404 end */
 }
@@ -3057,10 +3433,7 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 22.68px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-left: 42px;
-        margin-right: 100px;
+        margin: 50px 100px 30px 42px;
         width: 380px;
         height: auto;
         float: right;
@@ -3088,11 +3461,7 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 25.92px;
-        margin-left: 33px;
-        margin-right: 48px;
-        margin-bottom: 30px;
-        margin-top: 29px;
-        margin-bottom: 15px;
+        margin: 29px 48px 15px 33px;
         line-height: 25.92px;
         text-align: center;
     }
@@ -3122,35 +3491,34 @@ button {
         display: flex;
         justify-content: center;
     }
-    
+
     #partners .partners-main {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
     }
-    
+
     #partners .partners-main .partners-image {
         display: flex;
         flex-direction: column;
         width: 513px;
         height: 419px;
     }
-    
+
     #partners .partners-main .partners-content .partners-content-title {
         font-family: 'Ubuntu Bold';
         color: var(--сolor-white);
-         justify-content: center; 
-        text-align: left; 
+        justify-content: center;
+        text-align: left;
         font-size: 24px;
         margin: 30px 0 25px 20px;
     }
-    
+
     #partners .partners-main .partners-content {
         width: 511px;
         height: 419px;
-        padding-left: 20px;
     }
-    
+
     #partners .partners-main .partners-content .partners-content-text {
         padding-top: 0;
         font-size: 12px;
@@ -3159,8 +3527,9 @@ button {
         width: 302px;
         text-align: left;
         margin-bottom: 13px;
-        margin-left: 20px; 
+        margin-left: 20px;
     }
+
     #partners .partners-main .partners-content .dotted-line {
         width: 302px;
         margin-left: 20px;
@@ -3168,7 +3537,7 @@ button {
     }
 
     #partners .partners-main .partners-content .partners-content-text-third {
-       margin: 13px 189px 19px 20px;
+        margin: 13px 189px 19px 20px;
     }
 
 
@@ -3178,6 +3547,7 @@ button {
         margin-bottom: 30px;
         margin-left: 18px;
     }
+
     /* partners end */
 
     /* logo of partners start */
@@ -3244,6 +3614,7 @@ button {
 
     #specialty .specialty-main .specialty-headers .specialty-main-header {
         font-size: 42px;
+        margin-bottom: 50px;
     }
 
     #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container {
@@ -3265,7 +3636,7 @@ button {
     }
 
     #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:nth-child(-n+3) {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     /* specialities end */
@@ -3463,206 +3834,6 @@ button {
     /* modal windows start */
     /* modal windows end */
 
-    /* partners window start */
-
-    #questionnaire-form_modal .questionnaire-form_modal_container {
-        width: 677px;
-        max-width: 677px;
-        min-width: 677px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
-        position: relative;
-        width: 677px;
-        padding: 0px 83px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
-        color: var(--dark);
-        font-size: 36px;
-        text-align: center;
-        margin-bottom: 41px;
-        margin-top: 30px;
-        font-family: 'Unbuntu Medium';
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
-        color: var(--dark);
-        font-size: 36px;
-        font-family: 'Unbuntu Bold';
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        cursor: pointer;
-        top: 8px;
-        right: 8px;
-        font-size: 30px;
-        border-radius: 4px;
-        color: var(--black);
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 77px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
-        position: relative;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
-        width: 100%;
-        height: 40px;
-        border-radius: 2px;
-        border: 1.5px solid var(--dark);
-        padding: 11px 13px;
-        font-size: 12px;
-        font-family: 'Unbuntu Regular';
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
-        outline: none;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
-        opacity: 1;
-        transition: opacity 0.2s ease-out;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
-        opacity: 0;
-        transition: opacity 0.2s ease-in;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
-        opacity: 1;
-        transition: opacity 0.3s ease-in;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
-        color: #a7a7a7;
-        position: absolute;
-        top: 50%;
-        left: 14px;
-        transform: translateY(-60%);
-        z-index: 0;
-        font-family: 'Unbuntu Regular';
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
-        color: #a7a7a7;
-        font-family: 'Unbuntu Regular';
-        font-size: 12px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
-        content: '*';
-        color: red;
-        padding-left: 4px;
-        font-size: 24px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
-        color: red;
-        font-size: 14px;
-        margin-top: 6px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-        display: none;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-        width: 379px;
-        height: 14px;
-        position: absolute;
-        transform: translateY(40%);
-        z-index: 0;
-        padding-left: 11px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
-        width: 100%;
-        height: 40px;
-        border-radius: 2px;
-        border: 1.5px solid var(--dark);
-        padding: 11px 13px;
-        margin-bottom: 19px;
-        font-size: 12px;
-        font-family: 'Unbuntu Regular';
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input:focus {
-        outline: none;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input:focus {
-        outline: none;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields {
-        margin-top: 20px;
-    }
-
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
-        width: 379px;
-        height: 14px;
-        display: none;
-        position: absolute;
-        padding-left: 11px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
-        width: 100%;
-        height: 40px;
-        border: 1.5px solid var(--dark);
-        border-radius: 2px;
-        padding: 11px 13px;
-        margin-bottom: 19px;
-        font-size: 12px;
-        font-family: 'Unbuntu Regular';
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
-        height: 20px;
-        margin-top: 0;
-        font-size: 12px;
-        line-height: 20px;
-        font-family: 'Unbuntu Regular';
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
-        content: "*";
-        color: red;
-        font-size: 20px;
-        line-height: 20px;
-        margin-right: 2px;
-    }
-
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-        margin-top: 20px;
-        margin: 0 auto;
-        padding: 14px 83px;
-        width: 100%;
-        text-align: center;
-        width: 271px;
-        height: 53px;
-        margin-bottom: 30px;
-        font-family: 'Unbuntu Regular';
-        font-size: 22px;
-    }
-
-    /* partners window end */
-    
     /* 404 start */
     /* 404 end */
 }
