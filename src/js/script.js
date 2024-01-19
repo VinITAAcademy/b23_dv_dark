@@ -92,6 +92,7 @@ $(".owl-carousel").owlCarousel({
     navText: ["<div class='icon-arrow-left-logos'></div>","<div class='icon-arrow-right-logos'></div>"]
 });
 //end partners' logos
+
 // start modal burger menu
 $( document ).ready(function() {
     $( ".cross" ).hide();
