@@ -374,7 +374,7 @@
                             Для креативних, тих, хто має критичне мислення, хоче не просто малювати красиві картинки, а й робити їх частиною
                             привабливого динамічного веб-сайту!
                         </h2>
-                        <div class="specialty-carousel-card-button button-primary">Реєструйся</div>
+                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
                     
                     <div class="specialty-carousel-card carousel-item">
@@ -386,7 +386,7 @@
                             Для тих, хто відчуває в собі талант розробника оригінальних, цікавих і повноцінних проєктів та хоче чесно -
                             своїм інтелектом гарно заробляти!
                         </h2>
-                        <div class="specialty-carousel-card-button button-primary">Реєструйся</div>
+                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
                     
                     <div class="specialty-carousel-card carousel-item">
@@ -400,7 +400,7 @@
                         <h2 class="specialty-carousel-card-text2">
                             Для дітей віком від 6 до 16 років.
                         </h2>
-                        <div class="specialty-carousel-card-button button-primary">Реєструйся</div>
+                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
                     
                     <div class="specialty-carousel-card carousel-item">
@@ -412,7 +412,7 @@
                             Робота тестувальника нагадує роботу слідчого або детектива: він йде по “гарячих слідах” програміста і вишукує
                             помилки - на професійній мові “баги”. У хід йдуть різні дедуктивні методи і прийоми. Ти експерементатор - тобі сюди.
                         </h2>
-                        <div class="specialty-carousel-card-button button-primary">Реєструйся</div>
+                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
                     
                     <div class="specialty-carousel-card carousel-item">
@@ -424,7 +424,7 @@
                             Посада РМ`а приваблює змогою займатися управлінням: приймати рішення, організовувати швидке і якісне створення
                             продукту, продуктивну роботу в команді.
                         </h2>
-                        <div class="specialty-carousel-card-button button-primary">Реєструйся</div>
+                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
                 </div>
 
@@ -542,14 +542,209 @@
                     <p class="succes_modal_title">Дякуємо за Вашу заявку!</p>
                     <p class="succes_modal_description">Очікуйте зворотнього зв’язку.</p>
                     <button class="succes_modal_button button-primary">На головну</button> 
-                    <button class="succes_modal_close">
+                    <button class="succes_modal_close" data-bs-dismiss="modal">
                         <span class="icon-close"></span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="applicant_form_modal" tabindex="-1" role="dialog" aria-labelledby="applicantFormModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered applicant_form_modal_container" role="document">
+            <div class="modal-content">
+                <div class="applicant_form_modal_content">
+                    <h2 class="title">Анкета для <b>учасників</b> програми</h2>
+                    <form class="form">
+                        <div class="required_form_controls">
+                            <div class="form_control">
+                                <div class="input_container">
+                                    <input
+                                        id="firstname"
+                                        name="firstname"
+                                        type="text"
+                                        placeholder=""
+                                        required
+                                    />
+                                    <label for="firstname">Ім'я</label>
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="form_control">
+                                <div class="input_container">
+                                    <input
+                                        id="surname"
+                                        name="surname"
+                                        type="text"
+                                        placeholder=""
+                                        required
+                                    />
+                                    <label for="surname">Прізвище</label>
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="form_control">
+                                <div class="input_container">
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="text"
+                                        placeholder=""
+                                        required
+                                    />
+                                   <label for="email">Email</label>       
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="form_control">
+                                <div class="input_container">
+                                    <input
+                                        id="phone"
+                                        name="phone"
+                                        type="text"
+                                        placeholder=""
+                                        required
+                                    />
+                                    <label for="phone">Мобільний телефон</label>
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                            
+                        </div>
+                        <div class="optional_fields">
+                            <label for="location">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
+                            <input 
+                                id="location"
+                                name="location"
+                                type="text"
+                                placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?"
+                            />
+                            <label for="source">Звідки отримали інформацію про нас?</label>
+                            <input 
+                                id="source"
+                                name="source"
+                                type="text"
+                                placeholder="Звідки отримали інформацію про нас?"
+                            />
+                            <label for="cooperation">Яка співпраця цікавить Вас?</label>
+                            <input 
+                                id="cooperation"
+                                name="cooperation"
+                                type="text"
+                                placeholder="Яка співпраця цікавить Вас?"
+                            />
+                        </div>
+                        <p class="tip">Обов’язкові поля</p>
+                        <h3 class="checkbox_group_title">Бажаний напрям підготовки?</h3>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="automationQA" name="automationQA" checked />
+                            <label for="automationQA">Автоматизоване тестування</label>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="PM" name="PM" />
+                            <label for="PM">Проєктний менеджмент (PM)</label>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="HR" name="HR"  />
+                            <label for="HR">HR & TA (людські ресурси і залучення талантів)</label>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="childrenSchool" name="childrenSchool" />
+                            <label for="childrenSchool">Школа хакерів для дітей 6 - 16р</label>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="englishIT" name="englishIT" />
+                            <label for="englishIT">Англійська для IT</label>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="manualQA" name="manualQA" />
+                            <label for="manualQA">Ручне тестування</label>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="webDesigner" name="webDesigner" />
+                            <label for="webDesigner">Веб-дизайн (UI/UX)</label>
+                        </div>
+                        <div class="checkbox_group">
+                            <input type="checkbox" id="programing" name="programing" />
+                            <label for="programing">Програмування</label>
+                        </div>
+                        <button type="submit" class="button-primary applicant_form_submit">Надіслати</button>
+                    </form>
+                    <button class="modal_close" data-bs-dismiss="modal">
+                        <span class="icon-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- "modal windows end" -->
+    <!-- "partners window start" -->
+    <div class="modal fade" id="questionnaire-form_modal" tabindex="-1" role="dialog"
+        aria-labelledby="questionnaireFormModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered questionnaire-form_modal_container" role="document">
+            <div class="modal-content">
+                <div class="questionnaire-form_modal_content">
+                    <h2 class="questionnaire-title">Анкета для <b class="questionnaire-title-bold">партнерів</b>
+                        програми</h2>
+                    <form>
+                        <div class="questionnaire-reqiared_form_controls">
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="firstname" name="firstname" type="text" placeholder="" required />
+                                    <label for="firstname">Ім'я</label>
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="email" name="email" type="text" placeholder="" required />
+                                    <label for="email">Email</label>
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="surname" name="surname" type="text" placeholder="" required />
+                                    <label for="surname">Прізвище</label>
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                            <div class="questionnaire-form_control">
+                                <div class="questionnaire-input_container">
+                                    <input id="phone" name="phone" type="text" placeholder="" required />
+                                    <label for="phone">Мобільний телефон</label>
+                                </div>
+                                <span class="error_message"></span>
+                            </div>
+                        </div>
+                        <div class="questionnaire-optional_fields">
+                            <label for="location">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
+                            <input id="location" name="location" type="text"
+                                placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?" />
+                            <label for="source">Звідки отримали інформацію про нас?</label>
+                            <input id="source" name="source" type="text"
+                                placeholder="Звідки отримали інформацію про нас?" />
+                            <div class="questionnaire-optional_fields-1">
+                                <div class="questionnaire-input-1"> <label for="cooperation">Яка співпраця цікавить
+                                        Вас?</label>
+                                    <input id="cooperation" name="cooperation" type="text"
+                                        placeholder="Яка співпраця цікавить Вас?" />
+                                </div>
+                            </div>
+                        </div>
+                        <p class="questionnaire-tip">Обов’язкові поля</p>
+                        <button class="button-primary questionnaire-form_submit">Надіслати</button>
+                    </form>
+                    <button class="modal_close" data-bs-dismiss="modal">
+                        <span class="icon-close"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- "partners window end" -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="src/js/owl.carousel.min.js"></script>
