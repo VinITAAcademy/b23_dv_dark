@@ -1486,7 +1486,7 @@ button {
 
 #header-404 {
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 #header-404 #menu {
@@ -1581,7 +1581,7 @@ button {
 #header-404 #menu .bg-content-box-404 .bg-social-404 .social-item-404:before {
     color: var(--сolor-black);
     font-size: 50px;
-    margin: 13.5px 25px 13.5px 25px;
+    margin: 13.5px 25px;
 }
 
 /* 404 burger end */
@@ -2209,7 +2209,7 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
-        text-decoration: none;#footer .footer-main-container .footer-main .footer-main-students-logo
+        text-decoration: none;
     }
 
     #footer .footer-main-container .footer-main .footer-main-icon-box {
