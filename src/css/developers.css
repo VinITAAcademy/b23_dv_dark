@@ -331,7 +331,7 @@ a {
     margin-bottom: 24px;
 }
 
-.container-students .container-students-laptop .link-linkedin {
+#container-students .container-students-laptop .link-linkedin {
     text-decoration: none;
     cursor: pointer;
     color: black;
@@ -799,7 +799,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
     #footer .footer-mobile .progect p {
         font-size: 15px;
         margin-bottom: 0px;
-		width: 400px;
+        width: 400px;
     }
 
     #footer .dix-button {
@@ -1159,8 +1159,8 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
     
     #footer .footer-mobile .progect p {
         font-size: 16px;
-		width: 268px;
-		margin: 0 auto;
+        width: 268px;
+        margin: 0 auto;
     }
 
     #footer .dix-button {
