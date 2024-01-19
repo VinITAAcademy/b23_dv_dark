@@ -1351,6 +1351,8 @@ button {
 /* footer end */
 
 /* modal windows start */
+
+
 #succesModal .succes_modal_container {
     width: 375px !important;
 }
@@ -1403,6 +1405,282 @@ button {
     border-radius: 4px;
 }
 
+/* selection menu start */
+
+#selection-menu {
+    display: none;
+}
+
+#selection-menu .selection-menu-container {
+    top: 0px;
+    z-index: 1000000;
+    font-family: 'Ubuntu Medium';
+    src: local('Ubuntu-Medium'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    width: 100%;
+    height: 513px;
+    background: white;
+    position: absolute;
+    font-size: 24px;
+    color: black;
+}
+
+#selection-menu .selection-menu-container .sm-top {
+    width: 375px;
+    height: 108px;
+    margin-left: 32px;
+}
+
+#selection-menu .selection-menu-container .sm-top .sm-language {
+    width: 71px;
+    height: 31px;
+    float: left;
+    margin-top: 5px;
+    margin-left: -27px;
+}
+
+#selection-menu .selection-menu-container .sm-top .sm-text {
+    width: 186px;
+    height: 64px;
+    padding-top: 21px;
+    margin-left: 26px;
+    float: left;
+}
+
+#selection-menu .selection-menu-container .sm-top .sm-text .sm-text-italic {
+    font-family: 'Ubuntu Italic';
+    src: local('Ubuntu'), url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    font-size: 16px;
+    margin-left: -7px;
+    margin-top: -2px;
+}
+
+#selection-menu .selection-menu-container .sm-top .sm-text .sm-text-bold {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: 19px;
+    font-size: 36px;
+    padding-bottom: 5px;
+    margin-left: 1px;
+    margin-top: -1px;
+}
+
+#selection-menu .selection-menu-container .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#selection-menu .selection-menu-container .sm-close {
+    margin-left: 56px;
+    margin-top: 7px;
+}
+
+#selection-menu .selection-menu-container .sm-close .icon-close::before {
+    content: "\e90a";
+    color: black;
+    font-size: 22px;
+}
+
+#selection-menu .selection-menu-container .sm-top .sm-blue-line {
+    position: absolute;
+    color: #083CC0;
+    border: 3px;
+    border-style: solid;
+    width: 300px;
+    top: 97px;
+    left: 35px;
+    opacity: 1;
+    margin: 0;
+}
+
+#selection-menu .selection-menu-container .sm-top .sm-yellow-line {
+    position: absolute;
+    color: #FFD500;
+    border: 2px;
+    border-style: solid;
+    width: 300px;
+    top: 102px;
+    left: 35px;
+    opacity: 1;
+    margin: 0;
+}
+
+#selection-menu .selection-menu-container li {
+    display: block;
+    padding: 14px 0 15px 0;
+}
+
+#selection-menu .selection-menu-container .selection-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#selection-menu .selection-menu-container .sm-what {
+    font-family: 'Ubuntu Medium';
+    src: local('Ubuntu-Medium'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left: 69px;
+    margin-bottom: 15px;
+}
+
+#selection-menu .selection-menu-container .selection-buttons .sm-button {
+    width: 235px;
+    height: 46px;
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--button-primary);
+    font-family: 'Ubuntu Regular';
+    src: local('Ubuntu-Regular'), url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    margin-bottom: 26px;
+    margin-top: -7px;
+    margin-left: 2px;
+}
+
+#selection-menu .selection-menu-container .selection-buttons .sm-button:hover {
+    color: var(--white);
+    background: var(--button-primary-hover-bg);
+}
+
+#selection-menu .selection-menu-container .selection-buttons .sm-button:disabled {
+    color: var(--button-disabled-text);
+    background: var(--button-disabled);
+}
+
+#selection-menu .selection-menu-container .selection-buttons .sm-button:focus-visible {
+    color: var(--button-primary);
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#selection-menu .selection-menu-container .selection-buttons .sm-button #selection-menu .selection-menu-container .sm-blue-line2 {
+    position: absolute;
+    color: #083CC0;
+    border: 3px;
+    border-style: solid;
+    width: 300px;
+    top: 329px;
+    left: 35px;
+    opacity: 1;
+    margin: 0;
+}
+
+#selection-menu .selection-menu-container .sm-yellow-line2 {
+    position: absolute;
+    color: #FFD500;
+    border: 2px;
+    border-style: solid;
+    width: 300px;
+    top: 334px;
+    left: 35px;
+    opacity: 1;
+    margin: 0;
+}
+
+#selection-menu .selection-menu-container .sm-social {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 362px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+#selection-menu .selection-menu-container .sm-social-bottom {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    top: 438px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+#selection-menu .selection-menu-container .sm-social .icon-telegram:before {
+    content: "\e904";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .selection-menu-container .sm-social .icon-facebook:before {
+    content: "\e905";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .selection-menu-container .sm-social-bottom .icon-whatsapp:before {
+    content: "\e907";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .selection-menu-container .sm-social .icon-viber:before {
+    content: "\e906";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .selection-menu-container .sm-social-bottom .icon-twitter:before {
+    content: "\e909";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .selection-menu-container .sm-social-bottom .icon-instagram:before {
+    content: "\e908";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .selection-menu-container li:hover {
+    display: block;
+    background: #ffffff;
+    padding: 14px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+}
+
+#selection-menu .selection-menu-container ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #666;
+}
+
+#selection-menu .selection-menu-container ul li a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+#selection-menu .selection-menu-container a {
+    text-decoration: none;
+    color: #666;
+}
+
+#selection-menu .selection-menu-container a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+
+/* selection menu start */
 /* modal windows end */
 
 /* 404 start */
@@ -1532,6 +1810,7 @@ button {
     }
 
     /* header end */
+
 
     /* hero section start */
     #hero .hero_main {
@@ -2016,6 +2295,85 @@ button {
     /* footer end */
 
     /* modal windows start */
+    /* selection menu start */
+    #selection-menu .selection-menu-container {
+        height: 815px;
+    }
+
+    #selection-menu .selection-menu-container .sm-top {
+        width: 768px;
+        height: 166px;
+    }
+
+    #selection-menu .selection-menu-container .sm-top .sm-text .sm-text-italic {
+        width: 300px;
+        font-size: 24px;
+        margin-left: 143px;
+        margin-top: 23px;
+    }
+
+    #selection-menu .selection-menu-container .sm-top .sm-text .sm-text-bold {
+        font-size: 48px;
+        margin-left: 169px;
+        margin-top: 29px;
+    }
+
+    #selection-menu .selection-menu-container .sm-top .sm-close {
+        margin-left: 449px;
+    }
+
+    #selection-menu .selection-menu-container .sm-top .sm-blue-line {
+        top: 133px;
+        left: 34px;
+        width: 696px;
+
+    }
+
+    #selection-menu .selection-menu-container .sm-top .sm-yellow-line {
+        top: 138px;
+        left: 34px;
+        width: 696px;
+    }
+
+    #selection-menu .selection-menu-container .sm-what {
+        font-size: 40px;
+        margin-left: 146px;
+        margin-top: -8px;
+    }
+
+    #selection-menu .selection-menu-container .selection-buttons .sm-button {
+        width: 413px;
+        height: 81px;
+        font-size: 22px;
+        margin-top: 22px;
+        margin-bottom: 27px;
+
+    }
+
+    #selection-menu .selection-menu-container .sm-blue-line2 {
+        top: 612px;
+        width: 696px;
+    }
+
+    #selection-menu .selection-menu-container .sm-yellow-line2 {
+        top: 617px;
+        width: 696px;
+    }
+
+    #selection-menu .selection-menu-container .sm-social {
+        top: 650px;
+        width: 250px;
+        left: 199px;
+    }
+
+    #selection-menu .selection-menu-container .sm-social-bottom {
+        top: 727px;
+        width: 250px;
+        left: 199px;
+
+    }
+
+    /* selection menu start */
     /* modal windows end */
 
     /* 404 start */
@@ -2727,6 +3085,12 @@ button {
     /* footer end */
 
     /* modal windows start */
+    /* selection menu start */
+    #selection-menu .selection-menu-container .selection-buttons .sm-button {
+        margin-left: -255px;
+    }
+
+    /* selection menu start */
     /* modal windows end */
 
     /* 404 start */
