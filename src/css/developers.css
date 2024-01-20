@@ -234,7 +234,7 @@ a {
     height: 55px;
     background-color: var(--primary);
     color: var(--white);
-    padding: 16px 57px 16px 57px;
+    padding: 16px 57px 16px 82px;
     font-size: 18px;
     line-height: 25px;
     margin-top: 32px;
@@ -331,7 +331,7 @@ a {
     margin-bottom: 24px;
 }
 
-.container-students .container-students-laptop .link-linkedin {
+#container-students .container-students-laptop .link-linkedin {
     text-decoration: none;
     cursor: pointer;
     color: black;
@@ -799,6 +799,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
     #footer .footer-mobile .progect p {
         font-size: 15px;
         margin-bottom: 0px;
+        width: 400px;
     }
 
     #footer .dix-button {
@@ -923,7 +924,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
         flex-direction: column;
         align-items: center;
         width: 288px;
-        height: 596px;
+        height: 561px;
         border-radius: 15px;
         padding: 9px 24px;
     }
@@ -972,7 +973,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
 
     #blur-container-br .about-container .fields-about-container .container-about-one {
         width: 240px;
-        height: 93px;
+        height: 77px;
         font-size: 14px;
         padding: 16px 15px 16px 16px;
         margin-top: 40px;
@@ -995,7 +996,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
 
     #blur-container-br .about-container .fields-about-container .container-about-four {
         height: 57px;
-        padding: 16px 21px 16px 21px;
+        padding: 16px 21px 16px 34px;
         font-size: 14px;
         margin-top: 16px;
     }
@@ -1077,7 +1078,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
         display: none;
     }
 
-    .container-students .container-students-laptop .link-linkedin-team-lead {
+    #container-students .container-students-laptop .link-linkedin-team-lead {
         margin-right: 0px;
     }
 
@@ -1085,7 +1086,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
         width: 288px;
         border-radius: 15px;
         padding-top: 19px;
-        height: 1315px;
+        height: 1326px;
     }
 
     #container-students h2 {
@@ -1158,7 +1159,8 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
     
     #footer .footer-mobile .progect p {
         font-size: 16px;
-        padding-left: 2px;
+        width: 268px;
+        margin: 0 auto;
     }
 
     #footer .dix-button {
