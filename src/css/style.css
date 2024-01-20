@@ -313,7 +313,7 @@ button {
 #header .intita-logo-header .robota-molodi-logo-img {
     width: 63px;
     height: 19px;
-    margin-left: -4px;
+    margin-left: 2px;
 }
 
 #header .hamburger {
@@ -1184,7 +1184,7 @@ button {
     position: relative;
     min-height: 637px;
     width: 375px;
-    padding-top: 105px;
+    padding-top: 122px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1239,7 +1239,7 @@ button {
 
 #footer .footer-main-container .footer-main .footer-main-intita-logo {
     position: absolute;
-    top: 30px;
+    top: 47px;
     left: 16px;
     width: 89px;
     display: flex;
@@ -1277,7 +1277,7 @@ button {
 
 #footer .footer-main .footer-main-students-logo {
     position: absolute;
-    top: 33px;
+    top: 50px;
     right: 16px;
     width: 211px;
     height: 50px;
@@ -1304,7 +1304,7 @@ button {
     height: 84px;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 
 #footer .footer-main-container .footer-main .footer-main-nav .nav-menu-list {
@@ -1344,12 +1344,13 @@ button {
     text-align: center;
     line-height: 162%;
     letter-spacing: 0.24px;
-    width: 283px;
-    margin-bottom: 20px;
+    width: 291px;
+    margin-bottom: 14px;
 }
 
 #footer .footer-main-container .footer-main .footer-main-text2 {
     width: 232px;
+    margin-bottom: 19px;
 }
 
 #footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
@@ -2001,6 +2002,162 @@ button {
 /* mentors window end */
 
 /* 404 start */
+/* header start */
+#header-404 .header .intita-logo-header {
+    top: 17px;
+    left: 27px 
+}
+
+#header-404 #header .hamburger {
+    top: 20px;
+    right: 20px;
+}
+
+#header .intita-logo-header {
+    position: absolute;
+    width: 78px;
+    height: 7px;
+    top: 18px;
+    left: 18px;
+}
+
+/* 404 burger start */
+
+#header-404 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header-404 #menu {
+    padding-top: 18px;
+    width: 375px;
+}
+
+#header-404 #menu .bg-language-404 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#header-404 #menu .bg-content-box-404 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-text-italic-404 {
+    font-family: 'Ubuntu Italic';
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-text-bold-404 {
+    font-family: 'Ubuntu Bold';
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+#header-404 #menu .bg-content-box-404 .line-wrapper-404 {
+    margin-bottom: 16px;
+}
+
+#header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-blue-line-404 {
+    color: #083CC0;
+    border: 3px;
+    border-style: solid;
+    width: 300px;
+    opacity: 1;
+    margin: 0;
+}
+
+#header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-yellow-line-404 {
+    color: #FFD500;
+    border: 2px;
+    border-style: solid;
+    width: 300px;
+    opacity: 1;
+    margin: 0;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-menu-404 {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 12px;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404 {
+    padding: 0px;
+    margin-bottom: 27px;
+    line-height: normal;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-partners-404 {
+    padding-top: 1px;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404 .bg-text-menu-404 {
+    color: var(--сolor-black);
+}
+
+#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404:last-child {
+    margin-bottom: 0px;
+}
+
+#header-404 #menu .bg-content-box-404 .line-wrapper-404-bottom {
+    margin-bottom: 10px;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-social-404 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+    height: 154px;
+    margin-left: -5px;
+}
+
+#header-404 #menu .bg-content-box-404 .bg-social-404 .social-item-404:before {
+    color: var(--сolor-black);
+    font-size: 50px;
+    margin: 13.5px 25px;
+}
+
+/* 404 burger end */
+/* header end */
+
+#block-404 .block-404-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/images/404/404-background-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 362px;
+}
+
+#block-404 .block-404-main .block-404-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+#block-404 .block-404-main .block-404-content .block-404-content-title {
+    max-width: 258px;
+    color: var(--white);
+    font-family: 'Ubuntu Bold';
+    text-align: center;
+    font-size: 24px;
+}
+
+#block-404 .block-404-main .block-404-content .block-404-content-button {
+    padding: 16px 78.32px;
+    font-size: 14px;
+}
+
 /* 404 end */
 
 /* 404 EN start */
@@ -2527,7 +2684,7 @@ button {
 
     #footer .footer-main-container .footer-main {
         min-height: 341px;
-        padding-top: 155px;
+        padding-top: 161px;
         width: 768px;
     }
 
@@ -2539,8 +2696,8 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo {
-        top: 25px;
-        left: 37px;
+        top: 30px;
+        left: 40px;
         width: 139px;
     }
 
@@ -2568,7 +2725,7 @@ button {
 
     #footer .footer-main-container .footer-main .footer-main-students-logo {
         top: 266px;
-        right: 303px;
+        right: 278px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-nav {
@@ -2576,7 +2733,7 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-text-box {
-        width: 694px;
+        width: 686px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -2587,13 +2744,15 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-text {
-        width: 291px;
+        width: 289px;
         text-align: left;
         margin-bottom: 0;
+        letter-spacing: 162%;
     }
 
     #footer .footer-main-container .footer-main .footer-main-text2 {
         width: 237px;
+        line-height: 156%;
     }
 
     #footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
@@ -2606,8 +2765,8 @@ button {
 
     #footer .footer-main-container .footer-main .footer-main-contacts {
         position: absolute;
-        top: 25px;
-        right: 181px;
+        top: 32px;
+        right: 185px;
         height: 86px;
         text-align: left;
     }
@@ -2615,7 +2774,7 @@ button {
     #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
         font-family: "Ubuntu Bold";
         font-size: 20px;
-        margin-bottom: 19.69px;
+        margin-bottom: 18px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
@@ -2625,7 +2784,7 @@ button {
     #footer .footer-main-container .footer-main .footer-main-qr-code {
         display: block;
         position: absolute;
-        right: 37px;
+        right: 70px;
         bottom: 25px;
     }
 
@@ -3076,6 +3235,93 @@ button {
   /* mentors window end */
 
     /* 404 start */
+    /* header start */
+    #header-404 #header .hamburger {
+        top: 20px;
+        right: 20px;
+    }
+
+    /* 404 burger start */
+    #header-404 #menu {
+        padding-top: 40px;
+        width: 768px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .bg-text-italic-404 {
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .bg-text-bold-404 {
+        font-size: 48px;
+        margin-bottom: 6px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .line-wrapper-404 {
+        margin-bottom: 36px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-blue-line-404 {
+        width: 695px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-yellow-line-404 {
+        width: 695px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .bg-menu-404 {
+        margin-bottom: 32px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404 {
+        margin-bottom: 36px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-speс-404 {
+        margin-bottom: 35px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-partners-404 {
+        margin-bottom: 33px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .line-wrapper-404-bottom {
+        margin-bottom: 12px;
+    }
+
+    #header-404 #menu .bg-content-box-404 .bg-social-404 {
+        margin-left: 1px;
+    }
+
+    /* 404 burger end */
+    /* header end */
+
+    #block-404 .block-404-main {
+        align-items: flex-start;
+        padding-top: 372px;
+        background: url(../assets/images/404/404-background-tablet.png);
+        background-size: cover;
+        min-height: 1024px;
+    }
+
+    #block-404 .block-404-main .block-404-content .block-404-content-title {
+        line-height: normal;
+    }
+
+    #block-404 .block-404-main .block-404-content {
+        gap: 46px;
+    }
+
+    #block-404 .block-404-main .block-404-content .block-404-content-title {
+        max-width: 670px;
+        font-size: 70px;
+    }
+
+    #block-404 .block-404-main .block-404-content .block-404-content-button {
+        padding: 33px 124px;
+        font-size: 36px;
+    }
+
     /* 404 end */
 
 	/* 404 EN start */
@@ -3665,8 +3911,8 @@ button {
 
     #footer .footer-main-container .footer-main {
         min-height: 376px;
-        padding-top: 159px;
-        padding-left: 46px;
+        padding-top: 156px;
+        padding-left: 42px;
         flex-direction: row;
         align-items: flex-start;
         width: 1024px;
@@ -3688,8 +3934,8 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo {
-        top: 39px;
-        left: 43px;
+        top: 34px;
+        left: 46px;
         width: 139px;
     }
 
@@ -3716,8 +3962,8 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-students-logo {
-        top: 312px;
-        right: 408px;
+        top: 307px;
+        right: 406px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-nav {
@@ -3742,11 +3988,11 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-text-box {
-        width: 561px;
+        width: 564px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-right: 64px;
+        margin-right: 66px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-line {
@@ -3756,7 +4002,7 @@ button {
     #footer .footer-main-container .footer-main .footer-main-text {
         font-size: 15px;
         text-align: left;
-        line-height: 162%;
+        line-height: 160%;
         letter-spacing: 0.3px;
         width: 288px;
         height: 119px;
@@ -3773,8 +4019,8 @@ button {
 
     #footer .footer-main-container .footer-main .footer-main-icon-box {
         position: relative;
-        width: 310px;
-        height: 119px;
+        width: 312px;
+        height: 108px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -3804,8 +4050,8 @@ button {
 
     #footer .footer-main-container .footer-main .footer-main-contacts {
         position: absolute;
-        top: 68px;
-        right: 43px;
+        top: 64px;
+        right: 40px;
         width: 184.196px;
         height: 106px;
         text-align: right;
@@ -3814,17 +4060,17 @@ button {
 
     #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
         font-size: 24px;
-        margin-bottom: 22px;
+        margin-bottom: 20px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
-        margin-bottom: 10px;
+        margin-bottom: 9px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-qr-code {
         display: block;
         position: absolute;
-        right: 43px;
+        right: 41px;
         bottom: 19px;
     }
 
@@ -3852,5 +4098,39 @@ button {
     /* modal windows end */
 
     /* 404 start */
+    /* header start */
+    #header-404 #header .desktop-menu {
+        width: 521px;
+    }
+
+    #header-404 #header .desktop-menu .desktop-list {
+        margin-left: -29px
+    }
+    /* header end */
+
+    #block-404 .block-404-main {
+        /* padding: 303px; */
+        background: url(../assets/images/404/404-background-desktop.png);
+        background-size: cover;
+        min-height: 768px;
+    }
+
+    #block-404 .block-404-main {
+        padding-top: 303px;
+    }
+
+    #block-404 .block-404-main .block-404-content {
+        gap: 35px;
+    }
+
+    #block-404 .block-404-main .block-404-content .block-404-content-title {
+        width: 480px;
+        font-size: 36px;
+    }
+
+    #block-404 .block-404-main .block-404-content .block-404-content-button {
+        padding: 25px 85px;
+        font-size: 22px;
+    }
     /* 404 end */
 }
