@@ -2003,6 +2003,16 @@ button {
 /* 404 start */
 /* 404 end */
 
+/* 404 EN start */
+#footer .footer-main-container .footer-main .footer-main-nav-en {
+	width: 145px;
+}
+
+#footer .footer-main-container .footer-main .footer-main-text2-en {
+	width: 276px;
+}
+/* 404 EN end */
+
 /*=============================================================*/
 /*------------------------ @ media ----------------------------*/
 
@@ -3067,6 +3077,13 @@ button {
 
     /* 404 start */
     /* 404 end */
+
+	/* 404 EN start */
+	#footer .footer-main-container .footer-main .footer-main-text2-en {
+		width: 276px;
+	}
+    /* 404 EN end */
+	
 }
 
 @media (min-width: 1024px) {
