@@ -2169,11 +2169,11 @@ button {
 
 /* 404 EN start */
 #footer .footer-main-container .footer-main .footer-main-nav-en {
-	width: 145px;
+    width: 145px;
 }
 
 #footer .footer-main-container .footer-main .footer-main-text2-en {
-	width: 276px;
+    width: 276px;
 }
 /* 404 EN end */
 
@@ -3330,12 +3330,12 @@ button {
 
     /* 404 end */
 
-	/* 404 EN start */
-	#footer .footer-main-container .footer-main .footer-main-text2-en {
-		width: 276px;
-	}
+    /* 404 EN start */
+    #footer .footer-main-container .footer-main .footer-main-text2-en {
+        width: 276px;
+    }
     /* 404 EN end */
-	
+    
 }
 
 @media (min-width: 1024px) {
@@ -3372,8 +3372,8 @@ button {
         right: 0;
         padding-top: 176px;
         display: block;
-        width: 137px;
-        height: 768px;
+        min-width: 137px;
+        min-height: 768px;
         background-color: #515558;
     }
 
@@ -3382,12 +3382,20 @@ button {
         flex-direction: column;
         justify-content: space-between;
         width: 35px;
-        height: 495px;
+        min-height: 495px;
         margin: 0 auto;
     }
 
-    #hero .hero_main #contacts-block .contacts-box .contacts-block-icon {
+    #hero .hero_main #contacts-block .contacts-box a .contacts-block-icon {
         font-size: 35px;
+    }
+
+    #hero .hero_main #contacts-block .contacts-box a:hover .contacts-block-icon::before {
+        color: var(--icon-hover);
+    }
+
+    #hero .hero_main #contacts-block .contacts-box a:active .contacts-block-icon::before {
+        color: var(--button-primary);
     }
 
     /* desktop contacts block end */
