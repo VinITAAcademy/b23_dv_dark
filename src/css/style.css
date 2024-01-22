@@ -3372,8 +3372,8 @@ button {
         right: 0;
         padding-top: 176px;
         display: block;
-        width: 137px;
-        height: 768px;
+        min-width: 137px;
+        min-height: 768px;
         background-color: #515558;
     }
 
@@ -3382,7 +3382,7 @@ button {
         flex-direction: column;
         justify-content: space-between;
         width: 35px;
-        height: 495px;
+        min-height: 495px;
         margin: 0 auto;
     }
 
@@ -3396,7 +3396,6 @@ button {
 
     #hero .hero_main #contacts-block .contacts-box a:active .contacts-block-icon::before {
         color: var(--button-primary);
-        border-color: var(--icon-hover);
     }
 
     /* desktop contacts block end */
