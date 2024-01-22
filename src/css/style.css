@@ -2169,11 +2169,11 @@ button {
 
 /* 404 EN start */
 #footer .footer-main-container .footer-main .footer-main-nav-en {
-	width: 145px;
+    width: 145px;
 }
 
 #footer .footer-main-container .footer-main .footer-main-text2-en {
-	width: 276px;
+    width: 276px;
 }
 /* 404 EN end */
 
@@ -3330,12 +3330,12 @@ button {
 
     /* 404 end */
 
-	/* 404 EN start */
-	#footer .footer-main-container .footer-main .footer-main-text2-en {
-		width: 276px;
-	}
+    /* 404 EN start */
+    #footer .footer-main-container .footer-main .footer-main-text2-en {
+        width: 276px;
+    }
     /* 404 EN end */
-	
+    
 }
 
 @media (min-width: 1024px) {
@@ -3386,8 +3386,17 @@ button {
         margin: 0 auto;
     }
 
-    #hero .hero_main #contacts-block .contacts-box .contacts-block-icon {
+    #hero .hero_main #contacts-block .contacts-box a .contacts-block-icon {
         font-size: 35px;
+    }
+
+    #hero .hero_main #contacts-block .contacts-box a:hover .contacts-block-icon::before {
+        color: var(--icon-hover);
+    }
+
+    #hero .hero_main #contacts-block .contacts-box a:active .contacts-block-icon::before {
+        color: var(--button-primary);
+        border-color: var(--icon-hover);
     }
 
     /* desktop contacts block end */
