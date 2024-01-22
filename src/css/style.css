@@ -1329,6 +1329,10 @@ button {
     font-size: 16px;
 }
 
+#footer .footer-main-container .footer-main .nav-menu-link:active {
+    color: var(--button-hover-bg);
+}
+
 #footer .footer-main-container .footer-main .footer-main-text-box {
     display: flex;
     flex-direction: column;
@@ -3997,6 +4001,14 @@ button {
     #footer .footer-main-container .footer-main .nav-menu-link {
         font-family: "Ubuntu Regular";
         font-size: 15px;
+    }
+
+    #footer .footer-main-container .footer-main .nav-menu-link:hover {
+        color: var(--icon-hover);
+    }
+    
+    #footer .footer-main-container .footer-main .nav-menu-link:active {
+        color: var(--button-hover-bg);
     }
 
     #footer .footer-main-container .footer-main .footer-main-text-box {
