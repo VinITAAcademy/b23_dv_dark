@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
         // start specialities
-        let carouselBlock=document.querySelector('.specialty-carousel-main-container');
-        let carouselCardsContainer=document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
-        let carouselCard=document.querySelectorAll('.carousel-item');
-        let screenWidth=window.screen.width;
+        let carouselBlock = document.querySelector('.specialty-carousel-main-container');
+        let carouselCardsContainer = document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
+        let carouselCard = document.querySelectorAll('.carousel-item');
+        let screenWidth = window.screen.width;
 
         document.addEventListener('resize', function (e) {
                 if (screenWidth >=768) {
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // end specialities
 
         // start applicant form
-        const applicantForm=$("#applicant_form_modal .form");
+        const applicantForm = $("#applicant_form_modal .form");
 
         applicantForm.on("submit", function (event) {
                 event.preventDefault();
-                const data=$(this).serializeArray();
+                const data = $(this).serializeArray();
                 $("#applicant_form_modal").modal("hide");
                 $("#succesModal").modal('show');
             }
@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
         // end modal burger menu
 
         //start we provide video poster
-        let videos=$(".video");
+        let videos = $(".video");
 
         videos.on("click", function () {
-                let elm=$(this),
-                conts=elm.contents(),
-                le=conts.length,
-                ifr=null;
+                let elm = $(this),
+                conts = elm.contents(),
+                le = conts.length,
+                ifr = null;
 
                 for (let i=0; i < le; i++) {
                     if (conts[i].nodeType==8) ifr=conts[i].textContent;
@@ -66,13 +66,13 @@ document.addEventListener('DOMContentLoaded', function () {
         let videos2=$(".video_with_autoplay");
 
         videos2.on("click", function () {
-                let elm=$(this),
-                conts=elm.contents(),
-                le=conts.length,
-                ifr=null;
+                let elm = $(this),
+                conts = elm.contents(),
+                le = conts.length,
+                ifr = null;
 
                 for (let i=0; i < le; i++) {
-                    if (conts[i].nodeType==8) ifr=conts[i].textContent;
+                    if (conts[i].nodeType == 8) ifr = conts[i].textContent;
                 }
 
                 elm.addClass("player").html(ifr);
@@ -101,67 +101,67 @@ document.addEventListener('DOMContentLoaded', function () {
 );
 // start modal burger menu
 
-let hamburger=document.querySelector('.hamburger');
-let closes=document.querySelector('.cross');
-let menu=document.querySelector('#menu');
+let hamburger = document.querySelector('.hamburger');
+let closes = document.querySelector('.cross');
+let menu = document.querySelector('#menu');
 
 
 hamburger.onclick=function () {
-    menu.style.display='block';
-    hamburger.style.display='none';
+    menu.style.display = 'block';
+    hamburger.style.display = 'none';
 }
 
 closes.onclick=function () {
-    menu.style.display='none';
-    hamburger.style.display='block';
+    menu.style.display = 'none';
+    hamburger.style.display = 'block';
 }
 
 // end modal burger menu
 
 // start modal selection menu
-let registration=document.querySelector('.hero_content_button');
-let selection=document.querySelector('#selection-menu');
-let closeSelection=document.querySelector('.sm-cross');
+let registration = document.querySelector('.hero_content_button');
+let selection = document.querySelector('#selection-menu');
+let closeSelection = document.querySelector('.sm-cross');
 
-registration.onclick=function() {
-    selection.style.display='block';
-    hamburger.style.display='none';
+registration.onclick = function() {
+    selection.style.display = 'block';
+    hamburger.style.display = 'none';
 }
 
-closeSelection.onclick=function() {
-    selection.style.display='none';
-    hamburger.style.display='block';
+closeSelection.onclick = function() {
+    selection.style.display = 'none';
+    hamburger.style.display = 'block';
 }
 
 // start modal selection menu
 
 // start modal poll menu
-let partner=document.querySelector('.sm-button-partner');
-let participant=document.querySelector('.sm-button-participant');
-let mentor=document.querySelector('.sm-button-mentor');
-let partnerModal=document.querySelector('.partner-sm');
-let participantModal=document.querySelector('.participant-sm');
-let mentorModal=document.querySelector('.mentors-sm');
+let partner = document.querySelector('.sm-button-partner');
+let participant = document.querySelector('.sm-button-participant');
+let mentor = document.querySelector('.sm-button-mentor');
+let partnerModal = document.querySelector('.partner-sm');
+let participantModal = document.querySelector('.participant-sm');
+let mentorModal = document.querySelector('.mentors-sm');
 
-partner.onclick=function() {
-    selection.style.display='none';
-    partnerModal.style.opacity='1';
-    partnerModal.style.paddingTop='57px';
-    partnerModal.style.display='block';
+partner.onclick = function() {
+    selection.style.display = 'none';
+    partnerModal.style.opacity = '1';
+    partnerModal.style.paddingTop = '57px';
+    partnerModal.style.display = 'block';
 }
 
-participant.onclick=function() {
-    selection.style.display='none';
-    participantModal.style.opacity='1';
-    participantModal.style.paddingTop='57px';
-    participantModal.style.display='block';
+participant.onclick = function() {
+    selection.style.display = 'none';
+    participantModal.style.opacity = '1';
+    participantModal.style.paddingTop = '57px';
+    participantModal.style.display = 'block';
 }
 
-mentor.onclick=function() {
-    selection.style.display='none';
-    mentorModal.style.opacity='1';
-    mentorModal.style.paddingTop='57px';
-    mentorModal.style.display='block';
+mentor.onclick = function() {
+    selection.style.display = 'none';
+    mentorModal.style.opacity = '1';
+    mentorModal.style.paddingTop ='57px';
+    mentorModal.style.display = 'block';
 }
 
 // end modal poll menu

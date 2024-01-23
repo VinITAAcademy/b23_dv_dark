@@ -1972,7 +1972,7 @@ button {
     font-style: normal;
     line-height: 18px;
     font-size: 16px;
-    padding-top: 18px;
+    padding: 18px 0 0 0;
 }
 
 #selection-menu .burger-top .bg-text-bold {
@@ -1982,8 +1982,7 @@ button {
     font-style: normal;
     line-height: 19px;
     font-size: 36px;
-    padding-bottom: 10px;
-
+    padding: 0 0 10px 0;
 }
 
 #selection-menu .burger-top .bg-blue-line {
@@ -2355,7 +2354,6 @@ button {
     #header .intita-logo-header .line-logo {
         width: 130px;
         margin: 6px 0 0 11px;
-
     }
 
     #header .desktop-menu {
@@ -2373,7 +2371,6 @@ button {
         width: 134px;
         height: 32px;
         margin: 6px 0 0 8px;
-
     }
 
     #menu .burger-top {
