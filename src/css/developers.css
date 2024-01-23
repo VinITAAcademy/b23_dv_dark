@@ -139,7 +139,6 @@ a {
     background: var(--background-light);
     border-radius: 50px;
     margin: 0 auto;
-    /* justify-content: center; */
     margin-bottom: 40px;
     padding-left: 80px;
 }
