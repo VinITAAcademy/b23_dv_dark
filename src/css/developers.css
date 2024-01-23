@@ -77,11 +77,10 @@ a {
 #blur-container-br .container-header {
     display: flex;
     align-items: center;
-    margin: 0 auto;
     padding-top: 32px;
     justify-content: space-between;
     width: 849px;
-    margin-bottom: 33px;
+    margin: 0px auto 33px auto;
 }
 
 #blur-container-br .container-header .header-link {
@@ -138,8 +137,7 @@ a {
     height: 600px;
     background: var(--background-light);
     border-radius: 50px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0px auto 40px auto;
     padding-left: 80px;
 }
 
