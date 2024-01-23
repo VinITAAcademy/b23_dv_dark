@@ -649,7 +649,6 @@ button {
 }
 
 #we-provide .we-provide__container {
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -658,7 +657,6 @@ button {
 
 #we-provide .we-provide__container .we-provide__title {
     font-size: 1.5rem;
-    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -671,7 +669,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -2348,7 +2345,6 @@ button {
     #we-provide .we-provide__container .we-provide__title {
         font-family: 'Ubuntu Medium';
         font-size: 2.625rem;
-        margin: 0;
         margin-bottom: 40px;
     }
 
@@ -2376,7 +2372,6 @@ button {
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
         max-width: 352px;
         text-align: center;
-        margin: 0;
         font-size: 1.25rem;
         line-height: 162%;
         letter-spacing: 0.4px;
@@ -3568,7 +3563,6 @@ button {
     #we-provide .we-provide__container .we-provide__title {
         font-family: 'Ubuntu Medium';
         font-size: 2.625rem;
-        margin: 0;
         margin-bottom: 70px;
     }
 
@@ -3583,8 +3577,7 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
-        margin-right: 46px;
+        margin: 0px 46px 0px 0px;
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item:last-child {
