@@ -143,7 +143,7 @@ a {
 
 #blur-container-br .about-container .container-one {
     margin-right: 72px;
-    min-width: 357pxgit;
+    min-width: 357px;
 }
 
 #blur-container-br .about-container .container-one .container-intita {
@@ -237,7 +237,7 @@ a {
     height: 55px;
     background-color: var(--primary);
     color: var(--white);
-    padding: 16px 57px 16px 57px;
+    padding: 16px 57px;
     font-size: 18px;
     line-height: 25px;
     margin-top: 32px;
@@ -1007,7 +1007,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
 
     #blur-container-br .about-container .fields-about-container .container-about-four {
         height: 57px;
-        padding: 16px 21px 16px 21px;
+        padding: 16px 21px;
         font-size: 14px;
         margin-top: 16px;
     }
