@@ -564,6 +564,13 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
     }
 }
 
+/* English version starts */
+#blur-container-br .about-container .fields-about-container .container-about-four-en {
+    padding-left: 80px;
+}
+
+/* English version ends */
+
 @media screen and (max-width: 1023px) {
 
     .offcanvas.offcanvas-end {
@@ -1188,4 +1195,19 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
         height: 40px;
         padding-top: 9px;
     }
+
+    /* English version starts */
+    #blur-container-br .about-container-en {
+        height: 560px;
+    }
+
+    #blur-container-br .about-container .fields-about-container .container-about-one-en {
+        height: 78px;
+    }
+
+    #blur-container-br .about-container .fields-about-container .container-about-four-en {
+        padding-left: 38px;
+    }
+
+    /* English version ends */
 }
