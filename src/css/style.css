@@ -688,9 +688,9 @@ button {
 }
 
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
-    width: 220px;
+    width: 221px;
     height: 1px;
-    background: repeating-linear-gradient(90deg, var(--background) 0 2px, var(--сolor-black) 0 8px)
+    background: repeating-linear-gradient(90deg, var(--white) 0 3px, var(--background) 0 6px)
 }
 
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-right {
@@ -2369,7 +2369,8 @@ button {
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
-        width: 406px;
+        width: 407px;
+        background: repeating-linear-gradient(90deg, var(--white) 0 3px, var(--background) 0 6px)
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
@@ -3603,8 +3604,8 @@ button {
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
-        width: 291px;
-        background: repeating-linear-gradient(90deg, var(--background) 0 3px, var(--сolor-black) 0 12px)
+        width: 288px;
+        background: repeating-linear-gradient(90deg, var(--white) 0 6px, var(--background) 0 12px)
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
