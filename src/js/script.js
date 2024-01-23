@@ -115,6 +115,7 @@ closes.onclick=function () {
     menu.style.display='none';
     hamburger.style.display='block';
 }
+
 // end modal burger menu
 
 // start modal selection menu
@@ -122,15 +123,16 @@ let registration=document.querySelector('.hero_content_button');
 let selection=document.querySelector('#selection-menu');
 let closeSelection=document.querySelector('.sm-cross');
 
-    registration.onclick=function() {
-        selection.style.display='block';
-        hamburger.style.display='none';
-    }
+registration.onclick=function() {
+    selection.style.display='block';
+    hamburger.style.display='none';
+}
 
-    closeSelection.onclick=function() {
-        selection.style.display='none';
-        hamburger.style.display='block';
-    }
+closeSelection.onclick=function() {
+    selection.style.display='none';
+    hamburger.style.display='block';
+}
+
 // start modal selection menu
 
 // start modal poll menu
@@ -140,26 +142,26 @@ let mentor=document.querySelector('.sm-button-mentor');
 let partnerModal=document.querySelector('.partner-sm');
 let participantModal=document.querySelector('.participant-sm');
 let mentorModal=document.querySelector('.mentors-sm');
-    
-    partner.onclick=function() {
-        selection.style.display='none';
-        partnerModal.style.opacity='1';
-        partnerModal.style.paddingTop='57px';
-        partnerModal.style.display='block';  
-    }
 
-    participant.onclick=function() {
-        selection.style.display='none';
-        participantModal.style.opacity='1';
-        participantModal.style.paddingTop='57px';
-        participantModal.style.display='block';
-    }
+partner.onclick=function() {
+    selection.style.display='none';
+    partnerModal.style.opacity='1';
+    partnerModal.style.paddingTop='57px';
+    partnerModal.style.display='block';
+}
 
-    mentor.onclick=function() {
-        selection.style.display='none';
-        mentorModal.style.opacity='1';
-        mentorModal.style.paddingTop='57px';
-        mentorModal.style.display='block';
-    }
+participant.onclick=function() {
+    selection.style.display='none';
+    participantModal.style.opacity='1';
+    participantModal.style.paddingTop='57px';
+    participantModal.style.display='block';
+}
+
+mentor.onclick=function() {
+    selection.style.display='none';
+    mentorModal.style.opacity='1';
+    mentorModal.style.paddingTop='57px';
+    mentorModal.style.display='block';
+}
 
 // end modal poll menu

@@ -630,7 +630,7 @@ button {
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
     width: 220px;
     height: 1px;
-    background: repeating-linear-gradient(90deg, #000A24 0 2px, #0000 0 8px)
+    background: repeating-linear-gradient(90deg, var(--background) 0 2px, var(--сolor-black) 0 8px)
 }
 
 #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-right {
@@ -646,7 +646,7 @@ button {
     font-size: 0.875rem;
     line-height: 162%;
     letter-spacing: 0.28px;
-    color: #000A24;
+    color: var(--background);
 }
 
 #we-provide .we-provide__container .we-provide__video-wrapper {
@@ -1154,34 +1154,16 @@ button {
     color: var(--white);
 }
 
-#footer .footer-main-container .footer-main .footer-main-icon:hover {
-    color: var(--icon-hover);
-    border-color: var(--icon-hover);
-}
-
-#footer .footer-main-container .footer-main .footer-main-icon:active {
-    color: var(--button-hover-bg);
-    border-color: var(--button-hover-bg);
-}
-
-#footer .footer-main-container .footer-main .footer-main-icon:disabled {
-    color: var(--button-disabled-bg);
-    border-color: var(--button-disabled-bg);
-}
-
 #footer .footer-main-container .footer-main a:hover .footer-main-icon::before {
     color: var(--icon-hover);
-    border-color: var(--icon-hover);
 }
 
 #footer .footer-main-container .footer-main a:active .footer-main-icon::before {
     color: var(--button-hover-bg);
-    border-color: var(--button-hover-bg);
 }
 
 #footer .footer-main-container .footer-main a:disabled .footer-main-icon::before {
     color: var(--button-disabled-bg);
-    border-color: var(--button-disabled-bg);
 }
 
 #footer .footer-main-container .footer-main .footer-main-intita-logo {
@@ -1208,7 +1190,7 @@ button {
 #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-left {
     width: 81px;
     height: 0.633px;
-    background: repeating-linear-gradient(90deg, var(--white) 0 0.5px, #0000 0 2px);
+    background: repeating-linear-gradient(90deg, var(--white) 0 0.5px, var(--сolor-black) 0 2px);
 }
 
 #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-right {
@@ -1267,6 +1249,10 @@ button {
     color: var(--white);
     font-family: "Ubuntu Medium";
     font-size: 16px;
+}
+
+#footer .footer-main-container .footer-main .nav-menu-link:active {
+    color: var(--button-hover-bg);
 }
 
 #footer .footer-main-container .footer-main .footer-main-text-box {
@@ -2242,7 +2228,7 @@ button {
 }
 
 #header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-blue-line-404 {
-    color: #083CC0;
+    color: var(--button-primary);
     border: 3px;
     border-style: solid;
     width: 300px;
@@ -2870,7 +2856,7 @@ button {
     #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-left {
         width: 125.5px;
         height: 1px;
-        background: repeating-linear-gradient(90deg, var(--white) 0 0.75px, #0000 0 2.5px);
+        background: repeating-linear-gradient(90deg, var(--white) 0 0.75px, var(--сolor-black) 0 2.5px);
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-rm-logo-svg {
@@ -3563,6 +3549,7 @@ button {
     }
 
     /* selection menu end*/
+
 }
 
 @media (min-width: 1024px) {
@@ -3599,8 +3586,8 @@ button {
         right: 0;
         padding-top: 176px;
         display: block;
-        width: 137px;
-        height: 768px;
+        min-width: 137px;
+        min-height: 768px;
         background-color: #515558;
     }
 
@@ -3609,12 +3596,20 @@ button {
         flex-direction: column;
         justify-content: space-between;
         width: 35px;
-        height: 495px;
+        min-height: 495px;
         margin: 0 auto;
     }
 
-    #hero .hero_main #contacts-block .contacts-box .contacts-block-icon {
+    #hero .hero_main #contacts-block .contacts-box a .contacts-block-icon {
         font-size: 35px;
+    }
+
+    #hero .hero_main #contacts-block .contacts-box a:hover .contacts-block-icon::before {
+        color: var(--icon-hover);
+    }
+
+    #hero .hero_main #contacts-block .contacts-box a:active .contacts-block-icon::before {
+        color: var(--button-primary);
     }
 
     /* desktop contacts block end */
@@ -3889,7 +3884,7 @@ button {
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__line-wrapper .cards-item__line-left {
         width: 291px;
-        background: repeating-linear-gradient(90deg, #000A24 0 3px, #0000 0 12px)
+        background: repeating-linear-gradient(90deg, var(--background) 0 3px, var(--сolor-black) 0 12px)
     }
 
     #we-provide .we-provide__container .we-provide__cards-box .cards-item .cards-item__text {
@@ -4203,8 +4198,7 @@ button {
 
     #footer .footer-main-container .footer-main {
         min-height: 376px;
-        padding-top: 156px;
-        padding-left: 42px;
+        padding: 156px 0px 0px 42px;
         flex-direction: row;
         align-items: flex-start;
         width: 1024px;
@@ -4245,7 +4239,7 @@ button {
     #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-left {
         width: 125.5px;
         height: 1px;
-        background: repeating-linear-gradient(90deg, var(--white) 0 0.75px, #0000 0 2.5px);
+        background: repeating-linear-gradient(90deg, var(--white) 0 0.75px, var(--сolor-black) 0 2.5px);
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-rm-logo-svg {
@@ -4277,6 +4271,14 @@ button {
     #footer .footer-main-container .footer-main .nav-menu-link {
         font-family: "Ubuntu Regular";
         font-size: 15px;
+    }
+
+    #footer .footer-main-container .footer-main .nav-menu-link:hover {
+        color: var(--icon-hover);
+    }
+    
+    #footer .footer-main-container .footer-main .nav-menu-link:active {
+        color: var(--button-hover-bg);
     }
 
     #footer .footer-main-container .footer-main .footer-main-text-box {
