@@ -139,12 +139,14 @@ a {
     background: var(--background-light);
     border-radius: 50px;
     margin: 0 auto;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 40px;
+    padding-left: 80px;
 }
 
 #blur-container-br .about-container .container-one {
     margin-right: 72px;
+    min-width: 357pxgit;
 }
 
 #blur-container-br .about-container .container-one .container-intita {
@@ -169,6 +171,7 @@ a {
 }
 
 #blur-container-br .about-container .container-one .container-intita .text-intita .link-intita h1 {
+    position: relative;
     font-size: 48px;
     font-weight: 400;
     line-height: normal;
@@ -176,6 +179,9 @@ a {
 }
 
 #blur-container-br .about-container .container-one .container-intita .text-intita .link-intita .academy-text {
+    position: absolute;
+    top: 57px;
+    left: 41px;
     font-weight: 400;
 }
 
@@ -234,7 +240,7 @@ a {
     height: 55px;
     background-color: var(--primary);
     color: var(--white);
-    padding: 16px 57px 16px 82px;
+    padding: 16px 57px 16px 57px;
     font-size: 18px;
     line-height: 25px;
     margin-top: 32px;
@@ -697,6 +703,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
     }
 
     #blur-container-br .about-container .container-one {
+        min-width: 289px;
         margin-right: 66px;
     }
 
@@ -924,7 +931,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
         flex-direction: column;
         align-items: center;
         width: 288px;
-        height: 561px;
+        height: 595px;
         border-radius: 15px;
         padding: 9px 24px;
     }
@@ -973,7 +980,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
 
     #blur-container-br .about-container .fields-about-container .container-about-one {
         width: 240px;
-        height: 77px;
+        height: 93px;
         font-size: 14px;
         padding: 16px 15px 16px 16px;
         margin-top: 40px;
@@ -996,7 +1003,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
 
     #blur-container-br .about-container .fields-about-container .container-about-four {
         height: 57px;
-        padding: 16px 21px 16px 34px;
+        padding: 16px 21px 16px 21px;
         font-size: 14px;
         margin-top: 16px;
     }
@@ -1086,7 +1093,7 @@ a.btn-1.btn-white.btn-animation-1.btn-progect-footer:hover {
         width: 288px;
         border-radius: 15px;
         padding-top: 19px;
-        height: 1326px;
+        height: 1315px;
     }
 
     #container-students h2 {
