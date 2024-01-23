@@ -3760,7 +3760,6 @@ button {
         right: 33px;
         z-index: 10;
         display: block;
-
     }
 
     #header .dropdown .btn {
@@ -3817,7 +3816,6 @@ button {
         color: var(--button-hover-bg);
     }
 
-    */
     /* header end */
 
     /* quote start */
@@ -4276,7 +4274,7 @@ button {
     #footer .footer-main-container .footer-main .nav-menu-link:hover {
         color: var(--icon-hover);
     }
-    
+
     #footer .footer-main-container .footer-main .nav-menu-link:active {
         color: var(--button-hover-bg);
     }
