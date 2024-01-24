@@ -1773,9 +1773,7 @@ button {
     font-size: 16px;
     font-weight: 500;
     font-family: 'Unbuntu Medium';
-    margin-top: 11px;
-    margin-bottom: 30px;
-    margin-left: 12px;
+    margin: 11px 0 30px 12px;
     text-align: center;
 }
 
@@ -1889,8 +1887,7 @@ button {
     color: #a7a7a7;
     font-size: 12px;
     font-weight: 400;
-    margin-bottom: 6px;
-    margin-top: 12px;
+    margin: 12px 0 6px 0;
     font-family: 'Unbuntu Regular';
 }
 
@@ -1913,7 +1910,7 @@ button {
     content: "*";
     color: red;
     font-size: 20px;
-    margin-right: 2px;
+    margin: 0 2px 0 0;
 }
 
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
@@ -1926,7 +1923,7 @@ button {
     font-size: 22px;
     width: 271px;
     height: 53px;
-    margin-left: 8px;
+    margin: 8px 0 0 0;
 }
 
 /* mentors window end */
