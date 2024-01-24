@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
         // start specialities
+document.addEventListener('DOMContentLoaded', function () {
         let carouselBlock = document.querySelector('.specialty-carousel-main-container');
         let carouselCardsContainer = document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
         let carouselCard = document.querySelectorAll('.carousel-item');
@@ -23,9 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     carouselCard[0].classList.add('active');
                     for (let item of carouselCard) item.classList.add('carousel-item');
                 }
-            }
-
-        );
+            });
         // end specialities
 
         // start applicant form
@@ -36,9 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const data = $(this).serializeArray();
                 $("#applicant_form_modal").modal("hide");
                 $("#succesModal").modal('show');
-            }
-
-        );
+            });
         // end applicant form
 
         // start modal burger menu
@@ -59,9 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 elm.addClass("player").html(ifr);
                 elm.off("click");
-            }
-
-        );
+            });
 
         let videos2=$(".video_with_autoplay");
 
@@ -79,9 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 elm.off("click");
                 $("#we-provide-video")[0].src +="&autoplay=1";
 
-            }
-
-        );
+            });
         //end we provide video poster
 
         //start partners' logos
@@ -90,15 +82,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 nav: true,
                 loop: true,
                 navText: ["<div class='icon-arrow-left-logos'></div>", "<div class='icon-arrow-right-logos'></div>"]
-            }
-
-        );
+            });
         //end partners' logos
 
-
-    }
-
-);
+    });
 // start modal burger menu
 
 let hamburger = document.querySelector('.hamburger');
