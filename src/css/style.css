@@ -696,6 +696,8 @@ button {
 #main .conditions_main_block {
     background-color: var(--white);
     padding-bottom: 30px;
+    width: 375px;
+    margin: 0 auto;
 }
 
 #main .conditions_main_block .conditions-img1 {
@@ -709,15 +711,13 @@ button {
 }
 
 #main .conditions_main_block .conditions-line {
-    margin-left: 43px;
-    margin-right: 43px;
+    margin: 0px 43px;
     height: 1.5px;
     background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
 }
 
 #main .conditions_main_block .conditions-line-2 {
-    margin-left: 43px;
-    margin-right: 43px;
+    margin: 0px 43px;
     height: 1.5px;
     background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     background-color: var(--white);
@@ -735,8 +735,7 @@ button {
 
 #main .conditions_main_block .conditions-align_block .conditions-icon-main {
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 8px;
+    margin: 25px 0px 8px;
 }
 
 #main .conditions_main_block .conditions-text-1 {
@@ -745,7 +744,7 @@ button {
     font-style: normal;
     color: #000A24;
     line-height: 22.68px;
-    margin: 20px 44px 0px 44px;
+    margin: 20px 44px 0px;
 }
 
 #main .conditions_main_block .conditions-vertical_padding_block .conditions-text-2 {
@@ -754,7 +753,7 @@ button {
     font-style: normal;
     color: #000A24;
     line-height: 22.68px;
-    margin: 20px 40px 25px 40px;
+    margin: 20px 40px 25px;
     background-color: var(--white);
 }
 
@@ -764,9 +763,7 @@ button {
     font-style: normal;
     color: #000A24;
     line-height: 22.68px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 25px;
+    margin: 0px 60px 25px;
 }
 
 #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
@@ -2571,8 +2568,7 @@ button {
 
     #main .conditions_main_block .conditions-line {
         width: 672px;
-        margin-left: 43px;
-        margin-right: 43px;
+        margin: 0px 43px;
         height: 1.5px;
         background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     }
@@ -2580,6 +2576,8 @@ button {
     #main .conditions_main_block {
         background-color: var(--white);
         padding-bottom: 50px;
+        width: 768px;
+        margin: 0 auto;
     }
 
     #main .conditions_main_block .conditions-vertical_padding_block {
@@ -2594,8 +2592,7 @@ button {
 
     #main .conditions_main_block .conditions-align_block .conditions-icon-main {
         text-align: center;
-        margin-top: 53px;
-        margin-bottom: 15px;
+        margin: 53px 0px 15px;
     }
 
     #main .conditions_main_block .conditions-text-1 {
@@ -2625,13 +2622,10 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 22.68px;
-        margin-left: 48px;
-        margin-right: 48px;
-        margin-bottom: 53px;
-        margin-top: 15px;
         text-align: center;
         line-height: 162%;
         max-width: 700px;
+        margin: 15px 48px 53px;
     }
 
     #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
@@ -3613,7 +3607,7 @@ button {
     }
 
     #main .conditions_main_block .vertical_padding_block .img2 {
-        margin: 0px 42px 50px 42px;
+        margin: 0px 42px 50px;
         width: 380px;
         height: 538px;
         float: left;
@@ -3621,8 +3615,7 @@ button {
 
     #main .conditions_main_block .conditions-line {
         width: 940px;
-        margin-left: 42px;
-        margin-right: 42px;
+        margin: 0px 42px;
         background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     }
 
@@ -3642,15 +3635,12 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 22.68px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-left: 42px;
-        margin-right: 100px;
         width: 380px;
         height: auto;
         float: right;
         text-align: justify;
         line-height: 32.4px;
+        margin: 50px 100px 30px 42px;
     }
 
     #main .conditions_main_block .vertical_padding_block .text-2 {
@@ -3674,23 +3664,18 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 22.68px;
-        margin-left: 33px;
-        margin-right: 48px;
-        margin-bottom: 30px;
-        margin-top: 29px;
         margin-bottom: 15px;
         text-align: center;
         line-height: 25.92px;
         height: auto;
+        margin: 29px 48px 30px 33px;
     }
 
     #main .conditions_main_block .align_block .icon-main .icon-icon_condition:before {
         content: "\e900";
         font-size: 70px;
         text-align: center;
-        margin-top: 29px;
-        margin-bottom: 29px;
-        margin-left: 42px;
+        margin: 29px 0px 29px 42px;
     }
 
     #main .conditions_main_block .align_block .icon-main {
