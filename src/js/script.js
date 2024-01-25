@@ -25,19 +25,19 @@ document.addEventListener('DOMContentLoaded', function () {
 // end specialities
 
 // top button start
-    const topButton = document.getElementById("top-button")
+    const topButton = document.getElementById("top-button");
     window.onscroll = function() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            topButton.style.opacity = '1'
+            topButton.style.opacity = '1';
         } else {
-            topButton.style.opacity = '0'
+            topButton.style.opacity = '0';
         }
     }
 
     const iconArrow = document.getElementById("icon-arrow");
     const buttonRect = iconArrow.getBoundingClientRect();
     const whiteBlocks = document.querySelectorAll(".white-background");
-    const whiteCardsDesktop = document.querySelectorAll(".white-background-desktop")
+    const whiteCardsDesktop = document.querySelectorAll(".white-background-desktop");
 
     const areIntersecting = (bounds1, bounds2) => 
         bounds1.top < bounds2.bottom && bounds1.bottom > bounds2.top;
