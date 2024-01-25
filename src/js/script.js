@@ -22,7 +22,50 @@ document.addEventListener('DOMContentLoaded', function () {
                 for (let item of carouselCard) item.classList.add('carousel-item');
         }
     });
- // end specialities
+// end specialities
+
+// top button start
+const topButton = document.getElementById("top-button")
+window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topButton.style.opacity = '1'
+    } else {
+        topButton.style.opacity = '0'
+    }
+}
+
+const iconArrow = document.getElementById("icon-arrow");
+const buttonRect = iconArrow.getBoundingClientRect();
+const whiteBlocks = document.querySelectorAll(".white-background");
+const whiteCardsDesktop = document.querySelectorAll(".white-background-desktop")
+
+const areIntersecting = (bounds1, bounds2) => 
+    bounds1.top < bounds2.bottom && bounds1.bottom > bounds2.top;
+
+document.addEventListener('scroll', () => {
+
+    for (let item of whiteBlocks) {
+        const itemRect = item.getBoundingClientRect();
+        if (areIntersecting(itemRect, buttonRect)) {
+            iconArrow.classList.add("blue-button");
+            return; 
+        }
+        iconArrow.classList.remove("blue-button");
+    }
+
+    if (screenWidth >= 1024 && screenWidth < 1087) {
+        for (let item of whiteCardsDesktop) {
+            const itemRect = item.getBoundingClientRect();
+            if (areIntersecting(itemRect, buttonRect)) {
+                iconArrow.classList.add("blue-button");
+                return; 
+            }
+            iconArrow.classList.remove("blue-button");
+        }
+    }
+    
+});
+// top button end
 
 // start applicant form
 const applicantForm = $("#applicant_form_modal .form");
