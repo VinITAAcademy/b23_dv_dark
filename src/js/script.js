@@ -1,30 +1,71 @@
-        // start specialities
 document.addEventListener('DOMContentLoaded', function () {
-        let carouselBlock = document.querySelector('.specialty-carousel-main-container');
-        let carouselCardsContainer = document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
-        let carouselCard = document.querySelectorAll('.carousel-item');
-        let screenWidth = window.screen.width;
+// start specialities
+    let carouselBlock = document.querySelector('.specialty-carousel-main-container');
+    let carouselCardsContainer = document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
+    let carouselCard = document.querySelectorAll('.carousel-item');
+    let screenWidth = window.screen.width;
+    
+    document.addEventListener('resize', function (e) {    
+        if (screenWidth >= 768) {
+            carouselBlock.removeAttribute('id');
+            carouselBlock.classList.remove('carousel');
+            carouselBlock.classList.remove('slide');
+            carouselCardsContainer.classList.remove('carousel-inner');
+            carouselCard[0].classList.remove('active');
+            for (let item of carouselCard) item.classList.remove('carousel-item');
+        } else if (screenWidth < 768) {
+                carouselBlock.setAttribute('id', 'carouselExampleIndicators');
+                carouselBlock.classList.add('carousel');
+                carouselBlock.classList.add('slide');
+                carouselCardsContainer.classList.add('carousel-inner');
+                carouselCard[0].classList.add('active');
+                for (let item of carouselCard) item.classList.add('carousel-item');
+        }
+    });
+// end specialities
 
-        document.addEventListener('resize', function (e) {
-                if (screenWidth >=768) {
-                    carouselBlock.removeAttribute('id');
-                    carouselBlock.classList.remove('carousel');
-                    carouselBlock.classList.remove('slide');
-                    carouselCardsContainer.classList.remove('carousel-inner');
-                    carouselCard[0].classList.remove('active');
-                    for (let item of carouselCard) item.classList.remove('carousel-item');
-                }
+// top button start
+    const topButton = document.getElementById("top-button");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            topButton.style.opacity = '1';
+        } else {
+            topButton.style.opacity = '0';
+        }
+    }
 
-                else if (screenWidth < 768) {
-                    carouselBlock.setAttribute('id', 'carouselExampleIndicators');
-                    carouselBlock.classList.add('carousel');
-                    carouselBlock.classList.add('slide');
-                    carouselCardsContainer.classList.add('carousel-inner');
-                    carouselCard[0].classList.add('active');
-                    for (let item of carouselCard) item.classList.add('carousel-item');
+    const iconArrow = document.getElementById("icon-arrow");
+    const buttonRect = iconArrow.getBoundingClientRect();
+    const whiteBlocks = document.querySelectorAll(".white-background");
+    const whiteCardsDesktop = document.querySelectorAll(".white-background-desktop");
+
+    const areIntersecting = (bounds1, bounds2) => 
+        bounds1.top < bounds2.bottom && bounds1.bottom > bounds2.top;
+
+    document.addEventListener('scroll', () => {
+
+        for (let item of whiteBlocks) {
+            const itemRect = item.getBoundingClientRect();
+            if (areIntersecting(itemRect, buttonRect)) {
+                iconArrow.classList.add("blue-button");
+                return; 
+            }
+            iconArrow.classList.remove("blue-button");
+        }
+
+        if (screenWidth >= 1024 && screenWidth < 1087) {
+            for (let item of whiteCardsDesktop) {
+                const itemRect = item.getBoundingClientRect();
+                if (areIntersecting(itemRect, buttonRect)) {
+                    iconArrow.classList.add("blue-button");
+                    return; 
                 }
-            });
-        // end specialities
+                iconArrow.classList.remove("blue-button");
+            }
+        }
+        
+    });
+// top button end
 
         // start applicant form
         const applicantForm = $("#applicant_form_modal .form");
