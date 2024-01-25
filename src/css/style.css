@@ -3136,7 +3136,6 @@ button {
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-        margin: 20px 0px 30px;
         margin: 0 auto;
         padding: 14px 83px;
         width: 100%;
@@ -3341,7 +3340,6 @@ button {
         height: 53px;
         font-family: 'Unbuntu Regular';
         font-size: 22px;
-        margin: 20px 0px 30px;
     }
 
     /* mentors window end */
