@@ -25,36 +25,26 @@ document.addEventListener('DOMContentLoaded', function () {
 // end specialities
 
 // top button start
-const topButton = document.getElementById("top-button")
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        topButton.style.opacity = '1'
-    } else {
-        topButton.style.opacity = '0'
-    }
-}
-
-const iconArrow = document.getElementById("icon-arrow");
-const buttonRect = iconArrow.getBoundingClientRect();
-const whiteBlocks = document.querySelectorAll(".white-background");
-const whiteCardsDesktop = document.querySelectorAll(".white-background-desktop")
-
-const areIntersecting = (bounds1, bounds2) => 
-    bounds1.top < bounds2.bottom && bounds1.bottom > bounds2.top;
-
-document.addEventListener('scroll', () => {
-
-    for (let item of whiteBlocks) {
-        const itemRect = item.getBoundingClientRect();
-        if (areIntersecting(itemRect, buttonRect)) {
-            iconArrow.classList.add("blue-button");
-            return; 
+    const topButton = document.getElementById("top-button")
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            topButton.style.opacity = '1'
+        } else {
+            topButton.style.opacity = '0'
         }
-        iconArrow.classList.remove("blue-button");
     }
 
-    if (screenWidth >= 1024 && screenWidth < 1087) {
-        for (let item of whiteCardsDesktop) {
+    const iconArrow = document.getElementById("icon-arrow");
+    const buttonRect = iconArrow.getBoundingClientRect();
+    const whiteBlocks = document.querySelectorAll(".white-background");
+    const whiteCardsDesktop = document.querySelectorAll(".white-background-desktop")
+
+    const areIntersecting = (bounds1, bounds2) => 
+        bounds1.top < bounds2.bottom && bounds1.bottom > bounds2.top;
+
+    document.addEventListener('scroll', () => {
+
+        for (let item of whiteBlocks) {
             const itemRect = item.getBoundingClientRect();
             if (areIntersecting(itemRect, buttonRect)) {
                 iconArrow.classList.add("blue-button");
@@ -62,86 +52,144 @@ document.addEventListener('scroll', () => {
             }
             iconArrow.classList.remove("blue-button");
         }
-    }
-    
-});
+
+        if (screenWidth >= 1024 && screenWidth < 1087) {
+            for (let item of whiteCardsDesktop) {
+                const itemRect = item.getBoundingClientRect();
+                if (areIntersecting(itemRect, buttonRect)) {
+                    iconArrow.classList.add("blue-button");
+                    return; 
+                }
+                iconArrow.classList.remove("blue-button");
+            }
+        }
+        
+    });
 // top button end
 
-// start applicant form
-const applicantForm = $("#applicant_form_modal .form");
+        // start applicant form
+        const applicantForm = $("#applicant_form_modal .form");
 
-applicantForm.on("submit", function (event) {
-    event.preventDefault();
-    const data = $(this).serializeArray();
-    $("#applicant_form_modal").modal("hide");
-    $("#succesModal").modal('show');
-});
-// end applicant form
-
-// start modal burger menu
-// end modal burger menu
-
-//start we provide video poster
-let videos = $(".video");
-
-videos.on("click", function () {
-    let elm = $(this),
-        conts = elm.contents(),
-        le = conts.length,
-        ifr = null;
-
-    for (let i = 0; i < le; i++) {
-        if (conts[i].nodeType == 8) ifr = conts[i].textContent;
-    }
-
-    elm.addClass("player").html(ifr);
-    elm.off("click");
-});
-
-let videos2 = $(".video_with_autoplay");
-videos2.on("click", function () {
-    let elm = $(this),
-        conts = elm.contents(),
-        le = conts.length,
-        ifr = null;
-
-    for (let i = 0; i < le; i++) {
-        if (conts[i].nodeType == 8) ifr = conts[i].textContent;
-    }
-
-    elm.addClass("player").html(ifr);
-    elm.off("click");
-    $("#we-provide-video")[0].src += "&autoplay=1";
-    
-});
-//end we provide video poster
-
-//start partners' logos
-$(".owl-carousel").owlCarousel({
-    items: 2,
-    nav: true,
-    loop: true,
-    navText: ["<div class='icon-arrow-left-logos'></div>","<div class='icon-arrow-right-logos'></div>"]
-});
-//end partners' logos
-
-// start modal burger menu
-$( document ).ready(function() {
-    $( ".cross" ).hide();
-    $( "#menu" ).hide();
-        $( ".hamburger" ).click(function() {
-            $( "#menu" ).slideToggle( "slow", function() {
-                $( ".hamburger" ).hide();
-                $( ".cross" ).show();
+        applicantForm.on("submit", function (event) {
+                event.preventDefault();
+                const data = $(this).serializeArray();
+                $("#applicant_form_modal").modal("hide");
+                $("#succesModal").modal('show');
             });
-        });
-    
-    $( ".cross" ).click(function() {
-        $( "#menu" ).slideToggle( "slow", function() {
-            $( ".cross" ).hide();
-            $( ".hamburger" ).show();
-        });
+        // end applicant form
+
+        // start modal burger menu
+        // end modal burger menu
+
+        //start we provide video poster
+        let videos = $(".video");
+
+        videos.on("click", function () {
+                let elm = $(this),
+                conts = elm.contents(),
+                le = conts.length,
+                ifr = null;
+
+                for (let i=0; i < le; i++) {
+                    if (conts[i].nodeType==8) ifr=conts[i].textContent;
+                }
+
+                elm.addClass("player").html(ifr);
+                elm.off("click");
+            });
+
+        let videos2=$(".video_with_autoplay");
+
+        videos2.on("click", function () {
+                let elm = $(this),
+                conts = elm.contents(),
+                le = conts.length,
+                ifr = null;
+
+                for (let i=0; i < le; i++) {
+                    if (conts[i].nodeType == 8) ifr = conts[i].textContent;
+                }
+
+                elm.addClass("player").html(ifr);
+                elm.off("click");
+                $("#we-provide-video")[0].src +="&autoplay=1";
+
+            });
+        //end we provide video poster
+
+        //start partners' logos
+        $(".owl-carousel").owlCarousel( {
+                items: 2,
+                nav: true,
+                loop: true,
+                navText: ["<div class='icon-arrow-left-logos'></div>", "<div class='icon-arrow-right-logos'></div>"]
+            });
+        //end partners' logos
+
     });
-});
+// start modal burger menu
+
+let hamburger = document.querySelector('.hamburger');
+let closes = document.querySelector('.cross');
+let menu = document.querySelector('#menu');
+
+
+hamburger.onclick=function () {
+    menu.style.display = 'block';
+    hamburger.style.display = 'none';
+}
+
+closes.onclick=function () {
+    menu.style.display = 'none';
+    hamburger.style.display = 'block';
+}
+
 // end modal burger menu
-});
+
+// start modal selection menu
+let registration = document.querySelector('.hero_content_button');
+let selection = document.querySelector('#selection-menu');
+let closeSelection = document.querySelector('.sm-cross');
+
+registration.onclick = function() {
+    selection.style.display = 'block';
+    hamburger.style.display = 'none';
+}
+
+closeSelection.onclick = function() {
+    selection.style.display = 'none';
+    hamburger.style.display = 'block';
+}
+
+// start modal selection menu
+
+// start modal poll menu
+let partner = document.querySelector('.sm-button-partner');
+let participant = document.querySelector('.sm-button-participant');
+let mentor = document.querySelector('.sm-button-mentor');
+let partnerModal = document.querySelector('.partner-sm');
+let participantModal = document.querySelector('.participant-sm');
+let mentorModal = document.querySelector('.mentors-sm');
+
+partner.onclick = function() {
+    selection.style.display = 'none';
+    partnerModal.style.opacity = '1';
+    partnerModal.style.paddingTop = '57px';
+    partnerModal.style.display = 'block';
+}
+
+participant.onclick = function() {
+    selection.style.display = 'none';
+    participantModal.style.opacity = '1';
+    participantModal.style.paddingTop = '57px';
+    participantModal.style.display = 'block';
+}
+
+mentor.onclick = function() {
+    selection.style.display = 'none';
+    mentorModal.style.opacity = '1';
+    mentorModal.style.paddingTop ='57px';
+    mentorModal.style.display = 'block';
+}
+
+// end modal poll menu
