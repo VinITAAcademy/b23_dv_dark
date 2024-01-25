@@ -1596,9 +1596,7 @@ button {
     font-size: 16px;
     font-weight: 500;
     font-family: 'Unbuntu Medium';
-    margin-top: 11px;
-    margin-bottom: 30px;
-    margin-left: 12px;
+    margin: 11px 0px 30px 12px;
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
@@ -1690,8 +1688,7 @@ button {
     color: #a7a7a7;
     font-size: 12px;
     font-weight: 400;
-    margin-bottom: 6px;
-    margin-top: 12px;
+    margin: 12px 0px 6px;
     font-family: 'Unbuntu Regular';
     width: 218px;
 }
@@ -1711,8 +1708,7 @@ button {
     color: #a7a7a7;
     font-size: 12px;
     font-weight: 400;
-    margin-bottom: 6px;
-    margin-top: 12px;
+    margin: 12px 0px 6px;
     font-family: 'Unbuntu Regular';
 }
 
@@ -1739,8 +1735,6 @@ button {
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-    margin-top: 28px;
-    margin-bottom: 40px;
     padding: 14px 83px;
     text-align: center;
     font-family: 'Unbuntu Regular';
@@ -1748,7 +1742,7 @@ button {
     font-size: 22px;
     width: 271px;
     height: 53px;
-    margin: 0 0 0 8px;
+    margin: 28px 0px 40px 8px;
 }
 
 /* partners window end */
@@ -1863,8 +1857,7 @@ button {
     color: #a7a7a7;
     font-size: 12px;
     font-weight: 400;
-    margin-bottom: 6px;
-    margin-top: 12px;
+    margin: 12px 0px 6px;
     font-family: 'Unbuntu Regular';
     width: 218px;
 }
@@ -1884,7 +1877,7 @@ button {
     color: #a7a7a7;
     font-size: 12px;
     font-weight: 400;
-    margin: 12px 0 6px 0;
+    margin: 12px 0px 6px;
     font-family: 'Unbuntu Regular';
 }
 
@@ -1911,8 +1904,6 @@ button {
 }
 
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
-    margin-top: 28px;
-    margin-bottom: 40px;
     padding: 14px 83px;
     text-align: center;
     font-family: 'Unbuntu Regular';
@@ -1920,7 +1911,7 @@ button {
     font-size: 22px;
     width: 271px;
     height: 53px;
-    margin: 8px 0 0 0;
+    margin: 28px 0px 40px 8px;
 }
 
 /* mentors window end */
@@ -2979,8 +2970,7 @@ button {
         color: var(--dark);
         font-size: 36px;
         text-align: center;
-        margin-bottom: 41px;
-        margin-top: 30px;
+        margin: 30px 0px 41px;
         font-family: 'Unbuntu Medium';
     }
 
@@ -3146,14 +3136,12 @@ button {
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-        margin-top: 20px;
         margin: 0 auto;
         padding: 14px 83px;
         width: 100%;
         text-align: center;
         width: 271px;
         height: 53px;
-        margin-bottom: 30px;
         font-family: 'Unbuntu Regular';
         font-size: 22px;
     }
@@ -3175,8 +3163,7 @@ button {
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title {
         color: var(--dark);
         font-size: 36px;
-        margin-bottom: 41px;
-        margin-top: 30px;
+        margin: 30px 0px 41px;
         font-family: 'Unbuntu Medium';
         width: 589px;
         text-align: center;
@@ -3345,14 +3332,12 @@ button {
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
-        margin-top: 20px;
         margin: 0 auto;
         padding: 14px 83px;
         width: 100%;
         text-align: center;
         width: 271px;
         height: 53px;
-        margin-bottom: 30px;
         font-family: 'Unbuntu Regular';
         font-size: 22px;
     }
