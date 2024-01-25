@@ -295,25 +295,22 @@ button {
 #header .intita-logo-header .intita-logo-img {
     width: 72px;
     height: 22px;
-    margin-top: 2px;
-    margin-left: 2px;
+    margin: 5px 0 0 13px;
 }
 
 #header .intita-logo-header .line-logo {
     border-top: var(--border-width) solid;
     border-style: dotted;
     width: 76px;
-    margin-top: 2px;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin: 2px 0 0 8px;
     opacity: .25;
     border-color: white;
 }
 
 #header .intita-logo-header .robota-molodi-logo-img {
     width: 63px;
-    height: 19px;
-    margin-left: 2px;
+    height: 16px;
+    margin: 2px 0 0 8px;
 }
 
 #header .hamburger {
@@ -334,7 +331,7 @@ button {
     z-index: 10000000000000;
 }
 
-#header .cross .icon-close::before {
+#menu .cross .icon-close::before {
     content: "\e90a";
     color: black;
     font-size: 22px;
@@ -344,11 +341,7 @@ button {
     display: none;
 }
 
-#header .header-flag {
-    display: none;
-}
-
-#header .cross {
+#menu .cross {
     background: none;
     position: absolute;
     top: -10px;
@@ -364,6 +357,10 @@ button {
     z-index: 10000000000000;
 }
 
+#header .dropdown {
+    display: none;
+}
+
 #menu {
     top: 0px;
     z-index: 1000000;
@@ -373,199 +370,142 @@ button {
     width: 100%;
     height: 513px;
     background: white;
-    position: absolute;
+    position: relative;
     text-align: center;
+    justify-content: center;
     font-size: 24px;
     color: black;
+    display: none;
 }
 
 #menu .burger-top {
-    width: 375px;
-    height: 108px;
-    margin-left: 32px;
+    width: 365px;
+    margin: 0 auto;
 }
 
-#menu .burger-top .bg-language {
-    width: 71px;
-    height: 31px;
-    float: left;
-    margin-top: 5px;
-    margin-left: -27px;
+#menu .bg-language {
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
-#menu .burger-top .bg-text {
-    width: 186px;
-    height: 64px;
-    padding-top: 20px;
-    margin-left: 23px;
-    float: left;
-}
-
-#menu .burger-top .bg-text .bg-text-italic {
+#menu .burger-top .bg-text-italic {
     font-family: 'Ubuntu Italic';
     src: local('Ubuntu'), url('../fonts/Ubuntu-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     line-height: 18px;
     font-size: 16px;
-    margin-left: -7px;
-    margin-top: -2px;
+    padding-top: 18px;
 }
 
-#menu .burger-top .bg-text .bg-text-bold {
+#menu .burger-top .bg-text-bold {
     font-family: 'Ubuntu';
     src: local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     line-height: 19px;
     font-size: 36px;
-    padding-bottom: 5px;
-    margin-left: -8px;
-}
-
-#menu .menu ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    list-style-image: none;
+    padding-bottom: 10px;
 }
 
 #menu .burger-top .bg-blue-line {
-    position: absolute;
     color: #083CC0;
     border: 3px;
     border-style: solid;
-    width: 300px;
-    top: 97px;
-    left: 35px;
+    width: 82%;
     opacity: 1;
-    margin: 0;
+    margin: 0 0 0 30px;
 }
 
 #menu .burger-top .bg-yellow-line {
-    position: absolute;
     color: #FFD500;
     border: 2px;
     border-style: solid;
-    width: 300px;
-    top: 102px;
-    left: 35px;
+    width: 82%;
     opacity: 1;
-    margin: 0;
+    margin: 0 0 0 30px;
 }
 
 #menu li {
     display: block;
-    padding: 14px 0 15px 0;
-}
-
-#menu .bg-program {
-    margin-top: 0px;
-    margin-left: -34px;
-}
-
-#menu .bg-spets {
-    margin-top: -1px;
-    margin-left: -34px;
-}
-
-#menu .bg-partners {
-    margin-top: -1px;
-    margin-left: -34px;
-}
-
-#menu .bg-contacts {
-    margin-top: -3px;
-    margin-left: -34px;
+    padding: 15px 33px 13px 0;
 }
 
 #menu .bg-text-menu {
     color: var(--сolor-black);
 }
 
-#menu .bg-blue-line2 {
-    position: absolute;
+#menu .burger-bottom {
+    width: 365px;
+    margin: 0 auto;
+}
+
+#menu .burger-bottom .bg-blue-line2 {
     color: #083CC0;
     border: 3px;
     border-style: solid;
-    width: 300px;
-    top: 329px;
-    left: 35px;
+    width: 82%;
     opacity: 1;
-    margin: 0;
+    margin: -17px 0 0 30px;
 }
 
-#menu .bg-yellow-line2 {
-    position: absolute;
+#menu .burger-bottom .bg-yellow-line2 {
     color: #FFD500;
     border: 2px;
     border-style: solid;
-    width: 300px;
-    top: 334px;
-    left: 35px;
+    width: 82%;
     opacity: 1;
-    margin: 0;
+    margin: 0 0 0 30px;
 }
 
-#menu .bg-bottom {
-    width: 375px;
-    height: 179px;
-    margin-left: -30px;
-}
-
-#menu .bg-social {
-    position: absolute;
-    width: 250px;
-    height: 100px;
-    top: 362px;
+#menu .burger-bottom .bg-social {
+    width: 69%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 60px;
+    margin: 23px 0 0 54px;
 }
 
-#menu .bg-social-bottom {
-    position: absolute;
-    width: 250px;
-    height: 100px;
-    top: 438px;
+#menu .burger-bottom .bg-social-bottom {
+    width: 69%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 60px;
+    margin: 25px 0 0 54px;
 }
 
-#menu .bg-social .icon-telegram:before {
+#menu .burger-bottom .bg-social .icon-telegram:before {
     content: "\e904";
     font-size: 50px;
     color: #000;
 }
 
-#menu .bg-social .icon-facebook:before {
+#menu .burger-bottom .bg-social .icon-facebook:before {
     content: "\e905";
     font-size: 50px;
     color: #000;
 }
 
-#menu .bg-social-bottom .icon-whatsapp:before {
+#menu .burger-bottom .bg-social-bottom .icon-whatsapp:before {
     content: "\e907";
     font-size: 50px;
     color: #000;
 }
 
-#menu .bg-social .icon-viber:before {
+#menu .burger-bottom .bg-social .icon-viber:before {
     content: "\e906";
     font-size: 50px;
     color: #000;
 }
 
-#menu .bg-social-bottom .icon-twitter:before {
+#menu .burger-bottom .bg-social-bottom .icon-twitter:before {
     content: "\e909";
     font-size: 50px;
     color: #000;
 }
 
-#menu .bg-social-bottom .icon-instagram:before {
+#menu .burger-bottom .bg-social-bottom .icon-instagram:before {
     content: "\e908";
     font-size: 50px;
     color: #000;
@@ -756,6 +696,8 @@ button {
 #main .conditions_main_block {
     background-color: var(--white);
     padding-bottom: 30px;
+    width: 375px;
+    margin: 0 auto;
 }
 
 #main .conditions_main_block .conditions-img1 {
@@ -769,15 +711,13 @@ button {
 }
 
 #main .conditions_main_block .conditions-line {
-    margin-left: 43px;
-    margin-right: 43px;
+    margin: 0px 43px;
     height: 1.5px;
     background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
 }
 
 #main .conditions_main_block .conditions-line-2 {
-    margin-left: 43px;
-    margin-right: 43px;
+    margin: 0px 43px;
     height: 1.5px;
     background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     background-color: var(--white);
@@ -795,8 +735,7 @@ button {
 
 #main .conditions_main_block .conditions-align_block .conditions-icon-main {
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 8px;
+    margin: 25px 0px 8px;
 }
 
 #main .conditions_main_block .conditions-text-1 {
@@ -805,7 +744,7 @@ button {
     font-style: normal;
     color: #000A24;
     line-height: 22.68px;
-    margin: 20px 44px 0px 44px;
+    margin: 20px 44px 0px;
 }
 
 #main .conditions_main_block .conditions-vertical_padding_block .conditions-text-2 {
@@ -814,7 +753,7 @@ button {
     font-style: normal;
     color: #000A24;
     line-height: 22.68px;
-    margin: 20px 40px 25px 40px;
+    margin: 20px 40px 25px;
     background-color: var(--white);
 }
 
@@ -824,9 +763,7 @@ button {
     font-style: normal;
     color: #000A24;
     line-height: 22.68px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 25px;
+    margin: 0px 60px 25px;
 }
 
 #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
@@ -1642,360 +1579,588 @@ button {
 
 /* modal windows end */
 
-    /* partners window start */
-    #questionnaire-form_modal .questionnaire-form_modal_container {
-        width: 375px;
-        margin: auto auto;
-    }
+/* partners window start */
+#questionnaire-form_modal .questionnaire-form_modal_container {
+    width: 375px;
+    margin: auto auto;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
-        position: relative;
-        width: 375px;
-        padding: 12px 44px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
+    position: relative;
+    width: 375px;
+    padding: 12px 44px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
-        color: var(--dark);
-        font-size: 16px;
-        font-weight: 500;
-        font-family: 'Unbuntu Medium';
-        margin-top: 11px;
-        margin-bottom: 30px;
-        margin-left: 12px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Unbuntu Medium';
+    margin-top: 11px;
+    margin-bottom: 30px;
+    margin-left: 12px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
-        color: var(--dark);
-        font-size: 16px;
-        font-family: 'Unbuntu Bold';
-        font-weight: 700;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
+    color: var(--dark);
+    font-size: 16px;
+    font-family: 'Unbuntu Bold';
+    font-weight: 700;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        cursor: pointer;
-        top: 8px;
-        right: 8px;
-        font-size: 30px;
-        border-radius: 4px;
-        color: var(--black);
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    font-size: 30px;
+    border-radius: 4px;
+    color: var(--black);
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
-        display: flex;
-        flex-direction: column;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
+    display: flex;
+    flex-direction: column;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        row-gap: 20px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
-        position: relative;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
+    position: relative;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-        border: 1.5px solid #ccc;
-        border-color: #000;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1.5px solid #ccc;
+    border-color: #000;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
-        outline: none;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
+    outline: none;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
-        opacity: 1;
-        transition: opacity 0.2s ease-out;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:placeholder-shown+label {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
-        opacity: 0;
-        transition: opacity 0.2s ease-in;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:not(:placeholder-shown)+label {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
-        color: #a7a7a7;
-        position: absolute;
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-        z-index: 0;
-        font-family: 'Unbuntu Regular';
-        font-size: 12px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label {
+    color: #a7a7a7;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    z-index: 0;
+    font-family: 'Unbuntu Regular';
+    font-size: 12px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
-        content: '*';
-        color: red;
-        padding-left: 4px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container label:after {
+    content: '*';
+    color: red;
+    padding-left: 4px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
-        color: red;
-        font-size: 14px;
-        margin-top: 6px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 6px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
-        opacity: 1;
-        transition: opacity 0.3s ease-in;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .active {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
-        color: #a7a7a7;
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 6px;
-        margin-top: 12px;
-        font-family: 'Unbuntu Regular';
-        width: 218px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields label {
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-family: 'Unbuntu Regular';
+    width: 218px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
-        color: white;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
+    color: white;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
-        width: 287px;
-        height: 57px;
-        flex-shrink: 0;
-        border: 1.5px solid var(--dark);
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input {
+    width: 287px;
+    height: 57px;
+    flex-shrink: 0;
+    border: 1.5px solid var(--dark);
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
-        color: #a7a7a7;
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 6px;
-        margin-top: 12px;
-        font-family: 'Unbuntu Regular';
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-family: 'Unbuntu Regular';
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
-        width: 287px;
-        height: 40px;
-        flex-shrink: 0;
-        border: 1.5px solid var(--dark);
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
+    width: 287px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1.5px solid var(--dark);
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
-        height: 14px;
-        margin-top: 20px;
-        font-size: 12px;
-        font-style: normal;
-        font-family: 'Unbuntu Regular';
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
+    height: 14px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Unbuntu Regular';
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
-        content: "*";
-        color: red;
-        font-size: 20px;
-        margin-right: 2px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
+    content: "*";
+    color: red;
+    font-size: 20px;
+    margin-right: 2px;
+}
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
-        margin-top: 28px;
-        margin-bottom: 40px;
-        padding: 14px 83px;
-        text-align: center;
-        font-family: 'Unbuntu Regular';
-        font-weight: 400;
-        font-size: 22px;
-        width: 271px;
-        height: 53px;
-        margin-left: 8px;
-    }
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
+    margin-top: 28px;
+    margin-bottom: 40px;
+    padding: 14px 83px;
+    text-align: center;
+    font-family: 'Unbuntu Regular';
+    font-weight: 400;
+    font-size: 22px;
+    width: 271px;
+    height: 53px;
+    margin: 0 0 0 8px;
+}
 
-   /* partners window end */
+/* partners window end */
 
-    /* mentors window start */
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container {
-        width: 375px;
-        margin: auto auto;
-    }
+/* mentors window start */
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container {
+    width: 375px;
+    margin: auto auto;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content {
-        position: relative;
-        width: 375px;
-        padding: 12px 44px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content {
+    position: relative;
+    width: 375px;
+    padding: 12px 44px;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title {
-        color: var(--dark);
-        font-size: 16px;
-        font-weight: 500;
-        font-family: 'Unbuntu Medium';
-        margin-top: 11px;
-        margin-bottom: 30px;
-        margin-left: 12px;
-        text-align: center;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Unbuntu Medium';
+    margin: 11px 0 30px 12px;
+    text-align: center;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title .questionnaire-mentors-title-bold {
-        color: var(--dark);
-        font-size: 16px;
-        font-family: 'Unbuntu Bold';
-        font-weight: 700;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title .questionnaire-mentors-title-bold {
+    color: var(--dark);
+    font-size: 16px;
+    font-family: 'Unbuntu Bold';
+    font-weight: 700;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        cursor: pointer;
-        top: 8px;
-        right: 8px;
-        font-size: 30px;
-        border-radius: 4px;
-        color: var(--black);
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    font-size: 30px;
+    border-radius: 4px;
+    color: var(--black);
+}
 
-    #questionnaire-mentors-form_modal .questionnairev-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form {
-        display: flex;
-        flex-direction: column;
-    }
+#questionnaire-mentors-form_modal .questionnairev-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form {
+    display: flex;
+    flex-direction: column;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-reqiared_form_controls {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        row-gap: 20px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-reqiared_form_controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container {
-        position: relative;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container {
+    position: relative;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input {
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-        border: 1.5px solid #ccc;
-        border-color: #000;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1.5px solid #ccc;
+    border-color: #000;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:focus {
-        outline: none;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:focus {
+    outline: none;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:placeholder-shown+label {
-        opacity: 1;
-        transition: opacity 0.2s ease-out;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:placeholder-shown+label {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:not(:placeholder-shown)+label {
-        opacity: 0;
-        transition: opacity 0.2s ease-in;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:not(:placeholder-shown)+label {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label {
-        color: #a7a7a7;
-        position: absolute;
-        top: 50%;
-        left: 8px;
-        transform: translateY(-50%);
-        z-index: 0;
-        font-family: 'Unbuntu Regular';
-        font-size: 12px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label {
+    color: #a7a7a7;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    z-index: 0;
+    font-family: 'Unbuntu Regular';
+    font-size: 12px;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label:after {
-        content: '*';
-        color: red;
-        padding-left: 4px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container label:after {
+    content: '*';
+    color: red;
+    padding-left: 4px;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .error_message {
-        color: red;
-        font-size: 14px;
-        margin-top: 6px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .error_message {
+    color: red;
+    font-size: 14px;
+    margin-top: 6px;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .active {
-        opacity: 1;
-       transition: opacity 0.3s ease-in;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .active {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields label {
-        color: #a7a7a7;
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 6px;
-        margin-top: 12px;
-        font-family: 'Unbuntu Regular';
-        width: 218px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields label {
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    font-family: 'Unbuntu Regular';
+    width: 218px;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields ::placeholder {
-        color: white;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields ::placeholder {
+    color: white;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields input {
-        width: 287px;
-        height: 57px;
-        flex-shrink: 0;
-        border: 1.5px solid var(--dark);
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields input {
+    width: 287px;
+    height: 57px;
+    flex-shrink: 0;
+    border: 1.5px solid var(--dark);
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 label {
-        color: #a7a7a7;
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 6px;
-        margin-top: 12px;
-        font-family: 'Unbuntu Regular';
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 label {
+    color: #a7a7a7;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 12px 0 6px 0;
+    font-family: 'Unbuntu Regular';
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input {
-        width: 287px;
-        height: 40px;
-        flex-shrink: 0;
-        border: 1.5px solid var(--dark);
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input {
+    width: 287px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1.5px solid var(--dark);
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip {
-        height: 14px;
-        margin-top: 20px;
-        font-size: 12px;
-        font-style: normal;
-        font-family: 'Unbuntu Regular';
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip {
+    height: 14px;
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Unbuntu Regular';
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip::before {
-        content: "*";
-        color: red;
-        font-size: 20px;
-        margin-right: 2px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip::before {
+    content: "*";
+    color: red;
+    font-size: 20px;
+    margin: 0 2px 0 0;
+}
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
-        margin-top: 28px;
-        margin-bottom: 40px;
-        padding: 14px 83px;
-        text-align: center;
-        font-family: 'Unbuntu Regular';
-        font-weight: 400;
-        font-size: 22px;
-        width: 271px;
-        height: 53px;
-        margin-left: 8px;
-    }
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
+    margin-top: 28px;
+    margin-bottom: 40px;
+    padding: 14px 83px;
+    text-align: center;
+    font-family: 'Unbuntu Regular';
+    font-weight: 400;
+    font-size: 22px;
+    width: 271px;
+    height: 53px;
+    margin: 8px 0 0 0;
+}
 
 /* mentors window end */
+/* selection menu start*/
+#selection-menu {
+    display: none;
+}
 
+#selection-menu {
+    top: 0px;
+    z-index: 1000000;
+    font-family: 'Ubuntu Medium';
+    src: local('Ubuntu-Medium'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    width: 100%;
+    height: 513px;
+    background: white;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    color: black;
+}
+
+#selection-menu .burger-top {
+    width: 365px;
+    margin: 0 auto;
+}
+
+#selection-menu .bg-language {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#selection-menu .burger-top .bg-text-italic {
+    font-family: 'Ubuntu Italic';
+    src: local('Ubuntu'), url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    font-size: 16px;
+    padding: 18px 0 0 0;
+}
+
+#selection-menu .burger-top .bg-text-bold {
+    font-family: 'Ubuntu';
+    src: local('Ubuntu-Bold'), url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: 19px;
+    font-size: 36px;
+    padding: 0 0 10px 0;
+}
+
+#selection-menu .burger-top .bg-blue-line {
+    color: #083CC0;
+    border: 3px;
+    border-style: solid;
+    width: 82%;
+    opacity: 1;
+    margin: 0 0 0 30px;
+}
+
+#selection-menu .burger-top .bg-yellow-line {
+    color: #FFD500;
+    border: 2px;
+    border-style: solid;
+    width: 82%;
+    opacity: 1;
+    margin: 0 0 0 30px;
+}
+
+#selection-menu li {
+    display: block;
+    padding: 10px 33px 10px 5px;
+}
+
+#selection-menu .bg-text-menu {
+    color: var(--сolor-black);
+}
+
+#selection-menu .burger-bottom {
+    width: 365px;
+    margin: 0 auto;
+}
+
+#selection-menu .burger-bottom .bg-blue-line2 {
+    color: #083CC0;
+    border: 3px;
+    border-style: solid;
+    width: 82%;
+    opacity: 1;
+    margin: -4px 0 0 3px;
+}
+
+#selection-menu .burger-bottom .bg-yellow-line2 {
+    color: #FFD500;
+    border: 2px;
+    border-style: solid;
+    width: 82%;
+    opacity: 1;
+    margin: 0 0 0 3px;
+}
+
+#selection-menu .burger-bottom .bg-social {
+    width: 69%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 23px 0 0 27px;
+}
+
+#selection-menu .burger-bottom .bg-social-bottom {
+    width: 69%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 0 0 28px;
+}
+
+#selection-menu .burger-bottom .bg-social .icon-telegram:before {
+    content: "\e904";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .burger-bottom .bg-social .icon-facebook:before {
+    content: "\e905";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .burger-bottom .bg-social-bottom .icon-whatsapp:before {
+    content: "\e907";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .burger-bottom .bg-social .icon-viber:before {
+    content: "\e906";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .burger-bottom .bg-social-bottom .icon-twitter:before {
+    content: "\e909";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu .burger-bottom .bg-social-bottom .icon-instagram:before {
+    content: "\e908";
+    font-size: 50px;
+    color: #000;
+}
+
+#selection-menu li:hover {
+    display: block;
+    background: #ffffff;
+    padding: 14px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+}
+
+#selection-menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #666;
+}
+
+#selection-menu ul li a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+#selection-menu a {
+    text-decoration: none;
+    color: #666;
+}
+
+#selection-menu a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+#selection-menu .burger-top .sm-what {
+    font-size: 20px;
+    padding: 5px 0 0 2px;
+    margin: 0;
+}
+
+#selection-menu .cross {
+    background: none;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    padding: 7px 15px 0px 15px;
+    color: white;
+    border: 0;
+    font-size: 0px;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+#selection-menu .cross .icon-close::before {
+    content: "\e90a";
+    color: black;
+    font-size: 22px;
+}
+
+#selection-menu .sm-button {
+    width: 235px;
+    height: 46px;
+    color: var(--white);
+    border-radius: 6px;
+    background: var(--button-primary);
+    text-align: center;
+    font-size: 16px;
+}
+
+#selection-menu .sm-button:hover {
+    width: 235px;
+    height: 46px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--white);
+    background: var(--button-primary-hover-bg);
+}
+
+
+/* selection-menu end*/
 /* 404 start */
 /* header start */
 #header-404 .header .intita-logo-header {
     top: 17px;
-    left: 27px 
+    left: 27px;
 }
 
 #header-404 #header .hamburger {
@@ -2158,6 +2323,7 @@ button {
 #footer .footer-main-container .footer-main .footer-main-text2-en {
     width: 276px;
 }
+
 /* 404 EN end */
 
 /*=============================================================*/
@@ -2173,21 +2339,15 @@ button {
     #header .intita-logo-header .intita-logo-img {
         width: 130px;
         height: 42px;
-        margin-top: 4px;
-        margin-left: 1px;
+        margin: 6px 0 0 12px;
     }
 
     #header .intita-logo-header .line-logo {
         width: 130px;
-        margin-top: 6px;
-        margin-left: 0px;
+        margin: 6px 0 0 11px;
     }
 
     #header .desktop-menu {
-        display: none;
-    }
-
-    #header .header-flag {
         display: none;
     }
 
@@ -2201,86 +2361,66 @@ button {
     #header .intita-logo-header .robota-molodi-logo-img {
         width: 134px;
         height: 32px;
-        margin-top: 6px;
+        margin: 6px 0 0 8px;
     }
 
-    #menu .burger-top .bg-text {
-        width: 500px;
-        height: 105px;
-        padding-top: 7px;
-        margin-left: 215px;
-        float: left;
+    #menu .burger-top {
+        width: 768px;
     }
 
-    #menu .burger-top .bg-text .bg-text-italic {
+    #menu .burger-top .bg-text-italic {
         font-size: 24px;
-        margin-left: -225px;
-        margin-top: 1px;
+        padding: 44px 0 0 0;
     }
 
-    #menu .burger-top .bg-text .bg-text-bold {
+    #menu .burger-top .bg-text-bold {
         font-size: 48px;
-        margin-left: -225px;
-        margin-top: 29px;
+        padding: 12px 0 8px 0px;
     }
 
     #menu .burger-top .bg-blue-line {
-        top: 133px;
-        margin-left: -1px;
-        width: 696px;
+        width: 91%;
+        margin: 0 0 0 34px;
     }
 
     #menu .burger-top .bg-yellow-line {
-        top: 138px;
-        margin-left: -1px;
-        width: 696px;
+        width: 91%;
+        margin: 0 0 0 34px;
     }
 
     #menu {
         font-size: 64px;
-        height: 830px;
+        height: 815px;
     }
 
-    #menu .bg-program {
-        margin-top: 59px;
-        margin-left: -31px;
+    #menu li {
+        padding: 37px 33px 0 0;
     }
 
-    #menu .bg-spets {
-        margin-top: 6px;
-        margin-left: -31px;
+    #menu .burger-bottom {
+        width: 768px;
+        padding: 12px 0 0 0;
     }
 
-    #menu .bg-partners {
-        margin-top: 7px;
-        margin-left: -32px;
+    #menu .burger-bottom .bg-blue-line2 {
+        width: 91%;
+        margin: 0 0 0 34px;
     }
 
-    #menu .bg-contacts {
-        margin-top: 7px;
-        margin-left: -30px;
+    #menu .burger-bottom .bg-yellow-line2 {
+        width: 91%;
+        margin: 0 0 0 34px;
     }
 
-    #menu .bg-blue-line2 {
-        top: 612px;
-        margin-left: 1px;
-        width: 696px;
+    #menu .burger-bottom .bg-social {
+        width: 33%;
+        margin: 16px 0 0 258px;
     }
 
-    #menu .bg-yellow-line2 {
-        top: 617px;
-        margin-left: 1px;
-        width: 696px;
-    }
 
-    #menu .bg-social {
-        top: 637px;
-        left: 199px;
-    }
-
-    #menu .bg-social-bottom {
-        top: 713px;
-        left: 199px;
+    #menu .burger-bottom .bg-social-bottom {
+        width: 33%;
+        margin: 3px 0 0 258px;
     }
 
     /* header end */
@@ -2428,8 +2568,7 @@ button {
 
     #main .conditions_main_block .conditions-line {
         width: 672px;
-        margin-left: 43px;
-        margin-right: 43px;
+        margin: 0px 43px;
         height: 1.5px;
         background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     }
@@ -2437,6 +2576,8 @@ button {
     #main .conditions_main_block {
         background-color: var(--white);
         padding-bottom: 50px;
+        width: 768px;
+        margin: 0 auto;
     }
 
     #main .conditions_main_block .conditions-vertical_padding_block {
@@ -2451,8 +2592,7 @@ button {
 
     #main .conditions_main_block .conditions-align_block .conditions-icon-main {
         text-align: center;
-        margin-top: 53px;
-        margin-bottom: 15px;
+        margin: 53px 0px 15px;
     }
 
     #main .conditions_main_block .conditions-text-1 {
@@ -2482,13 +2622,10 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 22.68px;
-        margin-left: 48px;
-        margin-right: 48px;
-        margin-bottom: 53px;
-        margin-top: 15px;
         text-align: center;
         line-height: 162%;
         max-width: 700px;
+        margin: 15px 48px 53px;
     }
 
     #main .conditions_main_block .conditions-align_block .conditions-icon-main .icon-icon_condition:before {
@@ -2830,7 +2967,7 @@ button {
         width: 677px;
         max-width: 677px;
         min-width: 677px;
-     }
+    }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
         position: relative;
@@ -2873,7 +3010,7 @@ button {
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
         grid-template-columns: 1fr 1fr;
         column-gap: 77px;
-    }  
+    }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
         position: relative;
@@ -2962,7 +3099,7 @@ button {
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input:focus {
-         outline: none;
+        outline: none;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields input:focus {
@@ -3022,7 +3159,7 @@ button {
     }
 
     /* partners window end */
-         /* mentors window start */
+    /* mentors window start */
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container {
         width: 677px;
         max-width: 677px;
@@ -3077,7 +3214,7 @@ button {
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container {
         position: relative;
     }
- 
+
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input {
         width: 100%;
         height: 40px;
@@ -3158,7 +3295,7 @@ button {
         margin-bottom: 19px;
         font-size: 12px;
         font-family: 'Unbuntu Regular';
-    } 
+    }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input:focus {
         outline: none;
@@ -3220,7 +3357,7 @@ button {
         font-size: 22px;
     }
 
-  /* mentors window end */
+    /* mentors window end */
 
     /* 404 start */
     /* header start */
@@ -3316,8 +3453,87 @@ button {
     #footer .footer-main-container .footer-main .footer-main-text2-en {
         width: 276px;
     }
+
     /* 404 EN end */
-    
+    /* selection menu start*/
+    #selection-menu .burger-top {
+        width: 768px;
+    }
+
+    #selection-menu .burger-top .bg-text-italic {
+        font-size: 24px;
+        padding: 44px 0 0 0;
+    }
+
+    #selection-menu .burger-top .bg-text-bold {
+        font-size: 48px;
+        padding: 12px 0 8px 0px;
+    }
+
+    #selection-menu .burger-top .bg-blue-line {
+        width: 91%;
+        margin: 0 0 0 34px;
+    }
+
+    #selection-menu .burger-top .bg-yellow-line {
+        width: 91%;
+        margin: 0 0 0 34px;
+    }
+
+    #selection-menu .burger-top .sm-what {
+        font-size: 40px;
+        padding: 16px 0 0 2px;
+        margin: 0;
+    }
+
+    #selection-menu {
+        font-size: 64px;
+        height: 815px;
+    }
+
+    #selection-menu li {
+        padding: 25px 31px 13px 0;
+    }
+
+    #selection-menu .burger-bottom {
+        width: 768px;
+        padding: 16px 0 0 0;
+    }
+
+    #selection-menu .burger-bottom .bg-blue-line2 {
+        width: 91%;
+        margin: 0 0 0 4px;
+    }
+
+    #selection-menu .burger-bottom .bg-yellow-line2 {
+        width: 91%;
+        margin: 0 0 0 4px;
+    }
+
+    #selection-menu .burger-bottom .bg-social {
+        width: 33%;
+        margin: 16px 0 0 225px;
+    }
+
+    #selection-menu .burger-bottom .bg-social-bottom {
+        width: 33%;
+        margin: 3px 0 0 225px;
+    }
+
+    #selection-menu .sm-button {
+        width: 413px;
+        min-height: 81px;
+        font-size: 22px;
+    }
+
+    #selection-menu .sm-button:hover {
+        width: 413px;
+        min-height: 81px;
+        font-size: 22px;
+    }
+
+    /* selection menu end*/
+
 }
 
 @media (min-width: 1024px) {
@@ -3391,7 +3607,7 @@ button {
     }
 
     #main .conditions_main_block .vertical_padding_block .img2 {
-        margin: 0px 42px 50px 42px;
+        margin: 0px 42px 50px;
         width: 380px;
         height: 538px;
         float: left;
@@ -3399,8 +3615,7 @@ button {
 
     #main .conditions_main_block .conditions-line {
         width: 940px;
-        margin-left: 42px;
-        margin-right: 42px;
+        margin: 0px 42px;
         background: repeating-linear-gradient(90deg, black 0 5px, #0000 0 10px);
     }
 
@@ -3409,7 +3624,7 @@ button {
         padding-bottom: 50px;
     }
 
-    #main{
+    #main {
         background-color: var(--white);
         margin: 0 auto;
     }
@@ -3420,15 +3635,12 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 22.68px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-left: 42px;
-        margin-right: 100px;
         width: 380px;
         height: auto;
         float: right;
         text-align: justify;
         line-height: 32.4px;
+        margin: 50px 100px 30px 42px;
     }
 
     #main .conditions_main_block .vertical_padding_block .text-2 {
@@ -3443,7 +3655,7 @@ button {
         float: right;
         text-align: justify;
         line-height: 32.4px;
-        height:auto;
+        height: auto;
     }
 
     #main .conditions_main_block .align_block .text-3 {
@@ -3452,23 +3664,18 @@ button {
         font-style: normal;
         color: #000A24;
         line-height: 22.68px;
-        margin-left: 33px;
-        margin-right: 48px;
-        margin-bottom: 30px;
-        margin-top: 29px;
         margin-bottom: 15px;
         text-align: center;
         line-height: 25.92px;
         height: auto;
+        margin: 29px 48px 30px 33px;
     }
 
     #main .conditions_main_block .align_block .icon-main .icon-icon_condition:before {
         content: "\e900";
         font-size: 70px;
         text-align: center;
-        margin-top: 29px;
-        margin-bottom: 29px;
-        margin-left: 42px;
+        margin: 29px 0px 29px 42px;
     }
 
     #main .conditions_main_block .align_block .icon-main {
@@ -3492,19 +3699,78 @@ button {
     }
 
     #header .desktop-menu {
-        width: 516px;
+        width: 53.2%;
         height: 21px;
-        position: absolute;
         display: block;
-        top: 57px;
-        left: 283px;
+        padding: 58px 0 0 0;
+        margin: 0 auto;
+    }
+
+    #header .intita-logo-header {
+        top: 20px;
+        left: 30px;
+    }
+
+    #header .intita-logo-header .robota-molodi-logo-img {
+        width: 134px;
+        height: 32px;
+        margin: 4px 0 0 -3px;
     }
 
     #header .desktop-menu .desktop-list {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-left: -32px;
+        margin: 0 -15px 0 0;
+        padding: 0 0 0 44px;
+    }
+
+    #header .dropdown {
+        width: 74px;
+        height: 45px;
+        border: 2px solid white;
+        border-radius: 5px;
+        position: absolute;
+        top: 45px;
+        right: 33px;
+        z-index: 10;
+        display: block;
+    }
+
+    #header .dropdown .btn {
+        width: 70px;
+        height: 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #header .dropdown .btn .ua {
+        width: 29px;
+        height: 23px;
+        border-radius: 3px;
+        margin: 0 0 0 -6px;
+    }
+
+    #header .dropdown .dropdown-menu {
+        min-width: 74px;
+        height: 45px;
+        background-color: transparent;
+        padding: 0;
+        transform: translate3d(0px, 43px, 0px);
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+
+    #header .dropdown .dropdown-menu .dropdown-item {
+        height: 45px;
+    }
+
+    #header .dropdown .dropdown-menu .dropdown-item .uk {
+        width: 29px;
+        height: 23px;
+        border-radius: 3px;
+        margin: 5px 0 0 -9px;
     }
 
     #header .desktop-menu .desktop-list .desktop-menu-text {
@@ -3517,14 +3783,6 @@ button {
         color: var(--button-active-bg);
     }
 
-    #header .header-flag {
-        display: block;
-        position: absolute;
-        top: 46px;
-        right: 32px;
-        z-index: 1;
-    }
-
     #header .desktop-menu .desktop-list .desktop-menu-text .desktop-menu-link {
         color: var(--button-active-bg);
     }
@@ -3533,7 +3791,6 @@ button {
         color: var(--button-hover-bg);
     }
 
-    */
     /* header end */
 
     /* quote start */
@@ -3662,6 +3919,7 @@ button {
     #main {
         background-color: var(--white);
     }
+
     #main .conditions_main_block .conditions-img1 {
         margin: 50px 42px 0px 0px;
         width: 460px;
@@ -3989,7 +4247,7 @@ button {
     #footer .footer-main-container .footer-main .nav-menu-link:hover {
         color: var(--icon-hover);
     }
-    
+
     #footer .footer-main-container .footer-main .nav-menu-link:active {
         color: var(--button-hover-bg);
     }
@@ -4113,6 +4371,7 @@ button {
     #header-404 #header .desktop-menu .desktop-list {
         margin-left: -29px
     }
+
     /* header end */
 
     #block-404 .block-404-main {
@@ -4139,5 +4398,6 @@ button {
         padding: 25px 85px;
         font-size: 22px;
     }
+
     /* 404 end */
 }
