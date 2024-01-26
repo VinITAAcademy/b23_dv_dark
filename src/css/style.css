@@ -1613,18 +1613,16 @@ button {
     color: var(--dark);
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Unbuntu Medium';
     margin: 11px 0px 30px 12px;
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
     color: var(--dark);
     font-size: 16px;
-    font-family: 'Unbuntu Bold';
     font-weight: 700;
 }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close-partner span::before {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -1645,7 +1643,7 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    row-gap: 20px;
+    gap: 20px;
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container {
@@ -1681,7 +1679,7 @@ button {
     left: 8px;
     transform: translateY(-50%);
     z-index: 0;
-    font-family: 'Unbuntu Regular';
+    font-weight: 400;
     font-size: 12px;
 }
 
@@ -1707,7 +1705,6 @@ button {
     font-size: 12px;
     font-weight: 400;
     margin: 12px 0px 6px;
-    font-family: 'Unbuntu Regular';
     width: 218px;
 }
 
@@ -1720,6 +1717,7 @@ button {
     height: 57px;
     flex-shrink: 0;
     border: 1.5px solid var(--dark);
+    padding-left: 11px;
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 label {
@@ -1727,7 +1725,6 @@ button {
     font-size: 12px;
     font-weight: 400;
     margin: 12px 0px 6px;
-    font-family: 'Unbuntu Regular';
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input {
@@ -1742,7 +1739,7 @@ button {
     margin-top: 20px;
     font-size: 12px;
     font-style: normal;
-    font-family: 'Unbuntu Regular';
+    font-weight: 400;
 }
 
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
@@ -1755,7 +1752,6 @@ button {
 #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_submit {
     padding: 14px 83px;
     text-align: center;
-    font-family: 'Unbuntu Regular';
     font-weight: 400;
     font-size: 22px;
     width: 271px;
@@ -1781,19 +1777,17 @@ button {
     color: var(--dark);
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Unbuntu Medium';
-    margin: 11px 0 30px 12px;
+    margin: 11px 0px 30px;
     text-align: center;
 }
 
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title .questionnaire-mentors-title-bold {
     color: var(--dark);
     font-size: 16px;
-    font-family: 'Unbuntu Bold';
     font-weight: 700;
 }
 
-#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close-mentor span::before {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -1850,7 +1844,7 @@ button {
     left: 8px;
     transform: translateY(-50%);
     z-index: 0;
-    font-family: 'Unbuntu Regular';
+    font-weight: 400;
     font-size: 12px;
 }
 
@@ -1876,7 +1870,7 @@ button {
     font-size: 12px;
     font-weight: 400;
     margin: 12px 0px 6px;
-    font-family: 'Unbuntu Regular';
+    font-weight: 400;
     width: 218px;
 }
 
@@ -1889,6 +1883,7 @@ button {
     height: 57px;
     flex-shrink: 0;
     border: 1.5px solid var(--dark);
+    padding-left: 11px;
 }
 
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 label {
@@ -1896,7 +1891,6 @@ button {
     font-size: 12px;
     font-weight: 400;
     margin: 12px 0px 6px;
-    font-family: 'Unbuntu Regular';
 }
 
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input {
@@ -1904,6 +1898,7 @@ button {
     height: 40px;
     flex-shrink: 0;
     border: 1.5px solid var(--dark);
+    padding-left: 11px;
 }
 
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip {
@@ -1911,7 +1906,7 @@ button {
     margin-top: 20px;
     font-size: 12px;
     font-style: normal;
-    font-family: 'Unbuntu Regular';
+    font-weight: 400;
 }
 
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip::before {
@@ -1924,7 +1919,6 @@ button {
 #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_submit {
     padding: 14px 83px;
     text-align: center;
-    font-family: 'Unbuntu Regular';
     font-weight: 400;
     font-size: 22px;
     width: 271px;
@@ -2987,24 +2981,25 @@ button {
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content {
         position: relative;
         width: 677px;
-        padding: 0px 83px;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title {
         color: var(--dark);
         font-size: 36px;
+        margin: 30px 46px 41px 0px;
+        font-weight: 500;
+        width: 561px;
+        height: 41px;
         text-align: center;
-        margin: 30px 0px 41px;
-        font-family: 'Unbuntu Medium';
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-title .questionnaire-title-bold {
         color: var(--dark);
         font-size: 36px;
-        font-family: 'Unbuntu Bold';
+        font-weight: 700;
     }
 
-    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
+    #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close-partner span::before {
         width: 30px;
         height: 30px;
         position: absolute;
@@ -3019,6 +3014,7 @@ button {
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form {
         display: flex;
         flex-direction: column;
+        padding: 0px 39px;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls {
@@ -3037,7 +3033,8 @@ button {
         border: 1.5px solid var(--dark);
         padding: 11px 13px;
         font-size: 12px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
+        cursor: text;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .questionnaire-input_container input:focus {
@@ -3066,12 +3063,13 @@ button {
         left: 14px;
         transform: translateY(-60%);
         z-index: 0;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
+        cursor: text;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields ::placeholder {
         color: #a7a7a7;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
         font-size: 12px;
     }
 
@@ -3109,7 +3107,7 @@ button {
         padding: 11px 13px;
         margin-bottom: 19px;
         font-size: 12px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-optional_fields-1 input:focus {
@@ -3140,7 +3138,7 @@ button {
         padding: 11px 13px;
         margin-bottom: 19px;
         font-size: 12px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip {
@@ -3148,7 +3146,7 @@ button {
         margin-top: 0;
         font-size: 12px;
         line-height: 20px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .questionnaire-tip::before {
@@ -3166,7 +3164,7 @@ button {
         text-align: center;
         width: 271px;
         height: 53px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
         font-size: 22px;
     }
 
@@ -3181,26 +3179,24 @@ button {
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content {
         position: relative;
         width: 677px;
-        padding: 0px 83px;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title {
         color: var(--dark);
         font-size: 36px;
         margin: 30px 0px 41px;
-        font-family: 'Unbuntu Medium';
+        font-weight: 500;
         width: 589px;
         text-align: center;
-        padding-right: 75px;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-title .questionnaire-mentors-title-bold {
         color: var(--dark);
         font-size: 36px;
-        font-family: 'Unbuntu Bold';
+        font-weight: 700;
     }
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close-mentor span::before {
         width: 30px;
         height: 30px;
         position: absolute;
@@ -3215,6 +3211,7 @@ button {
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form {
         display: flex;
         flex-direction: column;
+        padding: 0px 39px;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-reqiared_form_controls {
@@ -3233,7 +3230,7 @@ button {
         border: 1.5px solid var(--dark);
         padding: 11px 13px;
         font-size: 12px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:focus {
@@ -3262,12 +3259,12 @@ button {
         left: 14px;
         transform: translateY(-60%);
         z-index: 0;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields ::placeholder {
         color: #a7a7a7;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
         font-size: 12px;
     }
 
@@ -3305,7 +3302,7 @@ button {
         padding: 11px 13px;
         margin-bottom: 19px;
         font-size: 12px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-optional_fields-1 input:focus {
@@ -3336,7 +3333,7 @@ button {
         padding: 11px 13px;
         margin-bottom: 19px;
         font-size: 12px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip {
@@ -3344,7 +3341,7 @@ button {
         margin-top: 0;
         font-size: 12px;
         line-height: 20px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .questionnaire-mentors-tip::before {
@@ -3362,7 +3359,7 @@ button {
         text-align: center;
         width: 271px;
         height: 53px;
-        font-family: 'Unbuntu Regular';
+        font-weight: 400;
         font-size: 22px;
     }
 
