@@ -1335,7 +1335,7 @@ button {
     right: 6px;
     z-index: 99;
     opacity: 0;
-    transition:all 0.6s;
+    transition: all 0.6s;
 }
 
 #top-button .icon-arrow::before {
@@ -1435,7 +1435,7 @@ button {
     margin-bottom: 30px;
 }
 
-#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content .modal_close span::before {
+#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content .modal_close-participant span::before {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -1624,7 +1624,7 @@ button {
     font-weight: 700;
 }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close-partner span::before {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -3200,7 +3200,7 @@ button {
         font-family: 'Unbuntu Bold';
     }
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close-mentor span::before {
         width: 30px;
         height: 30px;
         position: absolute;
@@ -3773,6 +3773,8 @@ button {
 
     #header .dropdown .dropdown-menu .dropdown-item {
         height: 45px;
+        --bs-dropdown-link-hover-bg: none;
+        --bs-dropdown-link-active-bg: none;
     }
 
     #header .dropdown .dropdown-menu .dropdown-item .uk {
@@ -4356,6 +4358,14 @@ button {
     }
 
     /* footer end */
+    /* selection menu start*/
+    #selection-menu {
+        max-width: 768px;
+        left: 50%;
+        margin: 0 0 0 -384px;
+    }
+
+    /* selection menu end*/
 
     /* top button start */
     #top-button {
