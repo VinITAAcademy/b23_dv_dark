@@ -67,7 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
 
                         iconArrow.classList.remove("blue-button");
-                    }}});
+                    }
+                }
+        });
         // top button end
 
         // start applicant form
@@ -88,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let videos = $(".video");
 
         videos.on("click", function () {
-                let elm=$(this),
+                let elm = $(this),
                 conts = elm.contents(),
                 le = conts.length,
                 ifr = null;
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 ifr = null;
 
                 for (let i=0; i < le; i++) {
-                    if (conts[i].nodeType == 8) ifr=conts[i].textContent;
+                    if (conts[i].nodeType == 8) ifr = conts[i].textContent;
                 }
 
                 elm.addClass("player").html(ifr);
@@ -127,9 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 loop: true,
                 navText: ["<div class='icon-arrow-left-logos'></div>", "<div class='icon-arrow-right-logos'></div>"]
             });    
-
     }
-
 );
 //end partners' logos
 // start modal burger menu
