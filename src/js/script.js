@@ -167,12 +167,12 @@ let screenMenu = window.screen.width;
 
     closeSelection.onclick = function(){
         if (screenMenu <=768) {
-    selection.style.display = 'none';
-    hamburger.style.display = 'block';
+            selection.style.display = 'none';
+            hamburger.style.display = 'block';
         }
         else (screenMenu >768) 
-    selection.style.display = 'none';
-    hamburger.style.display = 'none';
+            selection.style.display = 'none';
+            hamburger.style.display = 'none';
         }
 
 registration1.onclick = function() {
