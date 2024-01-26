@@ -3829,6 +3829,7 @@ button {
         font-family: 'Ubuntu Medium';
         font-size: 2.625rem;
         margin-bottom: 70px;
+        text-align: center;
     }
 
     #we-provide .we-provide__container .we-provide__cards-box {
