@@ -1622,7 +1622,7 @@ button {
     font-weight: 700;
 }
 
-#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close_butt span::before {
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content .modal_close span::before {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -1787,7 +1787,7 @@ button {
     font-weight: 700;
 }
 
-#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close_button span::before {
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
     width: 30px;
     height: 30px;
     position: absolute;
@@ -3196,7 +3196,7 @@ button {
         font-weight: 700;
     }
 
-    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close_button span::before {
+    #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content .modal_close span::before {
         width: 30px;
         height: 30px;
         position: absolute;
