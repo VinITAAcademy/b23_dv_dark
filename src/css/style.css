@@ -1131,18 +1131,6 @@ button {
     align-items: center;
 }
 
-#footer .footer-main-container .footer-main .footer-main-arrow-icon .icon-arrow {
-    position: absolute;
-    top: 0;
-    right: 12px;
-    font-size: 18px;
-    color: var(--white);
-    border: 1px solid var(--white);
-    border-radius: 50%;
-    padding: 5px 6px;
-    font-weight: 700;
-}
-
 #footer .footer-main-container .footer-main .footer-main-icon {
     font-size: 30px;
     color: var(--white);
@@ -1339,6 +1327,36 @@ button {
 }
 
 /* footer end */
+
+/* top button start */
+#top-button {
+    position: fixed;
+    bottom: 50px;
+    right: 6px;
+    z-index: 99;
+    opacity: 0;
+    transition:all 0.6s;
+}
+
+#top-button .icon-arrow::before {
+    font-size: 18px;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px 6px;
+    font-weight: 700;
+}
+
+#top-button a:active .icon-arrow::before {
+    color: var(--button-primary);
+    border-color: var(--button-primary);
+}
+
+.blue-button::before {
+    color: var(--background);
+    border-color: var(--background);
+}
+
+/* top button end */
 
 /* modal windows start */
 #succesModal .succes_modal_container {
@@ -2798,13 +2816,6 @@ button {
         width: 768px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-arrow-icon .icon-arrow {
-        top: 12px;
-        right: 40px;
-        font-size: 30px;
-        padding: 9px 11px;
-    }
-
     #footer .footer-main-container .footer-main .footer-main-intita-logo {
         top: 30px;
         left: 40px;
@@ -2913,6 +2924,19 @@ button {
     }
 
     /* footer end */
+
+    /* top button start */
+    #top-button {
+        bottom: 75px;
+        right: 10px;
+    }
+
+    #top-button .icon-arrow::before {
+        font-size: 30px;
+        padding: 9px 11px;
+    }
+
+    /* top button end */
 
     /* modal windows start */
     #applicant_form_modal .applicant_form_modal_container {
@@ -4157,17 +4181,6 @@ button {
         width: 1024px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-arrow-icon .icon-arrow {
-        top: 14px;
-        right: 43px;
-        font-size: 30px;
-        padding: 9px 11px;
-    }
-
-    #footer .footer-main-container .footer-main .footer-main-arrow-icon .footer-main-arrow-svg {
-        height: 50px;
-    }
-
     #footer .footer-main-container .footer-main .footer-main-icon {
         font-size: 25px;
     }
@@ -4341,6 +4354,19 @@ button {
 
     /* footer end */
 
+    /* top button start */
+    #top-button {
+        bottom: 143px;
+        right: 45px;
+    }
+
+    #top-button a:hover .icon-arrow::before {
+        color: var(--icon-hover);
+        border-color: var(--icon-hover);
+    }
+
+    /* top button end */
+
     /* modal windows start */
     /* modal windows end */
 
@@ -4357,7 +4383,6 @@ button {
     /* header end */
 
     #block-404 .block-404-main {
-        /* padding: 303px; */
         background: url(../assets/images/404/404-background-desktop.png);
         background-size: cover;
         min-height: 768px;
