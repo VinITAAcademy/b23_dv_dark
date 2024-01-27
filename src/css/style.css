@@ -3762,6 +3762,10 @@ button {
         border-radius: 5px;
     }
 
+    #header .dropdown ul.dropdown-menu.show {
+        transform: translate3d(-2px, 43px, 0px) !important; 
+    }
+
     #header .dropdown .dropdown-menu .dropdown-item {
         height: 45px;
         --bs-dropdown-link-hover-bg: none;
@@ -3791,6 +3795,25 @@ button {
 
     #header .desktop-menu .desktop-list .desktop-menu-text .desktop-menu-link:hover {
         color: var(--button-hover-bg);
+    }
+
+    #header .flex-en {
+        position: absolute;
+        right: 33px;
+        display: flex;
+        align-items: center;
+        z-index: 99;
+    }
+
+    #header .flex-en .link-language .translate {
+        font-size: 24px;
+        color: var(--button-primary);
+    }
+
+    #header .flex-en .br-header {
+        border-right: 1px solid var(--button-primary);
+        height: 18px;
+        margin: 0px 10px;
     }
 
     /* header end */
