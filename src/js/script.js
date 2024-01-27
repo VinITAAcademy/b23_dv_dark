@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const data = $(this).serializeArray();
                 $("#applicant_form_modal").modal("hide");
                 $("#succesModal").modal('show');
+                applicantForm.trigger("reset");
             });
         // end applicant form
 
@@ -163,10 +164,17 @@ registration.onclick = function() {
     hamburger.style.display = 'none';
 }
 
-closeSelection.onclick = function() {
-    selection.style.display = 'none';
-    hamburger.style.display = 'block';
-}
+let screenMenu = window.screen.width;
+
+closeSelection.onclick = function(){
+    if (screenMenu <= 768) {
+        selection.style.display = 'none';
+        hamburger.style.display = 'block';
+    }
+    else if (screenMenu > 768) {
+        selection.style.display = 'none';
+        hamburger.style.display = 'none';
+    }}
 
 registration1.onclick = function() {
     selection.style.display = 'block';

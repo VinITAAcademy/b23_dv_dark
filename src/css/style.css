@@ -807,16 +807,11 @@ button {
     color: var(--white);
     justify-content: center;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 0;
+    margin: 30px 0px 0px 0px;
     font-size: 24px;
 }
 
 #partners .partners-main .partners-content .partners-content-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
     padding-top: 25px;
     background: var(--background);
     color: var(--white);
@@ -826,7 +821,7 @@ button {
     line-height: 162%;
     letter-spacing: 0.28px;
     width: 288px;
-    margin: 0 38px 25px 49px;
+    margin: 0 auto 25px auto;
     text-align: left;
 }
 
@@ -850,8 +845,7 @@ button {
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
-    color: var(--white);
-    margin: 0 73px 30px;
+    margin: 0px auto 30px auto;
 }
 
 /* partners end */
@@ -2701,7 +2695,7 @@ button {
     #partners .partners-main .partners-content .partners-button {
         padding: 20px 77px;
         font-size: 24px;
-        margin: 0 236px 50px;
+        margin: 0px auto 50px auto;
     }
 
     /* partners end */
@@ -3857,6 +3851,7 @@ button {
         font-family: 'Ubuntu Medium';
         font-size: 2.625rem;
         margin-bottom: 70px;
+        text-align: center;
     }
 
     #we-provide .we-provide__container .we-provide__cards-box {
@@ -4101,8 +4096,7 @@ button {
     #partners .partners-main .partners-content .partners-button {
         padding: 15px 53px;
         font-size: 12px;
-        margin-bottom: 30px;
-        margin-left: 18px;
+        margin: 0px 0px 30px 18px;
     }
 
     /* partners end */
@@ -4401,6 +4395,11 @@ button {
     #top-button a:hover .icon-arrow::before {
         color: var(--icon-hover);
         border-color: var(--icon-hover);
+    }
+
+    #top-button a:active .icon-arrow::before {
+        color: var(--button-primary);
+        border-color: var(--button-primary);
     }
 
     /* top button end */
