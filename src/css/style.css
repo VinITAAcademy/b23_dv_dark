@@ -1923,9 +1923,7 @@ button {
 
 /* mentors window end */
 /* selection menu start*/
-#selection-menu {
-    display: none;
-}
+
 
 #selection-menu {
     top: 0px;
@@ -1944,7 +1942,7 @@ button {
 }
 
 #selection-menu .burger-top {
-    width: 365px;
+    width: 768px;
     margin: 0 auto;
 }
 
