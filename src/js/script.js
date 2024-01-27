@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const data = $(this).serializeArray();
                 $("#applicant_form_modal").modal("hide");
                 $("#succesModal").modal('show');
+                applicantForm.trigger("reset");
             });
         // end applicant form
 
