@@ -1,29 +1,68 @@
+// start loader НЕ ВИДАЛЯТИ!!!
+
+//imitation of loading. uncomment for test
+
+/*
+document.onreadystatechange = function (e) {
+    if (document.readyState === 'complete') {
+        let animationPreload = document.querySelectorAll('.loader-block')[0];
+        animationPreload.style.visibility = 'visible';
+        animationPreload.style.opacity = '1';
+
+        let timerId = setTimeout(function () {
+            animationPreload.style.opacity = '0';
+            animationPreload.style.visibility = 'hidden';
+        }, 2000); 
+    }
+};
+*/
+
+// end loader
+
 document.addEventListener('DOMContentLoaded', function () {
-        // start specialities
-        let carouselBlock = document.querySelector('.specialty-carousel-main-container');
-        let carouselCardsContainer = document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
-        let carouselCard = document.querySelectorAll('.carousel-item');
-        let screenWidth = window.screen.width;
+    // start specialities
+    let carouselBlock = document.querySelector('.specialty-carousel-main-container');
+    let carouselCardsContainer = document.querySelector('.specialty-carousel-main-container .specialty-carousel-cards-container');
+    let carouselCard = document.querySelectorAll('.specialty-carousel-card-container');
+    let screenWidth = window.screen.width;
 
-        document.addEventListener('resize', function (e) {
-                if (screenWidth >=768) {
-                    carouselBlock.removeAttribute('id');
-                    carouselBlock.classList.remove('carousel');
-                    carouselBlock.classList.remove('slide');
-                    carouselCardsContainer.classList.remove('carousel-inner');
-                    carouselCard[0].classList.remove('active');
-                    for (let item of carouselCard) item.classList.remove('carousel-item');
+    function changeStylesForCarousel() {
+        if (window.screen.width >= 768) {
+            carouselBlock.removeAttribute('id');
+            carouselBlock.classList.remove('carousel');
+            carouselBlock.classList.remove('slide');
+            
+            carouselCardsContainer.classList.remove('carousel-inner');
+            
+            for (let [index, item] of carouselCard.entries()) {
+                item.classList.remove('carousel-item');
+
+                if (item.classList.contains('active')) { 
+                    item.classList.remove('active');
                 }
+            }
 
-                else if (screenWidth < 768) {
-                    carouselBlock.setAttribute('id', 'carouselExampleIndicators');
-                    carouselBlock.classList.add('carousel');
-                    carouselBlock.classList.add('slide');
-                    carouselCardsContainer.classList.add('carousel-inner');
-                    carouselCard[0].classList.add('active');
-                    for (let item of carouselCard) item.classList.add('carousel-item');
-                }});
-        // end specialities
+        } else if (window.screen.width < 768) {
+            carouselBlock.setAttribute('id', 'carouselExampleIndicators');
+            carouselBlock.classList.add('carousel');
+            carouselBlock.classList.add('slide');
+            
+            carouselCardsContainer.classList.add('carousel-inner');
+
+            carouselCard[1].classList.add('active');
+
+            for (let [index, item] of carouselCard.entries()) {
+                if (index != 0) {
+                    item.classList.add('carousel-item');
+                }
+            }
+        }
+    }
+
+    changeStylesForCarousel();
+    window.addEventListener('resize', changeStylesForCarousel);
+
+    // end specialities
 
         // top button start
         const topButton = document.getElementById("top-button");
@@ -57,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     iconArrow.classList.remove("blue-button");
                 }
 
-                if (screenWidth >=1024 && screenWidth < 1087) {
+                if (screenWidth >= 1024 && screenWidth < 1087) {
                     for (let item of whiteCardsDesktop) {
                         const itemRect = item.getBoundingClientRect();
 
@@ -95,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 le = conts.length,
                 ifr = null;
 
-                for (let i=0; i < le; i++) {
-                    if (conts[i].nodeType==8) ifr=conts[i].textContent;
+                for (let i = 0; i < le; i++) {
+                    if (conts[i].nodeType == 8) ifr = conts[i].textContent;
                 }
 
                 elm.addClass("player").html(ifr);
@@ -111,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 le = conts.length,
                 ifr = null;
 
-                for (let i=0; i < le; i++) {
+                for (let i = 0; i < le; i++) {
                     if (conts[i].nodeType == 8) ifr = conts[i].textContent;
                 }
 
@@ -231,6 +270,5 @@ modalClosePartner.onclick = function() {
 modalCloseMentor.onclick = function() {
     mentorModal.style.display = 'none';
 }
-
 
 // end modal poll menu
