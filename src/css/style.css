@@ -1927,7 +1927,7 @@ button {
 /* mentors window end */
 /* selection menu start*/
 
-.modal {
+#select-modal {
     --bs-modal-margin: none;
     --bs-modal-border-color: none;
 }
