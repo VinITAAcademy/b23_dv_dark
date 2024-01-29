@@ -357,10 +357,6 @@ button {
     z-index: 10000000000000;
 }
 
-#header .dropdown {
-    display: none;
-}
-
 #menu {
     top: 0px;
     z-index: 1000000;
@@ -3082,7 +3078,6 @@ button {
         content: '*';
         color: red;
         padding-left: 4px;
-        font-size: 24px;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
@@ -3277,7 +3272,6 @@ button {
         content: '*';
         color: red;
         padding-left: 4px;
-        font-size: 24px;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .error_message {
@@ -3742,18 +3736,6 @@ button {
         padding: 0 0 0 44px;
     }
 
-    #header .dropdown {
-        width: 74px;
-        height: 45px;
-        border: 2px solid white;
-        border-radius: 5px;
-        position: absolute;
-        top: 45px;
-        right: 33px;
-        z-index: 10;
-        display: block;
-    }
-
     #header .dropdown .btn {
         width: 70px;
         height: 41px;
@@ -3762,34 +3744,8 @@ button {
         align-items: center;
     }
 
-    #header .dropdown .btn .ua {
-        width: 29px;
-        height: 23px;
-        border-radius: 3px;
-        margin: 0 0 0 -6px;
-    }
-
-    #header .dropdown .dropdown-menu {
-        min-width: 74px;
-        height: 45px;
-        background-color: transparent;
-        padding: 0;
-        transform: translate3d(0px, 43px, 0px);
-        border: 2px solid white;
-        border-radius: 5px;
-    }
-
-    #header .dropdown .dropdown-menu .dropdown-item {
-        height: 45px;
-        --bs-dropdown-link-hover-bg: none;
-        --bs-dropdown-link-active-bg: none;
-    }
-
-    #header .dropdown .dropdown-menu .dropdown-item .uk {
-        width: 29px;
-        height: 23px;
-        border-radius: 3px;
-        margin: 5px 0 0 -9px;
+    #header .dropdown ul.dropdown-menu.show {
+        transform: translate3d(-2px, 43px, 0px) !important; 
     }
 
     #header .desktop-menu .desktop-list .desktop-menu-text {
@@ -3808,6 +3764,25 @@ button {
 
     #header .desktop-menu .desktop-list .desktop-menu-text .desktop-menu-link:hover {
         color: var(--button-hover-bg);
+    }
+
+    #header .flex-en {
+        position: absolute;
+        right: 33px;
+        display: flex;
+        align-items: center;
+        z-index: 99;
+    }
+
+    #header .flex-en .link-language .translate {
+        font-size: 24px;
+        color: var(--button-primary);
+    }
+
+    #header .flex-en .br-header {
+        border-right: 1px solid var(--button-primary);
+        height: 18px;
+        margin: 0px 10px;
     }
 
     /* header end */
