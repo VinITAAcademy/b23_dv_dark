@@ -1,8 +1,5 @@
-// start loader НЕ ВИДАЛЯТИ!!!
-
 //imitation of loading. uncomment for test
 
-/*
 document.onreadystatechange = function (e) {
     if (document.readyState === 'complete') {
         let animationPreload = document.querySelectorAll('.loader-block')[0];
@@ -15,7 +12,6 @@ document.onreadystatechange = function (e) {
         }, 2000); 
     }
 };
-*/
 
 // end loader
 
