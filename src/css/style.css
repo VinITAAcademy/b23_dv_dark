@@ -3067,7 +3067,6 @@ button {
         content: '*';
         color: red;
         padding-left: 4px;
-        font-size: 24px;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
@@ -3262,7 +3261,6 @@ button {
         content: '*';
         color: red;
         padding-left: 4px;
-        font-size: 24px;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .error_message {
