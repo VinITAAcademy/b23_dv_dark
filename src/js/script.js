@@ -107,17 +107,66 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         // top button end
 
-        // start applicant form
-        const applicantForm = $("#applicant_form_modal .form");
+    // start applicant form
+    const applicantForm = $("#applicant_form_modal .form");
 
-        applicantForm.on("submit", function (event) {
-                event.preventDefault();
-                const data = $(this).serializeArray();
-                $("#applicant_form_modal").modal("hide");
-                $("#succesModal").modal('show');
-                applicantForm.trigger("reset");
-            });
+    applicantForm.on("submit", function (event) {
+            event.preventDefault();
+            const data = $(this).serializeArray();
+            $("#applicant_form_modal").modal("hide");
+            $("#selection-menu").modal("hide");
+            $("#succesModal").modal('show');
+            applicantForm.trigger("reset");
+        });
+
+        //modal applicant partner start
+    const questionnaireFormModal = $("#questionnaire-form_modal .form");
+
+    questionnaireFormModal.on("submit", function (event) {
+        event.preventDefault();
+        const data = $(this).serializeArray();
+        $("#questionnaire-form_modal").modal('hide');
+        $("#succesModal").modal('show');
+        questionnaireFormModal.trigger("reset");
+    });
+    //modal applicant partner end
+
+     //modal applicant mentor start//
+    const questionnaireMentorsFormModal = $("#questionnaire-mentors-form_modal .form");
+
+    questionnaireMentorsFormModal.on("submit", function (event) {
+        event.preventDefault();
+        const data = $(this).serializeArray();
+        $("#questionnaire-mentors-form_modal").modal ('hide');
+        $("#succesModal").modal('show');
+        questionnaireMentorsFormModal.trigger("reset");
+    });
+        //modal applicant mentor end//
         // end applicant form
+
+    //modal applicant partner start
+    questionnaireFormModal = $("#questionnaire-form_modal .form");
+
+    questionnaireFormModal.on("submit", function (event) {
+        event.preventDefault();
+        const data = $(this).serializeArray();
+        $("#questionnaire-form_modal").modal('hide');
+        $("#succesModal").modal('show');
+        questionnaireFormModal.trigger("reset");
+    });
+    //modal applicant partner end
+
+    //modal applicant mentor start//
+    questionnaireMentorsFormModal = $("#questionnaire-mentors-form_modal .form");
+
+    questionnaireMentorsFormModal.on("submit", function (event) {
+        event.preventDefault();
+        const data = $(this).serializeArray();
+        $("#questionnaire-mentors-form_modal").modal('hide');
+        $("#succesModal").modal('show');
+        questionnaireMentorsFormModal.trigger("reset");
+    });
+    //modal applicant mentor end//
 
         // start modal burger menu
         // end modal burger menu
@@ -173,7 +222,7 @@ document.addEventListener('DOMContentLoaded', function () {
 let hamburger = document.querySelector('.hamburger');
 let closes = document.querySelector('.cross');
 let menu = document.querySelector('#menu');
-
+let screenMenu = window.screen.width;
 
 hamburger.onclick=function () {
     menu.style.display = 'block';
@@ -187,85 +236,5 @@ closes.onclick=function () {
 
 // end modal burger menu
 
-// start modal selection menu
-let registration = document.querySelector('.hero_content_button');
-let registration1 = document.querySelector('.registration-content-button');
-let join = document.querySelector('.partners-button');
-let selection = document.querySelector('#selection-menu');
-let closeSelection = document.querySelector('.sm-cross');
-
-registration.onclick = function() {
-    selection.style.display = 'block';
-    hamburger.style.display = 'none';
-}
-
-let screenMenu = window.screen.width;
-
-closeSelection.onclick = function(){
-    if (screenMenu <= 768) {
-        selection.style.display = 'none';
-        hamburger.style.display = 'block';
-    }
-    else if (screenMenu > 768) {
-        selection.style.display = 'none';
-        hamburger.style.display = 'none';
-    }}
-
-registration1.onclick = function() {
-    selection.style.display = 'block';
-    hamburger.style.display = 'none';
-}
-
-join.onclick=function() {
-    selection.style.display = 'block';
-    hamburger.style.display = 'none';
-}
-
-// start modal selection menu
-
-// start modal poll menu
-let partner = document.querySelector('.sm-button-partner');
-let participant = document.querySelector('.sm-button-participant');
-let mentor = document.querySelector('.sm-button-mentor');
-let partnerModal = document.querySelector('.partner-sm');
-let participantModal = document.querySelector('.participant-sm');
-let mentorModal = document.querySelector('.mentors-sm');
-
-partner.onclick = function() {
-    selection.style.display = 'none';
-    partnerModal.style.opacity = '1';
-    partnerModal.style.paddingTop = '57px';
-    partnerModal.style.display = 'block';
-}
-
-participant.onclick = function() {
-    selection.style.display = 'none';
-    participantModal.style.opacity = '1';
-    participantModal.style.paddingTop = '57px';
-    participantModal.style.display = 'block';
-}
-
-mentor.onclick = function() {
-    selection.style.display = 'none';
-    mentorModal.style.opacity ='1';
-    mentorModal.style.paddingTop ='57px';
-    mentorModal.style.display = 'block';
-}
-
-let=modalCloseParticipant = document.querySelector('.modal_close-participant');
-let=modalClosePartner = document.querySelector('.modal_close-partner');
-let=modalCloseMentor = document.querySelector('.modal_close-mentor');
-
-modalCloseParticipant.onclick = function() {
-    participantModal.style.display = 'none';
-}
-
-modalClosePartner.onclick = function() {
-    partnerModal.style.display = 'none';
-}
-
-modalCloseMentor.onclick = function() {
-    mentorModal.style.display = 'none';
-}
 
 // end modal poll menu

@@ -65,17 +65,16 @@
                 <li class="desktop-menu-text"><a class="desktop-menu-link" href="#footer">Контакти</a></li>
             </ul>
         </div>
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="ua" src="./src/assets/images/flag_UA.png" alt="ua">
+        <div class="flex-en">
+            <a class="link-language" href="index-en">
+                <div class="translate">
+                    EN
+                </div>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li>
-                    <a class="dropdown-item" href="#">
-                        <img class="uk" src="./src/assets/images/flag_UK.png" alt="uk">
-                    </a>
-                </li>
-            </ul>
+            <div class="br-header"></div>
+            <div class="translate">
+                <img src="src/assets/images/header/Union_Jack.svg" alt="Union Jack">
+            </div>
         </div>
         <button class="hamburger">&#9776;</button>
     </header>
@@ -101,7 +100,7 @@
             <div class="bg-social">
                 <a href="https://t.me/IT_Academy_Vinnytsia" target="_blank"><i class="icon-telegram"></i></a>
                 <a href="https://www.facebook.com/intita.it/" target="_blank"><i class="icon-facebook"></i></a>
-                <a href="https://wa.me/+380674317424" target="_blank"><i class="icon-viber"></i></a>
+                <a href="https://wa.me/+380674311921" target="_blank"><i class="icon-viber"></i></a>
             </div>
             <div class="bg-social-bottom">
                 <a href="viber://chat?number=+380631892256" target="_blank"><i class="icon-whatsapp"></i></a>
@@ -120,7 +119,7 @@
                 <p class="hero_content_description">Програма працевлаштування ветеранів, ВПО та громадян, які
                     постраждали внаслідок війни росії проти України та українського народу.
                 </p>
-                <button class="hero_content_button button-primary" data-bs-toggle="modal" data-bs-target="#registrationForm">
+                <button class="hero_content_button button-primary" data-bs-toggle="modal" data-bs-target="#select-modal">
                     Зареєструватися
                 </button>
             </div>
@@ -133,7 +132,7 @@
                     <a href="https://www.facebook.com/intita.it/" target="_blank">
                         <i class="icon-facebook contacts-block-icon"></i>
                     </a>
-                    <a href="https://wa.me/+380674317424" target="_blank">
+                    <a href="https://wa.me/+380674311921" target="_blank">
                         <i class="icon-whatsapp contacts-block-icon"></i>
                     </a>
                     <a href="viber://chat?number=+380631892256" target="_blank">
@@ -224,7 +223,7 @@
                 <p class="registration-content-text">
                     Ви постраждали внаслідок війни в Україні? Реєструйтесь, щоб прийняти участь у нашій програмі:
                 </p>
-                <button class="registration-content-button button-primary" data-bs-toggle="modal" data-bs-target="#registrationForm">
+                <button class="registration-content-button button-primary" data-bs-toggle="modal" data-bs-target="#select-modal">
                     Зареєструватися
                 </button>
             </div>
@@ -240,7 +239,9 @@
         <div class="conditions_main_block">
             <img class="conditions-img1" src="src/assets/images/stand.png" alt="we stand with ukraine">
             <p class="conditions-text-1 white-background">
-                Залучаємо фінансові, матеріальні ресурси та експертизу від країн, фондів, підприємств, фізичних осіб з-за кордону в Україну - як для прямої, так і непрямої підтримки програми, а відтак української армії і українського народу.
+                Залучаємо фінансові, матеріальні ресурси та експертизу від країн, фондів, підприємств, фізичних осіб
+                з-за кордону в Україну - як для прямої, так і непрямої підтримки програми, а відтак української армії і
+                українського народу.
             </p>
             <div class="conditions-vertical_padding_block">
                 <img class="conditions-img2" src="src/assets/images/flag.png" alt="flag">
@@ -278,7 +279,8 @@
             <div class="partners-content">
                 <h2 class="partners-content-title">Наші партнери</h2>
                 <p class="partners-content-text">
-                    Ви - людина чи організація або фонд, які хочуть допомогти, громадський діяч, політик, державний службовець, айтішник,
+                    Ви - людина чи організація або фонд, які хочуть допомогти, громадський діяч, політик, державний
+                    службовець, айтішник,
                     представник ІТ-компанії, ІТ-Асоціації чи навчального закладу?
                 </p>
                 <div class="dotted-line"></div>
@@ -287,10 +289,11 @@
                 </p>
                 <div class="dotted-line"></div>
                 <p class="partners-content-text partners-content-text-third">
-                    Закликаємо усіх, де б ви не були! Усіх, кому не байдужа доля України і українців, долучитись у якості партнерів до реалізації
+                    Закликаємо усіх, де б ви не були! Усіх, кому не байдужа доля України і українців, долучитись у
+                    якості партнерів до реалізації
                     програми в Україні і за кордоном!
                 </p>
-                <button class="partners-button button-primary" data-bs-toggle="modal" data-bs-target="#registrationForm">Приєднатися</button>
+                <button class="partners-button button-primary" data-bs-toggle="modal" data-bs-target="#select-modal">Приєднатися</button>
             </div>
         </div>
     </section>
@@ -548,7 +551,8 @@
                 <div class="footer-main-text-box">
                     <hr class="footer-main-line">
                     <p class="footer-main-text">
-                        Якщо у Вас виникли запитання про нашу програму чи організацію або про те, як Ви можете нам допомогти, будь ласка, зв’яжіться з нами!
+                        Якщо у Вас виникли запитання про нашу програму чи організацію або про те, як Ви можете нам
+                        допомогти, будь ласка, зв’яжіться з нами!
                     </p>
                     <hr class="footer-main-line">
                     <p class="footer-main-text footer-main-text2">
@@ -567,7 +571,7 @@
                     <a href="https://www.facebook.com/intita.it/" target="_blank">
                         <i class="icon-facebook icon-icon-box footer-main-icon"></i>
                     </a>
-                    <a href="https://wa.me/+380674317424" target="_blank">
+                    <a href="https://wa.me/+380674311921" target="_blank">
                         <i class="icon-whatsapp icon-icon-box footer-main-icon"></i>
                     </a>
                     <a href="viber://chat?number=+380631892256" target="_blank">
@@ -627,7 +631,7 @@
                 <div class="succes_modal_content">
                     <p class="succes_modal_title">Дякуємо за Вашу заявку!</p>
                     <p class="succes_modal_description">Очікуйте зворотнього зв’язку.</p>
-                    <button class="succes_modal_button button-primary">На головну</button>
+                    <button class="succes_modal_button button-primary" class="btn-close" data-bs-dismiss="modal">На головну</button>
                     <button class="succes_modal_close" data-bs-dismiss="modal">
                         <span class="icon-close"></span>
                     </button>
@@ -733,7 +737,7 @@
                 <div class="questionnaire-form_modal_content">
                     <h2 class="questionnaire-title">Анкета для <b class="questionnaire-title-bold">партнерів</b>
                         програми</h2>
-                    <form>
+                    <form class="form">
                         <div class="questionnaire-reqiared_form_controls">
                             <div class="questionnaire-form_control">
                                 <div class="questionnaire-input_container">
@@ -777,7 +781,7 @@
                             </div>
                         </div>
                         <p class="questionnaire-tip">Обов’язкові поля</p>
-                        <button class="button-primary questionnaire-form_submit">Надіслати</button>
+                        <button type="submit" class="button-primary questionnaire-form_submit">Надіслати</button>
                     </form>
                     <button class="modal_close-partner" data-bs-dismiss="modal">
                         <span class="icon-close"></span>
@@ -794,7 +798,7 @@
                 <div class="questionnaire-mentors-form_modal_content">
                     <h2 class="questionnaire-mentors-title">Анкета для <b class="questionnaire-mentors-title-bold">викладачів/менторів</b>
                         програми</h2>
-                    <form>
+                    <form class="form">
                         <div class="questionnaire-mentors-reqiared_form_controls">
                             <div class="questionnaire-mentors-form_control">
                                 <div class="questionnaire-mentors-input_container">
@@ -831,14 +835,14 @@
                             <label for="getinfo">Звідки отримали інформацію про нас?</label>
                             <input id="getinfo" name="source" type="text" placeholder="Звідки отримали інформацію про нас?" />
                             <div class="questionnaire-mentors-optional_fields-1">
-                                <div class="questionnaire-mentors-input-1"> 
+                                <div class="questionnaire-mentors-input-1">
                                     <label for="examination">В чому маєте експертизу?</label>
                                     <input id="examination" name="cooperation" type="text" placeholder="В чому маєте експертизу?" />
                                 </div>
                             </div>
                         </div>
                         <p class="questionnaire-mentors-tip">Обов’язкові поля</p>
-                        <button class="button-primary questionnaire-mentors-form_submit">Надіслати</button>
+                        <button type="submit" class="button-primary questionnaire-mentors-form_submit">Надіслати</button>
                     </form>
                     <button class="modal_close-mentor" data-bs-dismiss="modal">
                         <span class="icon-close"></span>
@@ -849,36 +853,43 @@
     </div>
     <!-- mentors window end -->
     <!-- selection menu start -->
-    <div id="selection-menu">
-        <img class="bg-language" src="./src/assets/images/burger/Language.png" alt="language">
-        <button class="cross sm-cross"><i class="icon-close"></i>&#735;</button>
-        <div class="burger-top">
-            <p class="bg-text-italic">ДОБРОГО ВЕЧОРА - МИ З</p>
-            <p class="bg-text-bold"> УКРАЇНИ!</p>
-            <hr class="bg-blue-line">
-            <hr class="bg-yellow-line">
-            <p class="sm-what">Яка анкета Вас цікавить?</p>
-        </div>
-        <ul>
-            <li><button class="sm-button sm-button-partner">Партнера</button></li>
-            <li><button class="sm-button sm-button-participant">Учасника</button></li>
-            <li><button class="sm-button sm-button-mentor">Викладача/ментора</button></li>
-            <div class="burger-bottom">
-                <hr class="bg-blue-line2">
-                <hr class="bg-yellow-line2">
-                <div class="bg-social">
-                    <a href="https://t.me/IT_Academy_Vinnytsia" target="_blank"><i class="icon-telegram"></i></a>
-                    <a href="https://www.facebook.com/intita.it/" target="_blank"><i class="icon-facebook"></i></a>
-                    <a href="https://wa.me/+380674317424" target="_blank"><i class="icon-viber"></i></a>
-                </div>
-                <div class="bg-social-bottom">
-                    <a href="viber://chat?number=+380631892256" target="_blank"><i class="icon-whatsapp"></i></a>
-                    <a href="https://twitter.com/INTITA_EDU" target="_blank"><i class="icon-twitter"></i></a>
-                    <a href="https://www.instagram.com/intitaedu" target="_blank"><i class="icon-instagram"></i></a>
+    <div class="modal fade" id="select-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="selection-menu">
+                    <img class="bg-language" src="./src/assets/images/burger/Language.png" alt="language">
+                    <button class="cross sm-cross" class="btn-close" data-bs-dismiss="modal"><i class="icon-close"></i>&#735;</button>
+                    <div class="burger-top">
+                        <p class="bg-text-italic">ДОБРОГО ВЕЧОРА - МИ З</p>
+                        <p class="bg-text-bold"> УКРАЇНИ!</p>
+                        <hr class="bg-blue-line">
+                        <hr class="bg-yellow-line">
+                        <p class="sm-what">Яка анкета Вас цікавить?</p>
+                    </div>
+                    <ul>
+                        <li><button class="sm-button sm-button-partner" data-bs-toggle="modal" data-bs-target="#questionnaire-form_modal">Партнера</button></li>
+                        <li><button class="sm-button sm-button-participant" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Учасника</button></li>
+                        <li><button class="sm-button sm-button-mentor" data-bs-toggle="modal" data-bs-target="#questionnaire-mentors-form_modal">Викладача/ментора</button></li>
+                    </ul>
+                    <div class="burger-bottom">
+                        <hr class="bg-blue-line2">
+                        <hr class="bg-yellow-line2">
+                        <div class="bg-social">
+                            <a href="https://t.me/IT_Academy_Vinnytsia" target="_blank"><i class="icon-telegram"></i></a>
+                            <a href="https://www.facebook.com/intita.it/" target="_blank"><i class="icon-facebook"></i></a>
+                            <a href="https://wa.me/+380674317424" target="_blank"><i class="icon-viber"></i></a>
+                        </div>
+                        <div class="bg-social-bottom">
+                            <a href="viber://chat?number=+380631892256" target="_blank"><i class="icon-whatsapp"></i></a>
+                            <a href="https://twitter.com/INTITA_EDU" target="_blank"><i class="icon-twitter"></i></a>
+                            <a href="https://www.instagram.com/intitaedu" target="_blank"><i class="icon-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </ul>
+        </div>
     </div>
+
     <!-- selection menu end -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="src/js/owl.carousel.min.js"></script>

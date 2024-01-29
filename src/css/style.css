@@ -357,10 +357,6 @@ button {
     z-index: 10000000000000;
 }
 
-#header .dropdown {
-    display: none;
-}
-
 #menu {
     top: 0px;
     z-index: 1000000;
@@ -429,7 +425,7 @@ button {
 
 #menu li {
     display: block;
-    padding: 15px 33px 13px 0;
+    padding: 15px 0 13px 0;
 }
 
 #menu .bg-text-menu {
@@ -511,10 +507,13 @@ button {
     color: #000;
 }
 
+#menu ul {
+    padding: 0;
+}
+
 #menu li:hover {
     display: block;
     background: #ffffff;
-    padding: 14px 0 15px 0;
     border-bottom: #dddddd 1px solid;
 }
 
@@ -833,6 +832,7 @@ button {
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
+    color: var(--white);
     margin: 0px auto 30px auto;
 }
 
@@ -1915,8 +1915,10 @@ button {
 
 /* mentors window end */
 /* selection menu start*/
-#selection-menu {
-    display: none;
+
+#select-modal {
+    --bs-modal-margin: none;
+    --bs-modal-border-color: none;
 }
 
 #selection-menu {
@@ -1936,7 +1938,7 @@ button {
 }
 
 #selection-menu .burger-top {
-    width: 365px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1984,9 +1986,13 @@ button {
     margin: 0 0 0 30px;
 }
 
+#selection-menu ul {
+    padding: 0;
+}
+
 #selection-menu li {
     display: block;
-    padding: 10px 33px 10px 5px;
+    padding: 10px 0 10px 0;
 }
 
 #selection-menu .bg-text-menu {
@@ -2004,7 +2010,7 @@ button {
     border-style: solid;
     width: 82%;
     opacity: 1;
-    margin: -4px 0 0 3px;
+    margin: 0 auto;
 }
 
 #selection-menu .burger-bottom .bg-yellow-line2 {
@@ -2013,7 +2019,7 @@ button {
     border-style: solid;
     width: 82%;
     opacity: 1;
-    margin: 0 0 0 3px;
+    margin: 0 auto;
 }
 
 #selection-menu .burger-bottom .bg-social {
@@ -2021,7 +2027,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 23px 0 0 27px;
+    margin: 0 auto;
+    padding: 19px 0 0 0;
 }
 
 #selection-menu .burger-bottom .bg-social-bottom {
@@ -2029,7 +2036,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 25px 0 0 28px;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
 }
 
 #selection-menu .burger-bottom .bg-social .icon-telegram:before {
@@ -2071,7 +2079,6 @@ button {
 #selection-menu li:hover {
     display: block;
     background: #ffffff;
-    padding: 14px 0 15px 0;
     border-bottom: #dddddd 1px solid;
 }
 
@@ -2384,7 +2391,7 @@ button {
     }
 
     #menu li {
-        padding: 37px 33px 0 0;
+        padding: 37px 0 0 0;
     }
 
     #menu .burger-bottom {
@@ -3054,7 +3061,6 @@ button {
         content: '*';
         color: red;
         padding-left: 4px;
-        font-size: 24px;
     }
 
     #questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-form_control .error_message {
@@ -3249,7 +3255,6 @@ button {
         content: '*';
         color: red;
         padding-left: 4px;
-        font-size: 24px;
     }
 
     #questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .error_message {
@@ -3439,8 +3444,13 @@ button {
 
     /* 404 EN end */
     /* selection menu start*/
+
+    .modal {
+        --bs-modal-width: 100%;
+    }
+
     #selection-menu .burger-top {
-        width: 768px;
+        width: 100%;
     }
 
     #selection-menu .burger-top .bg-text-italic {
@@ -3455,18 +3465,18 @@ button {
 
     #selection-menu .burger-top .bg-blue-line {
         width: 91%;
-        margin: 0 0 0 34px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-top .bg-yellow-line {
         width: 91%;
-        margin: 0 0 0 34px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-top .sm-what {
         font-size: 40px;
         padding: 16px 0 0 2px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     #selection-menu {
@@ -3475,7 +3485,7 @@ button {
     }
 
     #selection-menu li {
-        padding: 25px 31px 13px 0;
+        padding: 25px 0 13px 0;
     }
 
     #selection-menu .burger-bottom {
@@ -3485,22 +3495,23 @@ button {
 
     #selection-menu .burger-bottom .bg-blue-line2 {
         width: 91%;
-        margin: 0 0 0 4px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-bottom .bg-yellow-line2 {
         width: 91%;
-        margin: 0 0 0 4px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-bottom .bg-social {
         width: 33%;
-        margin: 16px 0 0 225px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-bottom .bg-social-bottom {
         width: 33%;
-        margin: 3px 0 0 225px;
+        margin: 0 auto;
+        padding: 2px 0 0 0;
     }
 
     #selection-menu .sm-button {
@@ -3674,7 +3685,7 @@ button {
 
     /* header start */
     #menu {
-        display: none;
+        display: none !important;
     }
 
     #header .hamburger {
@@ -3697,7 +3708,7 @@ button {
     #header .intita-logo-header .robota-molodi-logo-img {
         width: 134px;
         height: 32px;
-        margin: 4px 0 0 -3px;
+        margin: 4px 0 0 7px;
     }
 
     #header .desktop-menu .desktop-list {
@@ -3708,18 +3719,6 @@ button {
         padding: 0 0 0 44px;
     }
 
-    #header .dropdown {
-        width: 74px;
-        height: 45px;
-        border: 2px solid white;
-        border-radius: 5px;
-        position: absolute;
-        top: 45px;
-        right: 33px;
-        z-index: 10;
-        display: block;
-    }
-
     #header .dropdown .btn {
         width: 70px;
         height: 41px;
@@ -3728,34 +3727,8 @@ button {
         align-items: center;
     }
 
-    #header .dropdown .btn .ua {
-        width: 29px;
-        height: 23px;
-        border-radius: 3px;
-        margin: 0 0 0 -6px;
-    }
-
-    #header .dropdown .dropdown-menu {
-        min-width: 74px;
-        height: 45px;
-        background-color: transparent;
-        padding: 0;
-        transform: translate3d(0px, 43px, 0px);
-        border: 2px solid white;
-        border-radius: 5px;
-    }
-
-    #header .dropdown .dropdown-menu .dropdown-item {
-        height: 45px;
-        --bs-dropdown-link-hover-bg: none;
-        --bs-dropdown-link-active-bg: none;
-    }
-
-    #header .dropdown .dropdown-menu .dropdown-item .uk {
-        width: 29px;
-        height: 23px;
-        border-radius: 3px;
-        margin: 5px 0 0 -9px;
+    #header .dropdown ul.dropdown-menu.show {
+        transform: translate3d(-2px, 43px, 0px) !important; 
     }
 
     #header .desktop-menu .desktop-list .desktop-menu-text {
@@ -3774,6 +3747,25 @@ button {
 
     #header .desktop-menu .desktop-list .desktop-menu-text .desktop-menu-link:hover {
         color: var(--button-hover-bg);
+    }
+
+    #header .flex-en {
+        position: absolute;
+        right: 33px;
+        display: flex;
+        align-items: center;
+        z-index: 99;
+    }
+
+    #header .flex-en .link-language .translate {
+        font-size: 24px;
+        color: var(--button-primary);
+    }
+
+    #header .flex-en .br-header {
+        border-right: 1px solid var(--button-primary);
+        height: 18px;
+        margin: 0px 10px;
     }
 
     /* header end */
