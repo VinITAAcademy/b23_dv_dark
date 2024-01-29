@@ -425,7 +425,7 @@ button {
 
 #menu li {
     display: block;
-    padding: 15px 33px 13px 0;
+    padding: 15px 0 13px 0;
 }
 
 #menu .bg-text-menu {
@@ -507,10 +507,13 @@ button {
     color: #000;
 }
 
+#menu ul {
+    padding: 0;
+}
+
 #menu li:hover {
     display: block;
     background: #ffffff;
-    padding: 14px 0 15px 0;
     border-bottom: #dddddd 1px solid;
 }
 
@@ -829,6 +832,7 @@ button {
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
+    color: var(--white);
     margin: 0px auto 30px auto;
 }
 
@@ -1926,8 +1930,10 @@ button {
 
 /* mentors window end */
 /* selection menu start*/
-#selection-menu {
-    display: none;
+
+#select-modal {
+    --bs-modal-margin: none;
+    --bs-modal-border-color: none;
 }
 
 #selection-menu {
@@ -1947,7 +1953,7 @@ button {
 }
 
 #selection-menu .burger-top {
-    width: 365px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -1995,9 +2001,13 @@ button {
     margin: 0 0 0 30px;
 }
 
+#selection-menu ul {
+    padding: 0;
+}
+
 #selection-menu li {
     display: block;
-    padding: 10px 33px 10px 5px;
+    padding: 10px 0 10px 0;
 }
 
 #selection-menu .bg-text-menu {
@@ -2015,7 +2025,7 @@ button {
     border-style: solid;
     width: 82%;
     opacity: 1;
-    margin: -4px 0 0 3px;
+    margin: 0 auto;
 }
 
 #selection-menu .burger-bottom .bg-yellow-line2 {
@@ -2024,7 +2034,7 @@ button {
     border-style: solid;
     width: 82%;
     opacity: 1;
-    margin: 0 0 0 3px;
+    margin: 0 auto;
 }
 
 #selection-menu .burger-bottom .bg-social {
@@ -2032,7 +2042,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 23px 0 0 27px;
+    margin: 0 auto;
+    padding: 19px 0 0 0;
 }
 
 #selection-menu .burger-bottom .bg-social-bottom {
@@ -2040,7 +2051,8 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 25px 0 0 28px;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
 }
 
 #selection-menu .burger-bottom .bg-social .icon-telegram:before {
@@ -2082,7 +2094,6 @@ button {
 #selection-menu li:hover {
     display: block;
     background: #ffffff;
-    padding: 14px 0 15px 0;
     border-bottom: #dddddd 1px solid;
 }
 
@@ -2395,7 +2406,7 @@ button {
     }
 
     #menu li {
-        padding: 37px 33px 0 0;
+        padding: 37px 0 0 0;
     }
 
     #menu .burger-bottom {
@@ -3461,8 +3472,13 @@ button {
 
     /* 404 EN end */
     /* selection menu start*/
+
+    .modal {
+        --bs-modal-width: 100%;
+    }
+
     #selection-menu .burger-top {
-        width: 768px;
+        width: 100%;
     }
 
     #selection-menu .burger-top .bg-text-italic {
@@ -3477,18 +3493,18 @@ button {
 
     #selection-menu .burger-top .bg-blue-line {
         width: 91%;
-        margin: 0 0 0 34px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-top .bg-yellow-line {
         width: 91%;
-        margin: 0 0 0 34px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-top .sm-what {
         font-size: 40px;
         padding: 16px 0 0 2px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     #selection-menu {
@@ -3497,7 +3513,7 @@ button {
     }
 
     #selection-menu li {
-        padding: 25px 31px 13px 0;
+        padding: 25px 0 13px 0;
     }
 
     #selection-menu .burger-bottom {
@@ -3507,22 +3523,23 @@ button {
 
     #selection-menu .burger-bottom .bg-blue-line2 {
         width: 91%;
-        margin: 0 0 0 4px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-bottom .bg-yellow-line2 {
         width: 91%;
-        margin: 0 0 0 4px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-bottom .bg-social {
         width: 33%;
-        margin: 16px 0 0 225px;
+        margin: 0 auto;
     }
 
     #selection-menu .burger-bottom .bg-social-bottom {
         width: 33%;
-        margin: 3px 0 0 225px;
+        margin: 0 auto;
+        padding: 2px 0 0 0;
     }
 
     #selection-menu .sm-button {
@@ -3696,7 +3713,7 @@ button {
 
     /* header start */
     #menu {
-        display: none;
+        display: none !important;
     }
 
     #header .hamburger {
@@ -3719,7 +3736,7 @@ button {
     #header .intita-logo-header .robota-molodi-logo-img {
         width: 134px;
         height: 32px;
-        margin: 4px 0 0 -3px;
+        margin: 4px 0 0 7px;
     }
 
     #header .desktop-menu .desktop-list {
