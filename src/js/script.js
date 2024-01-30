@@ -144,30 +144,6 @@ document.addEventListener('DOMContentLoaded', function () {
         //modal applicant mentor end//
         // end applicant form
 
-    //modal applicant partner start
-    questionnaireFormModal = $("#questionnaire-form_modal .form");
-
-    questionnaireFormModal.on("submit", function (event) {
-        event.preventDefault();
-        const data = $(this).serializeArray();
-        $("#questionnaire-form_modal").modal('hide');
-        $("#succesModal").modal('show');
-        questionnaireFormModal.trigger("reset");
-    });
-    //modal applicant partner end
-
-    //modal applicant mentor start//
-    questionnaireMentorsFormModal = $("#questionnaire-mentors-form_modal .form");
-
-    questionnaireMentorsFormModal.on("submit", function (event) {
-        event.preventDefault();
-        const data = $(this).serializeArray();
-        $("#questionnaire-mentors-form_modal").modal('hide');
-        $("#succesModal").modal('show');
-        questionnaireMentorsFormModal.trigger("reset");
-    });
-    //modal applicant mentor end//
-
         // start modal burger menu
         // end modal burger menu
 
