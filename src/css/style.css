@@ -1164,9 +1164,9 @@ button {
 }
 
 #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-left {
-    width: 81px;
+    width: 79px;
     height: 0.633px;
-    background: repeating-linear-gradient(90deg, var(--white) 0 0.5px, var(--сolor-black) 0 2px);
+    background: repeating-linear-gradient(90deg, var(--white) 0 2.5px, var(--сolor-black) 0 4px);
 }
 
 #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper .footer-main-logo-line-right {
@@ -1204,15 +1204,19 @@ button {
     text-decoration: underline;
 }
 
-#footer .footer-main-container .footer-main .footer-main-nav {
-    width: 111px;
+#footer .footer-main-container .footer-main .nav-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav {
     height: 84px;
     display: flex;
-    justify-content: center;
     margin-bottom: 17px;
 }
 
-#footer .footer-main-container .footer-main .footer-main-nav .nav-menu-list {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1221,32 +1225,31 @@ button {
     margin: 0;
 }
 
-#footer .footer-main-container .footer-main .nav-menu-link {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list .nav-menu-item .nav-menu-link {
     color: var(--white);
     font-family: "Ubuntu Medium";
     font-size: 16px;
 }
 
-#footer .footer-main-container .footer-main .nav-menu-link:active {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list .nav-menu-item .nav-menu-link:active {
     color: var(--button-hover-bg);
 }
 
-#footer .footer-main-container .footer-main .footer-main-text-box {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#footer .footer-main-container .footer-main .footer-main-line {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-line {
     width: 291px;
-    margin: 0;
     border: none;
     border-top: 3px solid var(--button-primary);
-    margin-bottom: 20px;
+    margin: 0px 0px 20px 0px;
     opacity: 1;
 }
 
-#footer .footer-main-container .footer-main .footer-main-text {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text {
     color: var(--white);
     font-family: "Ubuntu Bold";
     font-size: 12px;
@@ -1257,17 +1260,22 @@ button {
     margin-bottom: 14px;
 }
 
-#footer .footer-main-container .footer-main .footer-main-text2 {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text2 {
     width: 232px;
     margin-bottom: 19px;
 }
 
-#footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
+#footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text2 .footer-main-text-link {
     color: var(--white);
     text-decoration: underline;
 }
 
-#footer .footer-main-container .footer-main .footer-main-icon-box {
+#footer .footer-main-container .footer-main .icons-contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-icon-box {
     width: 340px;
     height: 30px;
     display: flex;
@@ -1275,30 +1283,30 @@ button {
     margin-bottom: 20px;
 }
 
-#footer .footer-main-container .footer-main .footer-main-contacts {
-    width: 147px;
+#footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts {
     height: 93px;
     text-align: center;
     font-family: "Ubuntu Regular";
     font-size: 16px;
     color: var(--white);
+    margin-bottom: 30px;
 }
 
-#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
+#footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-contacts-title {
     font-family: "Ubuntu Bold";
     font-size: 20px;
     margin-bottom: 25px;
 }
 
-#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
+#footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-phone {
     margin-bottom: 9px;
 }
 
-#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-email {
+#footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-email {
     margin-bottom: 0;
 }
 
-#footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-link {
+#footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-contacts-link {
     color: var(--white);
 }
 
@@ -2813,19 +2821,19 @@ button {
 
     #footer .footer-main-container .footer-main {
         min-height: 341px;
-        padding-top: 161px;
+        padding-top: 25px;
         width: 768px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo {
-        top: 30px;
-        left: 40px;
+        top: 25px;
+        left: 37px;
         width: 139px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-intita-logo-svg {
-        height: 39.043px;
-        margin-bottom: 8.61px;
+        height: 40px;
+        margin-bottom: 8px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper {
@@ -2847,66 +2855,69 @@ button {
 
     #footer .footer-main-container .footer-main .footer-main-students-logo {
         top: 266px;
-        right: 278px;
+        right: 303px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-nav {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav {
         display: none;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text-box {
-        width: 686px;
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box {
+        width: 693px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-line {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-line {
         display: none;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text {
-        width: 289px;
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text {
+        width: 291px;
         text-align: left;
         margin-bottom: 0;
         letter-spacing: 162%;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text2 {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text2 {
         width: 237px;
         line-height: 156%;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text2 .footer-main-text-link {
         text-decoration: none;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-icon-box {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper {
+        order: -1;
+    }
+
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-icon-box {
         display: none;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-contacts {
-        position: absolute;
-        top: 32px;
-        right: 185px;
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts {
         height: 86px;
         text-align: left;
+        margin-bottom: 44px;
+        padding-left: 260px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-contacts-title {
         font-family: "Ubuntu Bold";
         font-size: 20px;
-        margin-bottom: 18px;
+        margin-bottom: 19px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
-        margin-bottom: 5.18px;
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-phone {
+        margin-bottom: 6px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-qr-code {
         display: block;
         position: absolute;
-        right: 70px;
+        right: 36px;
         bottom: 25px;
     }
 
@@ -4163,10 +4174,17 @@ button {
 
     #footer .footer-main-container .footer-main {
         min-height: 376px;
-        padding: 156px 0px 0px 42px;
+        padding-top: 69px;
         flex-direction: row;
         align-items: flex-start;
         width: 1024px;
+    }
+
+    #footer .footer-main-container .footer-main .nav-text-wrapper {
+        order: -1;
+        align-items: flex-end;
+        min-width: 661px;
+        margin-right: 10px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-icon {
@@ -4174,14 +4192,9 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo {
-        top: 34px;
-        left: 46px;
+        top: 39px;
+        left: 43px;
         width: 139px;
-    }
-
-    #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-intita-logo-svg {
-        height: 39.043px;
-        margin-bottom: 8.61px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-intita-logo .footer-main-logo-line-wrapper {
@@ -4202,52 +4215,54 @@ button {
     }
 
     #footer .footer-main-container .footer-main .footer-main-students-logo {
-        top: 307px;
-        right: 406px;
+        top: 312px;
+        right: 409px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-nav {
-        position: absolute;
-        top: 73px;
-        left: 315px;
-        width: 348px;
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav {
+        min-width: 342px;
         height: 18px;
         display: flex;
-        margin-bottom: 0;
+        margin-bottom: 74px;
+        padding: 4px 0px 0px 0px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-nav .nav-menu-list {
-        width: 348px;
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list {
+        width: 342px;
         height: 18px;
         flex-direction: row;
     }
 
-    #footer .footer-main-container .footer-main .nav-menu-link {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list .nav-menu-item-partners {
+        order: 1;
+    }
+
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list .nav-menu-item .nav-menu-link {
         font-family: "Ubuntu Regular";
         font-size: 15px;
     }
 
-    #footer .footer-main-container .footer-main .nav-menu-link:hover {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list .nav-menu-item .nav-menu-link:hover {
         color: var(--icon-hover);
     }
 
-    #footer .footer-main-container .footer-main .nav-menu-link:active {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-nav .nav-menu-list .nav-menu-item .nav-menu-link:active {
         color: var(--button-hover-bg);
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text-box {
-        width: 564px;
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box {
+        width: 615px;
         display: flex;
         flex-direction: row-reverse;
+        padding-right: 58px;
         justify-content: space-between;
-        margin-right: 66px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-line {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-line {
         display: none;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text {
         font-size: 15px;
         text-align: left;
         line-height: 160%;
@@ -4257,68 +4272,71 @@ button {
         margin-bottom: 0;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text2 {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text2 {
         width: 237px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-text2 .footer-main-text-link {
+    #footer .footer-main-container .footer-main .nav-text-wrapper .footer-main-text-box .footer-main-text2 .footer-main-text-link {
         text-decoration: underline;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-icon-box {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper {
+        align-items: flex-end;
+    }
+
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-icon-box {
         position: relative;
-        width: 312px;
-        height: 108px;
+        width: 310px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         margin-bottom: 0;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-icon-box .icon-icon-box {
-        padding: 10px;
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-icon-box .icon-icon-box {
+        padding: 9px;
         border: 1px solid #6d6d6d;
         border-radius: 6px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-icon:hover {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-icon-box .footer-main-icon:hover {
         color: var(--icon-hover);
         border-color: var(--icon-hover);
     }
 
-    #footer .footer-main-container .footer-main .footer-main-icon:active {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-icon-box .footer-main-icon:active {
         color: var(--button-hover-bg);
         border-color: var(--button-hover-bg);
     }
 
-    #footer .footer-main-container .footer-main .footer-main-icon:disabled {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-icon-box .footer-main-icon:disabled {
         color: var(--button-disabled-bg);
         border-color: var(--button-disabled-bg);
     }
 
-    #footer .footer-main-container .footer-main .footer-main-contacts {
-        position: absolute;
-        top: 64px;
-        right: 40px;
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts {
         width: 184.196px;
         height: 106px;
         text-align: right;
         font-size: 20px;
+        padding-left: 0px;
+        margin-bottom: 64px;
+        order: -1;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-contacts-title {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-contacts-title {
         font-size: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 
-    #footer .footer-main-container .footer-main .footer-main-contacts .footer-main-phone {
+    #footer .footer-main-container .footer-main .icons-contacts-wrapper .footer-main-contacts .footer-main-phone {
         margin-bottom: 9px;
     }
 
     #footer .footer-main-container .footer-main .footer-main-qr-code {
         display: block;
         position: absolute;
-        right: 41px;
+        right: 43px;
         bottom: 19px;
     }
 
