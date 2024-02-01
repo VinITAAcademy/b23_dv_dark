@@ -199,6 +199,7 @@ let hamburger = document.querySelector('.hamburger');
 let closes = document.querySelector('.cross');
 let menu = document.querySelector('#menu');
 let screenMenu = window.screen.width;
+let topButtonClose = document.querySelector('#top-button');
 
 hamburger.onclick=function () {
     menu.style.display = 'block';
@@ -210,6 +211,10 @@ closes.onclick=function () {
     hamburger.style.display = 'block';
 }
 
+topButtonClose.onclick=function () {
+    menu.style.display = 'none';
+    hamburger.style.display = 'block';
+}
 // end modal burger menu
 
 
