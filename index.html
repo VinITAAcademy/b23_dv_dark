@@ -78,6 +78,7 @@
         </div>
         <button class="hamburger">&#9776;</button>
     </header>
+    
     <div id="menu">
         <img class="bg-language" src="./src/assets/images/burger/Language.png" alt="language">
         <button class="cross"><i class="icon-close"></i>&#735;</button>
@@ -380,48 +381,55 @@
 
                 <!--carousel cards-->
                 <div class="specialty-carousel-cards-container carousel-inner">
-                    <div class="specialty-carousel-card specialty-carousel-list-card">
-                        <p class="specialty-second-header specialty-carousel-list-text">
-                            Мрієш гарантовано отримати роботу в IT:
-                        </p>
-                        <ul class="specialty-carousel-list">
-                            <li class="specialty-carousel-list-item">Програміста</li>
-                            <li class="specialty-carousel-list-item">Тестувальника</li>
-                            <li class="specialty-carousel-list-item">WEB-дизайнера</li>
-                            <li class="specialty-carousel-list-item">Project-менеджера</li>
-                        </ul>
-                        <p class="specialty-carousel-list-text specialty-carousel-list-item">Це твій шанс змінити своє
-                            життя!</p>
-                        <p class="specialty-carousel-list-text specialty-carousel-list-item">Айтішники мають роботу
-                            завжди!</p>
+                    
+                    <div class="specialty-carousel-card-container">
+                        <div class="specialty-carousel-card specialty-carousel-list-card">
+                            <p class="specialty-second-header specialty-carousel-list-text">
+                                Мрієш гарантовано отримати роботу в IT:
+                            </p>
+                            <ul class="specialty-carousel-list">
+                                <li class="specialty-carousel-list-item">Програміста</li>
+                                <li class="specialty-carousel-list-item">Тестувальника</li>
+                                <li class="specialty-carousel-list-item">WEB-дизайнера</li>
+                                <li class="specialty-carousel-list-item">Project-менеджера</li>
+                            </ul>
+                            <p class="specialty-carousel-list-text specialty-carousel-list-item">Це твій шанс змінити своє життя!</p>
+                            <p class="specialty-carousel-list-text specialty-carousel-list-item">Айтішники мають роботу завжди!</p>
+                        </div>
                     </div>
 
-                    <div class="specialty-carousel-card carousel-item active">
-                        <h2 class="specialty-carousel-card-header">WEB-Дизайн</h2>
-                        <div class="specialty-carousel-card-icon">
-                            <i class="icon-specialty-design"></i>
+                    <div class="specialty-carousel-card-container carousel-item active">
+                        <div class="specialty-carousel-card">
+                            <h2 class="specialty-carousel-card-header">WEB-Дизайн</h2>
+                            <div class="specialty-carousel-card-icon">
+                                <i class="icon-specialty-design"></i>
+                            </div>
+                            <h2 class="specialty-carousel-card-text">
+                                Для креативних, тих, хто має критичне мислення, хоче не просто малювати красиві картинки, а й робити їх частиною
+                                привабливого динамічного веб-сайту!
+                            </h2>
+                            <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal"
+                                data-bs-target="#applicant_form_modal">Реєструйся</button>
                         </div>
-                        <h2 class="specialty-carousel-card-text">
-                            Для креативних, тих, хто має критичне мислення, хоче не просто малювати красиві картинки, а
-                            й робити їх частиною
-                            привабливого динамічного веб-сайту!
-                        </h2>
-                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
-                    </div>
-                    <div class="specialty-carousel-card carousel-item white-background-desktop">
-                        <h2 class="specialty-carousel-card-header">Програмування</h2>
-                        <div class="specialty-carousel-card-icon">
-                            <i class="icon-specialty-programming"></i>
-                        </div>
-                        <h2 class="specialty-carousel-card-text">
-                            Для тих, хто відчуває в собі талант розробника оригінальних, цікавих і повноцінних проєктів
-                            та хоче чесно -
-                            своїм інтелектом гарно заробляти!
-                        </h2>
-                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
 
-                    <div class="specialty-carousel-card carousel-item">
+                    <div class="specialty-carousel-card-container carousel-item">
+                        <div class="specialty-carousel-card white-background-desktop">
+                            <h2 class="specialty-carousel-card-header">Програмування</h2>
+                            <div class="specialty-carousel-card-icon">
+                                <i class="icon-specialty-programming"></i>
+                            </div>
+                            <h2 class="specialty-carousel-card-text">
+                                Для тих, хто відчуває в собі талант розробника оригінальних, цікавих і повноцінних проєктів та хоче чесно -
+                                своїм інтелектом гарно заробляти!
+                            </h2>
+                            <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal"
+                                data-bs-target="#applicant_form_modal">Реєструйся</button>
+                        </div>
+                    </div>
+
+                    <div class="specialty-carousel-card-container carousel-item">
+                        <div class="specialty-carousel-card">
                         <h2 class="specialty-carousel-card-header">Hackers` <br> school</h2>
                         <div class="specialty-carousel-card-icon hs">
                             <i class="icon-specialty-hack"></i>
@@ -432,36 +440,43 @@
                         <h2 class="specialty-carousel-card-text2">
                             Для дітей віком від 6 до 16 років.
                         </h2>
-                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
+                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal"
+                            data-bs-target="#applicant_form_modal">Реєструйся</button>
+                        </div>
                     </div>
 
-                    <div class="specialty-carousel-card carousel-item">
-                        <h2 class="specialty-carousel-card-header qa">Тестування</h2>
-                        <div class="specialty-carousel-card-icon">
-                            <i class="icon-specialty-testing"></i>
+                    <div class="specialty-carousel-card-container carousel-item">
+                        <div class="specialty-carousel-card">
+                            <h2 class="specialty-carousel-card-header qa">Тестування</h2>
+                            <div class="specialty-carousel-card-icon">
+                                <i class="icon-specialty-testing"></i>
+                            </div>
+                            <h2 class="specialty-carousel-card-text qa">
+                                Робота тестувальника нагадує роботу слідчого або детектива: він йде по “гарячих слідах” програміста і вишукує
+                                помилки - на професійній мові “баги”. У хід йдуть різні дедуктивні методи і прийоми. Ти експерементатор - тобі
+                                сюди.
+                            </h2>
+                            <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal"
+                                data-bs-target="#applicant_form_modal">Реєструйся</button>
                         </div>
-                        <h2 class="specialty-carousel-card-text qa">
-                            Робота тестувальника нагадує роботу слідчого або детектива: він йде по “гарячих слідах”
-                            програміста і вишукує
-                            помилки - на професійній мові “баги”. У хід йдуть різні дедуктивні методи і прийоми. Ти
-                            експерементатор - тобі сюди.
-                        </h2>
-                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
-                    <div class="specialty-carousel-card carousel-item white-background-desktop">
-                        <h2 class="specialty-carousel-card-header pm">Проєктний менеджмент</h2>
-                        <div class="specialty-carousel-card-icon">
-                            <i class="icon-specialty-pm"></i>
+                    
+                    <div class="specialty-carousel-card-container carousel-item">
+                        <div class="specialty-carousel-card white-background-desktop">
+                            <h2 class="specialty-carousel-card-header pm">Проєктний менеджмент</h2>
+                            <div class="specialty-carousel-card-icon">
+                                <i class="icon-specialty-pm"></i>
+                            </div>
+                            <h2 class="specialty-carousel-card-text pm">
+                                Посада РМ`а приваблює змогою займатися управлінням: приймати рішення, організовувати швидке і якісне створення
+                                продукту, продуктивну роботу в команді.
+                            </h2>
+                            <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal"
+                                data-bs-target="#applicant_form_modal">Реєструйся</button>
                         </div>
-                        <h2 class="specialty-carousel-card-text pm">
-                            Посада РМ`а приваблює змогою займатися управлінням: приймати рішення, організовувати швидке
-                            і якісне створення
-                            продукту, продуктивну роботу в команді.
-                        </h2>
-                        <button class="specialty-carousel-card-button button-primary" data-bs-toggle="modal" data-bs-target="#applicant_form_modal">Реєструйся</button>
                     </div>
                 </div>
-
+                                   
                 <!--left and right arrows-->
                 <button class="specialty-carousel-arrow-left carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon icon-arrow-left" aria-hidden="true"></span>
