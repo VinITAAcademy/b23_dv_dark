@@ -284,6 +284,10 @@ button {
     height: 100px;
 }
 
+#header .flex-en {
+    display: none;
+}
+
 #header .intita-logo-header {
     position: absolute;
     width: 78px;
@@ -328,7 +332,7 @@ button {
     cursor: pointer;
     outline: none;
     background-image: url(../assets/images/burger/burger_mobile_button.svg);
-    z-index: 10000000000000;
+    z-index: 1000;
 }
 
 #menu .cross .icon-close::before {
@@ -913,6 +917,8 @@ button {
     padding: 30px 0;
     font-style: normal;
     line-height: normal;
+    display: flex;
+    justify-content: center;
 }
 
 #specialty .specialty-main .specialty-headers .specialty-main-header {
@@ -950,11 +956,6 @@ button {
 /* end of round tumblers */
 
 /* start of carousel */
-#specialty {
-    display: flex;
-    justify-content: center;
-}
-
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container:not(:first-child) {
     display: flex;
     align-items: center;
@@ -985,7 +986,7 @@ button {
     margin: 20px 0 0;
 }
 
-#specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .active {
+#specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:not(:first-child) .specialty-carousel-card {
     width: 301px;
     height: 462px;
     background-color: var(--white);
@@ -997,10 +998,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card.carousel-item {
-    transition: transform .5s ease-in-out;
 }
 
 #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card .specialty-carousel-card-header {
@@ -2759,49 +2756,39 @@ button {
         justify-content: center;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card {
-        width: 301px;
-        height: 462px;
-        background-color: var(--white);
-        color: var(--background);
-        margin: 25px 0 0;
-        border-radius: 6px;
-        border: 1px solid #CBCBCB;
-        font-family: "Ubuntu Bold";
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:not(:first-child) .specialty-carousel-card,
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container .specialty-carousel-list-card {
+        margin: 0;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:nth-child(odd) {
-        margin: 25px 25px 0 0;
-    }
-
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:first-child {
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:first-child {
         width: 301px;
         height: 462px;
-        color: var(--white);
-        background-color: var(--background);
-        border: none;
         line-height: 135.5%;
-        display: inline-block;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-carousel-list .specialty-carousel-list-item,
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-carousel-list-text,
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-carousel-dream-header {
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container .specialty-carousel-list-card .specialty-carousel-list .specialty-carousel-list-item,
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container .specialty-carousel-list-card .specialty-carousel-list-text,
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container .specialty-carousel-list-card .specialty-carousel-dream-header {
         font-family: "Ubuntu Regular";
         font-size: 18px;
         margin-bottom: 15px;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-carousel-list-text:nth-child(2n+1) {
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container .specialty-carousel-list-card .specialty-carousel-list-text:nth-child(2n+1) {
         margin-top: 69px;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-list-card .specialty-second-header.specialty-carousel-list-text {
-        margin-bottom: 24px;
-        margin-top: 0;
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container .specialty-carousel-list-card .specialty-second-header.specialty-carousel-list-text {
+        margin: 0 0 24px;
+    }
+
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container {
+        margin: 25px 0 0;
+    }
+
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:nth-child(odd) {
+        margin: 25px 25px 0 0;
     }
 
     /* end of cards */
@@ -3756,7 +3743,7 @@ button {
     }
 
     #header .dropdown ul.dropdown-menu.show {
-        transform: translate3d(-2px, 43px, 0px) !important; 
+        transform: translate3d(-2px, 43px, 0px) !important;
     }
 
     #header .desktop-menu .desktop-list .desktop-menu-text {
@@ -3783,6 +3770,7 @@ button {
         display: flex;
         align-items: center;
         z-index: 99;
+
     }
 
     #header .flex-en .link-language .translate {
@@ -4148,20 +4136,20 @@ button {
         margin: 0 auto;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card,
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:nth-child(odd) {
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container,
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:nth-child(odd) {
         margin-right: 21px;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:nth-child(3n) {
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:nth-child(3n) {
         margin-right: 0;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:nth-last-child(-n+3) {
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:nth-last-child(-n+3) {
         margin-top: 40px;
     }
 
-    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card:nth-child(-n+3) {
+    #specialty .specialty-main .specialty-carousel-main-container .specialty-carousel-cards-container .specialty-carousel-card-container:nth-child(-n+3) {
         margin-top: 0px;
     }
 
