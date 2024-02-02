@@ -218,7 +218,7 @@ topButtonClose.onclick=function () {
 }
     else {
         hamburger.style.display = 'none';
-    }}
+}}
 // end modal burger menu
 
 
