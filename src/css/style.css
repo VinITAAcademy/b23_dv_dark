@@ -2163,132 +2163,18 @@ button {
     background: var(--button-primary-hover-bg);
 }
 
-
 /* selection-menu end*/
+
 /* 404 start */
-/* header start */
-#header-404 .header .intita-logo-header {
-    top: 17px;
-    left: 27px;
+#header .intita-logo-header-404 {
+    top: 15px;
+    left: 16px;
 }
 
-#header-404 #header .hamburger {
+#header .hamburger-404 {
     top: 20px;
-    right: 20px;
+    right: 20px 
 }
-
-#header .intita-logo-header {
-    position: absolute;
-    width: 78px;
-    height: 7px;
-    top: 18px;
-    left: 18px;
-}
-
-/* 404 burger start */
-
-#header-404 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#header-404 #menu {
-    padding-top: 18px;
-    width: 375px;
-}
-
-#header-404 #menu .bg-language-404 {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-}
-
-#header-404 #menu .bg-content-box-404 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-text-italic-404 {
-    font-family: 'Ubuntu Italic';
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-text-bold-404 {
-    font-family: 'Ubuntu Bold';
-    font-size: 36px;
-    margin-bottom: 14px;
-}
-
-#header-404 #menu .bg-content-box-404 .line-wrapper-404 {
-    margin-bottom: 16px;
-}
-
-#header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-blue-line-404 {
-    color: var(--button-primary);
-    border: 3px;
-    border-style: solid;
-    width: 300px;
-    opacity: 1;
-    margin: 0;
-}
-
-#header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-yellow-line-404 {
-    color: #FFD500;
-    border: 2px;
-    border-style: solid;
-    width: 300px;
-    opacity: 1;
-    margin: 0;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-menu-404 {
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 12px;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404 {
-    padding: 0px;
-    margin-bottom: 27px;
-    line-height: normal;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-partners-404 {
-    padding-top: 1px;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404 .bg-text-menu-404 {
-    color: var(--сolor-black);
-}
-
-#header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404:last-child {
-    margin-bottom: 0px;
-}
-
-#header-404 #menu .bg-content-box-404 .line-wrapper-404-bottom {
-    margin-bottom: 10px;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-social-404 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 300px;
-    height: 154px;
-    margin-left: -5px;
-}
-
-#header-404 #menu .bg-content-box-404 .bg-social-404 .social-item-404:before {
-    color: var(--сolor-black);
-    font-size: 50px;
-    margin: 13.5px 25px;
-}
-
-/* 404 burger end */
-/* header end */
 
 #block-404 .block-404-main {
     display: flex;
@@ -2321,18 +2207,9 @@ button {
     padding: 16px 78.32px;
     font-size: 14px;
 }
-
 /* 404 end */
 
 /* 404 EN start */
-#footer .footer-main-container .footer-main .footer-main-nav-en {
-    width: 145px;
-}
-
-#footer .footer-main-container .footer-main .footer-main-text2-en {
-    width: 276px;
-}
-
 /* 404 EN end */
 
 /*=============================================================*/
@@ -3363,66 +3240,15 @@ button {
     /* mentors window end */
 
     /* 404 start */
-    /* header start */
-    #header-404 #header .hamburger {
-        top: 20px;
-        right: 20px;
+    #header .intita-logo-header-404 {
+        top: 17px;
+        left: 19px;
     }
-
-    /* 404 burger start */
-    #header-404 #menu {
-        padding-top: 40px;
-        width: 768px;
+    
+    #header .hamburger-404 {
+        top: 25px;
+        right: 25px 
     }
-
-    #header-404 #menu .bg-content-box-404 .bg-text-italic-404 {
-        font-size: 24px;
-        margin-bottom: 4px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .bg-text-bold-404 {
-        font-size: 48px;
-        margin-bottom: 6px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .line-wrapper-404 {
-        margin-bottom: 36px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-blue-line-404 {
-        width: 695px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .line-wrapper-404 .bg-yellow-line-404 {
-        width: 695px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .bg-menu-404 {
-        margin-bottom: 32px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-menu-item-404 {
-        margin-bottom: 36px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-speс-404 {
-        margin-bottom: 35px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .bg-menu-404 .bg-partners-404 {
-        margin-bottom: 33px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .line-wrapper-404-bottom {
-        margin-bottom: 12px;
-    }
-
-    #header-404 #menu .bg-content-box-404 .bg-social-404 {
-        margin-left: 1px;
-    }
-
-    /* 404 burger end */
-    /* header end */
 
     #block-404 .block-404-main {
         align-items: flex-start;
@@ -3449,14 +3275,9 @@ button {
         padding: 33px 124px;
         font-size: 36px;
     }
-
     /* 404 end */
 
     /* 404 EN start */
-    #footer .footer-main-container .footer-main .footer-main-text2-en {
-        width: 276px;
-    }
-
     /* 404 EN end */
     /* selection menu start*/
 
@@ -4378,16 +4199,10 @@ button {
     /* modal windows end */
 
     /* 404 start */
-    /* header start */
-    #header-404 #header .desktop-menu {
-        width: 521px;
+    #header .intita-logo-header-404 {
+        top: 18px;
+        left: 19px;
     }
-
-    #header-404 #header .desktop-menu .desktop-list {
-        margin-left: -29px
-    }
-
-    /* header end */
 
     #block-404 .block-404-main {
         background: url(../assets/images/404/404-background-desktop.png);
@@ -4412,6 +4227,5 @@ button {
         padding: 25px 85px;
         font-size: 22px;
     }
-
     /* 404 end */
 }
