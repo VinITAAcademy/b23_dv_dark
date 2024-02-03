@@ -212,13 +212,14 @@ closes.onclick=function () {
 }
 
 topButtonClose.onclick=function () {
-    if (window.screen.width < 769){
-    menu.style.display = 'none';
-    hamburger.style.display = 'block';
-}
+    if (window.screen.width < 769) {
+        menu.style.display = 'none';
+        hamburger.style.display = 'block';
+    }
     else {
         hamburger.style.display = 'none';
-}}
+    }
+}
 // end modal burger menu
 
 
