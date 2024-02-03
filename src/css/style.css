@@ -2173,7 +2173,7 @@ button {
 
 #header .hamburger-404 {
     top: 20px;
-    right: 20px 
+    right: 20px
 }
 
 #block-404 .block-404-main {
@@ -2207,6 +2207,7 @@ button {
     padding: 16px 78.32px;
     font-size: 14px;
 }
+
 /* 404 end */
 
 /* 404 EN start */
@@ -3244,10 +3245,10 @@ button {
         top: 17px;
         left: 19px;
     }
-    
+
     #header .hamburger-404 {
         top: 25px;
-        right: 25px 
+        right: 25px
     }
 
     #block-404 .block-404-main {
@@ -3275,6 +3276,7 @@ button {
         padding: 33px 124px;
         font-size: 36px;
     }
+
     /* 404 end */
 
     /* 404 EN start */
@@ -3613,7 +3615,7 @@ button {
     }
 
     #quote .quote_text {
-        font-size: 16px;
+        font-size: 16.8px;
         font-weight: 500;
         line-height: 26px;
         letter-spacing: 0.32px;
@@ -4227,5 +4229,6 @@ button {
         padding: 25px 85px;
         font-size: 22px;
     }
+
     /* 404 end */
 }
