@@ -601,6 +601,7 @@ button {
 #we-provide .we-provide__container .we-provide__title {
     font-size: 1.5rem;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #we-provide .we-provide__container .we-provide__cards-box {
@@ -2173,7 +2174,7 @@ button {
 
 #header .hamburger-404 {
     top: 20px;
-    right: 20px 
+    right: 20px;
 }
 
 #block-404 .block-404-main {
@@ -2207,6 +2208,7 @@ button {
     padding: 16px 78.32px;
     font-size: 14px;
 }
+
 /* 404 end */
 
 /* 404 EN start */
@@ -3244,10 +3246,10 @@ button {
         top: 17px;
         left: 19px;
     }
-    
+
     #header .hamburger-404 {
         top: 25px;
-        right: 25px 
+        right: 25px;
     }
 
     #block-404 .block-404-main {
@@ -3275,6 +3277,7 @@ button {
         padding: 33px 124px;
         font-size: 36px;
     }
+
     /* 404 end */
 
     /* 404 EN start */
@@ -4227,5 +4230,6 @@ button {
         padding: 25px 85px;
         font-size: 22px;
     }
+
     /* 404 end */
 }
