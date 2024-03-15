@@ -591,6 +591,10 @@ button {
     line-height: normal;
 }
 
+#we-provide.we-provide-en {
+    min-height: 773px;
+}
+
 #we-provide .we-provide__container {
     display: flex;
     flex-direction: column;
@@ -601,6 +605,7 @@ button {
 #we-provide .we-provide__container .we-provide__title {
     font-size: 1.5rem;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #we-provide .we-provide__container .we-provide__cards-box {
@@ -1929,7 +1934,7 @@ button {
     src: local('Ubuntu-Medium'), url('../fonts/Ubuntu-Medium.ttf') format('truetype');
     font-weight: 500;
     width: 100%;
-    height: 513px;
+    min-height: 513px;
     background: white;
     position: absolute;
     text-align: center;
@@ -2321,6 +2326,10 @@ button {
         line-height: 2;
     }
 
+    #hero .hero_main .hero_content .hero_content_title-en {
+        font-size: 56px;
+    }
+
     #hero .hero_main .hero_content .hero_content_description {
         font-size: 36px;
         max-width: 500px;
@@ -2350,9 +2359,6 @@ button {
     /* quote end */
 
     /* we provide start */
-    #we-provide {
-        min-height: 1367px;
-    }
 
     #we-provide .we-provide__container {
         padding-top: 50px;
@@ -3313,7 +3319,7 @@ button {
 
     #selection-menu {
         font-size: 64px;
-        height: 815px;
+        min-height: 815px;
     }
 
     #selection-menu li {
@@ -3619,6 +3625,10 @@ button {
 
     /* we provide start */
     #we-provide {
+        min-height: 989px;
+    }
+
+    #we-provide.we-provide-en {
         min-height: 989px;
     }
 
