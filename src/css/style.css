@@ -1592,11 +1592,6 @@ button {
     font-size: 10px;
 }
 
-
-.required_form_controls:active {
-        border-color: blue; 
-        color: blue;
-}
 /* modal windows end */
 
 /* partners window start */
