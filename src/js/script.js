@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             carouselCardsContainer.classList.remove('carousel-inner');
             
-            for (let [index, item] of carouselCard.entries()) {
+            for (let [_index, item] of carouselCard.entries()) {
                 item.classList.remove('carousel-item');
 
                 if (item.classList.contains('active')) { 
@@ -107,18 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         // top button end
 
-    // start applicant form
-    const applicantForm = $("#applicant_form_modal .form");
-
-    applicantForm.on("submit", function (event) {
-            event.preventDefault();
-            const data = $(this).serializeArray();
-            $("#applicant_form_modal").modal("hide");
-            $("#selection-menu").modal("hide");
-            $("#succesModal").modal('show');
-            applicantForm.trigger("reset");
-        });
-
         //modal applicant partner start
     const questionnaireFormModal = $("#questionnaire-form_modal .form");
 
@@ -183,17 +171,22 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         //end we provide video poster
 
-        //start partners' logos
-        $(".owl-carousel").owlCarousel( {
-                items: 2,
-                nav: true,
-                loop: true,
-                navText: ["<div class='icon-arrow-left-logos'></div>", "<div class='icon-arrow-right-logos'></div>"]
-            });    
+    //start partners' logos
+    try {
+      $(".owl-carousel").owlCarousel( {
+        items: 2,
+        nav: true,
+        loop: true,
+        navText: ["<div class='icon-arrow-left-logos'></div>", "<div class='icon-arrow-right-logos'></div>"]
+      });
+    } catch (error) {
+      console.error(error)
     }
+    //end partners' logos
+  }    
 );
-//end partners' logos
 // start modal burger menu
+
 
 let hamburger = document.querySelector('.hamburger');
 let closes = document.querySelector('.cross');
@@ -222,5 +215,131 @@ topButtonClose.onclick=function () {
 }
 // end modal burger menu
 
+$(document).ready(function(){
+  $('.grecaptcha-badge').parent().css('display', 'none');
+});
 
-// end modal poll menu
+const applicantForm = document.getElementById("applicant_form");
+
+const submitApplicantFormHandler = (_form, event) => {
+  try {
+    event.preventDefault();
+      grecaptcha.ready(() => {
+        grecaptcha
+          .execute("6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP", {
+            action: "submit",
+          })
+          .then((token) => {
+            const formData = new FormData(applicantForm);
+            formData.append("organization_id", 1);
+            formData.append("g-recaptcha-response", token);
+            fetch("https://intita.com/api/v1/entrant", {
+              method: "POST",
+              body: formData,
+            })
+              .then((res) => {
+                if (res.ok) {
+                  $("#succesModal").modal("show");
+                  $("#applicant_form").trigger("reset");
+                }
+              })
+              .catch((error) => {
+                console.error(
+                  "There has been a problem with your fetch operation.",
+                  error
+                );
+              });
+          });
+      });
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+/**
+ * Add mask to applicant form phone field.
+ */
+const phone = document.querySelector('#applicant_form #phone');
+
+IMask(phone, {
+  mask: '+38 000 000 00 00',
+  lazy: false,
+});
+
+/**
+ * Add method to JQuery validation that ensure that field includes only letters.
+ */
+jQuery.validator.addMethod("lettersonly", function (value, element) {
+  return this.optional(element) || /^[a-zA-Zа-яА-ЯєЄїЇіІґҐ\-ʼ']+$/i.test(value);
+}, "Only letters, hyphens, backticks, and cyrillic letters");
+
+/**
+ * Add method to JQuery validation that ensure that field is valid Ukraine phone number.
+ */
+jQuery.validator.addMethod("phoneUA", function (value, element) {
+  return this.optional(element) || /\+\d{2} \d{3} \d{3} \d{2} \d{2}/.test(value);
+}, "Invalid phone number");
+
+/**
+ * Adjust validation and submit applicant form.
+ */
+$("#applicant_form").validate({
+  rules: {
+    first_name: {
+      required: true,
+      minlength: 2,
+      maxlength: 20,
+      lettersonly: true,
+    },
+    last_name: {
+      required: true,
+      minlength: 2,
+      maxlength: 30,
+      lettersonly: true,
+    },
+    email: {
+      required: true,
+      email: true
+    },
+    phone: {
+      required: true,
+      phoneUA: true,
+    },
+  },
+  messages: {
+    first_name: {
+      required: "Обов'язкове поле",
+      minlength: "Поле має містити мінімум 2 символи",
+      maxlength: "Максимум 20 символів",
+      lettersonly: "Дозволено тільки літери",
+    },
+    last_name: {
+      required: "Обов'язкове поле",
+      minlength: "Поле має містити мінімум два символи",
+      maxlength: "Максимум 30 символів",
+      lettersonly: "Дозволено тільки літери",
+    },
+    email: {
+      required: "Обов'язкове поле",
+      email: "Email введено некоректно",
+    },
+    phone: {
+      required: "Обов'язкове поле",
+      phoneUA: "Номер телефону введено некоректно"
+    },
+  },
+  submitHandler: submitApplicantFormHandler,
+  errorElement: "span",
+  highlight: function (element) {
+    $(element.form)
+      .find("#" + element.id + "-error")
+      .addClass("error");
+    $(element.form).find(`[name='${element.id}']`).addClass("input_error");
+  },
+  unhighlight: function (element) {
+    $(element.form)
+      .find("#" + element.id + "-error")
+      .removeClass("error");
+    $(element.form).find(`[name='${element.id}']`).removeClass("input_error");
+  },
+});
