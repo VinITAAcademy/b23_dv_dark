@@ -1481,31 +1481,6 @@ button {
     outline: none;
 }
 
-#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .input_container input:placeholder-shown+label {
-    opacity: 1;
-    transition: opacity 0.2s ease-out;
-}
-
-#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .input_container input:not(:placeholder-shown)+label {
-    opacity: 0;
-    transition: opacity 0.2s ease-in;
-}
-
-#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .input_container label {
-    color: var(--color-grey);
-    position: absolute;
-    top: 50%;
-    left: 14px;
-    transform: translateY(-50%);
-    z-index: 0;
-}
-
-#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .input_container label:after {
-    content: '*';
-    color: var(--red);
-    padding-left: 4px;
-}
-
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .error_message {
     color: var(--red);
     font-size: 14px;
@@ -1597,6 +1572,20 @@ button {
     width: 100%;
     max-width: 271px;
     text-align: center;
+}
+
+#applicant_form_modal .form .input_error {
+    color: var(--red) !important;
+    border: 1px solid var(--red) !important;
+}
+
+#applicant_form_modal .form .input_error::placeholder {
+    color: var(--red) !important;
+}
+
+#applicant_form_modal .form .error {
+    color: var(--red);
+    font-size: 10px;
 }
 
 /* modal windows end */
@@ -2178,7 +2167,7 @@ button {
 
 #header .hamburger-404 {
     top: 20px;
-    right: 20px;
+    right: 20px
 }
 
 #block-404 .block-404-main {
@@ -2851,6 +2840,11 @@ button {
         color: var(--color-grey);
     }
 
+    #applicant_form_modal .form .error {
+        color: var(--red);
+        font-size: 12px;
+    }
+
     /* modal windows end */
 
     /* partners window start */
@@ -3254,7 +3248,7 @@ button {
 
     #header .hamburger-404 {
         top: 25px;
-        right: 25px;
+        right: 25px
     }
 
     #block-404 .block-404-main {
