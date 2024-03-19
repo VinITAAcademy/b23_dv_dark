@@ -1477,6 +1477,10 @@ button {
     font-weight: 400;
 }
 
+#applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .input_container input:hover {
+    border: 1.5px solid var(--button-primary);
+}
+
 #applicant_form_modal .applicant_form_modal_container .modal-content .applicant_form_modal_content form .form_control .input_container input:focus {
     outline: none;
 }
