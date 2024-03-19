@@ -3610,9 +3610,9 @@ button {
         color: var(--button-primary);
     }
 
-	#header .flex-en .link-language .translate-flag {
-		font-size: 0px;
-	}
+    #header .flex-en .link-language .translate-flag {
+        font-size: 0px;
+    }
 
     #header .flex-en .br-header {
         border-right: 1px solid var(--button-primary);
