@@ -3600,9 +3600,18 @@ button {
 
     }
 
+    .link-language {
+        display: flex;
+        align-items: center;
+    }
+
     #header .flex-en .link-language .translate {
         font-size: 24px;
         color: var(--button-primary);
+    }
+
+    #header .flex-en .link-language .translate-flag {
+        font-size: 0px;
     }
 
     #header .flex-en .br-header {
