@@ -1756,6 +1756,24 @@ button {
     margin: 28px 0px 40px 8px;
 }
 
+#questionnaire-form_modal .form .input_error {
+    color: var(--red) !important;
+    border: 1px solid var(--red) !important;
+}
+
+#questionnaire-form_modal .form .input_error::placeholder {
+    color: var(--red) !important;
+}
+
+#questionnaire-form_modal .form .error {
+    color: var(--red);
+    font-size: 10px;
+}
+
+#questionnaire-form_modal .questionnaire-form_modal_container .modal-content .questionnaire-form_modal_content form .questionnaire-reqiared_form_controls input:hover {
+    border: 1.5px solid var(--button-primary);
+}
+
 /* partners window end */
 
 /* mentors window start */

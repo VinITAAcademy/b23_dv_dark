@@ -343,3 +343,78 @@ $("#applicant_form").validate({
     $(element.form).find(`[name='${element.id}']`).removeClass("input_error");
   },
 });
+
+/**
+ * Adjust validation and submit questionnaire form.
+ * 
+ */
+$("#questionnaire-form").validate({
+  rules: {
+    first_name: {
+      required: true,
+      minlength: 2,
+      maxlength: 20,
+      lettersonly: true,
+    },
+    last_name: {
+      required: true,
+      minlength: 2,
+      maxlength: 30,
+      lettersonly: true,
+    },
+    email: {
+      required: true,
+      email: true
+    },
+    phone: {
+      required: true,
+      phoneUA: true,
+    },
+  },
+  messages: {
+    first_name: {
+      required: "Обов'язкове поле",
+      minlength: "Поле має містити мінімум 2 символи",
+      maxlength: "Максимум 20 символів",
+      lettersonly: "Дозволено тільки літери",
+    },
+    last_name: {
+      required: "Обов'язкове поле",
+      minlength: "Поле має містити мінімум два символи",
+      maxlength: "Максимум 30 символів",
+      lettersonly: "Дозволено тільки літери",
+    },
+    email: {
+      required: "Обов'язкове поле",
+      email: "Email введено некоректно",
+    },
+    phone: {
+      required: "Обов'язкове поле",
+      phoneUA: "Номер телефону введено некоректно"
+    },
+  },
+  submitHandler: submitApplicantFormHandler,
+  errorElement: "span",
+  highlight: function (element) {
+    $(element.form)
+      .find("#" + element.id + "-error")
+      .addClass("error");
+    $(element.form).find(`[name='${element.id}']`).addClass("input_error");
+  },
+  unhighlight: function (element) {
+    $(element.form)
+      .find("#" + element.id + "-error")
+      .removeClass("error");
+    $(element.form).find(`[name='${element.id}']`).removeClass("input_error");
+  },
+});
+
+/**
+ * Add mask to questionnaire form phone field.
+ */
+const questionnairePhoneInput = document.querySelector('#questionnaire-form #phone');
+
+IMask(questionnairePhoneInput, {
+  mask: '+38 000 000 00 00',
+  lazy: false,
+});
