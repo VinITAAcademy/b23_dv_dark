@@ -790,46 +790,42 @@
                 <div class="questionnaire-mentors-form_modal_content">
                     <h2 class="questionnaire-mentors-title">Анкета для <b class="questionnaire-mentors-title-bold">викладачів/менторів</b>
                         програми</h2>
-                    <form class="form">
+                    <form id="questionnaire-mentors-form" class="form">
                         <div class="questionnaire-mentors-reqiared_form_controls">
                             <div class="questionnaire-mentors-form_control">
                                 <div class="questionnaire-mentors-input_container">
-                                    <input id="username" name="firstname" type="text" placeholder="" required />
-                                    <label for="username">Ім'я</label>
+                                    <input id="username" name="first_name" type="text" placeholder="Імʼя *"  />
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                             <div class="questionnaire-mentors-form_control">
                                 <div class="questionnaire-mentors-input_container">
-                                    <input id="useremail" name="email" type="text" placeholder="" required />
-                                    <label for="useremail">Email</label>
+                                    <input id="useremail" name="email" type="text" placeholder="Email *" />
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                             <div class="questionnaire-mentors-form_control">
                                 <div class="questionnaire-mentors-input_container">
-                                    <input id="usersurname" name="surname" type="text" placeholder="" required />
-                                    <label for="usersurname">Прізвище</label>
+                                    <input id="usersurname" name="last_name" type="text" placeholder="Прізвище *" />
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                             <div class="questionnaire-mentors-form_control">
                                 <div class="questionnaire-mentors-input_container">
-                                    <input id="userphone" name="phone" type="text" placeholder="" required />
-                                    <label for="userphone">Мобільний телефон</label>
+                                    <input id="phone" name="phone" type="text" placeholder="Мобільний телефон *" />
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                         </div>
                         <div class="questionnaire-mentors-optional_fields">
-                            <label for="country">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
-                            <input id="country" name="location" type="text" placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?" />
-                            <label for="getinfo">Звідки отримали інформацію про нас?</label>
-                            <input id="getinfo" name="source" type="text" placeholder="Звідки отримали інформацію про нас?" />
+                            <label for="status_mode">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
+                            <input id="status_mode" name="location" type="text" placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?" />
+                            <label for="resource">Звідки отримали інформацію про нас?</label>
+                            <input id="resource'" name="source" type="text" placeholder="Звідки отримали інформацію про нас?" />
                             <div class="questionnaire-mentors-optional_fields-1">
                                 <div class="questionnaire-mentors-input-1">
-                                    <label for="examination">В чому маєте експертизу?</label>
-                                    <input id="examination" name="cooperation" type="text" placeholder="В чому маєте експертизу?" />
+                                    <label for="social_networks">В чому маєте експертизу?</label>
+                                    <input id="social_networks" name="cooperation" type="text" placeholder="В чому маєте експертизу?" />
                                 </div>
                             </div>
                         </div>
