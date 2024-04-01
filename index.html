@@ -729,46 +729,42 @@
                 <div class="questionnaire-form_modal_content">
                     <h2 class="questionnaire-title">Анкета для <b class="questionnaire-title-bold">партнерів</b>
                         програми</h2>
-                    <form class="form">
+                    <form id="questionnaire-form" class="form">
                         <div class="questionnaire-reqiared_form_controls">
                             <div class="questionnaire-form_control">
                                 <div class="questionnaire-input_container">
-                                    <input id="name" name="firstname" type="text" placeholder="" required />
-                                    <label for="name">Ім'я</label>
+                                    <input id="first_name" name="first_name" type="text" placeholder="Імя *" />
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                             <div class="questionnaire-form_control">
                                 <div class="questionnaire-input_container">
-                                    <input id="emaill" name="email" type="text" placeholder="" required />
-                                    <label for="emaill">Email</label>
+                                    <input id="emaill" name="email" type="text" placeholder="Email *" />
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                             <div class="questionnaire-form_control">
                                 <div class="questionnaire-input_container">
-                                    <input id="surnam" name="surname" type="text" placeholder="" required />
-                                    <label for="surnam">Прізвище</label>
+                                    <input id="last_name" name="last_name" type="text" placeholder="Прізвище *" /> 
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                             <div class="questionnaire-form_control">
                                 <div class="questionnaire-input_container">
-                                    <input id="number" name="phone" type="text" placeholder="" required />
-                                    <label for="number">Мобільний телефон</label>
+                                    <input id="phone" name="phone" type="text" placeholder="Мобільний телефон*" />
                                 </div>
                                 <span class="error_message"></span>
                             </div>
                         </div>
                         <div class="questionnaire-optional_fields">
-                            <label for="city">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
-                            <input id="city" name="location" type="text" placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?" />
-                            <label for="info">Звідки отримали інформацію про нас?</label>
-                            <input id="info" name="source" type="text" placeholder="Звідки отримали інформацію про нас?" />
+                            <label for="address">В якому місті чи країні бажаєте представляти інтереси проєкту?</label>
+                            <input id="address" name="location" type="text" placeholder="В якому місті чи країні бажаєте представляти інтереси проєкту?" />
+                            <label for="resource">Звідки отримали інформацію про нас?</label>
+                            <input id="resource" name="source" type="text" placeholder="Звідки отримали інформацію про нас?" />
                             <div class="questionnaire-optional_fields-1">
-                                <div class="questionnaire-input-1"> <label for="interest">Яка співпраця цікавить
+                                <div class="questionnaire-input-1"> <label for="communication_type">Яка співпраця цікавить
                                         Вас?</label>
-                                    <input id="interest" name="cooperation" type="text" placeholder="Яка співпраця цікавить Вас?" />
+                                    <input id="communication_type" name="communication_type" type="text" placeholder="Яка співпраця цікавить Вас?" />
                                 </div>
                             </div>
                         </div>
