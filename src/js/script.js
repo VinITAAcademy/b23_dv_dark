@@ -410,11 +410,11 @@ $("#questionnaire-form").validate({
 });
 
 /**
- * Add mask to questionnaire form phone field.
+ * Add mask to questionnaire-mentors-form phone field.
  */
-const questionnairePhoneInput = document.querySelector('#questionnaire-form #phone');
+const questionnaireMentorsForm = document.querySelector('#questionnaire-mentors-form #phone');
 
-IMask(questionnairePhoneInput, {
+IMask(questionnaireMentorsForm, {
   mask: '+38 000 000 00 00',
   lazy: false,
 });

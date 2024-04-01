@@ -1941,6 +1941,24 @@ button {
     margin: 28px 0px 40px 8px;
 }
 
+#questionnaire-mentors-form_modal.form .input_error {
+    color: var(--red) !important;
+    border: 1px solid var(--red) !important;
+}
+
+#questionnaire-mentors-form_modal .form .input_error::placeholder {
+    color: var(--red) !important;
+}
+
+#questionnaire-mentors-form_modal .form .error {
+    color: var(--red);
+    font-size: 10px;
+}
+
+#questionnaire-mentors-form_modal .questionnaire-mentors-form_modal_container .modal-content .questionnaire-mentors-form_modal_content form .questionnaire-mentors-form_control .questionnaire-mentors-input_container input:hover {
+    border: 1.5px solid var(--button-primary);
+}
+
 /* mentors window end */
 /* selection menu start*/
 
