@@ -418,3 +418,48 @@ IMask(questionnairePhoneInput, {
   mask: '+38 000 000 00 00',
   lazy: false,
 });
+
+/**
+ * Add reCAPTCHA to questionnaire-form.
+ */
+$(document).ready(function(){
+  $('.grecaptcha-badge').parent().css('display', 'none');
+});
+
+const questionnaireForm = document.getElementById("questionnaire-form");
+
+const submitQuestionnaireForm = (_form, event) => {
+  try {
+    event.preventDefault();
+      grecaptcha.ready(() => {
+        grecaptcha
+          .execute("6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP", {
+            action: "submit",
+          })
+          .then((token) => {
+            const formData = new FormData(applicantForm);
+            formData.append("organization_id", 1);
+            formData.append("g-recaptcha-response", token);
+            fetch("https://intita.com/api/v1/entrant", {
+              method: "POST",
+              body: formData,
+            })
+              .then((res) => {
+                if (res.ok) {
+                  $("#succesModal").modal("show");
+                  $("#questionnaire-form").trigger("reset");
+                }
+              })
+              .catch((error) => {
+                console.error(
+                  "There has been a problem with your fetch operation.",
+                  error
+                );
+              });
+          });
+      });
+  } catch (error) {
+    console.error(error);
+  }
+};
+
