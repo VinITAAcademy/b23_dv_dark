@@ -418,3 +418,47 @@ IMask(questionnaireMentorsForm, {
   mask: '+38 000 000 00 00',
   lazy: false,
 });
+
+/**
+ * Add recaptcha to questionnaire-mentors-form.
+ */
+$(document).ready(function(){
+  $('.grecaptcha-badge').parent().css('display', 'none');
+});
+
+const questionnaireMentors = document.getElementById("questionnaire-mentors-form");
+
+const submitQuestionnaireMentorsForm = (_form, event) => {
+  try {
+    event.preventDefault();
+      grecaptcha.ready(() => {
+        grecaptcha
+          .execute("6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP", {
+            action: "submit",
+          })
+          .then((token) => {
+            const formData = new FormData(questionnaireMentors);
+            formData.append("organization_id", 1);
+            formData.append("g-recaptcha-response", token);
+            fetch("https://intita.com/api/v1/entrant", {
+              method: "POST",
+              body: formData,
+            })
+              .then((res) => {
+                if (res.ok) {
+                  $("#succesModal").modal("show");
+                  $("#questionnaire-mentors-form").trigger("reset");
+                }
+              })
+              .catch((error) => {
+                console.error(
+                  "There has been a problem with your fetch operation.",
+                  error
+                );
+              });
+          });
+      });
+  } catch (error) {
+    console.error(error);
+  }
+};
