@@ -344,11 +344,11 @@ $("#applicant_form").validate({
   },
 });
 
-
 /**
- * Adjust validation and submit questionnaire-mentors-form.
+ * Adjust validation and submit questionnaire form.
+ * 
  */
-$("#questionnaire-mentors-form").validate({
+$("#questionnaire-form").validate({
   rules: {
     first_name: {
       required: true,
