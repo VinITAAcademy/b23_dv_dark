@@ -437,7 +437,7 @@ const submitQuestionnaireForm = (_form, event) => {
             action: "submit",
           })
           .then((token) => {
-            const formData = new FormData(applicantForm);
+            const formData = new FormData(questionnaireForm);
             formData.append("organization_id", 1);
             formData.append("g-recaptcha-response", token);
             fetch("https://intita.com/api/v1/entrant", {
