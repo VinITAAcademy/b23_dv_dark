@@ -420,15 +420,15 @@ IMask(questionnaireMentorsForm, {
 });
 
 /**
- * Add recaptcha to questionnaire-mentors-form.
+ * Add reCAPTCHA to questionnaire-form.
  */
 $(document).ready(function(){
   $('.grecaptcha-badge').parent().css('display', 'none');
 });
 
-const questionnaireMentors = document.getElementById("questionnaire-mentors-form");
+const questionnaireForm = document.getElementById("questionnaire-form");
 
-const submitQuestionnaireMentorsForm = (_form, event) => {
+const submitQuestionnaireForm = (_form, event) => {
   try {
     event.preventDefault();
       grecaptcha.ready(() => {
@@ -437,7 +437,7 @@ const submitQuestionnaireMentorsForm = (_form, event) => {
             action: "submit",
           })
           .then((token) => {
-            const formData = new FormData(questionnaireMentors);
+            const formData = new FormData(questionnaireForm);
             formData.append("organization_id", 1);
             formData.append("g-recaptcha-response", token);
             fetch("https://intita.com/api/v1/entrant", {
@@ -447,7 +447,7 @@ const submitQuestionnaireMentorsForm = (_form, event) => {
               .then((res) => {
                 if (res.ok) {
                   $("#succesModal").modal("show");
-                  $("#questionnaire-mentors-form").trigger("reset");
+                  $("#questionnaire-form").trigger("reset");
                 }
               })
               .catch((error) => {
@@ -462,3 +462,4 @@ const submitQuestionnaireMentorsForm = (_form, event) => {
     console.error(error);
   }
 };
+
